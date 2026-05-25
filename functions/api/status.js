@@ -13,18 +13,20 @@ export async function onRequestGet(context) {
     const ref = env.GITHUB_REF || "main";
     const token = env.GITHUB_TOKEN;
 
-    const path = `exports/${file}`;
+    if (!owner || !repo || !token) {
+      return json({ error: "GitHub settings missing in Cloudflare." }, 500);
+    }
 
-    const response = await fetch(
-      `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F", "/")}?ref=${encodeURIComponent(ref)}`,
-      {
-        headers: {
-          "accept": "application/vnd.github+json",
-          "authorization": `Bearer ${token}`,
-          "user-agent": "retail-address-finder"
-        }
+    const path = `exports/${file}`;
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F", "/")}?ref=${encodeURIComponent(ref)}`;
+
+    const response = await fetch(apiUrl, {
+      headers: {
+        "accept": "application/vnd.github+json",
+        "authorization": `Bearer ${token}`,
+        "user-agent": "retail-address-finder"
       }
-    );
+    });
 
     if (response.status === 404) {
       return json({
@@ -48,7 +50,6 @@ export async function onRequestGet(context) {
       size: data.size,
       downloadUrl: `/api/download?file=${encodeURIComponent(file)}`
     });
-
   } catch (error) {
     return json({ error: error.message || "Okänt fel." }, 500);
   }
