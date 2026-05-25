@@ -19,116 +19,104 @@
         <a href="#">Search</a>
         <a href="#">Exports</a>
         <a href="#">Sources</a>
-        <a href="#">API</a>
       </nav>
     </header>
 
-    <section class="hero heroSplit">
+    <section class="hero">
       <div>
-        <div class="badge">CSV exports for retail locations</div>
+        <div class="badge">Store address exports</div>
         <h1>Find and export store addresses by chain and country.</h1>
         <p class="lead">
-          Start a store-location export in seconds. The system fetches locations,
-          standardizes the output and creates a CSV with formatted address or latitude/longitude.
+          Start a location export, follow progress in real time and download a CSV when the file is ready.
         </p>
-
-        <div class="heroStats">
-          <div>
-            <strong>CSV</strong>
-            <span>ready output</span>
-          </div>
-          <div>
-            <strong>OSM</strong>
-            <span>first data source</span>
-          </div>
-          <div>
-            <strong>GitHub</strong>
-            <span>export engine</span>
-          </div>
-        </div>
       </div>
 
-      <div class="statusPreview">
-        <div class="statusHeader">
-          <span class="liveDot"></span>
+      <div class="workflowCard">
+        <div class="workflowTop">
+          <span class="pulse"></span>
           Export workflow
         </div>
-        <div class="miniSteps">
-          <span>Queued</span>
-          <span>Fetching</span>
-          <span>Cleaning</span>
-          <span>Ready</span>
-        </div>
-        <p>
-          Create a job, follow progress, then download the generated CSV from the export.
-        </p>
-      </div>
-    </section>
 
-    <section class="card exportCard">
-      <div class="cardHeader">
-        <div>
-          <h2>Create new export</h2>
-          <p>Enter a retail chain and country. Example: Kiwi in Norway.</p>
+        <div class="workflowRows">
+          <span>Startar</span>
+          <span>Hämtar data</span>
+          <span>Bearbetar adresser</span>
+          <span>Skapar CSV</span>
+          <span>Klar för nedladdning</span>
         </div>
       </div>
-
-      <form id="exportForm">
-        <label>
-          Chain
-          <input
-            id="chain"
-            name="chain"
-            type="text"
-            placeholder="Ex. REMA 1000, Kiwi, Carrefour"
-            required
-          />
-        </label>
-
-        <label>
-          Country
-          <input
-            id="country"
-            name="country"
-            type="text"
-            placeholder="Ex. Norway, France, Netherlands"
-            required
-          />
-        </label>
-
-        <button type="submit">Generate file</button>
-      </form>
-
-      <div id="result" class="result hidden"></div>
     </section>
 
-    <section class="examples">
-      <h2>Try an example</h2>
-      <div class="grid">
-        <button type="button" class="example" data-chain="REMA 1000" data-country="Norway">
-          REMA 1000 in Norway
-        </button>
+    <section class="mainGrid">
+      <section class="card requestCard">
+        <div class="cardHeader">
+          <h2>Create export</h2>
+          <p>Enter a chain and country. Example: Kiwi in Norway.</p>
+        </div>
 
-        <button type="button" class="example" data-chain="Kiwi" data-country="Norway">
-          Kiwi in Norway
-        </button>
+        <form id="exportForm">
+          <label>
+            Chain
+            <input
+              id="chain"
+              name="chain"
+              type="text"
+              placeholder="Ex. REMA 1000, Kiwi, Carrefour"
+              required
+            />
+          </label>
 
-        <button type="button" class="example" data-chain="Carrefour" data-country="France">
-          Carrefour in France
-        </button>
+          <label>
+            Country
+            <input
+              id="country"
+              name="country"
+              type="text"
+              placeholder="Ex. Norway, France, Netherlands"
+              required
+            />
+          </label>
 
-        <button type="button" class="example" data-chain="Albert Heijn" data-country="Netherlands">
-          Albert Heijn in Netherlands
-        </button>
+          <button type="submit">Generate CSV</button>
+        </form>
+
+        <div class="examples">
+          <button type="button" class="example" data-chain="Kiwi" data-country="Norway">Kiwi / Norway</button>
+          <button type="button" class="example" data-chain="REMA 1000" data-country="Norway">REMA 1000 / Norway</button>
+          <button type="button" class="example" data-chain="Carrefour" data-country="France">Carrefour / France</button>
+          <button type="button" class="example" data-chain="Albert Heijn" data-country="Netherlands">Albert Heijn / Netherlands</button>
+        </div>
+      </section>
+
+      <section class="card statusCard">
+        <div class="cardHeader">
+          <h2>Export status</h2>
+          <p>Status updates automatically while the file is being created.</p>
+        </div>
+
+        <div id="result" class="result idle">
+          <div class="emptyState">
+            <div class="emptyIcon">↓</div>
+            <h3>No export running</h3>
+            <p>Start an export to see progress here.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="infoGrid">
+      <div class="infoCard">
+        <strong>1</strong>
+        <span>Submit chain and country</span>
       </div>
-    </section>
-
-    <section class="note">
-      <h2>How it works</h2>
-      <p>
-        The website starts a GitHub Actions workflow. GitHub runs the export script,
-        saves the CSV in the repository and also makes it available as an artifact.
-      </p>
+      <div class="infoCard">
+        <strong>2</strong>
+        <span>We fetch and process store locations</span>
+      </div>
+      <div class="infoCard">
+        <strong>3</strong>
+        <span>Download your CSV directly here</span>
+      </div>
     </section>
   </main>
 
