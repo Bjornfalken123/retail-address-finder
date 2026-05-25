@@ -1,0 +1,105 @@
+﻿chain_requested,name,brand,operator,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+MAX,Maxi ICA Stormarknad Häggvik,Maxi ICA Stormarknad,,Mossvägen,1,19162,Sollentuna,Sweden,Mossvägen 1 19162 Sollentuna Sweden,strict,59.4377882,17.9319525,node,60750116,OpenStreetMap via Overpass API
+MAX,ICA Maxi Brynäs,Maxi ICA Stormarknad,,Atlasgatan,40,80286,Gävle,Sweden,Atlasgatan 40 80286 Gävle Sweden,strict,60.6697604,17.1817686,node,277842499,OpenStreetMap via Overpass API
+MAX,Ica Maxi,Maxi ICA Stormarknad,,,,,,Sweden,"56.1644424,13.7807967",coordinates_only,56.1644424,13.7807967,node,291832202,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Kristianstad,Maxi ICA Stormarknad,ICA,Sjöcronas Gata,7,291 53,Kristianstad,Sweden,Sjöcronas Gata 7 291 53 Kristianstad Sweden,strict,56.0253211,14.1691196,node,320349384,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Göteborg,Maxi ICA Stormarknad,,Grafiska Vägen,16,41263,Göteborg,Sweden,Grafiska Vägen 16 41263 Göteborg Sweden,strict,57.6802124,12.005165,node,331322016,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Stenhagen Uppsala,Maxi ICA Stormarknad,ICA,,,,,Sweden,"59.8488507,17.5599509",coordinates_only,59.8488507,17.5599509,node,412064914,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Lindhagen,Maxi ICA Stormarknad,ICA,,,,,Sweden,"59.337221,18.0098203",coordinates_only,59.337221,18.0098203,node,468043008,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Sundsvall,Maxi ICA Stormarknad,ICA,Antennvägen,11,,,Sweden,Antennvägen 11 Sweden,usable,62.442646,17.3481855,node,524700960,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Angered,Maxi ICA Stormarknad,ICA,,,,,Sweden,"57.7952231,12.0496839",coordinates_only,57.7952231,12.0496839,node,593971770,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Haparanda,Maxi ICA Stormarknad,,Hästskovägen,2,95336,Haparanda,Sweden,Hästskovägen 2 95336 Haparanda Sweden,strict,65.8422409,24.1189337,node,598605171,OpenStreetMap via Overpass API
+MAX,ICA Maxi Hälla,Maxi ICA Stormarknad,,,,,Västerås,Sweden,Västerås Sweden,usable,59.6094409,16.620288,node,626011218,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Köping,Maxi ICA Stormarknad,,,,,,Sweden,"59.5223022,15.9741936",coordinates_only,59.5223022,15.9741936,node,635807861,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Växjö,Maxi ICA Stormarknad,ICA,Hejaregatan,30,352 46,Växjö,Sweden,Hejaregatan 30 352 46 Växjö Sweden,strict,56.8836334,14.7668629,node,739953649,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad,Maxi ICA Stormarknad,ICA,,,,,Sweden,"59.3763263,13.4288818",coordinates_only,59.3763263,13.4288818,node,858084869,OpenStreetMap via Overpass API
+MAX,ICA Maxi Gunnesbo,Maxi ICA Stormarknad,,Traktorvägen,1-3,226 60,Lund,Sweden,Traktorvägen 1-3 226 60 Lund Sweden,strict,55.7168824,13.1643471,node,858991927,OpenStreetMap via Overpass API
+MAX,Ica Maxi,Maxi ICA Stormarknad,Ica,Dragaregatan,2,26575,Hyllinge,Sweden,Dragaregatan 2 26575 Hyllinge Sweden,strict,56.1009367,12.8594644,node,907186988,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Karlshamn,Maxi ICA Stormarknad,,Korpadalsvägen,3,374 51,Asarum,Sweden,Korpadalsvägen 3 374 51 Asarum Sweden,strict,56.1957711,14.8441086,node,913797174,OpenStreetMap via Overpass API
+MAX,ICA Maxi Stormarknad Motala,Maxi ICA Stormarknad,,Hökartorget,,591 53,Motala,Sweden,Hökartorget 591 53 Motala Sweden,usable,58.5573477,15.0341495,node,1369951836,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Råå,Maxi ICA Stormarknad,ICA,Landskronavägen,33,252 32,Helsingborg,Sweden,Landskronavägen 33 252 32 Helsingborg Sweden,strict,56.0022875,12.7452179,node,1540013938,OpenStreetMap via Overpass API
+MAX,ICA Maxi Torslanda,Maxi ICA Stormarknad,ICA,Gamla Flygplatsvägen,60,,,Sweden,Gamla Flygplatsvägen 60 Sweden,usable,57.7097178,11.7722174,node,1646441154,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Örebro Boglundsängen,Maxi ICA Stormarknad,,Boglundsgatan,2,703 74,Örebro,Sweden,Boglundsgatan 2 703 74 Örebro Sweden,strict,59.2964063,15.2059136,node,1673665726,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Västra Hamnen,Maxi ICA Stormarknad,,Masttorget,12,211 77,Malmö,Sweden,Masttorget 12 211 77 Malmö Sweden,strict,55.611825,12.9801942,node,1745595579,OpenStreetMap via Overpass API
+MAX,Maxi ICA,Maxi ICA Stormarknad,,,,,,Sweden,"58.3537245,11.8084943",coordinates_only,58.3537245,11.8084943,node,1760248014,OpenStreetMap via Overpass API
+MAX,ICA Maxi Nynäshamn,Maxi ICA Stormarknad,ICA,Telivägen,2,14941,Nynäshamn,Sweden,Telivägen 2 14941 Nynäshamn Sweden,strict,58.9128704,17.9560601,node,1832548230,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Kumla,Maxi ICA Stormarknad,,Köpmangatan,18,692 30,Kumla,Sweden,Köpmangatan 18 692 30 Kumla Sweden,strict,59.1262454,15.1417504,node,1924797820,OpenStreetMap via Overpass API
+MAX,ICA,Maxi ICA Stormarknad,,,,,,Sweden,"55.7587436,13.0081224",coordinates_only,55.7587436,13.0081224,node,1963450961,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Härnösand,Maxi ICA Stormarknad,,,,,,Sweden,"62.6368792,17.9287888",coordinates_only,62.6368792,17.9287888,node,1971923527,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Trollhättan,Maxi ICA Stormarknad,,,,,,Sweden,"58.3131599,12.3037266",coordinates_only,58.3131599,12.3037266,node,1979955115,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Umeå,Maxi ICA Stormarknad,,,,,,Sweden,"63.797566,20.302819",coordinates_only,63.797566,20.302819,node,2354169189,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Alingsås,Maxi ICA Stormarknad,,,,,,Sweden,"57.9244128,12.5449399",coordinates_only,57.9244128,12.5449399,node,2843036385,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Haninge,Maxi ICA Stormarknad,,,,,,Sweden,"59.1813721,18.1576055",coordinates_only,59.1813721,18.1576055,node,3350546423,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stornarknad Välsviken,Maxi ICA Stormarknad,ICA,Rävbergsvägen,2,,,Sweden,Rävbergsvägen 2 Sweden,usable,59.3963563,13.5807351,node,3785981490,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Flemingsberg,Maxi ICA Stormarknad,,Ebba Bååts torg,40,141 51,Huddinge,Sweden,Ebba Bååts torg 40 141 51 Huddinge Sweden,strict,59.2185844,17.9488026,node,4616665702,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Ljungby,Maxi ICA Stormarknad,,,,,,Sweden,"56.8346418,13.9441564",coordinates_only,56.8346418,13.9441564,node,4725936849,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Högsbo,Maxi ICA Stormarknad,,,,42132,,Sweden,42132 Sweden,usable,57.651001,11.9494344,node,5060861816,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Barkarbystaden,Maxi ICA Stormarknad,,Majorsvägen,4,17744,Järfälla,Sweden,Majorsvägen 4 17744 Järfälla Sweden,strict,59.4138518,17.8634809,node,5280103753,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Partille,Maxi ICA Stormarknad,,,,,,Sweden,"57.736909,12.1056635",coordinates_only,57.736909,12.1056635,node,5310468103,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad,Maxi ICA Stormarknad,,,,,,Sweden,"55.6390456,13.0847657",coordinates_only,55.6390456,13.0847657,node,6250391760,OpenStreetMap via Overpass API
+MAX,Ica Maxi,Maxi ICA Stormarknad,,,,,,Sweden,"57.8126711,13.421854",coordinates_only,57.8126711,13.421854,node,7446348321,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Bromma,Maxi ICA Stormarknad,,Köpsvängen,4,16867,Bromma,Sweden,Köpsvängen 4 16867 Bromma Sweden,strict,59.3537504,17.9562145,node,9112053103,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Kungälv,Maxi ICA Stormarknad,ICA,,,,,Sweden,"57.8744514,11.9738259",coordinates_only,57.8744514,11.9738259,node,10890010743,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad,Maxi ICA Stormarknad,,,,,,Sweden,"58.6156029,16.1619454",coordinates_only,58.6156029,16.1619454,node,11737705031,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Solna,Maxi ICA Stormarknad,ICA,,,,,Sweden,"59.358382,17.980286",coordinates_only,59.358382,17.980286,node,12097728305,OpenStreetMap via Overpass API
+MAX,ICA Maxi Stormarknad Arninge,Maxi ICA Stormarknad,,Kundvägen,1E,187 66,Täby,Sweden,Kundvägen 1E 187 66 Täby Sweden,strict,59.4621163,18.1297183,node,13045337017,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Landskrona,Maxi ICA Stormarknad,,Österleden,183 B,26151,Landskrona,Sweden,Österleden 183 B 26151 Landskrona Sweden,strict,55.8739087,12.8578951,node,13539753098,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Botkyrka,Maxi ICA Stormarknad,,,,,,Sweden,"59.2372975,17.8315008",coordinates_only,59.2372975,17.8315008,way,16753808,OpenStreetMap via Overpass API
+MAX,ICA Maxi,Maxi ICA Stormarknad,,Ingenjörsgatan,1,80293,Gävle,Sweden,Ingenjörsgatan 1 80293 Gävle Sweden,strict,60.6468354,17.1470181,way,27038715,OpenStreetMap via Overpass API
+MAX,ICA Maxi Trelleborg,ICA Maxi,,Strandridaregatan,10,,Trelleborg,Sweden,Strandridaregatan 10 Trelleborg Sweden,usable,55.373904,13.1321285,way,27790303,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad,Maxi ICA Stormarknad,,,,,,Sweden,"57.771888,14.1766979",coordinates_only,57.771888,14.1766979,way,28785792,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Mellbystrand,Maxi ICA Stormarknad,,,,,Mellbystrand,Sweden,Mellbystrand Sweden,usable,56.5033816,12.9563751,way,36791769,OpenStreetMap via Overpass API
+MAX,Ica Maxi Stormarknad,Maxi ICA Stormarknad,ICA,,,,,Sweden,"63.1926248,14.6505955",coordinates_only,63.1926248,14.6505955,way,41673538,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Linköping,Maxi ICA Stormarknad,,Västra Svedengatan,12,582 73,Linköping,Sweden,Västra Svedengatan 12 582 73 Linköping Sweden,strict,58.4324544,15.5923627,way,43338197,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad,Maxi ICA Stormarknad,ICA,Bataljonsvägen,11,791 40,Falun,Sweden,Bataljonsvägen 11 791 40 Falun Sweden,strict,60.6070163,15.6587571,way,47848884,OpenStreetMap via Overpass API
+MAX,ICA Maxi Stormarknad,Maxi ICA Stormarknad,ICA,Storhedsvägen,14,97345,Luleå,Sweden,Storhedsvägen 14 97345 Luleå Sweden,strict,65.6175441,22.0487975,way,62031313,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Helsingborg,Maxi ICA Stormarknad,,Regementsvägen,7,254 57,Helsingborg,Sweden,Regementsvägen 7 254 57 Helsingborg Sweden,strict,56.0655065,12.719706,way,62323566,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Skellefteå,Maxi ICA Stormarknad,,Varugatan,28,931 76,Skellefteå,Sweden,Varugatan 28 931 76 Skellefteå Sweden,strict,64.7658672,21.0255614,way,68881985,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Borås,Maxi ICA Stormarknad,,Trandögatan,16,50433,Borås,Sweden,Trandögatan 16 50433 Borås Sweden,strict,57.7106271,12.9422355,way,85043210,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Oskarshamn,Maxi ICA Stormarknad,,Döderhultsvägen,26,57225,,Sweden,Döderhultsvägen 26 57225 Sweden,usable,57.2655209,16.4325835,way,96063502,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Nacka,Maxi ICA Stormarknad,,,,,,Sweden,"59.3115038,18.1715981",coordinates_only,59.3115038,18.1715981,way,102982374,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Hudiksvall,Maxi ICA Stormarknad,,,,,,Sweden,"61.7430046,17.1163839",coordinates_only,61.7430046,17.1163839,way,113723416,OpenStreetMap via Overpass API
+MAX,ICA Maxi Ystadvägen,Maxi ICA Stormarknad,,Cypressvägen,4,213 63,Malmö,Sweden,Cypressvägen 4 213 63 Malmö Sweden,strict,55.5732675,13.0366536,way,125735563,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Visby,Maxi ICA Stormarknad,,,,,,Sweden,"57.6237977,18.3221152",coordinates_only,57.6237977,18.3221152,way,126784267,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Ronneby,Maxi ICA Stormarknad,,Karlshamnsvägen,8,372 31,Ronneby,Sweden,Karlshamnsvägen 8 372 31 Ronneby Sweden,strict,56.2150101,15.2724717,way,134208681,OpenStreetMap via Overpass API
+MAX,ICA Maxi Erikslund,Maxi ICA Stormarknad,,Traversgatan,12,72138,Västerås,Sweden,Traversgatan 12 72138 Västerås Sweden,strict,59.616545,16.4621088,way,145558558,OpenStreetMap via Overpass API
+MAX,Ica Maxi,Maxi ICA Stormarknad,ICA,Mjälgavägen,2,784 37,Borlänge,Sweden,Mjälgavägen 2 784 37 Borlänge Sweden,strict,60.4826443,15.4487054,way,150876122,OpenStreetMap via Overpass API
+MAX,ICA Maxi,Maxi ICA Stormarknad,,Siljanssågsvägen,15,79250,Mora,Sweden,Siljanssågsvägen 15 79250 Mora Sweden,strict,61.0060633,14.595943,way,171860466,OpenStreetMap via Overpass API
+MAX,ICA Maxi Kristinehamn,Maxi ICA Stormarknad,,Närkevägen,28,681 43,Kristinehamn,Sweden,Närkevägen 28 681 43 Kristinehamn Sweden,strict,59.3117404,14.1291106,way,185872775,OpenStreetMap via Overpass API
+MAX,ICA Maxi Karlskoga,Maxi ICA Stormarknad,,,,,,Sweden,"59.3281954,14.5070421",coordinates_only,59.3281954,14.5070421,way,194657488,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Bromölla,Maxi ICA Stormarknad,ICA,Tians Väg,4,295 39,Bromölla,Sweden,Tians Väg 4 295 39 Bromölla Sweden,strict,56.066817,14.4800661,way,204144406,OpenStreetMap via Overpass API
+MAX,ICA Maxi Vasa Handelsplats,Maxi ICA Stormarknad,ICA,,,,,Sweden,"59.1873906,17.5791145",coordinates_only,59.1873906,17.5791145,way,206897155,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Enköping,Maxi ICA Stormarknad,,Vagnsgatan,3,745 37,Enköping,Sweden,Vagnsgatan 3 745 37 Enköping Sweden,strict,59.6521518,17.0870875,way,215109046,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Toftanäs,Maxi ICA Stormarknad,,Topplocksgatan,10,21241,Malmö,Sweden,Topplocksgatan 10 21241 Malmö Sweden,strict,55.5973526,13.0982732,way,219177011,OpenStreetMap via Overpass API
+MAX,Ica Maxi Stormarknad,Maxi ICA Stormarknad,,Afrodites väg,6,134 44,Värmdö,Sweden,Afrodites väg 6 134 44 Värmdö Sweden,strict,59.311894,18.4269917,way,221658763,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Högskolan,Maxi ICA Stormarknad,,Kristian IV:s väg,3,,,Sweden,Kristian IV:s väg 3 Sweden,usable,56.6638911,12.8761471,way,225285015,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Vetlanda,Maxi ICA Stormarknad,ICA,Nygatan,3,,Vetlanda,Sweden,Nygatan 3 Vetlanda Sweden,usable,57.4255886,15.0959604,way,249359508,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Falköping,Maxi ICA Stormarknad,,Lönnerbladsgatan,2,521 40,Falköping,Sweden,Lönnerbladsgatan 2 521 40 Falköping Sweden,strict,58.154256,13.5633885,way,249412482,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Älmhult,Maxi ICA Stormarknad,ICA,Silverdalsgatan,3,343 31,Älmhult,Sweden,Silverdalsgatan 3 343 31 Älmhult Sweden,strict,56.5571091,14.1460216,way,260678282,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Kungsbacka,Maxi ICA Stormarknad,ICA,,,,,Sweden,"57.5162793,12.0741735",coordinates_only,57.5162793,12.0741735,way,264727228,OpenStreetMap via Overpass API
+MAX,ICA Maxi Nyköping,Maxi ICA Stormarknad,,Gustafsbergsstigen,6,611 67,Nyköping,Sweden,Gustafsbergsstigen 6 611 67 Nyköping Sweden,strict,58.7703043,17.0219285,way,298617966,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Västervik,Maxi ICA Stormarknad,,,,,,Sweden,"57.7674793,16.5967949",coordinates_only,57.7674793,16.5967949,way,312681000,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Eskilstuna,Maxi ICA Stormarknad,,Karl Hovbergsgatan,32,,Eskilstuna,Sweden,Karl Hovbergsgatan 32 Eskilstuna Sweden,usable,59.3881889,16.5344849,way,324004049,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Universitetet,Maxi ICA Stormarknad,,Sörbyängsvägen,24-30,702 18,Örebro,Sweden,Sörbyängsvägen 24-30 702 18 Örebro Sweden,strict,59.252092,15.2307716,way,394983115,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Ängelholm,Maxi ICA Stormarknad,ICA,Hugingatan,1,,Ängelholm,Sweden,Hugingatan 1 Ängelholm Sweden,usable,56.2520873,12.8909073,way,399052014,OpenStreetMap via Overpass API
+MAX,ICA Maxi Stormarknad Gnista,Maxi ICA Stormarknad,,,,,,Sweden,"59.8435927,17.7136935",coordinates_only,59.8435927,17.7136935,way,492670143,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Löddeköpinge,Maxi ICA Stormarknad,,Marknadsvägen,5,,Löddeköpinge,Sweden,Marknadsvägen 5 Löddeköpinge Sweden,usable,55.7681108,12.990952,way,572528712,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Moraberg,Maxi ICA Stormarknad,,,,,,Sweden,"59.1995764,17.6693497",coordinates_only,59.1995764,17.6693497,way,595408589,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Kalmar,Maxi ICA Stormarknad,ICA,Verkstadsgatan,6,392 39,Kalmar,Sweden,Verkstadsgatan 6 392 39 Kalmar Sweden,strict,56.669827,16.3389041,way,853808151,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Olofström,ICA Maxi,,Ekhagsvägen,2,293 40,Olofström,Sweden,Ekhagsvägen 2 293 40 Olofström Sweden,strict,56.275052,14.5441129,way,870280963,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Katrineholm,Maxi ICA Stormarknad,,Starrvägen,17,,,Sweden,Starrvägen 17 Sweden,usable,59.0028662,16.2252614,way,889389690,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Karlskrona,Maxi ICA Stormarknad,,Verkövägen,5,37162,Lyckeby,Sweden,Verkövägen 5 37162 Lyckeby Sweden,strict,56.1971836,15.6406881,way,907037346,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Bålsta,Maxi ICA Stormarknad,ICA,Lillsjörännan,9,74650,Bålsta,Sweden,Lillsjörännan 9 74650 Bålsta Sweden,strict,59.5589629,17.5498608,way,925884593,OpenStreetMap via Overpass API
+MAX,Ica Maxi,Maxi ICA Stormarknad,ICA,Linggatan,25,81132,Sandviken,Sweden,Linggatan 25 81132 Sandviken Sweden,strict,60.6240314,16.7729052,way,970645822,OpenStreetMap via Overpass API
+MAX,Ica Maxi,Maxi ICA Stormarknad,,,,,,Sweden,"61.3391276,16.3968978",coordinates_only,61.3391276,16.3968978,way,1055184037,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Österåker,Maxi ICA Stormarknad,,,,,,Sweden,"59.4891672,18.2704558",coordinates_only,59.4891672,18.2704558,way,1113297100,OpenStreetMap via Overpass API
+MAX,ICA Maxi Flygstaden,Maxi ICA Stormarknad,,,,,,Sweden,"56.6795228,12.8062312",coordinates_only,56.6795228,12.8062312,way,1335980836,OpenStreetMap via Overpass API
+MAX,Maxi ICA Stormarknad Skövde,Maxi ICA Stormarknad,,,,,,Sweden,"58.4048055,13.8556908",coordinates_only,58.4048055,13.8556908,way,1453527487,OpenStreetMap via Overpass API
+MAX,MaxiMat,,,,,,,Sweden,"59.0657776,11.2045415",coordinates_only,59.0657776,11.2045415,node,430352132,OpenStreetMap via Overpass API
+MAX,ICA Maxi Söderhamn,ICA Kvantum,,,,,,Sweden,"61.2957555,17.0209185",coordinates_only,61.2957555,17.0209185,node,1372342896,OpenStreetMap via Overpass API
+MAX,Mat Max,,,,,,,Sweden,"56.668761,12.8732289",coordinates_only,56.668761,12.8732289,node,3076493500,OpenStreetMap via Overpass API
+MAX,Maximat,,,,,,,Sweden,"59.8812297,12.2883921",coordinates_only,59.8812297,12.2883921,node,4661168824,OpenStreetMap via Overpass API
+MAX,Maximat,,,,,,,Sweden,"59.0857055,11.2624508",coordinates_only,59.0857055,11.2624508,node,5563898778,OpenStreetMap via Overpass API
+MAX,ICA Maxi Förbutik,ICA,ICA,,,,,Sweden,"57.7952399,12.0501482",coordinates_only,57.7952399,12.0501482,node,6105411611,OpenStreetMap via Overpass API
+MAX,Byggmax,,,,,,,Sweden,"59.3802951,13.5255905",coordinates_only,59.3802951,13.5255905,node,9655578317,OpenStreetMap via Overpass API
+MAX,Maxims Livs,,,Tullslätten,25,392 53,Kalmar,Sweden,Tullslätten 25 392 53 Kalmar Sweden,strict,56.6638158,16.3548851,node,11873584450,OpenStreetMap via Overpass API
