@@ -3,6 +3,31 @@ const result = document.querySelector("#result");
 const chainInput = document.querySelector("#chain");
 const countryInput = document.querySelector("#country");
 
+let pollTimer = null;
+
+const steps = [
+  {
+    title: "Startar export",
+    text: "Vi skickar din begäran till exportmotorn."
+  },
+  {
+    title: "Hämtar data",
+    text: "Vi söker efter butiker för den valda kedjan och landet."
+  },
+  {
+    title: "Bearbetar adresser",
+    text: "Vi rensar resultatet, tar bort dubbletter och standardiserar adresser."
+  },
+  {
+    title: "Skapar CSV",
+    text: "Vi förbereder filen för nedladdning."
+  },
+  {
+    title: "Klar",
+    text: "Din CSV-fil är redo att laddas ner."
+  }
+];
+
 document.querySelectorAll(".example").forEach((button) => {
   button.addEventListener("click", () => {
     chainInput.value = button.dataset.chain;
@@ -18,18 +43,32 @@ form.addEventListener("submit", async (event) => {
   const country = countryInput.value.trim();
   const submitButton = form.querySelector("button");
 
-  result.classList.remove("hidden");
-  result.innerHTML = `
-    <strong>Startar exporten...</strong><br>
-    Skickar request till GitHub Actions.
-  `;
+  if (!chain || !country) {
+    showError("Fyll i både kedja och land.");
+    return;
+  }
+
+  if (pollTimer) {
+    clearInterval(pollTimer);
+    pollTimer = null;
+  }
 
   submitButton.disabled = true;
+
+  renderStatus({
+    currentStep: 0,
+    progress: 8,
+    badge: "Startar",
+    title: "Startar export",
+    subtitle: `Förbereder hämtning för ${chain} i ${country}.`
+  });
 
   try {
     const response = await fetch("/api/start", {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: {
+        "content-type": "application/json"
+      },
       body: JSON.stringify({
         chain,
         country,
@@ -41,25 +80,209 @@ form.addEventListener("submit", async (event) => {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error(data.error || "Något gick fel.");
+      throw new Error(data.error || "Kunde inte starta exporten.");
     }
 
-    result.innerHTML = `
-      <strong>Exporten är startad.</strong><br>
-      Kedja: ${escapeHtml(chain)}<br>
-      Land: ${escapeHtml(country)}<br><br>
-      Exporten körs nu i GitHub Actions. När den är klar hittar du CSV-filen i <strong>exports</strong>-mappen i GitHub, eller som artifact under körningen.<br><br>
-      <a href="${data.actionsUrl}" target="_blank" rel="noreferrer">Öppna GitHub Actions</a>
-    `;
+    renderStatus({
+      currentStep: 1,
+      progress: 28,
+      badge: "Arbetar",
+      title: "Hämtar data",
+      subtitle: `Exporten är startad. Vi hämtar butiker för ${chain} i ${country}.`,
+      actionsUrl: data.actionsUrl
+    });
+
+    startPolling({
+      fileName: data.fileName,
+      actionsUrl: data.actionsUrl,
+      chain,
+      country
+    });
   } catch (error) {
-    result.innerHTML = `
-      <strong>Fel:</strong><br>
-      ${escapeHtml(error.message)}
-    `;
+    showError(error.message);
   } finally {
     submitButton.disabled = false;
   }
 });
+
+function startPolling({ fileName, actionsUrl, chain, country }) {
+  let attempts = 0;
+  const maxAttempts = 150;
+
+  pollTimer = setInterval(async () => {
+    attempts += 1;
+
+    const phase = getPhase(attempts);
+
+    renderStatus({
+      currentStep: phase.step,
+      progress: phase.progress,
+      badge: phase.badge,
+      title: phase.title,
+      subtitle: phase.subtitle.replace("{chain}", chain).replace("{country}", country),
+      actionsUrl
+    });
+
+    try {
+      const response = await fetch(`/api/status?file=${encodeURIComponent(fileName)}`);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Kunde inte läsa exportstatus.");
+      }
+
+      if (data.ready) {
+        clearInterval(pollTimer);
+        pollTimer = null;
+
+        renderReady({
+          fileName,
+          downloadUrl: data.downloadUrl,
+          size: data.size,
+          actionsUrl
+        });
+      }
+
+      if (attempts >= maxAttempts) {
+        clearInterval(pollTimer);
+        pollTimer = null;
+
+        renderStatus({
+          currentStep: 3,
+          progress: 82,
+          badge: "Tar längre tid",
+          title: "Exporten tar längre tid än väntat",
+          subtitle: "Körningen kan fortfarande bli klar. Öppna GitHub Actions för detaljer.",
+          actionsUrl
+        });
+      }
+    } catch (error) {
+      clearInterval(pollTimer);
+      pollTimer = null;
+      showError(error.message);
+    }
+  }, 7000);
+}
+
+function getPhase(attempts) {
+  if (attempts <= 2) {
+    return {
+      step: 1,
+      progress: 32,
+      badge: "Hämtar",
+      title: "Hämtar data",
+      subtitle: "Vi söker efter butiker för {chain} i {country}."
+    };
+  }
+
+  if (attempts <= 5) {
+    return {
+      step: 2,
+      progress: 58,
+      badge: "Bearbetar",
+      title: "Bearbetar adresser",
+      subtitle: "Vi rensar, deduplicerar och standardiserar resultatet."
+    };
+  }
+
+  return {
+    step: 3,
+    progress: 78,
+    badge: "Skapar fil",
+    title: "Skapar CSV",
+    subtitle: "Vi förbereder filen. Den blir tillgänglig här så snart den är klar."
+  };
+}
+
+function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUrl }) {
+  result.className = "result";
+
+  result.innerHTML = `
+    <div class="statusPanel">
+      <div class="statusTitle">
+        <div>
+          <h3>${escapeHtml(title)}</h3>
+          <p>${escapeHtml(subtitle)}</p>
+        </div>
+        <div class="statusBadge">${escapeHtml(badge)}</div>
+      </div>
+
+      <div class="progressTrack">
+        <div class="progressBar" style="width: ${progress}%"></div>
+      </div>
+
+      <div class="statusSteps">
+        ${steps.map((step, index) => {
+          const state = index < currentStep ? "done" : index === currentStep ? "active" : "";
+          const icon = index < currentStep ? "✓" : index + 1;
+
+          return `
+            <div class="statusStep ${state}">
+              <div class="stepDot">${icon}</div>
+              <div>
+                <strong>${escapeHtml(step.title)}</strong>
+                <span>${escapeHtml(step.text)}</span>
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+
+      ${actionsUrl ? `
+        <p class="smallText">
+          Teknisk detalj: <a href="${actionsUrl}" target="_blank" rel="noreferrer">öppna GitHub Actions</a>
+        </p>
+      ` : ""}
+    </div>
+  `;
+}
+
+function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
+  const sizeText = size ? `${Math.max(1, Math.round(size / 1024))} KB` : "CSV";
+
+  result.className = "result";
+
+  result.innerHTML = `
+    <div class="readyBox">
+      <div class="statusTitle">
+        <div>
+          <h3>CSV-filen är klar</h3>
+          <p>Exporten är färdig och kan laddas ner direkt.</p>
+        </div>
+        <div class="statusBadge">Klar</div>
+      </div>
+
+      <div class="progressTrack">
+        <div class="progressBar" style="width: 100%"></div>
+      </div>
+
+      <div class="fileCard">
+        <strong>${escapeHtml(fileName)}</strong>
+        <span>${escapeHtml(sizeText)}</span>
+      </div>
+
+      <a class="downloadButton" href="${downloadUrl}">
+        Download CSV
+      </a>
+
+      <p class="smallText">
+        Filen är också sparad i GitHub under <strong>exports</strong>.
+        <br>
+        <a href="${actionsUrl}" target="_blank" rel="noreferrer">Visa körningen i GitHub Actions</a>
+      </p>
+    </div>
+  `;
+}
+
+function showError(message) {
+  result.className = "result";
+  result.innerHTML = `
+    <div class="errorBox">
+      <strong>Något gick fel</strong><br>
+      ${escapeHtml(message)}
+    </div>
+  `;
+}
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({
