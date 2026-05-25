@@ -11,24 +11,24 @@ let pollTimer = null;
 
 const steps = [
   {
-    title: "Startar export",
-    text: "Vi skickar din begäran till exportmotorn."
+    title: "Starting export",
+    text: "We send your request to the export engine."
   },
   {
-    title: "Hämtar data",
-    text: "Vi söker efter matchande platser i vald kategori."
+    title: "Fetching data",
+    text: "We search for matching locations in the selected category."
   },
   {
-    title: "Bearbetar adresser",
-    text: "Vi rensar resultatet, tar bort dubbletter och standardiserar adresser."
+    title: "Processing addresses",
+    text: "We clean the results, remove duplicates and standardize address data."
   },
   {
-    title: "Skapar CSV",
-    text: "Vi förbereder filen för nedladdning."
+    title: "Creating CSV",
+    text: "We prepare the file for download."
   },
   {
-    title: "Klar",
-    text: "Din CSV-fil är redo att laddas ner."
+    title: "Ready",
+    text: "Your CSV file is ready to download."
   }
 ];
 
@@ -56,7 +56,7 @@ form.addEventListener("submit", async (event) => {
   const submitButton = form.querySelector("button");
 
   if (!chain || !country) {
-    showError("Fyll i både kedja och land.");
+    showError("Please enter both chain and country.");
     return;
   }
 
@@ -66,14 +66,14 @@ form.addEventListener("submit", async (event) => {
   }
 
   submitButton.disabled = true;
-  setChip("Startar", "running");
+  setChip("Starting", "running");
 
   renderStatus({
     currentStep: 0,
     progress: 8,
-    badge: "Startar",
-    title: "Startar export",
-    subtitle: `Förbereder hämtning för ${chain} i ${country}.`
+    badge: "Starting",
+    title: "Starting export",
+    subtitle: `Preparing export for ${chain} in ${country}.`
   });
 
   try {
@@ -94,15 +94,15 @@ form.addEventListener("submit", async (event) => {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error(data.error || "Kunde inte starta exporten.");
+      throw new Error(data.error || "Could not start the export.");
     }
 
     renderStatus({
       currentStep: 1,
       progress: 28,
-      badge: "Arbetar",
-      title: "Hämtar data",
-      subtitle: `Exporten är startad. Vi hämtar ${getCategoryLabel(category).toLowerCase()} för ${chain} i ${country}.`,
+      badge: "Working",
+      title: "Fetching data",
+      subtitle: `The export has started. We are fetching ${getCategoryLabel(category).toLowerCase()} for ${chain} in ${country}.`,
       actionsUrl: data.actionsUrl
     });
 
@@ -148,14 +148,14 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Kunde inte läsa exportstatus.");
+        throw new Error(data.error || "Could not read export status.");
       }
 
       if (data.ready) {
         clearInterval(pollTimer);
         pollTimer = null;
 
-        setChip("Klar", "ready");
+        setChip("Ready", "ready");
 
         renderReady({
           fileName,
@@ -168,14 +168,14 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
       if (attempts >= maxAttempts) {
         clearInterval(pollTimer);
         pollTimer = null;
-        setChip("Tar längre tid", "slow");
+        setChip("Taking longer", "slow");
 
         renderStatus({
           currentStep: 3,
           progress: 82,
-          badge: "Tar längre tid",
-          title: "Exporten tar längre tid än väntat",
-          subtitle: "Körningen kan fortfarande bli klar. Öppna GitHub Actions för detaljer.",
+          badge: "Taking longer",
+          title: "The export is taking longer than expected",
+          subtitle: "The job may still complete. You can open GitHub Actions for technical details.",
           actionsUrl
         });
       }
@@ -192,9 +192,9 @@ function getPhase(attempts) {
     return {
       step: 1,
       progress: 32,
-      badge: "Hämtar",
-      title: "Hämtar data",
-      subtitle: "Vi söker efter {category} för {chain} i {country}."
+      badge: "Fetching",
+      title: "Fetching data",
+      subtitle: "We are searching for {category} for {chain} in {country}."
     };
   }
 
@@ -202,18 +202,18 @@ function getPhase(attempts) {
     return {
       step: 2,
       progress: 58,
-      badge: "Bearbetar",
-      title: "Bearbetar adresser",
-      subtitle: "Vi rensar, deduplicerar och standardiserar resultatet."
+      badge: "Processing",
+      title: "Processing addresses",
+      subtitle: "We are cleaning, deduplicating and standardizing the results."
     };
   }
 
   return {
     step: 3,
     progress: 78,
-    badge: "Skapar fil",
-    title: "Skapar CSV",
-    subtitle: "Vi förbereder filen. Den blir tillgänglig här så snart den är klar."
+    badge: "Creating file",
+    title: "Creating CSV",
+    subtitle: "We are preparing the file. It will appear here as soon as it is ready."
   };
 }
 
@@ -253,7 +253,7 @@ function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUr
 
       ${actionsUrl ? `
         <p class="smallText">
-          Körningen sker i bakgrunden. <a href="${actionsUrl}" target="_blank" rel="noreferrer">Öppna teknisk logg i GitHub Actions</a>
+          The export runs in the background. <a href="${actionsUrl}" target="_blank" rel="noreferrer">Open technical log in GitHub Actions</a>
         </p>
       ` : ""}
     </div>
@@ -269,10 +269,10 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
     <div class="readyBox">
       <div class="statusTitle">
         <div>
-          <h3>CSV-filen är klar</h3>
-          <p>Exporten är färdig och kan laddas ner direkt.</p>
+          <h3>CSV file is ready</h3>
+          <p>The export is complete and ready to download.</p>
         </div>
-        <div class="statusBadge">Klar</div>
+        <div class="statusBadge">Ready</div>
       </div>
 
       <div class="progressTrack">
@@ -289,9 +289,9 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
       </a>
 
       <p class="smallText">
-        Filen är också sparad i GitHub under <strong>exports</strong>.
+        The file is also saved in GitHub under <strong>exports</strong>.
         <br>
-        <a href="${actionsUrl}" target="_blank" rel="noreferrer">Visa körningen i GitHub Actions</a>
+        <a href="${actionsUrl}" target="_blank" rel="noreferrer">View run in GitHub Actions</a>
       </p>
     </div>
   `;
@@ -313,12 +313,12 @@ function getCategoryLabel(value) {
 }
 
 function showError(message) {
-  setChip("Fel", "error");
+  setChip("Error", "error");
 
   result.className = "result";
   result.innerHTML = `
     <div class="errorBox">
-      <strong>Något gick fel</strong><br>
+      <strong>Something went wrong</strong><br>
       ${escapeHtml(message)}
     </div>
   `;
