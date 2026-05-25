@@ -70,6 +70,41 @@ B2C_SELECTORS = [
     # Education / childcare chains, if relevant
     '["amenity"~"school|kindergarten|college|university"]',
 ]
+CATEGORY_SELECTORS = {
+    "all": B2C_SELECTORS,
+
+    "retail_grocery": [
+        '["shop"]',
+    ],
+
+    "food_restaurants": [
+        '["amenity"~"fast_food|restaurant|cafe|bar|pub|ice_cream|food_court"]',
+    ],
+
+    "mobility_fuel": [
+        '["amenity"~"fuel|car_rental|car_sharing|bicycle_rental|charging_station"]',
+        '["shop"~"car|car_repair|tyres"]',
+    ],
+
+    "hotels": [
+        '["tourism"~"hotel|motel|hostel|guest_house|apartment"]',
+    ],
+
+    "services": [
+        '["amenity"~"bank|atm|post_office|parcel_locker"]',
+        '["shop"~"hairdresser|beauty|cosmetics|optician"]',
+    ],
+
+    "healthcare_pharmacy": [
+        '["amenity"~"pharmacy|clinic|dentist|doctors|veterinary"]',
+        '["shop"~"chemist|optician"]',
+    ],
+
+    "fitness_entertainment": [
+        '["leisure"~"fitness_centre|sports_centre|bowling_alley|cinema|amusement_arcade"]',
+        '["amenity"~"cinema|theatre"]',
+    ],
+}
 
 SEARCH_KEYS = ["brand", "name", "operator"]
 
@@ -328,6 +363,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--country", required=True)
     parser.add_argument("--chain", required=True)
+    parser.add_argument("--category", required=False, default="all")
     parser.add_argument("--out", required=False)
     args = parser.parse_args()
 
@@ -340,18 +376,25 @@ def main():
 
     country_iso, country_name = COUNTRY_TO_ISO[country_key]
     chain = args.chain.strip()
+    category = args.category.strip().lower()
 
-    log(f"Exporting B2C locations for '{chain}' in {country_name}")
+    if category not in CATEGORY_SELECTORS:
+        log(f"Unknown category '{category}', falling back to all B2C locations.")
+        category = "all"
+
+    selected_selectors = CATEGORY_SELECTORS[category]
+
+    log(f"Exporting B2C locations for '{chain}' in {country_name}, category={category}")
 
     all_rows = []
     total_elements = 0
     failed_queries = []
 
-    total_queries = len(SEARCH_KEYS) * len(B2C_SELECTORS)
+    total_queries = len(SEARCH_KEYS) * len(selected_selectors)
     query_no = 0
 
     for search_key in SEARCH_KEYS:
-        for selector in B2C_SELECTORS:
+        for selector in selected_selectors:
             query_no += 1
             label = f"{search_key} {selector}"
             log(f"\n[{query_no}/{total_queries}] Query: {label}")
