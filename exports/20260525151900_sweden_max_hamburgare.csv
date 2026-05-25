@@ -1,0 +1,2 @@
+﻿chain_requested,name,brand,operator,category,shop,amenity,tourism,leisure,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+Max Hamburgare,Max,Max,Max Hamburgare,Food & restaurants,,fast_food,,,,,,,Sweden,"57.7244261,12.9895183",coordinates_only,57.7244261,12.9895183,node,11500494277,OpenStreetMap via Overpass API
