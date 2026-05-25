@@ -24,6 +24,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   export:
@@ -33,6 +34,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -44,24 +47,44 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pandas openpyxl
 
+      - name: Show request
+        run: |
+          echo "Chain: ${{ inputs.chain }}"
+          echo "Country: ${{ inputs.country }}"
+          echo "Format: ${{ inputs.format }}"
+          echo "Source: ${{ inputs.source }}"
+
       - name: Run export script
         run: |
           mkdir -p exports
-          python -u scripts/export_osm.py --country "${{ inputs.country }}" --chain "${{ inputs.chain }}" --out "exports/${{ inputs.country }}_${{ inputs.chain }}.csv"
+          python -u scripts/export_osm.py \
+            --country "${{ inputs.country }}" \
+            --chain "${{ inputs.chain }}" \
+            --out "exports/${{ inputs.country }}_${{ inputs.chain }}.csv"
+
+      - name: List generated files
+        run: |
+          echo "Generated files:"
+          find exports -maxdepth 1 -type f -print
 
       - name: Upload CSV as artifact
         uses: actions/upload-artifact@v4
         with:
           name: store-address-export
           path: exports/*.csv
+          if-no-files-found: error
 
-- name: Commit CSV to repository
-  run: |
-    git config user.name "github-actions[bot]"
-    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    git status
-    ls -la exports
-    git add exports/
-    git commit -m "Add address export for ${{ inputs.chain }} in ${{ inputs.country }}" || echo "No changes to commit"
-    git pull --rebase
-    git push
+      - name: Commit CSV to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add exports/*.csv
+
+          if git diff --cached --quiet; then
+            echo "No CSV changes to commit"
+          else
+            git commit -m "Add address export for ${{ inputs.chain }} in ${{ inputs.country }}"
+            git pull --rebase
+            git push
+          fi
