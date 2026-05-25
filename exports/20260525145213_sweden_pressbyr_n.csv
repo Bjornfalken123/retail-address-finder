@@ -1,0 +1,277 @@
+﻿chain_requested,name,brand,operator,category,shop,amenity,tourism,leisure,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.0898894,17.5651055",coordinates_only,59.0898894,17.5651055,node,250885854,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Drottningtorget,,,,Sweden,Drottningtorget Sweden,usable,57.7080771,11.9733161,node,283256123,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.357297,18.102717",coordinates_only,59.357297,18.102717,node,377701254,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.1227977,18.1046406",coordinates_only,59.1227977,18.1046406,node,417750506,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.6093053,13.0000798",coordinates_only,55.6093053,13.0000798,node,430003688,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.6030444,13.0006311",coordinates_only,55.6030444,13.0006311,node,444853611,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3421298,18.0567492",coordinates_only,59.3421298,18.0567492,node,469802362,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"63.1706914,14.6374492",coordinates_only,63.1706914,14.6374492,node,470642125,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.4791483,18.2997857",coordinates_only,59.4791483,18.2997857,node,472644584,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Johannes Magnus väg,13,58330,Linköping,Sweden,Johannes Magnus väg 13 58330 Linköping Sweden,strict,58.3964622,15.5780302,node,473124218,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3328907,18.0640739",coordinates_only,59.3328907,18.0640739,node,479369230,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2850753,18.0930879",coordinates_only,59.2850753,18.0930879,node,489325036,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.2070194,15.283045",coordinates_only,56.2070194,15.283045,node,573105377,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7971564,12.0498825",coordinates_only,57.7971564,12.0498825,node,629450183,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.332303,18.0294482",coordinates_only,59.332303,18.0294482,node,631753542,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2982356,17.9968142",coordinates_only,59.2982356,17.9968142,node,636035469,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.0465252,12.6947146",coordinates_only,56.0465252,12.6947146,node,656642136,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.796469,12.0504378",coordinates_only,57.796469,12.0504378,node,667391022,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Grocery / convenience,convenience,,,,,,,,Sweden,"57.7844647,14.1625563",coordinates_only,57.7844647,14.1625563,node,699755908,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3328145,18.0030249",coordinates_only,59.3328145,18.0030249,node,706164036,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2989635,18.0803227",coordinates_only,59.2989635,18.0803227,node,712600413,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Farsta Torg,2,,,Sweden,Farsta Torg 2 Sweden,usable,59.2432708,18.0933985,node,712656329,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.338445,18.0105086",coordinates_only,59.338445,18.0105086,node,730950917,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.6280293,17.861045",coordinates_only,59.6280293,17.861045,node,739839328,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.7591222,18.6995104",coordinates_only,59.7591222,18.6995104,node,843680637,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.7052593,13.1872617",coordinates_only,55.7052593,13.1872617,node,845115548,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2857684,17.964855",coordinates_only,59.2857684,17.964855,node,872588216,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.6988703,12.4560244",coordinates_only,58.6988703,12.4560244,node,894146594,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Esplanaden,2,852 32,Sundsvall,Sweden,Esplanaden 2 852 32 Sundsvall Sweden,strict,62.3917357,17.3084795,node,922505258,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.352415,18.032936",coordinates_only,59.352415,18.032936,node,938601605,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.6742801,12.8569209",coordinates_only,56.6742801,12.8569209,node,1072629586,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.7054422,13.1859368",coordinates_only,55.7054422,13.1859368,node,1129627329,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Repslagaregatan,5a,,Norrköping,Sweden,Repslagaregatan 5a Norrköping Sweden,usable,58.5887226,16.1881514,node,1131337464,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3103172,18.0217067",coordinates_only,59.3103172,18.0217067,node,1161921290,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Norra Promenaden,94,,Norrköping,Sweden,Norra Promenaden 94 Norrköping Sweden,usable,58.596397,16.184261,node,1177971710,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.6044684,13.0010217",coordinates_only,55.6044684,13.0010217,node,1181418030,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,1,417 05,Göteborg,Sweden,1 417 05 Göteborg Sweden,usable,57.72088,11.953691,node,1184106547,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Kungsgatan,14,,Karlstad,Sweden,Kungsgatan 14 Karlstad Sweden,usable,59.3812819,13.5032713,node,1201335759,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Stieg Trenters torg,1,,,Sweden,Stieg Trenters torg 1 Sweden,usable,59.2352735,18.1017947,node,1203647952,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.1924786,17.626716",coordinates_only,59.1924786,17.626716,node,1205499057,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.3895842,13.8519627",coordinates_only,58.3895842,13.8519627,node,1209368655,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3096112,18.0280249",coordinates_only,59.3096112,18.0280249,node,1245606532,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3079708,18.0760938",coordinates_only,59.3079708,18.0760938,node,1258634395,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7164124,12.0049223",coordinates_only,57.7164124,12.0049223,node,1275935023,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.309767,18.0752151",coordinates_only,59.309767,18.0752151,node,1348515169,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"63.2912106,18.7148783",coordinates_only,63.2912106,18.7148783,node,1376616301,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Klarabergsgatan,29,11121,Stockholm,Sweden,Klarabergsgatan 29 11121 Stockholm Sweden,strict,59.3319221,18.062161,node,1410371953,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7199094,12.9324238",coordinates_only,57.7199094,12.9324238,node,1420050782,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.7114747,13.1988032",coordinates_only,55.7114747,13.1988032,node,1440891775,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3606839,17.9709331",coordinates_only,59.3606839,17.9709331,node,1445495720,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.0444451,12.6943334",coordinates_only,56.0444451,12.6943334,node,1492519544,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.0442207,12.6939465",coordinates_only,56.0442207,12.6939465,node,1492519604,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.0437344,12.6946428",coordinates_only,56.0437344,12.6946428,node,1501505869,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Korsvägen,,,Göteborg,Sweden,Korsvägen Göteborg Sweden,usable,57.6966456,11.9869978,node,1691318998,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Arenagatan,15,215 32,,Sweden,Arenagatan 15 215 32 Sweden,usable,55.5628562,12.9763831,node,1692398183,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.5363926,15.0384674",coordinates_only,58.5363926,15.0384674,node,1714914227,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.5887411,13.0062509",coordinates_only,55.5887411,13.0062509,node,1726889278,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2995801,18.0303351",coordinates_only,59.2995801,18.0303351,node,1736347459,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Blå stråket,1,,Göteborg,Sweden,Blå stråket 1 Göteborg Sweden,usable,57.6833363,11.9607173,node,1775890110,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3256548,18.0689668",coordinates_only,59.3256548,18.0689668,node,1779515445,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Österlånggatan,52,503 37,Borås,Sweden,Österlånggatan 52 503 37 Borås Sweden,strict,57.7195552,12.9418808,node,1780247476,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.4277312,13.823829",coordinates_only,55.4277312,13.823829,node,1829900429,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3478308,18.0037809",coordinates_only,59.3478308,18.0037809,node,1831920374,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,Kungshamn,Sweden,Kungshamn Sweden,usable,58.3613545,11.2490769,node,1842673623,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7205634,12.9320615",coordinates_only,57.7205634,12.9320615,node,1871483894,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.334882,18.0602644",coordinates_only,59.334882,18.0602644,node,2138126281,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.70671,11.970542",coordinates_only,57.70671,11.970542,node,2139221293,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7087424,11.9742897",coordinates_only,57.7087424,11.9742897,node,2145371675,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3652343,18.0547477",coordinates_only,59.3652343,18.0547477,node,2162407820,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Kungsgatan,,,,Sweden,Kungsgatan Sweden,usable,59.8581622,17.644258,node,2203267388,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3358585,18.0681337",coordinates_only,59.3358585,18.0681337,node,2245349372,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Eketrägatan,26,41873,Göteborg,Sweden,Eketrägatan 26 41873 Göteborg Sweden,strict,57.716035,11.910144,node,2287945101,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2948905,17.9341717",coordinates_only,59.2948905,17.9341717,node,2288368253,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3266426,18.391562",coordinates_only,59.3266426,18.391562,node,2290922432,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.669287,12.295622",coordinates_only,57.669287,12.295622,node,2302234441,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Storgatan,67,972 31,Luleå,Sweden,Storgatan 67 972 31 Luleå Sweden,strict,65.5853003,22.1608662,node,2317076734,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.708501,11.9732387",coordinates_only,57.708501,11.9732387,node,2352733322,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7090635,11.9732083",coordinates_only,57.7090635,11.9732083,node,2352733323,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2786929,15.2117789",coordinates_only,59.2786929,15.2117789,node,2360919603,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.3912345,13.8461436",coordinates_only,58.3912345,13.8461436,node,2410701689,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.3228373,15.1324329",coordinates_only,58.3228373,15.1324329,node,2416266728,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7098214,11.972611",coordinates_only,57.7098214,11.972611,node,2466676072,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Drottninggatan,1,,Uppsala,Sweden,Drottninggatan 1 Uppsala Sweden,usable,59.8584334,17.6384016,node,2483690477,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.589707,13.0014979",coordinates_only,55.589707,13.0014979,node,2529781628,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Högdalsgången,10,124 54,Bandhagen,Sweden,Högdalsgången 10 124 54 Bandhagen Sweden,strict,59.2633929,18.042822,node,2560497499,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.333083,17.980232",coordinates_only,59.333083,17.980232,node,2571793111,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3383242,17.93887",coordinates_only,59.3383242,17.93887,node,2571793112,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Bangårdsgatan,,57432,Vetlanda,Sweden,Bangårdsgatan 57432 Vetlanda Sweden,usable,57.426017,15.0823014,node,2576340315,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3631301,17.8722161",coordinates_only,59.3631301,17.8722161,node,2601421804,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2579019,18.0823491",coordinates_only,59.2579019,18.0823491,node,2608542293,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3587214,17.9990603",coordinates_only,59.3587214,17.9990603,node,2612397566,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,784 34,Borlänge,Sweden,784 34 Borlänge Sweden,usable,60.4830011,15.426668,node,2619011221,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3304397,18.0566716",coordinates_only,59.3304397,18.0566716,node,2633884892,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3984911,18.0359979",coordinates_only,59.3984911,18.0359979,node,2714879821,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2785747,18.0108598",coordinates_only,59.2785747,18.0108598,node,2741617921,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.8580942,17.6465056",coordinates_only,59.8580942,17.6465056,node,2775883292,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2565328,18.0278262",coordinates_only,59.2565328,18.0278262,node,2786032282,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,194 76,Upplands Väsby,Sweden,194 76 Upplands Väsby Sweden,usable,59.5217346,17.9003508,node,2866954216,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.9970062,16.2068866",coordinates_only,58.9970062,16.2068866,node,3017854633,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.9270825,12.531908",coordinates_only,57.9270825,12.531908,node,3099935617,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Reitangruppen AS,Retail: kiosk,kiosk,,,,Storgatan,33,972 32,Luleå,Sweden,Storgatan 33 972 32 Luleå Sweden,strict,65.5842,22.1507523,node,3138887606,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Diagnosvägen,7,,,Sweden,Diagnosvägen 7 Sweden,usable,57.722249,12.048783,node,3182554461,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.709031,11.9704",coordinates_only,57.709031,11.9704,node,3187755377,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Nils Ericsonsplatsen,7,411 03,Göteborg,Sweden,Nils Ericsonsplatsen 7 411 03 Göteborg Sweden,strict,57.709276,11.97273,node,3203568061,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.3536109,11.8096297",coordinates_only,58.3536109,11.8096297,node,3296412767,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Västra Boulevarden,,291 32,Kristianstad,Sweden,Västra Boulevarden 291 32 Kristianstad Sweden,usable,56.0314713,14.1518528,node,3447206559,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.652255,11.910179",coordinates_only,57.652255,11.910179,node,3493069193,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2747969,15.2137945",coordinates_only,59.2747969,15.2137945,node,3641397201,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Södra Ringvägen,1,,,Sweden,Södra Ringvägen 1 Sweden,usable,59.6075484,16.5517466,node,3684728250,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3328427,18.0730529",coordinates_only,59.3328427,18.0730529,node,3764249696,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.4104557,15.6222254",coordinates_only,58.4104557,15.6222254,node,3796891704,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.3719208,13.1585785",coordinates_only,55.3719208,13.1585785,node,3890669408,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3347825,18.0312368",coordinates_only,59.3347825,18.0312368,node,3920360533,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3456195,18.0714724",coordinates_only,59.3456195,18.0714724,node,4013808452,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2787455,18.0096343",coordinates_only,59.2787455,18.0096343,node,4020607819,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.0380358,14.9764388",coordinates_only,58.0380358,14.9764388,node,4083026489,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.5720221,16.2082053",coordinates_only,58.5720221,16.2082053,node,4108110218,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Sommargatan,110,656 37,Karlstad,Sweden,Sommargatan 110 656 37 Karlstad Sweden,strict,59.4058809,13.5794948,node,4119458160,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.7850368,16.9222507",coordinates_only,58.7850368,16.9222507,node,4255680090,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Forelltorget,6,141 47,Huddinge,Sweden,Forelltorget 6 141 47 Huddinge Sweden,strict,59.2365146,17.9802846,node,4306999317,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.706165,11.9576829",coordinates_only,57.706165,11.9576829,node,4427966519,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.650905,11.9122769",coordinates_only,57.650905,11.9122769,node,4520847093,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.8973696,16.4011243",coordinates_only,57.8973696,16.4011243,node,4620782239,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.3537672,11.9236725",coordinates_only,58.3537672,11.9236725,node,4643000853,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: newsagent,newsagent,,,,,,,,Sweden,"58.3500261,11.9313484",coordinates_only,58.3500261,11.9313484,node,4643000854,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Trädgårdstorget,4,,Linköping,Sweden,Trädgårdstorget 4 Linköping Sweden,usable,58.4092717,15.6244726,node,4646011922,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.326929,18.2578813",coordinates_only,59.326929,18.2578813,node,4692783308,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7072118,11.9393227",coordinates_only,57.7072118,11.9393227,node,4734975220,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.71106,13.8246079",coordinates_only,58.71106,13.8246079,node,4740795772,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.0481841,17.3118253",coordinates_only,59.0481841,17.3118253,node,4880578988,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.8792557,14.8001336",coordinates_only,56.8792557,14.8001336,node,5030616522,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3693173,16.5063851",coordinates_only,59.3693173,16.5063851,node,5175868005,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,fast_food,,,,,,,Sweden,"57.1094289,12.2488781",coordinates_only,57.1094289,12.2488781,node,5240151252,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Stora Gatan,36 D,193 30,Sigtuna,Sweden,Stora Gatan 36 D 193 30 Sigtuna Sweden,strict,59.6170756,17.7233756,node,5276621309,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Friggavägen,27,181 32,Lidingö,Sweden,Friggavägen 27 181 32 Lidingö Sweden,strict,59.3661769,18.1353571,node,5302734867,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Drottninggatan,20,,Karlstad,Sweden,Drottninggatan 20 Karlstad Sweden,usable,59.3793692,13.500213,node,5366245926,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3054615,17.9890568",coordinates_only,59.3054615,17.9890568,node,5469259564,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3043836,17.9748271",coordinates_only,59.3043836,17.9748271,node,5482736134,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.4017423,15.6209466",coordinates_only,58.4017423,15.6209466,node,5552550827,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Grocery / convenience,convenience,,,,,,,,Sweden,"57.8719376,11.9682171",coordinates_only,57.8719376,11.9682171,node,5586658462,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3027347,18.1031285",coordinates_only,59.3027347,18.1031285,node,5694849301,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.1578659,13.7636483",coordinates_only,56.1578659,13.7636483,node,5714913208,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,cafe,,,,,,,Sweden,"59.2757833,15.2278699",coordinates_only,59.2757833,15.2278699,node,5817856341,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2181003,17.9454046",coordinates_only,59.2181003,17.9454046,node,5822033864,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.5877067,13.000924",coordinates_only,55.5877067,13.000924,node,5837664020,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.4896912,12.079576",coordinates_only,57.4896912,12.079576,node,5882442055,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3155165,14.5050967",coordinates_only,59.3155165,14.5050967,node,5928184800,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2439627,18.2285969",coordinates_only,59.2439627,18.2285969,node,5983504705,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.313948,18.0640217",coordinates_only,59.313948,18.0640217,node,6005464171,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Grocery / convenience,convenience,,,,,,,,Sweden,"56.9051821,12.4915543",coordinates_only,56.9051821,12.4915543,node,6071263324,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.4040396,17.9426822",coordinates_only,59.4040396,17.9426822,node,6167740440,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.4160348,15.6260601",coordinates_only,58.4160348,15.6260601,node,6199037684,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.6488858,17.9290624",coordinates_only,59.6488858,17.9290624,node,6378430620,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3682886,18.008521",coordinates_only,59.3682886,18.008521,node,6575959982,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.6506034,17.9296812",coordinates_only,59.6506034,17.9296812,node,6816993035,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3302658,18.0593026",coordinates_only,59.3302658,18.0593026,node,6824554026,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.330256,18.0577076",coordinates_only,59.330256,18.0577076,node,6824554036,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3309741,18.0576505",coordinates_only,59.3309741,18.0576505,node,6859092791,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2939041,18.0806568",coordinates_only,59.2939041,18.0806568,node,6864114954,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3313835,18.0564704",coordinates_only,59.3313835,18.0564704,node,7010934113,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.5136619,12.0837876",coordinates_only,57.5136619,12.0837876,node,7098463295,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.5948937,13.0039444",coordinates_only,55.5948937,13.0039444,node,7283459650,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7824949,14.1706897",coordinates_only,57.7824949,14.1706897,node,7773260186,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.1676782,18.1361138",coordinates_only,59.1676782,18.1361138,node,8306041729,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån Växjö Universitet,Pressbyrån,,Retail: kiosk,kiosk,,,,PG Vejdes väg,29,352 52,Växjö,Sweden,PG Vejdes väg 29 352 52 Växjö Sweden,strict,56.8551059,14.8286587,node,8396852657,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3295162,18.0747357",coordinates_only,59.3295162,18.0747357,node,8722153784,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.6657213,16.3652941",coordinates_only,56.6657213,16.3652941,node,9022758618,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Västra Kyrkogatan,22A,387 31,Borgholm,Sweden,Västra Kyrkogatan 22A 387 31 Borgholm Sweden,strict,56.8793191,16.6552844,node,9079613317,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån Centralstation,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,Stationsgatan,2,392 31,Kalmar,Sweden,Stationsgatan 2 392 31 Kalmar Sweden,strict,56.6614273,16.3608438,node,9081576518,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.8769511,14.8067119",coordinates_only,56.8769511,14.8067119,node,9135019574,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Storgatan,7,352 46,Växjö,Sweden,Storgatan 7 352 46 Växjö Sweden,strict,56.8785669,14.8076943,node,9221236036,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.1583276,13.7617645",coordinates_only,56.1583276,13.7617645,node,9240531175,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Albanovägen,12,11419,Stockholm,Sweden,Albanovägen 12 11419 Stockholm Sweden,strict,59.3549918,18.0577093,node,9795292862,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2444853,17.8261886",coordinates_only,59.2444853,17.8261886,node,9895153253,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2761239,17.9077112",coordinates_only,59.2761239,17.9077112,node,9895217822,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3160332,18.0341668",coordinates_only,59.3160332,18.0341668,node,10036051721,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Järnvägsgatan,22,53239,Skara,Sweden,Järnvägsgatan 22 53239 Skara Sweden,strict,58.3834876,13.4391209,node,10073155095,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.1856044,18.1355352",coordinates_only,59.1856044,18.1355352,node,10151332362,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3229983,18.0673255",coordinates_only,59.3229983,18.0673255,node,10154913312,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.6989491,11.9348377",coordinates_only,57.6989491,11.9348377,node,10647311443,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Barkarbyvägen,40,177 44,Järfälla,Sweden,Barkarbyvägen 40 177 44 Järfälla Sweden,strict,59.4131615,17.8647616,node,10777526287,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3315189,18.0160153",coordinates_only,59.3315189,18.0160153,node,10814082836,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7386472,12.1051694",coordinates_only,57.7386472,12.1051694,node,10861071129,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.5634661,16.1785128",coordinates_only,58.5634661,16.1785128,node,10905690303,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.363132,18.0590251",coordinates_only,59.363132,18.0590251,node,10919477356,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.334945,18.0750229",coordinates_only,59.334945,18.0750229,node,11046743805,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Landsvägsallén,6,852 29,Sundsvall,Sweden,Landsvägsallén 6 852 29 Sundsvall Sweden,strict,62.3867961,17.3157639,node,11257602312,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,41512,Göteborg,Sweden,41512 Göteborg Sweden,usable,57.7278344,12.0054336,node,11261176208,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Gamlestads Brygga,7,41512,Göteborg,Sweden,Gamlestads Brygga 7 41512 Göteborg Sweden,strict,57.7274632,12.0056818,node,11261176209,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"56.0912631,12.7555322",coordinates_only,56.0912631,12.7555322,node,11544141617,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3483955,18.029602",coordinates_only,59.3483955,18.029602,node,11556185856,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.638094,18.2997333",coordinates_only,57.638094,18.2997333,node,11691721470,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3198822,18.0719306",coordinates_only,59.3198822,18.0719306,node,11711069974,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3485362,18.0325288",coordinates_only,59.3485362,18.0325288,node,11739055640,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3430164,18.0497102",coordinates_only,59.3430164,18.0497102,node,11911531854,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3179134,18.0500372",coordinates_only,59.3179134,18.0500372,node,11925994943,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Friggagatan,29,,,Sweden,Friggagatan 29 Sweden,usable,57.7128582,11.9914256,node,11969117543,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2767958,17.9064557",coordinates_only,59.2767958,17.9064557,node,11991577669,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3669776,17.8435403",coordinates_only,59.3669776,17.8435403,node,12012015508,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2725339,15.2119532",coordinates_only,59.2725339,15.2119532,node,12026220093,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3064083,18.0011559",coordinates_only,59.3064083,18.0011559,node,12027827391,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2840495,18.114657",coordinates_only,59.2840495,18.114657,node,12035276144,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.1992311,17.8349831",coordinates_only,59.1992311,17.8349831,node,12042219773,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.317306,18.0578967",coordinates_only,59.317306,18.0578967,node,12112731797,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Bangatan,15,,Lund,Sweden,Bangatan 15 Lund Sweden,usable,55.7069049,13.1869856,node,12241851150,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"63.3982671,13.0757401",coordinates_only,63.3982671,13.0757401,node,12346087049,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3353865,18.0633703",coordinates_only,59.3353865,18.0633703,node,12616194919,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3326786,18.0662925",coordinates_only,59.3326786,18.0662925,node,12622780768,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3383824,18.0137955",coordinates_only,59.3383824,18.0137955,node,12634094375,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Trädgårdsgatan,1,294 31,Sölvesborg,Sweden,Trädgårdsgatan 1 294 31 Sölvesborg Sweden,strict,56.0500087,14.5835768,node,12680453706,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.7515953,17.004549",coordinates_only,58.7515953,17.004549,node,12739424628,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3300397,18.0580832",coordinates_only,59.3300397,18.0580832,node,12876812285,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Storgatan,36,352 31,Växjö,Sweden,Storgatan 36 352 31 Växjö Sweden,strict,56.8792069,14.8012602,node,13001704571,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.6521359,14.6947514",coordinates_only,57.6521359,14.6947514,node,13030233594,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.1110543,12.2493573",coordinates_only,57.1110543,12.2493573,node,13069363690,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Sollentunavägen,163C,19147,Sollentuna,Sweden,Sollentunavägen 163C 19147 Sollentuna Sweden,strict,59.427858,17.9514278,node,13072942327,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.6477296,17.9267402",coordinates_only,59.6477296,17.9267402,node,13081532298,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.1754715,13.5525122",coordinates_only,58.1754715,13.5525122,node,13135957673,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"65.6714097,21.9313344",coordinates_only,65.6714097,21.9313344,node,13188997940,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.6100721,16.5458817",coordinates_only,59.6100721,16.5458817,node,13236287043,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.6447703,17.9280601",coordinates_only,59.6447703,17.9280601,node,13299321519,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.6610339,12.0125115",coordinates_only,57.6610339,12.0125115,node,13308656034,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3984016,18.0352618",coordinates_only,59.3984016,18.0352618,node,13415975805,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Mölndals bro,9,431 30,Mölndal,Sweden,Mölndals bro 9 431 30 Mölndal Sweden,strict,57.655488,12.0175015,node,13416731803,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.0787192,13.0205188",coordinates_only,58.0787192,13.0205188,node,13423285790,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3307737,18.0597378",coordinates_only,59.3307737,18.0597378,node,13432470471,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3921087,18.0385721",coordinates_only,59.3921087,18.0385721,node,13652261477,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Marklandsplatsen,3,41477,Göteborg,Sweden,Marklandsplatsen 3 41477 Göteborg Sweden,strict,57.6742634,11.9354885,way,28473366,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7040292,11.9703475",coordinates_only,57.7040292,11.9703475,way,83724159,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Lindövägen,44,,Norrköping,Sweden,Lindövägen 44 Norrköping Sweden,usable,58.5901293,16.2115257,way,99270228,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.215921,17.8983701",coordinates_only,59.215921,17.8983701,way,131354106,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Järntorget,10,413 04,Göteborg,Sweden,Järntorget 10 413 04 Göteborg Sweden,strict,57.6998146,11.9527084,way,132435856,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3393369,18.0821762",coordinates_only,59.3393369,18.0821762,way,159585601,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.749885,17.0017075",coordinates_only,58.749885,17.0017075,way,170933096,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7005168,11.9739686",coordinates_only,57.7005168,11.9739686,way,180819009,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7079115,11.96909",coordinates_only,57.7079115,11.96909,way,184770754,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7778953,14.2236721",coordinates_only,57.7778953,14.2236721,way,202291237,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7064122,11.9689687",coordinates_only,57.7064122,11.9689687,way,215463869,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.7553546,16.9953436",coordinates_only,58.7553546,16.9953436,way,299861960,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.5054404,18.4549453",coordinates_only,57.5054404,18.4549453,way,305107218,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.9394036,11.1708393",coordinates_only,58.9394036,11.1708393,way,314793853,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Stationsgatan,29,,,Sweden,Stationsgatan 29 Sweden,usable,56.6689218,12.8637611,way,375499370,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3546469,17.9734516",coordinates_only,59.3546469,17.9734516,way,543842398,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"62.4470913,17.3343209",coordinates_only,62.4470913,17.3343209,way,574145088,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.2053279,17.9030049",coordinates_only,59.2053279,17.9030049,way,859205511,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3689189,18.005934",coordinates_only,59.3689189,18.005934,way,949941855,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"55.7022887,13.1940712",coordinates_only,55.7022887,13.1940712,way,1034773858,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Södra Förstadsgatan,12,,Malmö,Sweden,Södra Förstadsgatan 12 Malmö Sweden,usable,55.5998036,13.0013649,way,1036504133,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,Brattåsvägen,,438 32,Landvetter,Sweden,Brattåsvägen 438 32 Landvetter Sweden,usable,57.686123,12.2127681,way,1052029359,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.3873072,18.1999796",coordinates_only,57.3873072,18.1999796,way,1109028408,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Grocery / convenience,convenience,,,,Östervångsplan,13,261 44,Landskrona,Sweden,Östervångsplan 13 261 44 Landskrona Sweden,strict,55.8789624,12.8566323,way,1283757229,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.4919729,12.0744719",coordinates_only,57.4919729,12.0744719,way,1304771238,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.4031139,17.946101",coordinates_only,59.4031139,17.946101,way,1311862198,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.4022852,17.9436462",coordinates_only,59.4022852,17.9436462,way,1311862221,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.5187493,17.9114184",coordinates_only,59.5187493,17.9114184,way,1318990045,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3780163,13.4999303",coordinates_only,59.3780163,13.4999303,way,1331120046,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.707271,11.9691283",coordinates_only,57.707271,11.9691283,way,1352425882,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7078543,11.9678421",coordinates_only,57.7078543,11.9678421,way,1352425915,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,Kungsgatan,28,54530,,Sweden,Kungsgatan 28 54530 Sweden,usable,58.7061434,14.1272474,node,441993855,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"57.7762184,14.1548805",coordinates_only,57.7762184,14.1548805,node,848956370,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.7236656,12.9608674",coordinates_only,57.7236656,12.9608674,node,1467907862,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"63.8263123,20.2675541",coordinates_only,63.8263123,20.2675541,node,2644095728,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"59.3098853,18.055557",coordinates_only,59.3098853,18.055557,node,2889260990,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"57.6673031,12.2950127",coordinates_only,57.6673031,12.2950127,node,4503178991,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"59.8807433,12.2881164",coordinates_only,59.8807433,12.2881164,node,4661168845,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"59.2538351,15.2437064",coordinates_only,59.2538351,15.2437064,node,9162270417,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,supermarket,,,,,,,,Sweden,"57.8973652,16.4010491",coordinates_only,57.8973652,16.4010491,node,12252870206,OpenStreetMap via Overpass API
+Pressbyrån,"Pressbyrån Östra Sjögatan 26, Kalmar",,Instabee;Pressbyrån,Retail: kiosk,kiosk,parcel_locker,,,ÖSTRA SJÖGATAN,26,392 31,Kalmar,Sweden,ÖSTRA SJÖGATAN 26 392 31 Kalmar Sweden,strict,56.6657714,16.3653307,node,12998710920,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Grocery / convenience,convenience,,,,,,,,Sweden,"57.7337187,12.938864",coordinates_only,57.7337187,12.938864,node,13140680101,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Retail: kiosk,kiosk,,,,,,,,Sweden,"59.3315942,18.0596955",coordinates_only,59.3315942,18.0596955,node,13432470459,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Retail: kiosk,kiosk,,,,,,,,Sweden,"57.6683399,12.2947217",coordinates_only,57.6683399,12.2947217,way,303606466,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Post / parcel,,post_office,,,,,,,Sweden,"56.6656822,16.365281",coordinates_only,56.6656822,16.365281,node,1606146471,OpenStreetMap via Overpass API
+Pressbyrån,Paketbox Pressbyrån Karlstad,Postnord,Postnord,Post / parcel,,parcel_locker,,,,,,,Sweden,"59.4058926,13.5793471",coordinates_only,59.4058926,13.5793471,node,10958535679,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån Växjö Universitet,,Instabee,Post / parcel,,parcel_locker,,,PG Vejdes väg,29,352 52,Växjö,Sweden,PG Vejdes väg 29 352 52 Växjö Sweden,strict,56.8551216,14.8287199,node,13001704539,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån Ronneby Jvg,,Instabee,Post / parcel,,parcel_locker,,,Järnvägsgatan,2,372 29,RONNEBY,Sweden,Järnvägsgatan 2 372 29 RONNEBY Sweden,strict,56.2069949,15.2830459,node,13031030477,OpenStreetMap via Overpass API
+Pressbyrån,,,Pressbyrån,Retail: kiosk,kiosk,,,,,,,,Sweden,"58.5275714,13.4922241",coordinates_only,58.5275714,13.4922241,node,4367872976,OpenStreetMap via Overpass API
