@@ -17,6 +17,11 @@ OVERPASS_ENDPOINTS = [
 COUNTRY_TO_ISO = {
     "norway": ("NO", "Norway"),
     "norge": ("NO", "Norway"),
+    "sweden": ("SE", "Sweden"),
+    "sverige": ("SE", "Sweden"),
+    "denmark": ("DK", "Denmark"),
+    "danmark": ("DK", "Denmark"),
+    "finland": ("FI", "Finland"),
     "france": ("FR", "France"),
     "frankrike": ("FR", "France"),
     "belgium": ("BE", "Belgium"),
@@ -24,11 +29,6 @@ COUNTRY_TO_ISO = {
     "netherlands": ("NL", "Netherlands"),
     "nederländerna": ("NL", "Netherlands"),
     "nederlanderna": ("NL", "Netherlands"),
-    "sweden": ("SE", "Sweden"),
-    "sverige": ("SE", "Sweden"),
-    "denmark": ("DK", "Denmark"),
-    "danmark": ("DK", "Denmark"),
-    "finland": ("FI", "Finland"),
     "germany": ("DE", "Germany"),
     "tyskland": ("DE", "Germany"),
     "spain": ("ES", "Spain"),
@@ -38,44 +38,77 @@ COUNTRY_TO_ISO = {
     "usa": ("US", "USA"),
     "united states": ("US", "USA"),
     "united states of america": ("US", "USA"),
+    "united kingdom": ("GB", "United Kingdom"),
+    "uk": ("GB", "United Kingdom"),
+    "great britain": ("GB", "United Kingdom"),
+    "ireland": ("IE", "Ireland"),
+    "poland": ("PL", "Poland"),
+    "portugal": ("PT", "Portugal"),
+    "austria": ("AT", "Austria"),
+    "switzerland": ("CH", "Switzerland"),
 }
+
+# Broad B2C category selectors. We intentionally avoid pure office/company/building-only
+# matches so the output focuses on consumer-facing physical locations.
+B2C_SELECTORS = [
+    # Retail
+    '["shop"]',
+    # Food & restaurants
+    '["amenity"~"fast_food|restaurant|cafe|bar|pub|ice_cream|food_court"]',
+    # Pharmacy / healthcare
+    '["amenity"~"pharmacy|clinic|dentist|doctors|veterinary"]',
+    # Fuel / mobility / transport service
+    '["amenity"~"fuel|car_rental|car_sharing|bicycle_rental|charging_station"]',
+    # Finance / postal / parcel
+    '["amenity"~"bank|atm|post_office|parcel_locker"]',
+    # Hotels / accommodation
+    '["tourism"~"hotel|motel|hostel|guest_house|apartment"]',
+    # Fitness / entertainment
+    '["leisure"~"fitness_centre|sports_centre|bowling_alley|cinema|amusement_arcade"]',
+    # Some cinemas are tagged as amenity
+    '["amenity"~"cinema|theatre"]',
+    # Education / childcare chains, if relevant
+    '["amenity"~"school|kindergarten|college|university"]',
+]
+
+SEARCH_KEYS = ["brand", "name", "operator"]
+
 
 def log(message: str) -> None:
     print(message, flush=True)
+
 
 def safe_filename(value: str) -> str:
     value = value.strip().lower()
     value = re.sub(r"[^a-z0-9åäöæøéüß]+", "_", value, flags=re.I)
     return value.strip("_") or "export"
 
+
 def overpass_regex_for_chain(chain: str) -> str:
+    """
+    Escape regex special characters but do not escape spaces.
+    This avoids some Overpass 406 errors for names like 'REMA 1000'.
+    """
     chain = chain.strip()
     escaped = re.sub(r"([.^$*+?{}\[\]\\|()])", r"\\\1", chain)
     escaped = re.sub(r"\s+", " ", escaped)
     return escaped
 
-def build_query(country_iso: str, chain: str, mode: str) -> str:
-    chain_regex = overpass_regex_for_chain(chain)
 
-    if mode == "brand_shop":
-        selector = f'["shop"~"supermarket|convenience|department_store|greengrocer"]["brand"~"{chain_regex}",i]'
-    elif mode == "name_shop":
-        selector = f'["shop"~"supermarket|convenience|department_store|greengrocer"]["name"~"{chain_regex}",i]'
-    elif mode == "operator_shop":
-        selector = f'["shop"~"supermarket|convenience|department_store|greengrocer"]["operator"~"{chain_regex}",i]'
-    else:
-        raise ValueError(f"Unknown mode: {mode}")
+def build_query(country_iso: str, chain: str, search_key: str, selector: str) -> str:
+    chain_regex = overpass_regex_for_chain(chain)
 
     return f"""
 [out:json][timeout:120];
 area["ISO3166-1"="{country_iso}"][admin_level=2]->.searchArea;
 (
-  node{selector}(area.searchArea);
-  way{selector}(area.searchArea);
-  relation{selector}(area.searchArea);
+  node{selector}["{search_key}"~"{chain_regex}",i](area.searchArea);
+  way{selector}["{search_key}"~"{chain_regex}",i](area.searchArea);
+  relation{selector}["{search_key}"~"{chain_regex}",i](area.searchArea);
 );
 out tags center;
 """
+
 
 def fetch_overpass(query: str) -> dict:
     last_error = None
@@ -89,14 +122,16 @@ def fetch_overpass(query: str) -> dict:
                     data={"data": query},
                     timeout=180,
                     headers={
-                        "User-Agent": "RetailAddressFinder/0.2 (GitHub Actions)",
+                        "User-Agent": "RetailAddressFinder/0.3 B2C (GitHub Actions)",
                         "Accept": "application/json",
                     },
                 )
 
                 if response.status_code == 406:
                     preview = response.text[:600].replace("\n", " ")
-                    raise RuntimeError(f"Overpass rejected query with 406. Response preview: {preview}")
+                    raise RuntimeError(
+                        f"Overpass rejected query with 406. Response preview: {preview}"
+                    )
 
                 response.raise_for_status()
                 return response.json()
@@ -108,6 +143,7 @@ def fetch_overpass(query: str) -> dict:
 
     raise RuntimeError(f"All Overpass endpoints failed. Last error: {last_error}")
 
+
 def get_tag(tags: dict, *names: str) -> str:
     for name in names:
         value = tags.get(name)
@@ -115,19 +151,80 @@ def get_tag(tags: dict, *names: str) -> str:
             return str(value).strip()
     return ""
 
+
 def get_lat_lon(element: dict) -> tuple[str, str]:
-    # nodes have lat/lon directly; ways/relations usually have center lat/lon after "out center"
     lat = element.get("lat")
     lon = element.get("lon")
+
     center = element.get("center") or {}
+
     if lat is None:
         lat = center.get("lat")
     if lon is None:
         lon = center.get("lon")
+
     return (
         "" if lat is None else str(lat),
         "" if lon is None else str(lon),
     )
+
+
+def detect_category(tags: dict) -> str:
+    shop = get_tag(tags, "shop")
+    amenity = get_tag(tags, "amenity")
+    tourism = get_tag(tags, "tourism")
+    leisure = get_tag(tags, "leisure")
+
+    if shop:
+        if shop in {"supermarket", "convenience", "greengrocer"}:
+            return "Grocery / convenience"
+        if shop in {"chemist"}:
+            return "Pharmacy / chemist"
+        if shop in {"clothes", "shoes", "fashion", "jewelry"}:
+            return "Fashion retail"
+        if shop in {"electronics", "mobile_phone", "computer"}:
+            return "Electronics retail"
+        if shop in {"furniture", "doityourself", "garden_centre"}:
+            return "Home / furniture retail"
+        if shop in {"hairdresser", "beauty", "cosmetics"}:
+            return "Beauty / wellness"
+        if shop in {"car", "car_repair", "tyres"}:
+            return "Automotive retail/service"
+        return f"Retail: {shop}"
+
+    if amenity:
+        if amenity in {"fast_food", "restaurant", "cafe", "bar", "pub", "ice_cream", "food_court"}:
+            return "Food & restaurants"
+        if amenity in {"pharmacy", "clinic", "dentist", "doctors", "veterinary"}:
+            return "Healthcare / pharmacy"
+        if amenity in {"fuel", "charging_station"}:
+            return "Fuel / charging"
+        if amenity in {"bank", "atm"}:
+            return "Banking"
+        if amenity in {"post_office", "parcel_locker"}:
+            return "Post / parcel"
+        if amenity in {"car_rental", "car_sharing", "bicycle_rental"}:
+            return "Mobility / rental"
+        if amenity in {"cinema", "theatre"}:
+            return "Entertainment"
+        if amenity in {"school", "kindergarten", "college", "university"}:
+            return "Education"
+        return f"Service: {amenity}"
+
+    if tourism:
+        if tourism in {"hotel", "motel", "hostel", "guest_house", "apartment"}:
+            return "Hotel / accommodation"
+        return f"Tourism: {tourism}"
+
+    if leisure:
+        if leisure in {"fitness_centre", "sports_centre"}:
+            return "Fitness / sports"
+        if leisure in {"bowling_alley", "cinema", "amusement_arcade"}:
+            return "Entertainment"
+        return f"Leisure: {leisure}"
+
+    return "Other B2C"
+
 
 def build_formatted_address(tags: dict, country_name: str) -> tuple[str, str]:
     """
@@ -150,7 +247,6 @@ def build_formatted_address(tags: dict, country_name: str) -> tuple[str, str]:
         parts = [full, postcode, city, country_name]
         return " ".join([p for p in parts if p]), "usable"
 
-    # Build a best-effort address instead of skipping.
     street_line = ""
     if street and housenumber:
         street_line = f"{street} {housenumber}"
@@ -162,26 +258,33 @@ def build_formatted_address(tags: dict, country_name: str) -> tuple[str, str]:
     parts = [street_line, postcode, city, country_name]
     usable_parts = [p for p in parts if p]
 
-    # Need at least one real address component besides country to call it usable.
     if len(usable_parts) > 1:
         return " ".join(usable_parts), "usable"
 
     return "", "coordinates_only"
 
+
 def element_to_row(element: dict, country_name: str, chain: str) -> dict:
     tags = element.get("tags", {}) or {}
+
     lat, lon = get_lat_lon(element)
     address_formatted, address_quality = build_formatted_address(tags, country_name)
 
-    # If no address fields exist, still include coordinates.
     if not address_formatted:
         address_formatted = f"{lat},{lon}" if lat and lon else ""
+
+    category = detect_category(tags)
 
     return {
         "chain_requested": chain,
         "name": get_tag(tags, "name"),
         "brand": get_tag(tags, "brand"),
         "operator": get_tag(tags, "operator"),
+        "category": category,
+        "shop": get_tag(tags, "shop"),
+        "amenity": get_tag(tags, "amenity"),
+        "tourism": get_tag(tags, "tourism"),
+        "leisure": get_tag(tags, "leisure"),
         "street": get_tag(tags, "addr:street"),
         "housenumber": get_tag(tags, "addr:housenumber"),
         "postcode": get_tag(tags, "addr:postcode"),
@@ -195,6 +298,7 @@ def element_to_row(element: dict, country_name: str, chain: str) -> dict:
         "osm_id": element.get("id", ""),
         "source": "OpenStreetMap via Overpass API",
     }
+
 
 def dedupe(rows: list[dict]) -> list[dict]:
     seen = set()
@@ -213,10 +317,12 @@ def dedupe(rows: list[dict]) -> list[dict]:
 
         if key in seen:
             continue
+
         seen.add(key)
         unique.append(row)
 
     return unique
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -226,6 +332,7 @@ def main():
     args = parser.parse_args()
 
     country_key = args.country.strip().lower()
+
     if country_key not in COUNTRY_TO_ISO:
         log(f"Unsupported country: {args.country}")
         log("Add the country to COUNTRY_TO_ISO in scripts/export_osm.py.")
@@ -234,34 +341,51 @@ def main():
     country_iso, country_name = COUNTRY_TO_ISO[country_key]
     chain = args.chain.strip()
 
-    log(f"Exporting {chain} in {country_name}")
+    log(f"Exporting B2C locations for '{chain}' in {country_name}")
 
     all_rows = []
     total_elements = 0
+    failed_queries = []
 
-    for mode in ["brand_shop", "name_shop", "operator_shop"]:
-        log(f"\nMode: {mode}")
-        query = build_query(country_iso, chain, mode)
-        data = fetch_overpass(query)
-        elements = data.get("elements", [])
-        total_elements += len(elements)
-        log(f"Found {len(elements)} OSM elements in mode {mode}.")
+    total_queries = len(SEARCH_KEYS) * len(B2C_SELECTORS)
+    query_no = 0
 
-        mode_rows = [element_to_row(element, country_name, chain) for element in elements]
-        all_rows.extend(mode_rows)
-        all_rows = dedupe(all_rows)
+    for search_key in SEARCH_KEYS:
+        for selector in B2C_SELECTORS:
+            query_no += 1
+            label = f"{search_key} {selector}"
+            log(f"\n[{query_no}/{total_queries}] Query: {label}")
 
-        strict_count = sum(1 for r in mode_rows if r["address_quality"] == "strict")
-        usable_count = sum(1 for r in mode_rows if r["address_quality"] == "usable")
-        coord_count = sum(1 for r in mode_rows if r["address_quality"] == "coordinates_only")
+            query = build_query(country_iso, chain, search_key, selector)
 
-        log(
-            f"Added {len(mode_rows)} rows from {mode}. "
-            f"Strict addresses: {strict_count}. "
-            f"Usable partial addresses: {usable_count}. "
-            f"Coordinates only: {coord_count}. "
-            f"Total unique rows: {len(all_rows)}."
-        )
+            try:
+                data = fetch_overpass(query)
+            except Exception as exc:
+                failed_queries.append(f"{label}: {type(exc).__name__}: {exc}")
+                log(f"Skipping failed query: {label}")
+                continue
+
+            elements = data.get("elements", [])
+            total_elements += len(elements)
+            log(f"Found {len(elements)} OSM elements.")
+
+            mode_rows = [element_to_row(element, country_name, chain) for element in elements]
+            all_rows.extend(mode_rows)
+            all_rows = dedupe(all_rows)
+
+            strict_count = sum(1 for r in mode_rows if r["address_quality"] == "strict")
+            usable_count = sum(1 for r in mode_rows if r["address_quality"] == "usable")
+            coord_count = sum(1 for r in mode_rows if r["address_quality"] == "coordinates_only")
+
+            log(
+                f"Added {len(mode_rows)} rows. "
+                f"Strict: {strict_count}. "
+                f"Usable: {usable_count}. "
+                f"Coordinates only: {coord_count}. "
+                f"Total unique rows: {len(all_rows)}."
+            )
+
+            time.sleep(1)
 
     rows = dedupe(all_rows)
 
@@ -277,6 +401,11 @@ def main():
         "name",
         "brand",
         "operator",
+        "category",
+        "shop",
+        "amenity",
+        "tourism",
+        "leisure",
         "street",
         "housenumber",
         "postcode",
@@ -306,7 +435,14 @@ def main():
     log(f"Strict full addresses: {strict_total}")
     log(f"Usable partial addresses: {usable_total}")
     log(f"Coordinates only: {coord_total}")
+
+    if failed_queries:
+        log("\nFailed queries:")
+        for failure in failed_queries:
+            log(f"- {failure}")
+
     log(f"Wrote {out_path}")
+
 
 if __name__ == "__main__":
     main()
