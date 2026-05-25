@@ -1,0 +1,127 @@
+﻿chain_requested,name,brand,operator,category,shop,amenity,tourism,leisure,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,771 33,Ludvika,Sweden,771 33 Ludvika Sweden,usable,60.1434221,15.1800521,node,148691749,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"60.6646802,17.1531659",coordinates_only,60.6646802,17.1531659,node,218696051,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Järnvägstorget,2,90328,Umeå,Sweden,Järnvägstorget 2 90328 Umeå Sweden,strict,63.8301021,20.2648685,node,295220038,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"56.1387301,13.1162432",coordinates_only,56.1387301,13.1162432,node,403553439,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.8717079,17.6019133",coordinates_only,59.8717079,17.6019133,node,412516108,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.1784559,18.1432301",coordinates_only,59.1784559,18.1432301,node,417751263,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.2585964,18.369678",coordinates_only,60.2585964,18.369678,node,444870213,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"60.6749675,17.1405514",coordinates_only,60.6749675,17.1405514,node,457267419,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.1502882,15.207093",coordinates_only,60.1502882,15.207093,node,473136940,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Köpmantorget,1,826 30,Söderhamn,Sweden,Köpmantorget 1 826 30 Söderhamn Sweden,strict,61.3029456,17.0600432,node,544328333,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Datavägen,1,,Järfälla,Sweden,Datavägen 1 Järfälla Sweden,usable,59.4146324,17.8258361,node,682239801,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"63.2962236,18.72046",coordinates_only,63.2962236,18.72046,node,695590096,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3394008,18.0376998",coordinates_only,59.3394008,18.0376998,node,708031994,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Nätragatan,31,,,Sweden,Nätragatan 31 Sweden,usable,63.2015006,18.502492,node,731995714,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.9179271,12.517255",coordinates_only,57.9179271,12.517255,node,761586198,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Vendevägen,8,,Djursholm,Sweden,Vendevägen 8 Djursholm Sweden,usable,59.3975337,18.0903907,node,918519987,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3889239,13.5152298",coordinates_only,59.3889239,13.5152298,node,954764806,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Stationsgatan,,692 35,,Sweden,Stationsgatan 692 35 Sweden,usable,59.126774,15.1393883,node,989931681,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"62.3958729,17.2528773",coordinates_only,62.3958729,17.2528773,node,1055530663,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Bergsgatan,29,852 36,,Sweden,Bergsgatan 29 852 36 Sweden,usable,62.386276,17.3017953,node,1058748545,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Lindövägen,60,,Norrköping,Sweden,Lindövägen 60 Norrköping Sweden,usable,58.5903928,16.2161637,node,1118667764,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Bryggargatan,10,686 30,Sunne,Sweden,Bryggargatan 10 686 30 Sunne Sweden,strict,59.8379102,13.1436717,node,1181554179,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"62.4019986,17.3280344",coordinates_only,62.4019986,17.3280344,node,1229815528,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.2361918,17.8354468",coordinates_only,59.2361918,17.8354468,node,1242636552,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.7299407,14.9982448",coordinates_only,60.7299407,14.9982448,node,1295802441,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Sydhamnsgatan,8,252 28,Helsingborg,Sweden,Sydhamnsgatan 8 252 28 Helsingborg Sweden,strict,56.0293212,12.7077087,node,1501505911,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"63.3288346,14.4293985",coordinates_only,63.3288346,14.4293985,node,1567995646,OpenStreetMap via Overpass API
+sibylla,Sivans Grill,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.930561,14.2914602",coordinates_only,55.930561,14.2914602,node,1570211668,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"58.5366508,15.0390565",coordinates_only,58.5366508,15.0390565,node,1714404427,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.6586754,12.1203376",coordinates_only,57.6586754,12.1203376,node,1786040044,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.6400523,13.4837742",coordinates_only,55.6400523,13.4837742,node,1786807513,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"65.1017619,17.1226646",coordinates_only,65.1017619,17.1226646,node,1806269482,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.5776006,17.5125284",coordinates_only,59.5776006,17.5125284,node,1913833940,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.2828952,12.2873904",coordinates_only,58.2828952,12.2873904,node,1955901679,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"56.4677139,13.0215436",coordinates_only,56.4677139,13.0215436,node,2022212665,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Dackevägen,1-7,,Järfälla,Sweden,Dackevägen 1-7 Järfälla Sweden,usable,59.4210668,17.8459831,node,2105916537,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"64.686166,21.2368461",coordinates_only,64.686166,21.2368461,node,2330334561,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.6353541,13.679987",coordinates_only,55.6353541,13.679987,node,2407958450,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"64.5949485,18.6703633",coordinates_only,64.5949485,18.6703633,node,2707938176,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.2778547,15.2148339",coordinates_only,59.2778547,15.2148339,node,2871223643,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"65.6171531,22.0464534",coordinates_only,65.6171531,22.0464534,node,3225938625,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Industrivägen,2,186 36,Vallentuna,Sweden,Industrivägen 2 186 36 Vallentuna Sweden,strict,59.532111,18.0796616,node,3536377167,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.513692,17.9297027",coordinates_only,59.513692,17.9297027,node,3695719688,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,Vemdalsskalet,Sweden,Vemdalsskalet Sweden,usable,62.4815056,13.9732056,node,4043356112,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3796066,13.5039972",coordinates_only,59.3796066,13.5039972,node,4275978306,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,Arvidsjaur,Sweden,Arvidsjaur Sweden,usable,65.5921332,19.1760859,node,4375351689,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.5082465,13.2341115",coordinates_only,55.5082465,13.2341115,node,4788873831,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.0554621,12.6755395",coordinates_only,59.0554621,12.6755395,node,4895240381,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.9195861,16.606145",coordinates_only,59.9195861,16.606145,node,4998548845,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.1354909,13.0053458",coordinates_only,60.1354909,13.0053458,node,5087304985,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"63.1755922,14.6391712",coordinates_only,63.1755922,14.6391712,node,5760537422,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.4937589,15.839978",coordinates_only,57.4937589,15.839978,node,5833490141,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"56.8784898,16.6798197",coordinates_only,56.8784898,16.6798197,node,6258328657,OpenStreetMap via Overpass API
+sibylla,,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"56.254802,12.9730806",coordinates_only,56.254802,12.9730806,node,6779092724,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.3398291,17.4879867",coordinates_only,60.3398291,17.4879867,node,7105861512,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.7035984,12.4512076",coordinates_only,58.7035984,12.4512076,node,7116236109,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Sturegatan,73,791 60,Falun,Sweden,Sturegatan 73 791 60 Falun Sweden,strict,60.604089,15.6267122,node,7244743748,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3365985,17.0223159",coordinates_only,59.3365985,17.0223159,node,7291060689,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Strandgatan,10,952 33,Kalix,Sweden,Strandgatan 10 952 33 Kalix Sweden,strict,65.855404,23.1407476,node,10054590180,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"62.4887559,17.3282247",coordinates_only,62.4887559,17.3282247,node,10903413677,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"63.4031223,13.0740173",coordinates_only,63.4031223,13.0740173,node,12017432483,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.6167814,17.7246162",coordinates_only,59.6167814,17.7246162,node,12237949812,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Skarphällsgatan,1,621 41,Visby,Sweden,Skarphällsgatan 1 621 41 Visby Sweden,strict,57.6334335,18.3245232,node,12903356274,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Revirvägen,18,69530,Laxå,Sweden,Revirvägen 18 69530 Laxå Sweden,strict,58.9836855,14.6276164,node,13200778034,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"63.1720783,14.603639",coordinates_only,63.1720783,14.603639,node,13874337226,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.2153222,17.8291747",coordinates_only,59.2153222,17.8291747,way,23406108,OpenStreetMap via Overpass API
+sibylla,Aröds Grillen,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"57.7306582,11.9559589",coordinates_only,57.7306582,11.9559589,way,60946458,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.1636128,18.1391593",coordinates_only,59.1636128,18.1391593,way,89349505,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Getingevägen,9,222 41,Lund,Sweden,Getingevägen 9 222 41 Lund Sweden,strict,55.717119,13.2063945,way,92720202,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.5917887,13.007935",coordinates_only,55.5917887,13.007935,way,160642742,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Holmtorget,2,791 71,,Sweden,Holmtorget 2 791 71 Sweden,usable,60.605221,15.6323861,way,173032496,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.6467181,14.7356093",coordinates_only,57.6467181,14.7356093,way,174360478,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.2739761,12.2955571",coordinates_only,58.2739761,12.2955571,way,184729161,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Trumslagaregatan,1,,Linköping,Sweden,Trumslagaregatan 1 Linköping Sweden,usable,58.3981265,15.6068698,way,221725066,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Brändströmsplan,2,80324,Gävle,Sweden,Brändströmsplan 2 80324 Gävle Sweden,strict,60.6758861,17.1216473,way,231826944,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"63.0821564,14.8231141",coordinates_only,63.0821564,14.8231141,way,236000656,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.4316828,13.8164561",coordinates_only,55.4316828,13.8164561,way,245836655,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.1635766,13.5633096",coordinates_only,58.1635766,13.5633096,way,273673710,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.33047,14.5007857",coordinates_only,59.33047,14.5007857,way,293868669,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Riksvägen,29,795 32,Rättvik,Sweden,Riksvägen 29 795 32 Rättvik Sweden,strict,60.8884071,15.1133575,way,313487013,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Ljusnegatan,2,84233,Sveg,Sweden,Ljusnegatan 2 84233 Sveg Sweden,strict,62.0334883,14.3673407,way,313842126,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"67.1332396,20.6544165",coordinates_only,67.1332396,20.6544165,way,323704667,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.4895445,12.0668906",coordinates_only,57.4895445,12.0668906,way,328046462,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.3939946,13.8410084",coordinates_only,58.3939946,13.8410084,way,329953248,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.7934886,13.1106203",coordinates_only,55.7934886,13.1106203,way,336785940,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.6676957,15.8548569",coordinates_only,57.6676957,15.8548569,way,391206296,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"56.8138702,13.9062127",coordinates_only,56.8138702,13.9062127,way,422590706,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Värdshusgatan,1,54351,Tibro,Sweden,Värdshusgatan 1 54351 Tibro Sweden,strict,58.4292361,14.1448392,way,483463345,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Handelsvägen,24,343 33,Älmhult,Sweden,Handelsvägen 24 343 33 Älmhult Sweden,strict,56.5492374,14.158474,way,508261737,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.0760865,15.0979141",coordinates_only,59.0760865,15.0979141,way,572730623,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.5119756,15.9817592",coordinates_only,59.5119756,15.9817592,way,572814113,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Norra Storgatan,3,26731,,Sweden,Norra Storgatan 3 26731 Sweden,usable,56.0862807,12.9150772,way,612512113,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Fårbo Rastplats,,57276,,Sweden,Fårbo Rastplats 57276 Sweden,usable,57.3739182,16.4905998,way,624378213,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"61.3566865,16.4231818",coordinates_only,61.3566865,16.4231818,way,666124857,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Turistvägen,33,820 40,,Sweden,Turistvägen 33 820 40 Sweden,usable,61.7155394,16.169143,way,708398139,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.6571388,17.0775779",coordinates_only,59.6571388,17.0775779,way,775119380,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.3846497,13.0868867",coordinates_only,55.3846497,13.0868867,way,813503875,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.8777209,14.8941893",coordinates_only,58.8777209,14.8941893,way,833560818,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,Sibylla,Food & restaurants,,fast_food,,,Dalkullevägen,2,31139,Falkenberg,Sweden,Dalkullevägen 2 31139 Falkenberg Sweden,strict,56.9173124,12.502923,way,866332368,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.433981,13.8394463",coordinates_only,55.433981,13.8394463,way,874518555,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.364948,13.1135943",coordinates_only,59.364948,13.1135943,way,952800936,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.6144423,16.7765663",coordinates_only,60.6144423,16.7765663,way,980656052,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3055516,15.2283508",coordinates_only,59.3055516,15.2283508,way,1106332338,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Limsjöänget,2,703 91,Leksand,Sweden,Limsjöänget 2 703 91 Leksand Sweden,strict,60.7365392,15.0051564,way,1124872748,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"58.0443202,14.973556",coordinates_only,58.0443202,14.973556,way,1160369816,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"61.3368263,16.3968478",coordinates_only,61.3368263,16.3968478,way,1327260175,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Henningsvägen,1,737 30,Fagersta,Sweden,Henningsvägen 1 737 30 Fagersta Sweden,strict,59.9920233,15.8129287,way,1396432717,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,Torsåkersvägen,1,813 33,Hofors,Sweden,Torsåkersvägen 1 813 33 Hofors Sweden,strict,60.5412603,16.2930719,way,1417489212,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.6218159,16.5722119",coordinates_only,59.6218159,16.5722119,way,1505297132,OpenStreetMap via Overpass API
+sibylla,Sibylla,Sibylla,,Food & restaurants,,restaurant,,,Norra vägen,67,,Karlsborg,Sweden,Norra vägen 67 Karlsborg Sweden,usable,58.5413272,14.505923,way,361196908,OpenStreetMap via Overpass API
+sibylla,Sibylla,,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.6344534,18.3302405",coordinates_only,59.6344534,18.3302405,node,288899450,OpenStreetMap via Overpass API
+sibylla,Sibylla Brandts Gatukök,,,Food & restaurants,,fast_food,,,,,,,Sweden,"60.1397745,15.4110514",coordinates_only,60.1397745,15.4110514,node,850395945,OpenStreetMap via Overpass API
+sibylla,Sibylla / Korvis Gatukök,,,Food & restaurants,,fast_food,,,Berglundavägen,37,86030,,Sweden,Berglundavägen 37 86030 Sweden,usable,62.5126958,17.3757558,node,1417359612,OpenStreetMap via Overpass API
+sibylla,Nisskiosken / Sibylla,,Sibylla,Food & restaurants,,fast_food,,,,,782 31,Malung,Sweden,782 31 Malung Sweden,usable,60.6832696,13.7148881,node,2398652064,OpenStreetMap via Overpass API
+sibylla,Sibylla,,,Food & restaurants,,fast_food,,,,,,,Sweden,"57.2642022,16.4358243",coordinates_only,57.2642022,16.4358243,node,11023026405,OpenStreetMap via Overpass API
+sibylla,Sibylla Gustavsberg,,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3278495,18.3921895",coordinates_only,59.3278495,18.3921895,way,186923458,OpenStreetMap via Overpass API
+sibylla,Sibylla Stures Gatukök,,,Food & restaurants,,fast_food,,,,,,,Sweden,"63.1654774,17.272609",coordinates_only,63.1654774,17.272609,way,304286349,OpenStreetMap via Overpass API
+sibylla,Sibylla Wisborg,,,Food & restaurants,,fast_food,,,Pilhagsvägen,2A,621 50,Visby,Sweden,Pilhagsvägen 2A 621 50 Visby Sweden,strict,57.6164011,18.2850735,way,462905908,OpenStreetMap via Overpass API
+sibylla,Sibylla,,,Food & restaurants,,fast_food,,,,,,,Sweden,"55.4908317,13.4828997",coordinates_only,55.4908317,13.4828997,way,1101663737,OpenStreetMap via Overpass API
+sibylla,Sibylla,,,Food & restaurants,,fast_food,,,,,,,Sweden,"59.7128297,14.1747059",coordinates_only,59.7128297,14.1747059,way,1311265564,OpenStreetMap via Overpass API
+sibylla,Frans Gatukök,,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"60.6682212,17.1405565",coordinates_only,60.6682212,17.1405565,node,224868436,OpenStreetMap via Overpass API
+sibylla,Kulla Kiosken,,Sibylla,Retail: kiosk,kiosk,fast_food,,,,,,,Sweden,"56.2361293,12.8580822",coordinates_only,56.2361293,12.8580822,node,840728681,OpenStreetMap via Overpass API
+sibylla,Grillringen,,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.3086862,18.0814201",coordinates_only,59.3086862,18.0814201,node,1256870998,OpenStreetMap via Overpass API
+sibylla,Pärlans gatukök,,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.6377372,17.0663361",coordinates_only,59.6377372,17.0663361,node,4022224088,OpenStreetMap via Overpass API
+sibylla,Malagagrillen,,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"59.327419,14.5298606",coordinates_only,59.327419,14.5298606,way,252087770,OpenStreetMap via Overpass API
+sibylla,Skrovmålet,,Sibylla,Food & restaurants,,fast_food,,,,,,,Sweden,"63.8504126,15.5596565",coordinates_only,63.8504126,15.5596565,way,339824780,OpenStreetMap via Overpass API
