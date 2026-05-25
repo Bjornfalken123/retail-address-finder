@@ -12,7 +12,7 @@ on:
         required: true
         type: string
       format:
-        description: "Output format, for example CSV"
+        description: "Output format"
         required: false
         default: "CSV"
         type: string
@@ -22,7 +22,7 @@ on:
         default: "OpenStreetMap"
         type: string
       job_id:
-        description: "Unique job id from the website"
+        description: "Unique job id from website"
         required: true
         type: string
 
@@ -66,11 +66,6 @@ jobs:
             --country "${{ inputs.country }}" \
             --chain "${{ inputs.chain }}" \
             --out "exports/${{ inputs.job_id }}.csv"
-
-      - name: List generated files
-        run: |
-          echo "Generated files:"
-          find exports -maxdepth 1 -type f -print
 
       - name: Upload CSV as artifact
         uses: actions/upload-artifact@v4
