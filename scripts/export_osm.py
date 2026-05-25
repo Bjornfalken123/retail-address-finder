@@ -35,6 +35,9 @@ COUNTRY_TO_ISO = {
     "spanien": ("ES", "Spain"),
     "italy": ("IT", "Italy"),
     "italien": ("IT", "Italy"),
+    "usa": ("US", "USA"),
+    "united states": ("US", "USA"),
+    "united states of america": ("US", "USA"),
 }
 
 def log(message: str) -> None:
@@ -46,10 +49,6 @@ def safe_filename(value: str) -> str:
     return value.strip("_") or "export"
 
 def overpass_regex_for_chain(chain: str) -> str:
-    """
-    Escape regex special characters but DO NOT escape spaces.
-    re.escape('REMA 1000') creates 'REMA\\ 1000', which can trigger Overpass 406 errors.
-    """
     chain = chain.strip()
     escaped = re.sub(r"([.^$*+?{}\[\]\\|()])", r"\\\1", chain)
     escaped = re.sub(r"\s+", " ", escaped)
@@ -90,7 +89,7 @@ def fetch_overpass(query: str) -> dict:
                     data={"data": query},
                     timeout=180,
                     headers={
-                        "User-Agent": "RetailAddressFinder/0.1 (GitHub Actions)",
+                        "User-Agent": "RetailAddressFinder/0.2 (GitHub Actions)",
                         "Accept": "application/json",
                     },
                 )
@@ -116,36 +115,82 @@ def get_tag(tags: dict, *names: str) -> str:
             return str(value).strip()
     return ""
 
-def element_to_row(element: dict, country_name: str, chain: str) -> dict | None:
-    tags = element.get("tags", {}) or {}
+def get_lat_lon(element: dict) -> tuple[str, str]:
+    # nodes have lat/lon directly; ways/relations usually have center lat/lon after "out center"
+    lat = element.get("lat")
+    lon = element.get("lon")
+    center = element.get("center") or {}
+    if lat is None:
+        lat = center.get("lat")
+    if lon is None:
+        lon = center.get("lon")
+    return (
+        "" if lat is None else str(lat),
+        "" if lon is None else str(lon),
+    )
 
+def build_formatted_address(tags: dict, country_name: str) -> tuple[str, str]:
+    """
+    Returns (address_formatted, address_quality)
+
+    strict: street + house number + postcode + city + country
+    usable: some useful address fields exist, but not all
+    coordinates_only: no usable address fields; use lat/lon columns
+    """
     street = get_tag(tags, "addr:street")
     housenumber = get_tag(tags, "addr:housenumber")
     postcode = get_tag(tags, "addr:postcode")
     city = get_tag(tags, "addr:city", "addr:town", "addr:village", "addr:municipality")
     full = get_tag(tags, "addr:full")
 
+    if street and housenumber and postcode and city:
+        return f"{street} {housenumber} {postcode} {city} {country_name}", "strict"
+
+    if full:
+        parts = [full, postcode, city, country_name]
+        return " ".join([p for p in parts if p]), "usable"
+
+    # Build a best-effort address instead of skipping.
+    street_line = ""
     if street and housenumber:
         street_line = f"{street} {housenumber}"
-    else:
-        street_line = street or full
+    elif street:
+        street_line = street
+    elif housenumber:
+        street_line = housenumber
 
-    if not street_line or not postcode or not city:
-        return None
+    parts = [street_line, postcode, city, country_name]
+    usable_parts = [p for p in parts if p]
 
-    address_formatted = " ".join([street_line, postcode, city, country_name])
+    # Need at least one real address component besides country to call it usable.
+    if len(usable_parts) > 1:
+        return " ".join(usable_parts), "usable"
+
+    return "", "coordinates_only"
+
+def element_to_row(element: dict, country_name: str, chain: str) -> dict:
+    tags = element.get("tags", {}) or {}
+    lat, lon = get_lat_lon(element)
+    address_formatted, address_quality = build_formatted_address(tags, country_name)
+
+    # If no address fields exist, still include coordinates.
+    if not address_formatted:
+        address_formatted = f"{lat},{lon}" if lat and lon else ""
 
     return {
         "chain_requested": chain,
         "name": get_tag(tags, "name"),
         "brand": get_tag(tags, "brand"),
         "operator": get_tag(tags, "operator"),
-        "street": street,
-        "housenumber": housenumber,
-        "postcode": postcode,
-        "city": city,
+        "street": get_tag(tags, "addr:street"),
+        "housenumber": get_tag(tags, "addr:housenumber"),
+        "postcode": get_tag(tags, "addr:postcode"),
+        "city": get_tag(tags, "addr:city", "addr:town", "addr:village", "addr:municipality"),
         "country": country_name,
         "address_formatted": address_formatted,
+        "address_quality": address_quality,
+        "latitude": lat,
+        "longitude": lon,
         "osm_type": element.get("type", ""),
         "osm_id": element.get("id", ""),
         "source": "OpenStreetMap via Overpass API",
@@ -156,11 +201,16 @@ def dedupe(rows: list[dict]) -> list[dict]:
     unique = []
 
     for row in rows:
-        key = (
-            row.get("address_formatted", "").casefold(),
-            row.get("name", "").casefold(),
-            row.get("brand", "").casefold(),
-        )
+        if row.get("osm_type") and row.get("osm_id"):
+            key = (row["osm_type"], str(row["osm_id"]))
+        else:
+            key = (
+                row.get("address_formatted", "").casefold(),
+                row.get("latitude", ""),
+                row.get("longitude", ""),
+                row.get("name", "").casefold(),
+            )
+
         if key in seen:
             continue
         seen.add(key)
@@ -188,7 +238,6 @@ def main():
 
     all_rows = []
     total_elements = 0
-    skipped = 0
 
     for mode in ["brand_shop", "name_shop", "operator_shop"]:
         log(f"\nMode: {mode}")
@@ -198,21 +247,21 @@ def main():
         total_elements += len(elements)
         log(f"Found {len(elements)} OSM elements in mode {mode}.")
 
-        mode_rows = []
-        mode_skipped = 0
-
-        for element in elements:
-            row = element_to_row(element, country_name, chain)
-            if row:
-                mode_rows.append(row)
-            else:
-                mode_skipped += 1
-
-        skipped += mode_skipped
+        mode_rows = [element_to_row(element, country_name, chain) for element in elements]
         all_rows.extend(mode_rows)
         all_rows = dedupe(all_rows)
 
-        log(f"Added {len(mode_rows)} rows from {mode}. Skipped without full address: {mode_skipped}. Total unique rows: {len(all_rows)}.")
+        strict_count = sum(1 for r in mode_rows if r["address_quality"] == "strict")
+        usable_count = sum(1 for r in mode_rows if r["address_quality"] == "usable")
+        coord_count = sum(1 for r in mode_rows if r["address_quality"] == "coordinates_only")
+
+        log(
+            f"Added {len(mode_rows)} rows from {mode}. "
+            f"Strict addresses: {strict_count}. "
+            f"Usable partial addresses: {usable_count}. "
+            f"Coordinates only: {coord_count}. "
+            f"Total unique rows: {len(all_rows)}."
+        )
 
     rows = dedupe(all_rows)
 
@@ -234,6 +283,9 @@ def main():
         "city",
         "country",
         "address_formatted",
+        "address_quality",
+        "latitude",
+        "longitude",
         "osm_type",
         "osm_id",
         "source",
@@ -244,10 +296,16 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
+    strict_total = sum(1 for r in rows if r["address_quality"] == "strict")
+    usable_total = sum(1 for r in rows if r["address_quality"] == "usable")
+    coord_total = sum(1 for r in rows if r["address_quality"] == "coordinates_only")
+
     log("\nExport complete")
-    log(f"Total OSM elements seen: {total_elements}")
-    log(f"Rows with full formatted address: {len(rows)}")
-    log(f"Skipped without full address: {skipped}")
+    log(f"Total OSM elements seen before dedupe: {total_elements}")
+    log(f"Unique rows written: {len(rows)}")
+    log(f"Strict full addresses: {strict_total}")
+    log(f"Usable partial addresses: {usable_total}")
+    log(f"Coordinates only: {coord_total}")
     log(f"Wrote {out_path}")
 
 if __name__ == "__main__":
