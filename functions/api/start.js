@@ -12,7 +12,6 @@ export async function onRequestPost(context) {
     }
 
     const env = context.env;
-
     const owner = env.GITHUB_OWNER;
     const repo = env.GITHUB_REPO;
     const workflow = env.GITHUB_WORKFLOW_FILE || "export-custom.yml";
@@ -64,7 +63,6 @@ export async function onRequestPost(context) {
       country,
       actionsUrl: `https://github.com/${owner}/${repo}/actions/workflows/${workflow}`
     });
-
   } catch (error) {
     return json({ error: error.message || "Okänt fel." }, 500);
   }
