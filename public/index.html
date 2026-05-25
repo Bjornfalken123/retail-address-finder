@@ -1,125 +1,110 @@
+
 <!doctype html>
 <html lang="sv">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Retail Address Finder</title>
+  <meta name="description" content="Exportera adresser och koordinater för B2C-kedjor per land." />
   <link rel="stylesheet" href="/styles.css" />
 </head>
-
 <body>
   <main class="page">
     <header class="topbar">
-      <div class="brand">
-        <span class="brandIcon">⌖</span>
+      <a class="brand" href="/" aria-label="Retail Address Finder home">
+        <span class="brandMark">⌖</span>
         <span>Retail Address Finder</span>
-      </div>
-
-      <nav class="nav">
-        <a href="#">Search</a>
-        <a href="#">Exports</a>
-        <a href="#">Sources</a>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="#create">Create export</a>
+        <a href="#status">Status</a>
+        <a href="#coverage">Coverage</a>
       </nav>
+      <div class="topPill">B2C location exports</div>
     </header>
 
     <section class="hero">
-      <div>
-        <div class="badge">Store address exports</div>
-        <h1>Find and export store addresses by chain and country.</h1>
-        <p class="lead">
-          Start a location export, follow progress in real time and download a CSV when the file is ready.
-        </p>
-      </div>
-
-      <div class="workflowCard">
-        <div class="workflowTop">
-          <span class="pulse"></span>
-          Export workflow
-        </div>
-
-        <div class="workflowRows">
-          <span>Startar</span>
-          <span>Hämtar data</span>
-          <span>Bearbetar adresser</span>
-          <span>Skapar CSV</span>
-          <span>Klar för nedladdning</span>
+      <div class="heroCopy">
+        <div class="eyebrow"><span class="eyebrowDot"></span> Store, restaurant & B2C location exports</div>
+        <h1>Find chain locations by country. Export clean CSV files.</h1>
+        <p class="lead">Search for retail chains, restaurants, cafés, gas stations, gyms, hotels and other consumer-facing locations. Follow progress live and download the finished CSV directly.</p>
+        <div class="heroActions">
+          <a class="primaryLink" href="#create">Start an export</a>
+          <a class="secondaryLink" href="#coverage">View supported categories</a>
         </div>
       </div>
+
+      <aside class="heroPanel" aria-label="Workflow preview">
+        <div class="heroPanelHeader"><span class="pulse"></span> Live export workflow</div>
+        <div class="workflowPreview">
+          <div><strong>1. Request</strong><span>Chain + country</span></div>
+          <div><strong>2. Fetch</strong><span>OSM / Overpass</span></div>
+          <div><strong>3. Clean</strong><span>Deduplicate + normalize</span></div>
+          <div><strong>4. Export</strong><span>CSV download</span></div>
+        </div>
+      </aside>
     </section>
 
-    <section class="mainGrid">
+    <section class="productGrid" id="create">
       <section class="card requestCard">
         <div class="cardHeader">
-          <h2>Create export</h2>
-          <p>Enter a chain and country. Example: Kiwi in Norway.</p>
+          <div><p class="sectionLabel">New export</p><h2>Create location file</h2></div>
+          <span class="cardBadge">CSV</span>
         </div>
 
-        <form id="exportForm">
-          <label>
-            Chain
-            <input
-              id="chain"
-              name="chain"
-              type="text"
-              placeholder="Ex. REMA 1000, Kiwi, Carrefour"
-              required
-            />
-          </label>
-
-          <label>
-            Country
-            <input
-              id="country"
-              name="country"
-              type="text"
-              placeholder="Ex. Norway, France, Netherlands"
-              required
-            />
-          </label>
-
-          <button type="submit">Generate CSV</button>
+        <form id="exportForm" class="exportForm">
+          <label><span>Chain</span><input id="chain" name="chain" type="text" placeholder="Ex. MAX Hamburgare, Kiwi, Carrefour" autocomplete="organization" required /></label>
+          <label><span>Country</span><input id="country" name="country" type="text" placeholder="Ex. Sweden, Norway, France" autocomplete="country-name" required /></label>
+          <label><span>Output</span><select id="format" name="format"><option value="CSV">CSV UTF-8</option></select></label>
+          <label><span>Source</span><select id="source" name="source"><option value="OpenStreetMap">OpenStreetMap / Overpass</option></select></label>
+          <button type="submit" class="submitButton"><span>Generate CSV</span><span aria-hidden="true">→</span></button>
         </form>
 
-        <div class="examples">
-          <button type="button" class="example" data-chain="Kiwi" data-country="Norway">Kiwi / Norway</button>
-          <button type="button" class="example" data-chain="REMA 1000" data-country="Norway">REMA 1000 / Norway</button>
-          <button type="button" class="example" data-chain="Carrefour" data-country="France">Carrefour / France</button>
-          <button type="button" class="example" data-chain="Albert Heijn" data-country="Netherlands">Albert Heijn / Netherlands</button>
+        <div class="exampleBlock">
+          <div class="exampleHeader">Try an example</div>
+          <div class="examples">
+            <button type="button" class="example" data-chain="MAX Hamburgare" data-country="Sweden">MAX / Sweden</button>
+            <button type="button" class="example" data-chain="Kiwi" data-country="Norway">Kiwi / Norway</button>
+            <button type="button" class="example" data-chain="SATS" data-country="Sweden">SATS / Sweden</button>
+            <button type="button" class="example" data-chain="Carrefour" data-country="France">Carrefour / France</button>
+          </div>
         </div>
       </section>
 
-      <section class="card statusCard">
+      <section class="card statusCard" id="status">
         <div class="cardHeader">
-          <h2>Export status</h2>
-          <p>Status updates automatically while the file is being created.</p>
+          <div><p class="sectionLabel">Live status</p><h2>Export progress</h2></div>
+          <span id="statusChip" class="cardBadge mutedBadge">Idle</span>
         </div>
-
         <div id="result" class="result idle">
           <div class="emptyState">
             <div class="emptyIcon">↓</div>
             <h3>No export running</h3>
-            <p>Start an export to see progress here.</p>
+            <p>Start an export to see each step here.</p>
           </div>
         </div>
       </section>
     </section>
 
-    <section class="infoGrid">
-      <div class="infoCard">
-        <strong>1</strong>
-        <span>Submit chain and country</span>
+    <section class="categorySection" id="coverage">
+      <div class="sectionIntro">
+        <p class="sectionLabel">Coverage</p>
+        <h2>Built for broad B2C chains</h2>
+        <p>The export engine is designed for consumer-facing locations, not only grocery stores. Results depend on available OpenStreetMap data.</p>
       </div>
-      <div class="infoCard">
-        <strong>2</strong>
-        <span>We fetch and process store locations</span>
-      </div>
-      <div class="infoCard">
-        <strong>3</strong>
-        <span>Download your CSV directly here</span>
+      <div class="categoryGrid">
+        <div class="categoryCard"><span>🛒</span><strong>Retail & grocery</strong><p>Supermarkets, convenience, fashion, electronics, furniture and general shops.</p></div>
+        <div class="categoryCard"><span>🍔</span><strong>Food & restaurants</strong><p>Fast food, restaurants, cafés, bars, food courts and ice cream chains.</p></div>
+        <div class="categoryCard"><span>⛽</span><strong>Mobility & fuel</strong><p>Gas stations, charging stations, car rental, car sharing and bike rental.</p></div>
+        <div class="categoryCard"><span>🏨</span><strong>Hotels & services</strong><p>Hotels, gyms, banks, parcel lockers, pharmacies, clinics and other services.</p></div>
       </div>
     </section>
-  </main>
 
+    <footer class="footer">
+      <span>Retail Address Finder</span>
+      <span>CSV output includes formatted address when available, otherwise latitude/longitude.</span>
+    </footer>
+  </main>
   <script src="/app.js"></script>
 </body>
 </html>
