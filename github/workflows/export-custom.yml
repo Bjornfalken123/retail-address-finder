@@ -1,0 +1,65 @@
+name: Export custom store addresses
+
+on:
+  workflow_dispatch:
+    inputs:
+      chain:
+        description: Store chain, for example REMA 1000
+        required: true
+        type: string
+      country:
+        description: Country in English, for example Norway
+        required: true
+        type: string
+      format:
+        description: Output format
+        required: false
+        default: CSV
+        type: string
+      source:
+        description: Source preference
+        required: false
+        default: OpenStreetMap
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pandas openpyxl
+
+      - name: Run export script
+        run: |
+          mkdir -p exports
+          SAFE_COUNTRY=$(echo "${{ inputs.country }}" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9' '_' | sed 's/^_//;s/_$//')
+          SAFE_CHAIN=$(echo "${{ inputs.chain }}" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9' '_' | sed 's/^_//;s/_$//')
+          python -u scripts/export_osm.py --country "${{ inputs.country }}" --chain "${{ inputs.chain }}" --out "exports/${SAFE_COUNTRY}_${SAFE_CHAIN}.csv"
+
+      - name: Upload CSV as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: store-address-export
+          path: exports/*.csv
+
+      - name: Commit CSV to repository
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add exports/*.csv
+          git commit -m "Add address export for ${{ inputs.chain }} in ${{ inputs.country }}" || echo "No changes to commit"
+          git push
