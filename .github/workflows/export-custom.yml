@@ -21,6 +21,11 @@ on:
         required: false
         default: "OpenStreetMap"
         type: string
+      category:
+        description: "B2C category filter"
+        required: false
+        default: "all"
+        type: string
       job_id:
         description: "Unique job id from website"
         required: true
@@ -57,6 +62,7 @@ jobs:
           echo "Country: ${{ inputs.country }}"
           echo "Format: ${{ inputs.format }}"
           echo "Source: ${{ inputs.source }}"
+          echo "Category: ${{ inputs.category }}"
           echo "Job ID: ${{ inputs.job_id }}"
 
       - name: Run export script
@@ -65,6 +71,7 @@ jobs:
           python -u scripts/export_osm.py \
             --country "${{ inputs.country }}" \
             --chain "${{ inputs.chain }}" \
+            --category "${{ inputs.category }}" \
             --out "exports/${{ inputs.job_id }}.csv"
 
       - name: Upload CSV as artifact
