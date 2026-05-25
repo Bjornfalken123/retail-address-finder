@@ -185,6 +185,7 @@ KNOWN_CHAIN_ALIASES = {
     "taco bell": ["Taco Bell"],
     "pizza hut": ["Pizza Hut"],
     "dominos": ["Domino's", "Dominos", "Domino’s Pizza"],
+    "domino's": ["Domino's", "Dominos", "Domino’s Pizza"],
 
     "starbucks": ["Starbucks"],
     "espresso house": ["Espresso House"],
@@ -202,7 +203,7 @@ KNOWN_CHAIN_ALIASES = {
     "coop": ["Coop", "COOP"],
     "netto": ["Netto"],
     "spar": ["SPAR", "Spar"],
-    "7-eleven": ["7-Eleven", "7-Eleven"],
+    "7-eleven": ["7-Eleven", "Seven Eleven"],
     "seven eleven": ["7-Eleven", "Seven Eleven"],
 
     "circle k": ["Circle K"],
@@ -210,6 +211,7 @@ KNOWN_CHAIN_ALIASES = {
     "bp": ["BP"],
     "esso": ["Esso"],
     "totalenergies": ["TotalEnergies", "Total"],
+    "total": ["TotalEnergies", "Total"],
     "okq8": ["OKQ8"],
     "preem": ["Preem"],
 
@@ -219,11 +221,14 @@ KNOWN_CHAIN_ALIASES = {
     "zara": ["Zara"],
     "elgiganten": ["Elgiganten"],
     "media markt": ["MediaMarkt", "Media Markt"],
+    "mediamarkt": ["MediaMarkt", "Media Markt"],
 
     "sats": ["SATS", "Sats"],
     "fitness24seven": ["Fitness24Seven", "Fitness 24 Seven"],
+    "fitness 24 seven": ["Fitness24Seven", "Fitness 24 Seven"],
     "nordic wellness": ["Nordic Wellness"],
     "basic-fit": ["Basic-Fit", "Basic Fit"],
+    "basic fit": ["Basic-Fit", "Basic Fit"],
 
     "scandic": ["Scandic"],
     "radisson": ["Radisson"],
@@ -234,6 +239,7 @@ KNOWN_CHAIN_ALIASES = {
     "boots": ["Boots"],
     "apoteket": ["Apoteket"],
     "lloydsapotek": ["LloydsApotek", "Lloyds Apotek"],
+    "lloyds apotek": ["LloydsApotek", "Lloyds Apotek"],
     "walgreens": ["Walgreens"],
 
     "dhl": ["DHL"],
@@ -248,10 +254,282 @@ KNOWN_CHAIN_ALIASES = {
     "handelsbanken": ["Handelsbanken"],
 }
 
+KNOWN_CHAIN_SELECTORS = {
+    "max": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "max hamburgare": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "max burgers": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "mcdonalds": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "mcdonald's": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "burger king": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "kfc": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "subway": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]'],
+    },
+    "pizza hut": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]', '["amenity"="restaurant"]'],
+    },
+    "dominos": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]', '["amenity"="restaurant"]'],
+    },
+    "domino's": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="fast_food"]', '["amenity"="restaurant"]'],
+    },
+
+    "starbucks": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="cafe"]'],
+    },
+    "espresso house": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="cafe"]'],
+    },
+    "costa coffee": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="cafe"]'],
+    },
+    "joe & the juice": {
+        "category": "food_restaurants",
+        "selectors": ['["amenity"="cafe"]', '["amenity"="fast_food"]'],
+    },
+
+    "kiwi": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]'],
+    },
+    "rema 1000": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]'],
+    },
+    "lidl": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]'],
+    },
+    "aldi": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]'],
+    },
+    "carrefour": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]', '["shop"="convenience"]'],
+    },
+    "albert heijn": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]'],
+    },
+    "tesco": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]', '["shop"="convenience"]'],
+    },
+    "ica": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]'],
+    },
+    "coop": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="supermarket"]', '["shop"="convenience"]'],
+    },
+    "7-eleven": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="convenience"]'],
+    },
+    "seven eleven": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="convenience"]'],
+    },
+
+    "circle k": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+    "shell": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+    "bp": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+    "esso": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+    "totalenergies": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+    "okq8": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+    "preem": {
+        "category": "mobility_fuel",
+        "selectors": ['["amenity"="fuel"]'],
+    },
+
+    "ikea": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="furniture"]'],
+    },
+    "h&m": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="clothes"]', '["shop"="fashion"]'],
+    },
+    "hm": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="clothes"]', '["shop"="fashion"]'],
+    },
+    "zara": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="clothes"]', '["shop"="fashion"]'],
+    },
+    "elgiganten": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="electronics"]'],
+    },
+    "media markt": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="electronics"]'],
+    },
+    "mediamarkt": {
+        "category": "retail_grocery",
+        "selectors": ['["shop"="electronics"]'],
+    },
+
+    "sats": {
+        "category": "fitness_entertainment",
+        "selectors": ['["leisure"="fitness_centre"]'],
+    },
+    "fitness24seven": {
+        "category": "fitness_entertainment",
+        "selectors": ['["leisure"="fitness_centre"]'],
+    },
+    "fitness 24 seven": {
+        "category": "fitness_entertainment",
+        "selectors": ['["leisure"="fitness_centre"]'],
+    },
+    "nordic wellness": {
+        "category": "fitness_entertainment",
+        "selectors": ['["leisure"="fitness_centre"]'],
+    },
+    "basic-fit": {
+        "category": "fitness_entertainment",
+        "selectors": ['["leisure"="fitness_centre"]'],
+    },
+    "basic fit": {
+        "category": "fitness_entertainment",
+        "selectors": ['["leisure"="fitness_centre"]'],
+    },
+
+    "scandic": {
+        "category": "hotels",
+        "selectors": ['["tourism"="hotel"]'],
+    },
+    "radisson": {
+        "category": "hotels",
+        "selectors": ['["tourism"="hotel"]'],
+    },
+    "best western": {
+        "category": "hotels",
+        "selectors": ['["tourism"="hotel"]'],
+    },
+    "marriott": {
+        "category": "hotels",
+        "selectors": ['["tourism"="hotel"]'],
+    },
+    "hilton": {
+        "category": "hotels",
+        "selectors": ['["tourism"="hotel"]'],
+    },
+
+    "boots": {
+        "category": "healthcare_pharmacy",
+        "selectors": ['["amenity"="pharmacy"]', '["shop"="chemist"]'],
+    },
+    "apoteket": {
+        "category": "healthcare_pharmacy",
+        "selectors": ['["amenity"="pharmacy"]'],
+    },
+    "lloydsapotek": {
+        "category": "healthcare_pharmacy",
+        "selectors": ['["amenity"="pharmacy"]'],
+    },
+    "lloyds apotek": {
+        "category": "healthcare_pharmacy",
+        "selectors": ['["amenity"="pharmacy"]'],
+    },
+    "walgreens": {
+        "category": "healthcare_pharmacy",
+        "selectors": ['["amenity"="pharmacy"]'],
+    },
+
+    "dhl": {
+        "category": "services",
+        "selectors": ['["amenity"="post_office"]', '["amenity"="parcel_locker"]'],
+    },
+    "ups": {
+        "category": "services",
+        "selectors": ['["amenity"="post_office"]', '["amenity"="parcel_locker"]'],
+    },
+    "fedex": {
+        "category": "services",
+        "selectors": ['["amenity"="post_office"]'],
+    },
+    "postnord": {
+        "category": "services",
+        "selectors": ['["amenity"="post_office"]', '["amenity"="parcel_locker"]'],
+    },
+    "instabox": {
+        "category": "services",
+        "selectors": ['["amenity"="parcel_locker"]'],
+    },
+
+    "nordea": {
+        "category": "services",
+        "selectors": ['["amenity"="bank"]', '["amenity"="atm"]'],
+    },
+    "seb": {
+        "category": "services",
+        "selectors": ['["amenity"="bank"]', '["amenity"="atm"]'],
+    },
+    "swedbank": {
+        "category": "services",
+        "selectors": ['["amenity"="bank"]', '["amenity"="atm"]'],
+    },
+    "handelsbanken": {
+        "category": "services",
+        "selectors": ['["amenity"="bank"]', '["amenity"="atm"]'],
+    },
+}
+
 SMART_RULES = [
     {
         "category": "food_restaurants",
-        "tokens": ["burger", "hamburg", "mcdonald", "kfc", "subway", "taco", "pizza", "chicken", "grill", "kebab", "doner", "sushi"],
+        "tokens": ["max", "burger", "hamburg", "mcdonald", "kfc", "subway", "taco", "pizza", "chicken", "grill", "kebab", "doner", "sushi"],
         "selectors": ['["amenity"="fast_food"]', '["amenity"="restaurant"]'],
     },
     {
@@ -261,7 +539,7 @@ SMART_RULES = [
     },
     {
         "category": "retail_grocery",
-        "tokens": ["supermarket", "market", "grocery", "foods", "lidl", "aldi", "kiwi", "rema", "carrefour", "tesco", "spar", "ica"],
+        "tokens": ["supermarket", "market", "grocery", "foods", "lidl", "aldi", "kiwi", "rema", "carrefour", "tesco", "spar", "ica", "coop"],
         "selectors": ['["shop"="supermarket"]', '["shop"="convenience"]'],
     },
     {
@@ -271,7 +549,7 @@ SMART_RULES = [
     },
     {
         "category": "retail_grocery",
-        "tokens": ["electronics", "phone", "mobile", "media markt", "elgiganten"],
+        "tokens": ["electronics", "phone", "mobile", "media markt", "mediamarkt", "elgiganten"],
         "selectors": ['["shop"="electronics"]', '["shop"="mobile_phone"]', '["shop"="computer"]'],
     },
     {
@@ -281,7 +559,7 @@ SMART_RULES = [
     },
     {
         "category": "mobility_fuel",
-        "tokens": ["fuel", "gas", "petrol", "shell", "circle k", "esso", "bp", "okq8", "preem"],
+        "tokens": ["fuel", "gas", "petrol", "shell", "circle k", "esso", "bp", "okq8", "preem", "total"],
         "selectors": ['["amenity"="fuel"]'],
     },
     {
@@ -311,8 +589,8 @@ SMART_RULES = [
     },
     {
         "category": "services",
-        "tokens": ["hair", "barber", "beauty", "cosmetic", "sephora", "rituals", "cutters"],
-        "selectors": ['["shop"="hairdresser"]', '["shop"="beauty"]', '["shop"="cosmetics"]'],
+        "tokens": ["hair", "barber", "beauty", "cosmetic", "sephora", "rituals", "cutters", "optician", "specsavers"],
+        "selectors": ['["shop"="hairdresser"]', '["shop"="beauty"]', '["shop"="cosmetics"]', '["shop"="optician"]'],
     },
     {
         "category": "healthcare_pharmacy",
@@ -366,6 +644,12 @@ def overpass_regex_for_chain(chain: str) -> str:
 def infer_smart_selectors(chain: str, selected_category: str) -> list[str]:
     normalized = normalize_chain(chain)
 
+    if normalized in KNOWN_CHAIN_SELECTORS:
+        known = KNOWN_CHAIN_SELECTORS[normalized]
+
+        if selected_category == "all" or selected_category == known["category"]:
+            return known["selectors"]
+
     for rule in SMART_RULES:
         if selected_category != "all" and rule["category"] != selected_category:
             continue
@@ -416,7 +700,7 @@ def fetch_overpass(query: str) -> dict:
                     data={"data": query},
                     timeout=180,
                     headers={
-                        "User-Agent": "RetailAddressFinder/0.4 Smart B2C (GitHub Actions)",
+                        "User-Agent": "RetailAddressFinder/0.5 Smart B2C (GitHub Actions)",
                         "Accept": "application/json",
                     },
                 )
@@ -693,7 +977,7 @@ def main():
         country_name=country_name,
         chain=chain,
         selectors=smart_selectors,
-        phase_name="smart"
+        phase_name="smart",
     )
 
     rows.extend(rows_smart)
@@ -712,7 +996,7 @@ def main():
             country_name=country_name,
             chain=chain,
             selectors=remaining_selectors,
-            phase_name="fallback"
+            phase_name="fallback",
         )
 
         rows.extend(rows_fallback)
