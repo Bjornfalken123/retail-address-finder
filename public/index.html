@@ -9,15 +9,70 @@
 
 <body>
   <main class="page">
-    <section class="hero">
-      <div class="badge">Retail Address Finder</div>
-      <h1>Find and export store addresses</h1>
-      <p class="lead">
-        Ange butikskedja och land. Vi skapar en CSV med adress eller lat/lon via GitHub Actions.
-      </p>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brandIcon">⌖</span>
+        <span>Retail Address Finder</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#">Search</a>
+        <a href="#">Exports</a>
+        <a href="#">Sources</a>
+        <a href="#">API</a>
+      </nav>
+    </header>
+
+    <section class="hero heroSplit">
+      <div>
+        <div class="badge">CSV exports for retail locations</div>
+        <h1>Find and export store addresses by chain and country.</h1>
+        <p class="lead">
+          Start a store-location export in seconds. The system fetches locations,
+          standardizes the output and creates a CSV with formatted address or latitude/longitude.
+        </p>
+
+        <div class="heroStats">
+          <div>
+            <strong>CSV</strong>
+            <span>ready output</span>
+          </div>
+          <div>
+            <strong>OSM</strong>
+            <span>first data source</span>
+          </div>
+          <div>
+            <strong>GitHub</strong>
+            <span>export engine</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="statusPreview">
+        <div class="statusHeader">
+          <span class="liveDot"></span>
+          Export workflow
+        </div>
+        <div class="miniSteps">
+          <span>Queued</span>
+          <span>Fetching</span>
+          <span>Cleaning</span>
+          <span>Ready</span>
+        </div>
+        <p>
+          Create a job, follow progress, then download the generated CSV from the export.
+        </p>
+      </div>
     </section>
 
-    <section class="card">
+    <section class="card exportCard">
+      <div class="cardHeader">
+        <div>
+          <h2>Create new export</h2>
+          <p>Enter a retail chain and country. Example: Kiwi in Norway.</p>
+        </div>
+      </div>
+
       <form id="exportForm">
         <label>
           Chain
@@ -48,7 +103,7 @@
     </section>
 
     <section class="examples">
-      <h2>Examples</h2>
+      <h2>Try an example</h2>
       <div class="grid">
         <button type="button" class="example" data-chain="REMA 1000" data-country="Norway">
           REMA 1000 in Norway
@@ -66,6 +121,14 @@
           Albert Heijn in Netherlands
         </button>
       </div>
+    </section>
+
+    <section class="note">
+      <h2>How it works</h2>
+      <p>
+        The website starts a GitHub Actions workflow. GitHub runs the export script,
+        saves the CSV in the repository and also makes it available as an artifact.
+      </p>
     </section>
   </main>
 
