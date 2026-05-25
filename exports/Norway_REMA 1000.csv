@@ -1,1 +1,702 @@
-﻿chain_requested,name,brand,operator,street,housenumber,postcode,city,country,address_formatted,osm_type,osm_id,source
+﻿chain_requested,name,brand,operator,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+REMA 1000,Rema 1000 Knarvik,Rema 1000,,,,,,Norway,"60.5459871,5.2863643",coordinates_only,60.5459871,5.2863643,node,36604250,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moholt,Rema 1000,,,,,,Norway,"63.409949,10.438926",coordinates_only,63.409949,10.438926,node,148322126,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Berkåk,Rema 1000,,,,,,Norway,"62.828678,10.008779",coordinates_only,62.828678,10.008779,node,190596261,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stavset,Rema 1000,,,,,,Norway,"63.387395,10.330293",coordinates_only,63.387395,10.330293,node,193629076,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Drotningsvik,Rema 1000,,,,,,Norway,"60.371971,5.180103",coordinates_only,60.371971,5.180103,node,197492272,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ranheim,Rema 1000,,,,,,Norway,"63.421105,10.534483",coordinates_only,63.421105,10.534483,node,211168452,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kanalen,Rema 1000,,,,,,Norway,"59.434437,10.652014",coordinates_only,59.434437,10.652014,node,213581529,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mosseskogen,Rema 1000,,,,,,Norway,"59.4455461,10.683634",coordinates_only,59.4455461,10.683634,node,215091463,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bromstad,Rema 1000,,,,,,Norway,"63.430991,10.450936",coordinates_only,63.430991,10.450936,node,226059674,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Jørpeland,Rema 1000,,,,,,Norway,"59.0171247,6.0381738",coordinates_only,59.0171247,6.0381738,node,243081589,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Byåsen,Rema 1000,,,,,,Norway,"63.418045,10.352454",coordinates_only,63.418045,10.352454,node,245395441,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ladetorget,Rema 1000,,,,,,Norway,"63.4477148,10.4451606",coordinates_only,63.4477148,10.4451606,node,246875581,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Jessheim,Rema 1000,,,,,,Norway,"60.1425718,11.1740993",coordinates_only,60.1425718,11.1740993,node,251710249,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Godvik,Rema 1000,,,,,,Norway,"60.370045,5.192887",coordinates_only,60.370045,5.192887,node,258171008,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kleppestø,Rema 1000,,,,,,Norway,"60.406272,5.219544",coordinates_only,60.406272,5.219544,node,259723046,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mellombølgen,Rema 1000,NORD DAGLIGVARE AS,,,,,Norway,"59.866218,10.82203",coordinates_only,59.866218,10.82203,node,261734292,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandstuveien,Rema 1000,,,,,,Norway,"59.8876992,10.805681",coordinates_only,59.8876992,10.805681,node,264768991,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sæterkrysset,Rema 1000,,,,,,Norway,"59.860465,10.801512",coordinates_only,59.860465,10.801512,node,266563150,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Askøy,Rema 1000,,,,,,Norway,"60.428036,5.192585",coordinates_only,60.428036,5.192585,node,281805244,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Danmarksplass,Rema 1000,,,,,,Norway,"60.376399,5.339928",coordinates_only,60.376399,5.339928,node,282763146,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nyrud,Rema 1000,,,,,,Norway,"65.83398,13.211943",coordinates_only,65.83398,13.211943,node,283597920,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Haukelandsveien,Rema 1000,,,,,,Norway,"60.377162,5.358722",coordinates_only,60.377162,5.358722,node,287159656,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Eidsvåg,Rema 1000,,,,,,Norway,"60.438223,5.322826",coordinates_only,60.438223,5.322826,node,287469597,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kjerreidviken,Rema 1000,,,,,,Norway,"60.341371,5.246888",coordinates_only,60.341371,5.246888,node,289518556,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Myrholtet,Rema 1000,,,,,,Norway,"60.345741,5.271583",coordinates_only,60.345741,5.271583,node,289525263,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Wergeland,Rema 1000,,,,,,Norway,"60.360226,5.352041",coordinates_only,60.360226,5.352041,node,289529136,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Frekhaug,Rema 1000,,,,,,Norway,"60.5181894,5.2414685",coordinates_only,60.5181894,5.2414685,node,290377809,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nattland,Rema 1000,,,,,,Norway,"60.351094,5.369186",coordinates_only,60.351094,5.369186,node,299612922,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moan,Rema 1000,,,,,,Norway,"63.733504,11.28383",coordinates_only,63.733504,11.28383,node,306935384,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Svelvik,Rema 1000,,,,,,Norway,"59.617581,10.408093",coordinates_only,59.617581,10.408093,node,323126223,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Spydeberg,Rema 1000,,,,,,Norway,"59.6155481,11.0764775",coordinates_only,59.6155481,11.0764775,node,329724142,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Jordal,Rema 1000,,,,,,Norway,"59.9082608,10.7790482",coordinates_only,59.9082608,10.7790482,node,347483777,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Dikeveien,Rema 1000,,,,,,Norway,"59.2515,10.996471",coordinates_only,59.2515,10.996471,node,356303843,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gystadparken,Rema 1000,,,,,,Norway,"60.143413,11.19107",coordinates_only,60.143413,11.19107,node,364548431,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hellerud,Rema 1000,,,,,,Norway,"59.916476,10.848495",coordinates_only,59.916476,10.848495,node,365154970,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Borgheim,Rema 1000,,,,,,Norway,"59.225832,10.408142",coordinates_only,59.225832,10.408142,node,365558109,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Byterminalen,Rema 1000,,,,,,Norway,"58.966684,5.733824",coordinates_only,58.966684,5.733824,node,373669398,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fjøsanger,Rema 1000,,,,,,Norway,"60.34751,5.335561",coordinates_only,60.34751,5.335561,node,391254962,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Spikkestad,Rema 1000,,,,,,Norway,"59.743793,10.339167",coordinates_only,59.743793,10.339167,node,409169166,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Herøya,Rema 1000,,,,,,Norway,"59.11466,9.645884",coordinates_only,59.11466,9.645884,node,428918895,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tvedestrand,Rema 1000,,,,,,Norway,"58.627278,8.920585",coordinates_only,58.627278,8.920585,node,435770556,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Basarene Hamar,Rema 1000,,,,,,Norway,"60.794311,11.066783",coordinates_only,60.794311,11.066783,node,441005248,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Olrud City Hamar,Rema 1000,,,,,,Norway,"60.830319,11.065997",coordinates_only,60.830319,11.065997,node,441009942,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storhamar,Rema 1000,,,,,,Norway,"60.801719,11.03518",coordinates_only,60.801719,11.03518,node,441010598,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grimstad,Rema 1000,,,,,,Norway,"58.336024,8.590781",coordinates_only,58.336024,8.590781,node,441292595,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ila,Rema 1000,,,,,,Norway,"59.925626,10.745457",coordinates_only,59.925626,10.745457,node,441346633,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Strandvegen,Rema 1000,,,,,,Norway,"69.635532,18.934726",coordinates_only,69.635532,18.934726,node,443840679,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sellebakk,Rema 1000,,,,,,Norway,"59.2243,10.989181",coordinates_only,59.2243,10.989181,node,445595252,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vestnes sør,Rema 1000,,,,,,Norway,"58.029186,7.446291",coordinates_only,58.029186,7.446291,node,447222389,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Husnes,Rema 1000,,,,,,Norway,"59.8632691,5.7586137",coordinates_only,59.8632691,5.7586137,node,448170643,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Oseberg,Rema 1000,,,,,,Norway,"59.263449,10.414254",coordinates_only,59.263449,10.414254,node,461709499,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nesbru,Rema 1000,,,,,,Norway,"59.8625242,10.4881042",coordinates_only,59.8625242,10.4881042,node,470665039,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sentrumsgården,Rema 1000,,,,,,Norway,"67.283568,14.376469",coordinates_only,67.283568,14.376469,node,471563873,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sartorparken,Rema 1000,,,,,,Norway,"60.358054,5.122046",coordinates_only,60.358054,5.122046,node,474797273,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Råde,Rema 1000,,,,,,Norway,"59.351738,10.875737",coordinates_only,59.351738,10.875737,node,482992246,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vækerøveien,Rema 1000,,,,,,Norway,"59.9344761,10.6389443",coordinates_only,59.9344761,10.6389443,node,487233125,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kirkeby,Rema 1000,,,,,,Norway,"60.784331,10.692235",coordinates_only,60.784331,10.692235,node,488515691,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sørfjordsenteret,Rema 1000,,,,,,Norway,"60.070213,6.542021",coordinates_only,60.070213,6.542021,node,490252214,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ålgård,Rema 1000,,,,,,Norway,"58.767753,5.861332",coordinates_only,58.767753,5.861332,node,492691664,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gjøvik sentrum,Rema 1000,,,,,,Norway,"60.795721,10.689838",coordinates_only,60.795721,10.689838,node,494458627,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nadderud,Rema 1000,,,,,,Norway,"59.928626,10.588714",coordinates_only,59.928626,10.588714,node,496104751,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sørsia,Rema 1000,,,,,,Norway,"64.009546,11.494324",coordinates_only,64.009546,11.494324,node,498433253,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åros,Rema 1000,,,,,,Norway,"59.705276,10.511544",coordinates_only,59.705276,10.511544,node,501798895,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mariero,Rema 1000,,,,,,Norway,"58.93546,5.742457",coordinates_only,58.93546,5.742457,node,506025411,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Oppdal,Rema 1000,,,,,,Norway,"62.593466,9.690918",coordinates_only,62.593466,9.690918,node,506351646,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mjøndalen,Rema 1000,,,,,,Norway,"59.750772,10.008643",coordinates_only,59.750772,10.008643,node,514406989,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Farsund,Rema 1000,,,,,,Norway,"58.096328,6.804904",coordinates_only,58.096328,6.804904,node,529635148,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kopperud,Rema 1000,,,,,,Norway,"60.776428,10.676035",coordinates_only,60.776428,10.676035,node,529924767,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Prinsens gate,Rema 1000,,,,,,Norway,"63.431803,10.392311",coordinates_only,63.431803,10.392311,node,530890482,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Olav Tryggvasons gate,Rema 1000,,,,,,Norway,"63.433197,10.399932",coordinates_only,63.433197,10.399932,node,530915939,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stangeland,Rema 1000,,,,,,Norway,"58.856505,5.714278",coordinates_only,58.856505,5.714278,node,538473958,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Marikollen,Rema 1000,,,,,,Norway,"60.486482,5.268848",coordinates_only,60.486482,5.268848,node,560517963,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Klepp,Rema 1000,,,,,,Norway,"58.773268,5.630051",coordinates_only,58.773268,5.630051,node,562818633,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fredrikstad øst,Rema 1000,,,,,,Norway,"59.206305,10.971478",coordinates_only,59.206305,10.971478,node,576768780,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Heiane,Rema 1000,,,,,,Norway,"59.761786,5.453685",coordinates_only,59.761786,5.453685,node,585171822,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Håbafjell,Rema 1000,,,,,,Norway,"58.825956,5.756042",coordinates_only,58.825956,5.756042,node,603353837,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Helleveien,Rema 1000,,,,,,Norway,"60.424582,5.303392",coordinates_only,60.424582,5.303392,node,606174637,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stange,Rema 1000,,,,,,Norway,"60.72099,11.198179",coordinates_only,60.72099,11.198179,node,619245341,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bakklandet,Rema 1000,,,,,,Norway,"63.431333,10.406636",coordinates_only,63.431333,10.406636,node,628626611,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ålingen,Rema 1000,,,,,,Norway,"60.6304924,8.5636753",coordinates_only,60.6304924,8.5636753,node,634886479,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Haugenstua,Rema 1000,,,,,,Norway,"59.953275,10.908598",coordinates_only,59.953275,10.908598,node,638975288,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lijordet,Rema 1000,,,,,,Norway,"59.936789,10.608246",coordinates_only,59.936789,10.608246,node,641770043,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Husbyfaret,Rema 1000,,,,,,Norway,"63.469112,10.94257",coordinates_only,63.469112,10.94257,node,648894420,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skudenes,Rema 1000,,,,,,Norway,"59.157188,5.236803",coordinates_only,59.157188,5.236803,node,652656580,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nedre Rommen,Rema 1000,,,,,,Norway,"59.963455,10.9064631",coordinates_only,59.963455,10.9064631,node,663574274,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grorud,Rema 1000,,,,,,Norway,"59.961014,10.8842",coordinates_only,59.961014,10.8842,node,668029523,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brennåsen,Rema 1000,,,,,,Norway,"58.138378,7.855746",coordinates_only,58.138378,7.855746,node,674525278,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mosby,Rema 1000,,,,,,Norway,"58.21577,7.92231",coordinates_only,58.21577,7.92231,node,674525536,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ostereidet senter,Rema 1000,,,,,,Norway,"60.625717,5.473054",coordinates_only,60.625717,5.473054,node,678290481,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Teie,Rema 1000,,,,,,Norway,"59.251839,10.418694",coordinates_only,59.251839,10.418694,node,678845955,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tønsberg,Rema 1000,,,,,,Norway,"59.274782,10.428755",coordinates_only,59.274782,10.428755,node,680240583,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Trelastgården,Rema 1000,,,,,,Norway,"59.9100514,10.7640883",coordinates_only,59.9100514,10.7640883,node,709087300,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kjelsås,Rema 1000,,,,,,Norway,"59.965659,10.776233",coordinates_only,59.965659,10.776233,node,715010960,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stjørdal,Rema 1000,,,,,,Norway,"63.4683884,10.926076",coordinates_only,63.4683884,10.926076,node,717464461,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ørje,Rema 1000,,,,,,Norway,"59.480183,11.66341",coordinates_only,59.480183,11.66341,node,740029665,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bønes,Rema 1000,,,,,,Norway,"60.333425,5.302013",coordinates_only,60.333425,5.302013,node,763643436,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandnessjøen,Rema 1000,,,,,,Norway,"66.023213,12.642262",coordinates_only,66.023213,12.642262,node,767154301,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Iseveien,Rema 1000,,,,,,Norway,"59.269573,11.162428",coordinates_only,59.269573,11.162428,node,797354637,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nordkjosbotn,Rema 1000,,,,,,Norway,"69.216275,19.554819",coordinates_only,69.216275,19.554819,node,801256996,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storslett,Rema 1000,,,,,,Norway,"69.768245,21.00796",coordinates_only,69.768245,21.00796,node,805981581,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Egersund,Rema 1000,,,,,,Norway,"58.461397,6.013469",coordinates_only,58.461397,6.013469,node,812456233,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Etne,Rema 1000,,,,,,Norway,"59.664142,5.939832",coordinates_only,59.664142,5.939832,node,819301852,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nygård,Rema 1000,,,,,,Norway,"60.385333,5.271039",coordinates_only,60.385333,5.271039,node,822174688,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bytunet,Rema 1000,,,,,,Norway,"59.414828,5.267219",coordinates_only,59.414828,5.267219,node,828242615,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fuglset,Rema 1000,,,,,,Norway,"62.740977,7.197446",coordinates_only,62.740977,7.197446,node,835770302,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gol,Rema 1000,,,,,,Norway,"60.702016,8.961199",coordinates_only,60.702016,8.961199,node,840277832,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Pindsle,Rema 1000,,,,,,Norway,"59.1411091,10.1791767",coordinates_only,59.1411091,10.1791767,node,845163636,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skinsnes,Rema 1000,,,,,,Norway,"58.027114,7.475452",coordinates_only,58.027114,7.475452,node,850811996,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mandal,Rema 1000,,,,,,Norway,"58.028386,7.459497",coordinates_only,58.028386,7.459497,node,850815604,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Voiebyen,Rema 1000,,,,,,Norway,"58.106766,7.959908",coordinates_only,58.106766,7.959908,node,855599296,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sogn,Rema 1000,,,,,,Norway,"59.953264,10.729277",coordinates_only,59.953264,10.729277,node,863690028,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ensjø,Rema 1000,,,,,,Norway,"59.915081,10.787729",coordinates_only,59.915081,10.787729,node,868459581,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Reknes,Rema 1000,,,,,,Norway,"62.733964,7.139415",coordinates_only,62.733964,7.139415,node,869565653,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Geilo,Rema 1000,,,,,,Norway,"60.534063,8.208056",coordinates_only,60.534063,8.208056,node,886273824,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gaula,Rema 1000,,,,,,Norway,"63.286216,10.267699",coordinates_only,63.286216,10.267699,node,892322150,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Melhus torg,Rema 1000,,,,,,Norway,"63.285392,10.280415",coordinates_only,63.285392,10.280415,node,892322160,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sjøgata,Rema 1000,,,,,,Norway,"68.691062,15.418747",coordinates_only,68.691062,15.418747,node,893514235,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Langeland,Rema 1000,,,,,,Norway,"60.201985,11.976678",coordinates_only,60.201985,11.976678,node,939738143,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åfjord,Rema 1000,,,,,,Norway,"63.960277,10.224213",coordinates_only,63.960277,10.224213,node,944167610,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ski,Rema 1000,,,,,,Norway,"59.718544,10.840441",coordinates_only,59.718544,10.840441,node,958644887,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Majorstua,Rema 1000,,,,,,Norway,"59.929864,10.713728",coordinates_only,59.929864,10.713728,node,973843478,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Arnebråtveien,Rema 1000,,,,,,Norway,"59.955809,10.655969",coordinates_only,59.955809,10.655969,node,974731220,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stasjonsveien,Rema 1000,,,,,,Norway,"59.948453,10.664828",coordinates_only,59.948453,10.664828,node,974731276,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kokstad,Rema 1000,,,,,,Norway,"60.292016,5.262275",coordinates_only,60.292016,5.262275,node,999701269,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hassingveien,Rema 1000,,,,,,Norway,"59.218023,10.945097",coordinates_only,59.218023,10.945097,node,1005651461,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Løten,Rema 1000,,,,,,Norway,"60.821301,11.337362",coordinates_only,60.821301,11.337362,node,1064725176,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Forus,Rema 1000,,,,,,Norway,"58.895468,5.703802",coordinates_only,58.895468,5.703802,node,1065880312,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vennesla,Rema 1000,,,,,,Norway,"58.250412,7.963741",coordinates_only,58.250412,7.963741,node,1071682574,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rolvsøyveien,Rema 1000,,,,,,Norway,"59.266749,11.013392",coordinates_only,59.266749,11.013392,node,1106394156,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ulsrud,Rema 1000,,,,,,Norway,"59.892195,10.853331",coordinates_only,59.892195,10.853331,node,1119548642,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Solsiden,Rema 1000,,,,,,Norway,"63.436493,10.416296",coordinates_only,63.436493,10.416296,node,1200404358,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kalmarhuset,Rema 1000,,,,,,Norway,"60.393197,5.318953",coordinates_only,60.393197,5.318953,node,1206294394,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vinjesgate,Rema 1000,,,,,,Norway,"59.747008,10.192102",coordinates_only,59.747008,10.192102,node,1218869393,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Slemmestad,Rema 1000,,,,,,Norway,"59.785769,10.489301",coordinates_only,59.785769,10.489301,node,1225147950,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bø,Rema 1000,,,,,,Norway,"59.410161,9.067678",coordinates_only,59.410161,9.067678,node,1234252102,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sogndal,Rema 1000,,,,,,Norway,"61.226185,7.100403",coordinates_only,61.226185,7.100403,node,1236115275,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skjold,Rema 1000,,,,,,Norway,"60.309623,5.345829",coordinates_only,60.309623,5.345829,node,1237659093,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rombaksveien,Rema 1000,,,,,,Norway,"68.444943,17.451696",coordinates_only,68.444943,17.451696,node,1249066180,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lierstranda,Rema 1000,,,,,,Norway,"59.749381,10.247236",coordinates_only,59.749381,10.247236,node,1270690166,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lierbyen,Rema 1000,,,,,,Norway,"59.786998,10.24441",coordinates_only,59.786998,10.24441,node,1270700469,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ankenes,Rema 1000,,,,,,Norway,"68.40741,17.414072",coordinates_only,68.40741,17.414072,node,1274116364,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vie,Rema 1000,,,,,,Norway,"61.459062,5.89044",coordinates_only,61.459062,5.89044,node,1288334853,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rosenhoff,Rema 1000,,,,,,Norway,"59.929896,10.7806456",coordinates_only,59.929896,10.7806456,node,1309184678,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kalbakken,Rema 1000,,,,,,Norway,"59.95213,10.867593",coordinates_only,59.95213,10.867593,node,1311005120,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Helleberg,Rema 1000,,,,,,Norway,"61.125076,10.456544",coordinates_only,61.125076,10.456544,node,1324765796,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Alta,Rema 1000,,,,,,Norway,"69.963995,23.27092",coordinates_only,69.963995,23.27092,node,1341690980,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Heimdal,Rema 1000,,,,,,Norway,"63.351663,10.354107",coordinates_only,63.351663,10.354107,node,1373921226,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vinderen,Rema 1000,,,,,,Norway,"59.942934,10.702899",coordinates_only,59.942934,10.702899,node,1376615636,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rognbudalen,Rema 1000,,,,,,Norway,"63.353923,10.379841",coordinates_only,63.353923,10.379841,node,1381677677,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Løkkemyra,Rema 1000,,,,,,Norway,"63.108823,7.786361",coordinates_only,63.108823,7.786361,node,1417294607,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kautokeino,Rema 1000,,,,,,Norway,"69.004163,23.042235",coordinates_only,69.004163,23.042235,node,1421446990,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fanatorget,Rema 1000,,,,,,Norway,"60.305177,5.282668",coordinates_only,60.305177,5.282668,node,1424647231,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Eidsvoll,Rema 1000,,,,,,Norway,"60.3276001,11.2598273",coordinates_only,60.3276001,11.2598273,node,1470887910,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ås,Rema 1000,,,,,,Norway,"59.664935,10.79664",coordinates_only,59.664935,10.79664,node,1520882085,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Notodden,Rema 1000,,,,,,Norway,"59.55801,9.257809",coordinates_only,59.55801,9.257809,node,1579350192,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjerkvik,Rema 1000,,,,,,Norway,"68.550865,17.557382",coordinates_only,68.550865,17.557382,node,1581074559,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vigeland,Rema 1000,,,,,,Norway,"58.083771,7.304056",coordinates_only,58.083771,7.304056,node,1600974348,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tuven,Rema 1000,,,,,,Norway,"59.566611,9.219769",coordinates_only,59.566611,9.219769,node,1607823816,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ryen,Rema 1000,,,,,,Norway,"59.897954,10.803372",coordinates_only,59.897954,10.803372,node,1616627490,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Holmlia,Rema 1000,,,,,,Norway,"59.831921,10.796632",coordinates_only,59.831921,10.796632,node,1634438282,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Holt Vestvollen,Rema 1000,,,,,,Norway,"59.986022,11.027972",coordinates_only,59.986022,11.027972,node,1652092748,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stokmarknes,Rema 1000,,,,,,Norway,"68.565068,14.911065",coordinates_only,68.565068,14.911065,node,1657481403,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Alstad,Rema 1000,,,,,,Norway,"67.275626,14.459164",coordinates_only,67.275626,14.459164,node,1660695071,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stormyra,Rema 1000,,,,,,Norway,"67.282127,14.413508",coordinates_only,67.282127,14.413508,node,1660718988,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tromsø-K1,Rema 1000,,,,,,Norway,"69.672383,18.9232362",coordinates_only,69.672383,18.9232362,node,1660844139,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Veita,Rema 1000,,,,,,Norway,"69.6519,18.957059",coordinates_only,69.6519,18.957059,node,1660848482,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Finnsnes,Rema 1000,,,,,,Norway,"69.228232,17.994068",coordinates_only,69.228232,17.994068,node,1660851635,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sofienberg,Rema 1000,,,,,,Norway,"59.921503,10.770234",coordinates_only,59.921503,10.770234,node,1669933465,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tromsdalen,Rema 1000,,,,,,Norway,"69.639781,18.970733",coordinates_only,69.639781,18.970733,node,1675826592,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bergseng,Rema 1000,,,,,,Norway,"68.81285,16.514561",coordinates_only,68.81285,16.514561,node,1683127738,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sørreisa,Rema 1000,,,,,,Norway,"69.145286,18.156032",coordinates_only,69.145286,18.156032,node,1683129064,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kanebogen,Rema 1000,,,,,,Norway,"68.779307,16.565744",coordinates_only,68.779307,16.565744,node,1683237640,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hammerfest,Rema 1000,,,,,,Norway,"70.677564,23.671877",coordinates_only,70.677564,23.671877,node,1697472933,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Krøgenes,Rema 1000,,,,,,Norway,"58.474278,8.81618",coordinates_only,58.474278,8.81618,node,1699920273,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Avaldsnes,Rema 1000,,,,,,Norway,"59.353828,5.277746",coordinates_only,59.353828,5.277746,node,1708618179,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storhaug,Rema 1000,,,,,,Norway,"58.9659453,5.7584304",coordinates_only,58.9659453,5.7584304,node,1726378728,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Landås,Rema 1000,,,,,,Norway,"60.357935,5.368662",coordinates_only,60.357935,5.368662,node,1727574664,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Dokka,Rema 1000,,,,,,Norway,"60.837238,10.069616",coordinates_only,60.837238,10.069616,node,1729148563,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skedsmokorset,Rema 1000,,,,,,Norway,"60.000112,11.042487",coordinates_only,60.000112,11.042487,node,1740622324,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nesodden,Rema 1000,,,,,,Norway,"59.835389,10.642645",coordinates_only,59.835389,10.642645,node,1775566348,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sørumsand,Rema 1000,,,,,,Norway,"59.987274,11.245414",coordinates_only,59.987274,11.245414,node,1790236526,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skiptvet,Rema 1000,,,,,,Norway,"59.4717,11.163951",coordinates_only,59.4717,11.163951,node,1792049371,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rena,Rema 1000,,,,,,Norway,"61.131422,11.368404",coordinates_only,61.131422,11.368404,node,1805493566,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Surnadal,Rema 1000,,,,,,Norway,"62.969385,8.710733",coordinates_only,62.969385,8.710733,node,1816089101,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Namsos,Rema 1000,,,,,,Norway,"64.467465,11.504802",coordinates_only,64.467465,11.504802,node,1834390282,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Røakrysset,Rema 1000,,,,,,Norway,"59.947235,10.642527",coordinates_only,59.947235,10.642527,node,1841211150,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Håland,Rema 1000,,,,,,Norway,"58.721229,5.654861",coordinates_only,58.721229,5.654861,node,1853564214,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Olsrød park,Rema 1000,,,,,,Norway,"59.27579,10.451558",coordinates_only,59.27579,10.451558,node,1892729984,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hundvåg,Rema 1000,,,,,,Norway,"58.993284,5.729454",coordinates_only,58.993284,5.729454,node,1896814062,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bryne,Rema 1000,,,,,,Norway,"58.734704,5.638437",coordinates_only,58.734704,5.638437,node,1900715300,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lommedalen,Rema 1000,,,,,,Norway,"59.955789,10.480678",coordinates_only,59.955789,10.480678,node,1908063652,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Eik,Rema 1000,,,,,,Norway,"59.289188,10.417666",coordinates_only,59.289188,10.417666,node,1913789216,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ulset,Rema 1000,,,,,,Norway,"60.462718,5.319378",coordinates_only,60.462718,5.319378,node,1925271890,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skårer,Rema 1000,,,,,,Norway,"59.921849,10.953159",coordinates_only,59.921849,10.953159,node,1937388033,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Røros,Rema 1000,,,,,,Norway,"62.574419,11.396927",coordinates_only,62.574419,11.396927,node,1982629826,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Palmafossen,Rema 1000,,,,,,Norway,"60.6357732,6.4666007",coordinates_only,60.6357732,6.4666007,node,1997900769,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kvaløya,Rema 1000,,,,,,Norway,"69.690006,18.860288",coordinates_only,69.690006,18.860288,node,2040054525,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Varatun,Rema 1000,,,,,,Norway,"58.865532,5.735504",coordinates_only,58.865532,5.735504,node,2102527852,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storo,Rema 1000,,,,,,Norway,"59.9439897,10.7711855",coordinates_only,59.9439897,10.7711855,node,2112985822,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tollbugaten,Rema 1000,,,,,,Norway,"59.731034,10.221349",coordinates_only,59.731034,10.221349,node,2202447756,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Signaturgården,Rema 1000,,,,,,Norway,"59.918964,10.585324",coordinates_only,59.918964,10.585324,node,2260247230,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rosenborg,Rema 1000,,,,,,Norway,"63.430416,10.419996",coordinates_only,63.430416,10.419996,node,2275990844,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mogata,Rema 1000,,,,,,Norway,"59.939038,10.753362",coordinates_only,59.939038,10.753362,node,2278258606,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Son,Rema 1000,,,,,,Norway,"59.493859,10.690747",coordinates_only,59.493859,10.690747,node,2285449944,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nedenes,Rema 1000,,,,,,Norway,"58.417484,8.700754",coordinates_only,58.417484,8.700754,node,2296148215,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kyrksæterøra,Rema 1000,,,,,,Norway,"63.290935,9.086858",coordinates_only,63.290935,9.086858,node,2296978798,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kanalveien,Rema 1000,,,,,,Norway,"59.952064,11.045265",coordinates_only,59.952064,11.045265,node,2345967377,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stryn,Rema 1000,,,,,,Norway,"61.903672,6.718625",coordinates_only,61.903672,6.718625,node,2360953908,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ørnes,Rema 1000,,,,,,Norway,"66.8737384,13.7071139",coordinates_only,66.8737384,13.7071139,node,2375529445,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rognan,Rema 1000,,,,,,Norway,"67.102263,15.397049",coordinates_only,67.102263,15.397049,node,2405596704,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ganddal,Rema 1000,,,,,,Norway,"58.825521,5.713446",coordinates_only,58.825521,5.713446,node,2406811794,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Volda,Rema 1000,,,,,,Norway,"62.144175,6.071335",coordinates_only,62.144175,6.071335,node,2440115468,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tynset,Rema 1000,,,,,,Norway,"62.2788678,10.7755721",coordinates_only,62.2788678,10.7755721,node,2462641578,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Torshovdalen,Rema 1000,,,,,,Norway,"59.938203,10.780705",coordinates_only,59.938203,10.780705,node,2476542845,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skullerud,Rema 1000,,,,,,Norway,"59.868058,10.839568",coordinates_only,59.868058,10.839568,node,2500390763,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stemmen,Rema 1000,,,,,,Norway,"58.979388,5.715223",coordinates_only,58.979388,5.715223,node,2627315000,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tiller,Rema 1000,,,,,,Norway,"63.359563,10.375511",coordinates_only,63.359563,10.375511,node,2698855834,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ågotnes,Rema 1000,,,,,,Norway,"60.402826,5.000229",coordinates_only,60.402826,5.000229,node,2710524843,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Inderøy,Rema 1000,,,,,,Norway,"63.873531,11.297697",coordinates_only,63.873531,11.297697,node,2748254515,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Torggata,Rema 1000,,,,,,Norway,"59.9137361,10.7471306",coordinates_only,59.9137361,10.7471306,node,2785551301,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ryensvingen,Rema 1000,,,,,,Norway,"59.89272,10.805089",coordinates_only,59.89272,10.805089,node,2795582466,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Årstaddalen,Rema 1000,,,,,,Norway,"58.438407,6.008744",coordinates_only,58.438407,6.008744,node,2795633445,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Randaberg,Rema 1000,,,,,,Norway,"58.991859,5.643823",coordinates_only,58.991859,5.643823,node,2795679019,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stadion,Rema 1000,,,,,,Norway,"59.213088,10.9272986",coordinates_only,59.213088,10.9272986,node,2796325156,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hana,Rema 1000,,,,,,Norway,"58.854649,5.7705306",coordinates_only,58.854649,5.7705306,node,2816773851,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Amfi Sogningen,Rema 1000,,,,,,Norway,"61.232167,7.103662",coordinates_only,61.232167,7.103662,node,2861926381,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gausdal,Rema 1000,,,,,,Norway,"61.226379,10.222218",coordinates_only,61.226379,10.222218,node,2879952358,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moelv,Rema 1000,,,,,,Norway,"60.929088,10.701911",coordinates_only,60.929088,10.701911,node,2902882997,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Elgeseter,Rema 1000,,,,,,Norway,"63.415413,10.399031",coordinates_only,63.415413,10.399031,node,2905986801,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Deknepollen,Rema 1000,,,,,,Norway,"61.925102,5.148611",coordinates_only,61.925102,5.148611,node,2906221269,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tordenskjolds gate,Rema 1000,,,,,,Norway,"58.1468707,7.9886906",coordinates_only,58.1468707,7.9886906,node,2949121597,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rock City,Rema 1000,,,,,,Norway,"64.469489,11.489264",coordinates_only,64.469489,11.489264,node,2952883037,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Enebakk,Rema 1000,,,,,,Norway,"59.723972,11.049844",coordinates_only,59.723972,11.049844,node,2953806533,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fitjar,Rema 1000,,,,,,Norway,"59.919764,5.326894",coordinates_only,59.919764,5.326894,node,2958986046,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Møllenberg,Rema 1000,,,,,,Norway,"63.434226,10.415051",coordinates_only,63.434226,10.415051,node,2968030050,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Pirsenteret,Rema 1000,,,,,,Norway,"63.440352,10.404193",coordinates_only,63.440352,10.404193,node,2968030051,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bardufoss,Rema 1000,,,,,,Norway,"69.063987,18.504794",coordinates_only,69.063987,18.504794,node,2982562778,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Otta,Rema 1000,,,,,,Norway,"61.770803,9.538447",coordinates_only,61.770803,9.538447,node,2982758445,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Elnesvågen,Rema 1000,,,,,,Norway,"62.854409,7.16564",coordinates_only,62.854409,7.16564,node,2990529184,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Torshov,Rema 1000,,,,,,Norway,"59.934073,10.761415",coordinates_only,59.934073,10.761415,node,3013019481,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Treschows gate,Rema 1000,,,,,,Norway,"59.938797,10.762296",coordinates_only,59.938797,10.762296,node,3013732055,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ammerud,Rema 1000,,,,,,Norway,"59.9589133,10.8713888",coordinates_only,59.9589133,10.8713888,node,3033464339,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Høvleriet,Rema 1000,,,,,,Norway,"59.1208875,11.3775232",coordinates_only,59.1208875,11.3775232,node,3034226465,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hell,Rema 1000,,,,,,Norway,"63.447835,10.91035",coordinates_only,63.447835,10.91035,node,3066654831,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kvinesdal,Rema 1000,,,,,,Norway,"58.321016,6.963572",coordinates_only,58.321016,6.963572,node,3069335568,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Strømmen storsenter,Rema 1000,,,,,,Norway,"59.948432,11.008387",coordinates_only,59.948432,11.008387,node,3094718196,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lade Arena,Rema 1000,,,,,,Norway,"63.441992,10.458537",coordinates_only,63.441992,10.458537,node,3097492388,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Metro senter,Rema 1000,,,,,,Norway,"59.927592,10.962676",coordinates_only,59.927592,10.962676,node,3098739984,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kræmer brygge,Rema 1000,,,,,,Norway,"69.6656476,18.9688463",coordinates_only,69.6656476,18.9688463,node,3110905566,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Måløy brygge,Rema 1000,,,,,,Norway,"61.935831,5.11531",coordinates_only,61.935831,5.11531,node,3118668484,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Revetal,Rema 1000,,,,,,Norway,"59.3685245,10.2643339",coordinates_only,59.3685245,10.2643339,node,3119952310,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kolvereid,Rema 1000,,,,,,Norway,"64.8654947,11.6052279",coordinates_only,64.8654947,11.6052279,node,3119990289,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Leira,Rema 1000,,,,,,Norway,"60.970652,9.291908",coordinates_only,60.970652,9.291908,node,3120125543,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grålum,Rema 1000,,,,,,Norway,"59.295235,11.066745",coordinates_only,59.295235,11.066745,node,3122630971,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Askim,Rema 1000,,,,,,Norway,"59.5823247,11.1665372",coordinates_only,59.5823247,11.1665372,node,3122753563,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mysen,Rema 1000,,,,,,Norway,"59.552239,11.34057",coordinates_only,59.552239,11.34057,node,3122780703,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bertnes,Rema 1000,,,,,,Norway,"67.287299,14.592055",coordinates_only,67.287299,14.592055,node,3123859597,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Guldbergaunet,Rema 1000,,,,,,Norway,"64.016699,11.510005",coordinates_only,64.016699,11.510005,node,3125281513,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Risør,Rema 1000,,,,,,Norway,"58.71515,9.176686",coordinates_only,58.71515,9.176686,node,3131466130,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Christian Krohgs gate,Rema 1000,,,,,,Norway,"59.9139935,10.7567122",coordinates_only,59.9139935,10.7567122,node,3189733778,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lørenveien,Rema 1000,,,,,,Norway,"59.931653,10.789786",coordinates_only,59.931653,10.789786,node,3210871277,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tangen,Rema 1000,,,,,,Norway,"58.1479469,8.0058935",coordinates_only,58.1479469,8.0058935,node,3261794160,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rådhusplassen,Rema 1000,,,,,,Norway,"59.664751,10.7888744",coordinates_only,59.664751,10.7888744,node,3309055214,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lonevåg,Rema 1000,,,,,,Norway,"60.527003,5.493424",coordinates_only,60.527003,5.493424,node,3324720972,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ellingsrud,Rema 1000,,,,,,Norway,"59.938768,10.907944",coordinates_only,59.938768,10.907944,node,3428529838,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lindås,Rema 1000,,,,,,Norway,"60.739333,5.161646",coordinates_only,60.739333,5.161646,node,3439458795,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Neskollen,Rema 1000,,,,,,Norway,"60.125757,11.342028",coordinates_only,60.125757,11.342028,node,3481458856,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lura,Rema 1000,,,,,,Norway,"58.873293,5.726273",coordinates_only,58.873293,5.726273,node,3611035693,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skjeberg,Rema 1000,,,,,,Norway,"59.210347,11.190356",coordinates_only,59.210347,11.190356,node,3637932290,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Svinesundparken,Rema 1000,,,,,,Norway,"59.128271,11.274588",coordinates_only,59.128271,11.274588,node,3662420184,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vikhammer,Rema 1000,,,,,,Norway,"63.436414,10.626098",coordinates_only,63.436414,10.626098,node,3674029029,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Øya,Rema 1000,,,,,,Norway,"59.045386,10.060593",coordinates_only,59.045386,10.060593,node,3692730102,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Halmstad,Rema 1000,,,,,,Norway,"59.37732,10.759519",coordinates_only,59.37732,10.759519,node,3737461423,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hokksund,Rema 1000,,,,,,Norway,"59.7728685,9.9081427",coordinates_only,59.7728685,9.9081427,node,3787208372,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lena,Rema 1000,,,,,,Norway,"60.6775192,10.8181904",coordinates_only,60.6775192,10.8181904,node,3824297281,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Garnesveien,Rema 1000,,,,,,Norway,"60.428505,5.469539",coordinates_only,60.428505,5.469539,node,3827722522,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Årdalstangen,Rema 1000,,,,,,Norway,"61.2388252,7.7113913",coordinates_only,61.2388252,7.7113913,node,3868562323,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lakselv,Rema 1000,,,,,,Norway,"70.053066,24.958473",coordinates_only,70.053066,24.958473,node,3882536916,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Begby,Rema 1000,,,,,,Norway,"59.208213,10.990954",coordinates_only,59.208213,10.990954,node,3932021154,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kløverhuset,Rema 1000,,,,,,Norway,"60.394473,5.323167",coordinates_only,60.394473,5.323167,node,3934152270,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nygårdsgaten,Rema 1000,,,,,,Norway,"60.388556,5.32617",coordinates_only,60.388556,5.32617,node,3946010561,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ilsvika,Rema 1000,,,,,,Norway,"63.431548,10.357079",coordinates_only,63.431548,10.357079,node,3961731167,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Marken,Rema 1000,,,,,,Norway,"60.39117,5.331998",coordinates_only,60.39117,5.331998,node,3962005399,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Østerøyveien,Rema 1000,,,,,,Norway,"59.134202,10.251473",coordinates_only,59.134202,10.251473,node,4001578390,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandefjord,Rema 1000,,,,,,Norway,"59.129011,10.240423",coordinates_only,59.129011,10.240423,node,4001578393,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Thorøya,Rema 1000,,,,,,Norway,"59.102779,10.223249",coordinates_only,59.102779,10.223249,node,4001578399,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lørenskog stasjonsby,Rema 1000,,,,,,Norway,"59.944053,10.950918",coordinates_only,59.944053,10.950918,node,4075212709,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hommelvik,Rema 1000,,,,,,Norway,"63.416458,10.810064",coordinates_only,63.416458,10.810064,node,4134849573,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Holmestrand,Rema 1000,,,,,,Norway,"59.47547,10.317491",coordinates_only,59.47547,10.317491,node,4159423912,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Amfi Florø,Rema 1000,,,,,,Norway,"61.600866,5.036804",coordinates_only,61.600866,5.036804,node,4171466892,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fabrikkvegen,Rema 1000,,,,,,Norway,"60.888041,10.932964",coordinates_only,60.888041,10.932964,node,4213098367,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Digernes,Rema 1000,,,,,,Norway,"62.492093,6.605557",coordinates_only,62.492093,6.605557,node,4214873094,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gran,Rema 1000,,,,,,Norway,"60.353103,10.575738",coordinates_only,60.353103,10.575738,node,4294899648,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Opstadveien,Rema 1000,,,,,,Norway,"58.778637,5.832234",coordinates_only,58.778637,5.832234,node,4306063737,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rakkestad,Rema 1000,,,,,,Norway,"59.41927,11.345903",coordinates_only,59.41927,11.345903,node,4329960408,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Årvoll,Rema 1000,,,,,,Norway,"59.945159,10.809216",coordinates_only,59.945159,10.809216,node,4343697794,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sofiemyr,Rema 1000,,,,,,Norway,"59.801715,10.818084",coordinates_only,59.801715,10.818084,node,4348945904,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Seljord,Rema 1000,,,,,,Norway,"59.480471,8.6319456",coordinates_only,59.480471,8.6319456,node,4355073789,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Billingstadsletta,Rema 1000,,,,,,Norway,"59.877088,10.500884",coordinates_only,59.877088,10.500884,node,4377990827,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bremnes,Rema 1000,,,,,,Norway,"59.793482,5.171917",coordinates_only,59.793482,5.171917,node,4392633229,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandved,Rema 1000,,,,,,Norway,"58.838206,5.722023",coordinates_only,58.838206,5.722023,node,4419370011,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ask,Rema 1000,,,,,,Norway,"60.0711798,11.0342301",coordinates_only,60.0711798,11.0342301,node,4437439600,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skogsvåg,Rema 1000,,,,,,Norway,"60.270189,5.070255",coordinates_only,60.270189,5.070255,node,4575509692,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Viken,Rema 1000,,,,,,Norway,"60.378394,5.328383",coordinates_only,60.378394,5.328383,node,4614985253,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Industrigata,Rema 1000,,,,,,Norway,"59.926781,10.72201",coordinates_only,59.926781,10.72201,node,4623901187,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Havstein,Rema 1000,,,,,,Norway,"63.409079,10.3614045",coordinates_only,63.409079,10.3614045,node,4630571197,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Torsbudalen,Rema 1000,,,,,,Norway,"58.481145,8.756305",coordinates_only,58.481145,8.756305,node,4779567232,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Korskirkekvartalet,Rema 1000,,,,,,Norway,"60.394396,5.327478",coordinates_only,60.394396,5.327478,node,4809443448,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tollboden,Rema 1000,,,,,,Norway,"60.398878,5.309801",coordinates_only,60.398878,5.309801,node,4836710457,OpenStreetMap via Overpass API
+REMA 1000,REMA 1000 Hommelvik,Rema 1000,,,,,,Norway,"63.416458,10.810064",coordinates_only,63.416458,10.810064,node,4844721023,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sunndalsøra,Rema 1000,,,,,,Norway,"62.672299,8.567943",coordinates_only,62.672299,8.567943,node,4948749673,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stoa,Rema 1000,,,,,,Norway,"58.46533,8.7132753",coordinates_only,58.46533,8.7132753,node,5009498839,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Krokdalsmyra,Rema 1000,,,,,,Norway,"67.2703653,15.3956326",coordinates_only,67.2703653,15.3956326,node,5034740293,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Parkveien,Rema 1000,,,,,,Norway,"59.921281,10.728906",coordinates_only,59.921281,10.728906,node,5159248736,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Drøbak,Rema 1000,,,,,,Norway,"59.668287,10.647926",coordinates_only,59.668287,10.647926,node,5235692621,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Søgne,Rema 1000,,,,,,Norway,"58.097777,7.810864",coordinates_only,58.097777,7.810864,node,5258644275,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hovseter,Rema 1000,,,,,,Norway,"59.9496261,10.6536314",coordinates_only,59.9496261,10.6536314,node,5273825791,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lars Hilles gate,Rema 1000,,,,,,Norway,"60.387054,5.331511",coordinates_only,60.387054,5.331511,node,5318783336,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Langveien,Rema 1000,,,,,,Norway,"63.108393,7.728807",coordinates_only,63.108393,7.728807,node,5391130158,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Holtandalen,Rema 1000,,,,,,Norway,"59.411141,10.4673",coordinates_only,59.411141,10.4673,node,5439882352,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lystlunden,Rema 1000,,,,,,Norway,"59.41643,10.491778",coordinates_only,59.41643,10.491778,node,5439882358,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Linden park,Rema 1000,,,,,,Norway,"59.408035,10.484786",coordinates_only,59.408035,10.484786,node,5439882359,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Olavsgate,Rema 1000,,,,,,Norway,"59.054254,10.031762",coordinates_only,59.054254,10.031762,node,5493880254,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Manger,Rema 1000,,,,,,Norway,"60.64134,5.044927",coordinates_only,60.64134,5.044927,node,5555279331,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Konnerud,Rema 1000,,,,,,Norway,"59.718673,10.145175",coordinates_only,59.718673,10.145175,node,5644721564,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vingrom,Rema 1000,,,,,,Norway,"61.046945,10.433418",coordinates_only,61.046945,10.433418,node,5646631221,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Midtun,Rema 1000,,,,,,Norway,"60.323599,5.369708",coordinates_only,60.323599,5.369708,node,5678299821,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Breidablikk,Rema 1000,,,,,,Norway,"63.349972,10.359199",coordinates_only,63.349972,10.359199,node,5715076049,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Larvik,Rema 1000,,,,,,Norway,"59.066702,10.040635",coordinates_only,59.066702,10.040635,node,5729010093,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tinnheia,Rema 1000,,,,,,Norway,"58.146875,7.956283",coordinates_only,58.146875,7.956283,node,5732291813,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åndalsnes,Rema 1000,,,,,,Norway,"62.5594818,7.6824023",coordinates_only,62.5594818,7.6824023,node,5751448221,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Jevnaker,Rema 1000,,,,,,Norway,"60.2408233,10.3821062",coordinates_only,60.2408233,10.3821062,node,5763115771,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gamleveien,Rema 1000,,,,,,Norway,"58.883855,5.743727",coordinates_only,58.883855,5.743727,node,5798470441,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Byporten,Rema 1000,,,,,,Norway,"66.306144,14.131636",coordinates_only,66.306144,14.131636,node,5822799613,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ørsta,Rema 1000,,,,,,Norway,"62.192347,6.124312",coordinates_only,62.192347,6.124312,node,5841728209,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åskollen,Rema 1000,,,,,,Norway,"59.7129062,10.2576775",coordinates_only,59.7129062,10.2576775,node,5842227426,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Alti Verdal,Rema 1000,,,,,,Norway,"63.781588,11.471086",coordinates_only,63.781588,11.471086,node,5853193549,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjugn,Rema 1000,,,,,,Norway,"63.763516,9.805104",coordinates_only,63.763516,9.805104,node,5854225908,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tana,Rema 1000,,,,,,Norway,"70.198038,28.189498",coordinates_only,70.198038,28.189498,node,5861081955,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bie,Rema 1000,,,,,,Norway,"58.351639,8.597121",coordinates_only,58.351639,8.597121,node,5916310343,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grannes,Rema 1000,,,,,,Norway,"58.93178,5.696077",coordinates_only,58.93178,5.696077,node,5938766420,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hov E39,Rema 1000,,,,,,Norway,"58.8340792,5.733126",coordinates_only,58.8340792,5.733126,node,5939243464,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fredensborgveien,Rema 1000,,,,,,Norway,"59.9191486,10.7470604",coordinates_only,59.9191486,10.7470604,node,5985261344,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Råstølen,Rema 1000,Gurgen Margaryan,,,,,Norway,"60.30117,5.308614",coordinates_only,60.30117,5.308614,node,5992864173,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Minde,Rema 1000,,,,,,Norway,"60.369935,5.341715",coordinates_only,60.369935,5.341715,node,6005437697,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Evenskjer,Rema 1000,,,,,,Norway,"68.584598,16.574023",coordinates_only,68.584598,16.574023,node,6027261511,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kilamyra,Rema 1000,,,,,,Norway,"68.740183,16.563338",coordinates_only,68.740183,16.563338,node,6027262810,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Harstad,Rema 1000,,,,,,Norway,"68.790811,16.535711",coordinates_only,68.790811,16.535711,node,6027262817,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tverlandet,Rema 1000,,,,,,Norway,"67.296378,14.745406",coordinates_only,67.296378,14.745406,node,6028427546,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rønvik,Rema 1000,,,,,,Norway,"67.297559,14.402545",coordinates_only,67.297559,14.402545,node,6028427859,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Frydenlund,Rema 1000,,,,,,Norway,"68.438521,17.417142",coordinates_only,68.438521,17.417142,node,6028427867,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sortland,Rema 1000,,,,,,Norway,"68.708287,15.413727",coordinates_only,68.708287,15.413727,node,6028427872,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Halsøy,Rema 1000,,,,,,Norway,"65.863322,13.193434",coordinates_only,65.863322,13.193434,node,6028427874,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Melbu,Rema 1000,,,,,,Norway,"68.501288,14.813969",coordinates_only,68.501288,14.813969,node,6028427875,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brønnøysund,Rema 1000,,,,,,Norway,"65.4806,12.220734",coordinates_only,65.4806,12.220734,node,6028428708,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skistua Narvik,Rema 1000,,,,,,Norway,"68.438315,17.445463",coordinates_only,68.438315,17.445463,node,6028428726,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kroppanmarka,Rema 1000,,,,,,Norway,"63.382429,10.377665",coordinates_only,63.382429,10.377665,node,6028552683,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Dragvoll,Rema 1000,,,,,,Norway,"63.411637,10.464936",coordinates_only,63.411637,10.464936,node,6028555282,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Flatåsen,Rema 1000,,,,,,Norway,"63.372529,10.344218",coordinates_only,63.372529,10.344218,node,6028555439,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Røstad,Rema 1000,,,,,,Norway,"63.751219,11.312533",coordinates_only,63.751219,11.312533,node,6028555442,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sveberg,Rema 1000,,,,,,Norway,"63.42065,10.755008",coordinates_only,63.42065,10.755008,node,6028555443,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nordsia,Rema 1000,,,,,,Norway,"64.019156,11.49232",coordinates_only,64.019156,11.49232,node,6028555858,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Charlottenlund,Rema 1000,,,,,,Norway,"63.420496,10.494545",coordinates_only,63.420496,10.494545,node,6028555862,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Saupstad,Rema 1000,,,,,,Norway,"63.366518,10.345141",coordinates_only,63.366518,10.345141,node,6028555869,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Orkanger,Rema 1000,,,,,,Norway,"63.297739,9.852276",coordinates_only,63.297739,9.852276,node,6028555885,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stranda,Rema 1000,,,,,,Norway,"62.309358,6.943504",coordinates_only,62.309358,6.943504,node,6029407240,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Strandgata,Rema 1000,,,,,,Norway,"62.470191,6.138378",coordinates_only,62.470191,6.138378,node,6029408148,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ulsteinvik,Rema 1000,,,,,,Norway,"62.337661,5.85184",coordinates_only,62.337661,5.85184,node,6029408507,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Evja,Rema 1000,,,,,,Norway,"61.5985688,5.0476626",coordinates_only,61.5985688,5.0476626,node,6029787350,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Førde,Rema 1000,,,,,,Norway,"61.44925,5.87293",coordinates_only,61.44925,5.87293,node,6029788157,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjelland,Rema 1000,,,,,,Norway,"59.773416,5.495329",coordinates_only,59.773416,5.495329,node,6029984906,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skulestadmo,Rema 1000,,,,,,Norway,"60.658506,6.437296",coordinates_only,60.658506,6.437296,node,6029984914,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Morvik,Rema 1000,,,,,,Norway,"60.474311,5.265761",coordinates_only,60.474311,5.265761,node,6029984925,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fjell,Rema 1000,,,,,,Norway,"60.330975,5.0774",coordinates_only,60.330975,5.0774,node,6029985595,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vabakkjen,Rema 1000,,,,,,Norway,"59.77415,5.485493",coordinates_only,59.77415,5.485493,node,6029985605,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Spannavegen,Rema 1000,,,,,,Norway,"59.395358,5.306818",coordinates_only,59.395358,5.306818,node,6030391819,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sunde,Rema 1000,,,,,,Norway,"58.956445,5.63597",coordinates_only,58.956445,5.63597,node,6030391826,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tasta,Rema 1000,,,,,,Norway,"58.982979,5.685645",coordinates_only,58.982979,5.685645,node,6030391828,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Aspervik,Rema 1000,,,,,,Norway,"58.865965,5.760227",coordinates_only,58.865965,5.760227,node,6030391910,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kvernevik,Rema 1000,,,,,,Norway,"58.965591,5.611838",coordinates_only,58.965591,5.611838,node,6030391926,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hillevåg,Rema 1000,,,,,,Norway,"58.947097,5.742019",coordinates_only,58.947097,5.742019,node,6030392078,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vanse,Rema 1000,,,,,,Norway,"58.098133,6.690593",coordinates_only,58.098133,6.690593,node,6052478656,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lyngdal,Rema 1000,,,,,,Norway,"58.13689,7.073624",coordinates_only,58.13689,7.073624,node,6052479515,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brokelandsheia,Rema 1000,,,,,,Norway,"58.82108,9.078403",coordinates_only,58.82108,9.078403,node,6052507158,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Myrene,Rema 1000,,,,,,Norway,"58.462876,8.751547",coordinates_only,58.462876,8.751547,node,6052512755,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grøm,Rema 1000,,,,,,Norway,"58.339434,8.574093",coordinates_only,58.339434,8.574093,node,6052512962,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vallermyrene,Rema 1000,,,,,,Norway,"59.134928,9.670935",coordinates_only,59.134928,9.670935,node,6052572960,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stathelle,Rema 1000,,,,,,Norway,"59.045822,9.69087",coordinates_only,59.045822,9.69087,node,6052573847,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kragerø,Rema 1000,,,,,,Norway,"58.871647,9.373707",coordinates_only,58.871647,9.373707,node,6052574008,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Siljan,Rema 1000,,,,,,Norway,"59.278349,9.726098",coordinates_only,59.278349,9.726098,node,6052574011,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Svarstad,Rema 1000,,,,,,Norway,"59.401569,9.957304",coordinates_only,59.401569,9.957304,node,6052734542,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Veldrebakken,Rema 1000,,,,,,Norway,"59.047461,9.996582",coordinates_only,59.047461,9.996582,node,6052734543,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tempokrysset,Rema 1000,,,,,,Norway,"59.136614,10.214143",coordinates_only,59.136614,10.214143,node,6052734913,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Trysil,Rema 1000,,,,,,Norway,"61.314303,12.255702",coordinates_only,61.314303,12.255702,node,6052793640,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Epa,Rema 1000,,,,,,Norway,"60.1928174,12.0011871",coordinates_only,60.1928174,12.0011871,node,6052793896,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ottestad,Rema 1000,,,,,,Norway,"60.7687011,11.1306454",coordinates_only,60.7687011,11.1306454,node,6052794738,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Røyslimoen,Rema 1000,,,,,,Norway,"61.09895,10.50681",coordinates_only,61.09895,10.50681,node,6052844574,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grua,Rema 1000,,,,,,Norway,"60.2510266,10.6741058",coordinates_only,60.2510266,10.6741058,node,6052844684,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hunndalen,Rema 1000,,,,,,Norway,"60.784098,10.645819",coordinates_only,60.784098,10.645819,node,6052844690,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gulskogen,Rema 1000,,,,,,Norway,"59.74203,10.162415",coordinates_only,59.74203,10.162415,node,6052901228,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Orkidehøgda,Rema 1000,,,,,,Norway,"59.747597,10.028154",coordinates_only,59.747597,10.028154,node,6052901669,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Busterudgate,Rema 1000,,,,,,Norway,"59.126143,11.385881",coordinates_only,59.126143,11.385881,node,6052988462,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Risum,Rema 1000,,,,,,Norway,"59.118618,11.409254",coordinates_only,59.118618,11.409254,node,6052988466,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ryggeveien,Rema 1000,,,,,,Norway,"59.414372,10.685377",coordinates_only,59.414372,10.685377,node,6052991562,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Korsegården,Rema 1000,,,,,,Norway,"59.5861854,11.1788517",coordinates_only,59.5861854,11.1788517,node,6052992364,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tistedal,Rema 1000,,,,,,Norway,"59.1258235,11.4450505",coordinates_only,59.1258235,11.4450505,node,6052992368,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Trøgstad,Rema 1000,,,,,,Norway,"59.641978,11.314963",coordinates_only,59.641978,11.314963,node,6052992409,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gjelleråsen,Rema 1000,,,,,,Norway,"59.984555,10.928252",coordinates_only,59.984555,10.928252,node,6053105860,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Silovegen,Rema 1000,,,,,,Norway,"60.126089,11.469039",coordinates_only,60.126089,11.469039,node,6053105872,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Dyrløkkeveien,Rema 1000,,,,,,Norway,"59.672584,10.652486",coordinates_only,59.672584,10.652486,node,6053105884,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nittedal,Rema 1000,,,,,,Norway,"60.045889,10.880716",coordinates_only,60.045889,10.880716,node,6053106063,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gullhella,Rema 1000,,,,,,Norway,"59.810401,10.448148",coordinates_only,59.810401,10.448148,node,6053106088,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nannestad,Rema 1000,,,,,,Norway,"60.220812,11.014314",coordinates_only,60.220812,11.014314,node,6053106122,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bærums verk,Rema 1000,,,,,,Norway,"59.942452,10.501191",coordinates_only,59.942452,10.501191,node,6053106123,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bryn,Rema 1000,,,,,,Norway,"59.913768,10.825261",coordinates_only,59.913768,10.825261,node,6053222984,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skeidbanen,Rema 1000,,,,,,Norway,"59.942645,10.784966",coordinates_only,59.942645,10.784966,node,6053231481,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bøler,Rema 1000,,,,,,Norway,"59.879677,10.852188",coordinates_only,59.879677,10.852188,node,6053231483,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lambertseter,Rema 1000,,,,,,Norway,"59.8789128,10.8074762",coordinates_only,59.8789128,10.8074762,node,6053231484,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hoffsveien,Rema 1000,,,,,,Norway,"59.9258797,10.6745475",coordinates_only,59.9258797,10.6745475,node,6053234991,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjørndal,Rema 1000,,,,,,Norway,"59.832483,10.838313",coordinates_only,59.832483,10.838313,node,6053234995,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lillo,Rema 1000,,,,,,Norway,"59.953133,10.774179",coordinates_only,59.953133,10.774179,node,6053234997,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hesseng,Rema 1000,,,,,,Norway,"69.688114,29.995766",coordinates_only,69.688114,29.995766,node,6055597801,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Myre,Rema 1000,,,,,,Norway,"68.914573,15.08027",coordinates_only,68.914573,15.08027,node,6057857066,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Langneset,Rema 1000,,,,,,Norway,"66.303917,14.127834",coordinates_only,66.303917,14.127834,node,6057857067,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fauske,Rema 1000,,,,,,Norway,"67.258013,15.38304",coordinates_only,67.258013,15.38304,node,6057857068,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Båtsfjord,Rema 1000,,,,,,Norway,"70.6312384,29.7126257",coordinates_only,70.6312384,29.7126257,node,6057857069,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Honningsvåg,Rema 1000,,,,,,Norway,"70.99997,25.966565",coordinates_only,70.99997,25.966565,node,6057857070,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Karasjok,Rema 1000,,,,,,Norway,"69.473551,25.513934",coordinates_only,69.473551,25.513934,node,6057857071,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lødingen,Rema 1000,,,,,,Norway,"68.419985,15.9898758",coordinates_only,68.419985,15.9898758,node,6057857072,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Innhavet,Rema 1000,,,,,,Norway,"67.963117,15.928216",coordinates_only,67.963117,15.928216,node,6057857074,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ranenget,Rema 1000,,,,,,Norway,"66.32207,14.167284",coordinates_only,66.32207,14.167284,node,6057857075,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tomasjord,Rema 1000,,,,,,Norway,"69.664835,19.021537",coordinates_only,69.664835,19.021537,node,6057857076,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Veisletta,Rema 1000,,,,,,Norway,"70.080675,29.706551",coordinates_only,70.080675,29.706551,node,6057857077,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lyngåsen,Rema 1000,,,,,,Norway,"66.00772,12.577644",coordinates_only,66.00772,12.577644,node,6057857078,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Søderlundmyra,Rema 1000,,,,,,Norway,"66.317765,14.144444",coordinates_only,66.317765,14.144444,node,6057857079,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ballangen,Rema 1000,,,,,,Norway,"68.343215,16.829905",coordinates_only,68.343215,16.829905,node,6057857080,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storsvingen,Rema 1000,,,,,,Norway,"70.652415,23.664056",coordinates_only,70.652415,23.664056,node,6057857081,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hallset,Rema 1000,,,,,,Norway,"63.394369,10.369203",coordinates_only,63.394369,10.369203,node,6057929423,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fossegrenda,Rema 1000,,,,,,Norway,"63.387517,10.408287",coordinates_only,63.387517,10.408287,node,6057930929,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hitra,Rema 1000,,,,,,Norway,"63.6002794,8.9756366",coordinates_only,63.6002794,8.9756366,node,6057930931,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandgata Namsos,Rema 1000,,,,,,Norway,"64.465564,11.510722",coordinates_only,64.465564,11.510722,node,6057930932,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Frøya,Rema 1000,,,,,,Norway,"63.728777,8.828036",coordinates_only,63.728777,8.828036,node,6057930933,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rørvik,Rema 1000,,,,,,Norway,"64.859499,11.23135",coordinates_only,64.859499,11.23135,node,6057930934,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Verdal,Rema 1000,,,,,,Norway,"63.791854,11.485481",coordinates_only,63.791854,11.485481,node,6057930935,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grong,Rema 1000,,,,,,Norway,"64.4638436,12.3059986",coordinates_only,64.4638436,12.3059986,node,6057930937,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brekstad,Rema 1000,,,,,,Norway,"63.691846,9.660461",coordinates_only,63.691846,9.660461,node,6057930938,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 OTI senteret,Rema 1000,,,,,,Norway,"63.30601,9.838966",coordinates_only,63.30601,9.838966,node,6057931495,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Suljordet Verdal,Rema 1000,,,,,,Norway,"63.7944352,11.4807963",coordinates_only,63.7944352,11.4807963,node,6057931496,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vestnes,Rema 1000,,,,,,Norway,"62.624228,7.094305",coordinates_only,62.624228,7.094305,node,6057979796,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brattvåg,Rema 1000,,,,,,Norway,"62.6054112,6.4379648",coordinates_only,62.6054112,6.4379648,node,6057979797,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Øyrane,Rema 1000,,,,,,Norway,"61.457519,5.848443",coordinates_only,61.457519,5.848443,node,6057979799,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Flisnes,Rema 1000,,,,,,Norway,"62.4326278,6.4131405",coordinates_only,62.4326278,6.4131405,node,6057979801,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Averøy,Rema 1000,,,,,,Norway,"63.068083,7.646358",coordinates_only,63.068083,7.646358,node,6057979803,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Eide,Rema 1000,,,,,,Norway,"62.916696,7.446954",coordinates_only,62.916696,7.446954,node,6057979804,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Elvetorget,Rema 1000,,,,,,Norway,"61.451545,5.849116",coordinates_only,61.451545,5.849116,node,6057979805,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Breivika,Rema 1000,,,,,,Norway,"62.470538,6.352136",coordinates_only,62.470538,6.352136,node,6057979806,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Giske,Rema 1000,,,,,,Norway,"62.528524,6.116136",coordinates_only,62.528524,6.116136,node,6057979807,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fosnavåg,Rema 1000,,,,,,Norway,"62.326066,5.63958",coordinates_only,62.326066,5.63958,node,6057979808,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Langevåg,Rema 1000,,,,,,Norway,"62.440917,6.19466",coordinates_only,62.440917,6.19466,node,6057979809,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moa,Rema 1000,,,,,,Norway,"62.4658685,6.356559",coordinates_only,62.4658685,6.356559,node,6057979810,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skreia,Rema 1000,,,,,,Norway,"60.654294,10.934721",coordinates_only,60.654294,10.934721,node,6058014311,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Raufoss,Rema 1000,,,,,,Norway,"60.719498,10.612487",coordinates_only,60.719498,10.612487,node,6058014312,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hov,Rema 1000,,,,,,Norway,"60.696238,10.353308",coordinates_only,60.696238,10.353308,node,6058014313,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brandbu,Rema 1000,,,,,,Norway,"60.406667,10.533126",coordinates_only,60.406667,10.533126,node,6058014314,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Søre Ål,Rema 1000,,,,,,Norway,"61.0999733,10.472215",coordinates_only,61.0999733,10.472215,node,6058014315,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Terningen,Rema 1000,,,,,,Norway,"60.883627,11.536661",coordinates_only,60.883627,11.536661,node,6058014316,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skarnes,Rema 1000,,,,,,Norway,"60.253989,11.6834499",coordinates_only,60.253989,11.6834499,node,6058014317,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ridabu,Rema 1000,,,,,,Norway,"60.806184,11.148452",coordinates_only,60.806184,11.148452,node,6058014319,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kurudsand,Rema 1000,,,,,,Norway,"60.189069,11.9899748",coordinates_only,60.189069,11.9899748,node,6058014320,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bispehaugen,Rema 1000,,,,,,Norway,"60.79724,11.0506",coordinates_only,60.79724,11.0506,node,6058014321,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Flisa,Rema 1000,,,,,,Norway,"60.613484,12.022388",coordinates_only,60.613484,12.022388,node,6058014322,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åsane senter,Rema 1000,,,,,,Norway,"60.468222,5.325124",coordinates_only,60.468222,5.325124,node,6058177231,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Søreide,Rema 1000,,,,,,Norway,"60.306103,5.269099",coordinates_only,60.306103,5.269099,node,6058177232,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mongstad,Rema 1000,,,,,,Norway,"60.797808,5.009928",coordinates_only,60.797808,5.009928,node,6058177518,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Øyrane torg,Rema 1000,,,,,,Norway,"60.421388,5.465241",coordinates_only,60.421388,5.465241,node,6058177519,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sagvåg,Rema 1000,,,,,,Norway,"59.779746,5.39773",coordinates_only,59.779746,5.39773,node,6058177520,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Norheimsund,Rema 1000,,,,,,Norway,"60.370539,6.156901",coordinates_only,60.370539,6.156901,node,6058177521,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Melkeplassen,Rema 1000,,,,,,Norway,"60.371217,5.302723",coordinates_only,60.371217,5.302723,node,6058177522,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storebø senter,Rema 1000,,,,,,Norway,"60.096365,5.2253114",coordinates_only,60.096365,5.2253114,node,6058177524,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vigrestad,Rema 1000,,,,,,Norway,"58.571545,5.691086",coordinates_only,58.571545,5.691086,node,6058221232,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Solvang,Rema 1000,,,,,,Norway,"59.42036,5.278819",coordinates_only,59.42036,5.278819,node,6058221233,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Myklebust,Rema 1000,,,,,,Norway,"58.945986,5.58035",coordinates_only,58.945986,5.58035,node,6058221234,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Raglamyr,Rema 1000,,,,,,Norway,"59.397309,5.33452",coordinates_only,59.397309,5.33452,node,6058221235,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Norheim,Rema 1000,,,,,,Norway,"59.377581,5.306317",coordinates_only,59.377581,5.306317,node,6058221236,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hinna,Rema 1000,,,,,,Norway,"58.920853,5.724775",coordinates_only,58.920853,5.724775,node,6058221237,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bygnes,Rema 1000,,,,,,Norway,"59.293125,5.29132",coordinates_only,59.293125,5.29132,node,6058221238,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Madlakrossen,Rema 1000,,,,,,Norway,"58.952581,5.68038",coordinates_only,58.952581,5.68038,node,6058221239,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åkrehamn,Rema 1000,,,,,,Norway,"59.264406,5.19271",coordinates_only,59.264406,5.19271,node,6058221240,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stadionparken,Rema 1000,,,,,,Norway,"58.915049,5.730344",coordinates_only,58.915049,5.730344,node,6058221471,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sola,Rema 1000,,,,,,Norway,"58.883896,5.648472",coordinates_only,58.883896,5.648472,node,6058221473,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storaberget,Rema 1000,,,,,,Norway,"58.896143,5.724552",coordinates_only,58.896143,5.724552,node,6058221474,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Dusavik,Rema 1000,,,,,,Norway,"58.994875,5.681389",coordinates_only,58.994875,5.681389,node,6058221475,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Elvegata,Rema 1000,,,,,,Norway,"58.849921,5.738266",coordinates_only,58.849921,5.738266,node,6058221476,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kvala,Rema 1000,,,,,,Norway,"59.437681,5.268511",coordinates_only,59.437681,5.268511,node,6058221477,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skaarlia,Rema 1000,,,,,,Norway,"58.841701,5.765761",coordinates_only,58.841701,5.765761,node,6058221478,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nærbø,Rema 1000,,,,,,Norway,"58.6687931,5.6417543",coordinates_only,58.6687931,5.6417543,node,6058221479,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tollnes,Rema 1000,,,,,,Norway,"59.164346,9.635757",coordinates_only,59.164346,9.635757,node,6058273495,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 His,Rema 1000,,,,,,Norway,"58.435087,8.743807",coordinates_only,58.435087,8.743807,node,6058273496,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Evje,Rema 1000,,,,,,Norway,"58.583325,7.797055",coordinates_only,58.583325,7.797055,node,6058273497,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Froland,Rema 1000,,,,,,Norway,"58.5081018,8.6293403",coordinates_only,58.5081018,8.6293403,node,6058273498,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tingsaker,Rema 1000,,,,,,Norway,"58.260929,8.392155",coordinates_only,58.260929,8.392155,node,6058273499,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Maxis,Rema 1000,,,,,,Norway,"58.4548,8.747831",coordinates_only,58.4548,8.747831,node,6058273500,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vågsbygd,Rema 1000,,,,,,Norway,"58.12457,7.953443",coordinates_only,58.12457,7.953443,node,6058273502,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fagerholt,Rema 1000,,,,,,Norway,"58.1771871,8.0425543",coordinates_only,58.1771871,8.0425543,node,6058273503,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sørlandsparken,Rema 1000,,,,,,Norway,"58.179341,8.126339",coordinates_only,58.179341,8.126339,node,6058273504,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kjørbekk,Rema 1000,,,,,,Norway,"59.174244,9.616169",coordinates_only,59.174244,9.616169,node,6058275505,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Falkum,Rema 1000,,,,,,Norway,"59.212137,9.590161",coordinates_only,59.212137,9.590161,node,6058275506,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moflata,Rema 1000,,,,,,Norway,"59.191406,9.58839",coordinates_only,59.191406,9.58839,node,6058275507,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Arkaden,Rema 1000,,,,,,Norway,"59.20639,9.608592",coordinates_only,59.20639,9.608592,node,6058275508,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hovenga,Rema 1000,,,,,,Norway,"59.148799,9.662622",coordinates_only,59.148799,9.662622,node,6058275509,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sannidal,Rema 1000,,,,,,Norway,"58.895956,9.283579",coordinates_only,58.895956,9.283579,node,6058275510,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skogen,Rema 1000,,,,,,Norway,"59.413002,9.064711",coordinates_only,59.413002,9.064711,node,6058275511,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Down Town,Rema 1000,,,,,,Norway,"59.1362261,9.6387098",coordinates_only,59.1362261,9.6387098,node,6058275512,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gimsøy,Rema 1000,,,,,,Norway,"59.191744,9.611314",coordinates_only,59.191744,9.611314,node,6058275513,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lund,Rema 1000,,,,,,Norway,"58.1502,8.02564",coordinates_only,58.1502,8.02564,node,6058275514,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Amfisenteret,Rema 1000,,,,,,Norway,"59.4364513,10.6623748",coordinates_only,59.4364513,10.6623748,node,6058497609,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brødløs,Rema 1000,,,,,,Norway,"59.139155,11.379646",coordinates_only,59.139155,11.379646,node,6058497610,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mosseporten,Rema 1000,,,,,,Norway,"59.4467421,10.7044545",coordinates_only,59.4467421,10.7044545,node,6058497611,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Varnaveien,Rema 1000,,,,,,Norway,"59.4175204,10.6746095",coordinates_only,59.4175204,10.6746095,node,6058497612,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Borg,Rema 1000,,,,,,Norway,"59.27413,11.082266",coordinates_only,59.27413,11.082266,node,6058497613,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skogveien,Rema 1000,,,,,,Norway,"59.42674,11.343593",coordinates_only,59.42674,11.343593,node,6058497614,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skreppestad,Rema 1000,,,,,,Norway,"59.045812,10.075879",coordinates_only,59.045812,10.075879,node,6058497615,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stokke,Rema 1000,,,,,,Norway,"59.2224087,10.3037806",coordinates_only,59.2224087,10.3037806,node,6058497616,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tjøme,Rema 1000,,,,,,Norway,"59.121165,10.400606",coordinates_only,59.121165,10.400606,node,6058497617,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Toppen,Rema 1000,,,,,,Norway,"59.490758,10.293734",coordinates_only,59.490758,10.293734,node,6058497618,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stavern,Rema 1000,,,,,,Norway,"59.016168,10.021154",coordinates_only,59.016168,10.021154,node,6058497619,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sande,Rema 1000,,,,,,Norway,"59.5834985,10.2101341",coordinates_only,59.5834985,10.2101341,node,6058497620,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sem,Rema 1000,,,,,,Norway,"59.283074,10.333172",coordinates_only,59.283074,10.333172,node,6058497621,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sørenga,Rema 1000,,,,,,Norway,"59.9039462,10.7562749",coordinates_only,59.9039462,10.7562749,node,6058574245,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rodeløkka,Rema 1000,,,,,,Norway,"59.9235213,10.7722423",coordinates_only,59.9235213,10.7722423,node,6058574246,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vulkan,Rema 1000,,,,,,Norway,"59.923197,10.751193",coordinates_only,59.923197,10.751193,node,6058574248,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sporveisgata,Rema 1000,,,,,,Norway,"59.925463,10.725963",coordinates_only,59.925463,10.725963,node,6058574249,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gjettum,Rema 1000,,,,,,Norway,"59.908512,10.533197",coordinates_only,59.908512,10.533197,node,6058574251,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Aurskog,Rema 1000,,,,,,Norway,"59.9286254,11.4435139",coordinates_only,59.9286254,11.4435139,node,6058574253,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjørkelangen,Rema 1000,,,,,,Norway,"59.8830097,11.5667358",coordinates_only,59.8830097,11.5667358,node,6058574254,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kolbotn,Rema 1000,,,,,,Norway,"59.823296,10.808804",coordinates_only,59.823296,10.808804,node,6058574255,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vestby,Rema 1000,,,,,,Norway,"59.601496,10.747136",coordinates_only,59.601496,10.747136,node,6058574256,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Asker sentrum,Rema 1000,,,,,,Norway,"59.8332054,10.4327814",coordinates_only,59.8332054,10.4327814,node,6058574257,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Borgen,Rema 1000,,,,,,Norway,"59.8264459,10.422578",coordinates_only,59.8264459,10.422578,node,6058574258,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vestby storsenter,Rema 1000,,,,,,Norway,"59.6038657,10.7424147",coordinates_only,59.6038657,10.7424147,node,6058576648,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kløfta,Rema 1000,,,,,,Norway,"60.076095,11.136156",coordinates_only,60.076095,11.136156,node,6058576649,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vinterbro,Rema 1000,,,,,,Norway,"59.73954,10.770839",coordinates_only,59.73954,10.770839,node,6058576650,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandvika,Rema 1000,,,,,,Norway,"59.890393,10.521291",coordinates_only,59.890393,10.521291,node,6058576651,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fetsund,Rema 1000,,,,,,Norway,"59.928127,11.162448",coordinates_only,59.928127,11.162448,node,6058576652,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Løken,Rema 1000,,,,,,Norway,"59.795481,11.466741",coordinates_only,59.795481,11.466741,node,6058576653,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vollen,Rema 1000,,,,,,Norway,"59.806978,10.48677",coordinates_only,59.806978,10.48677,node,6058576654,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Maura,Rema 1000,,,,,,Norway,"60.2582881,11.0352274",coordinates_only,60.2582881,11.0352274,node,6058576655,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åråsen,Rema 1000,,,,,,Norway,"59.963909,11.064397",coordinates_only,59.963909,11.064397,node,6058576656,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lakkegata,Rema 1000,,,,,,Norway,"59.917963,10.763777",coordinates_only,59.917963,10.763777,node,6058576830,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brynseng,Rema 1000,,,,,,Norway,"59.909746,10.813047",coordinates_only,59.909746,10.813047,node,6058576831,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hovin,Rema 1000,,,,,,Norway,"59.921285,10.791806",coordinates_only,59.921285,10.791806,node,6058576833,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Veitvet,Rema 1000,,,,,,Norway,"59.944437,10.848299",coordinates_only,59.944437,10.848299,node,6058576835,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Etterstad,Rema 1000,,,,,,Norway,"59.906453,10.795639",coordinates_only,59.906453,10.795639,node,6058576836,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vika,Rema 1000,,,,,,Norway,"59.91429,10.722011",coordinates_only,59.91429,10.722011,node,6058576838,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Symra,Rema 1000,ØKSNE DAGLIGVARE AS,,,,,Norway,"59.8752995,10.8112782",coordinates_only,59.8752995,10.8112782,node,6058576839,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vikersund,Rema 1000,,,,,,Norway,"59.963227,10.000356",coordinates_only,59.963227,10.000356,node,6058590042,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ormåsen,Rema 1000,,,,,,Norway,"59.753009,9.825673",coordinates_only,59.753009,9.825673,node,6058590043,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Eikli,Rema 1000,,,,,,Norway,"60.15316,10.248914",coordinates_only,60.15316,10.248914,node,6058590044,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hønengaten,Rema 1000,,,,,,Norway,"60.172044,10.261563",coordinates_only,60.172044,10.261563,node,6058590045,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sentrum Kongsberg,Rema 1000,,,,,,Norway,"59.671547,9.647044",coordinates_only,59.671547,9.647044,node,6058590046,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kalosjegata,Rema 1000,,,,,,Norway,"59.755972,10.009101",coordinates_only,59.755972,10.009101,node,6058590047,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nesbyen,Rema 1000,,,,,,Norway,"60.568155,9.103642",coordinates_only,60.568155,9.103642,node,6058590050,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bragernes kvartal,Rema 1000,,,,,,Norway,"59.744412,10.206844",coordinates_only,59.744412,10.206844,node,6058590051,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vik,Rema 1000,,,,,,Norway,"60.077902,10.282111",coordinates_only,60.077902,10.282111,node,6058598843,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åmot,Rema 1000,,,,,,Norway,"59.8923945,9.9255586",coordinates_only,59.8923945,9.9255586,node,6058598844,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Åssiden,Rema 1000,,,,,,Norway,"59.755366,10.124932",coordinates_only,59.755366,10.124932,node,6058598845,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grandsenteret,Rema 1000,,,,,,Norway,"60.791859,11.0775088",coordinates_only,60.791859,11.0775088,node,6058971181,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Briskeby,Rema 1000,,,,,,Norway,"59.920471,10.717048",coordinates_only,59.920471,10.717048,node,6109135499,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Heistad,Rema 1000,,,,,,Norway,"59.075376,9.682839",coordinates_only,59.075376,9.682839,node,6167773029,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rjukan,Rema 1000,,,,,,Norway,"59.877073,8.587398",coordinates_only,59.877073,8.587398,node,6222869304,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Rissa,Rema 1000,,,,,,Norway,"63.585434,9.961692",coordinates_only,63.585434,9.961692,node,6222869305,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Meierigata,Rema 1000,,,,,,Norway,"69.2278756,17.9769624",coordinates_only,69.2278756,17.9769624,node,6222869306,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjergsted,Rema 1000,,,,,,Norway,"58.972973,5.721637",coordinates_only,58.972973,5.721637,node,6222869307,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Strusshamn,Rema 1000,,,,,,Norway,"60.406114,5.19335",coordinates_only,60.406114,5.19335,node,6222869308,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Liljendal,Rema 1000,,,,,,Norway,"63.437954,10.45643",coordinates_only,63.437954,10.45643,node,6222869309,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hunstad,Rema 1000,,,,,,Norway,"67.280604,14.545183",coordinates_only,67.280604,14.545183,node,6222869310,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Løkenhagen,Rema 1000,,,,,,Norway,"59.91744,10.957576",coordinates_only,59.91744,10.957576,node,6449043553,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hvaler,Rema 1000,,,,,,Norway,"59.106583,10.905395",coordinates_only,59.106583,10.905395,node,6449043554,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sinsenveien,Rema 1000,,,,,,Norway,"59.934615,10.791474",coordinates_only,59.934615,10.791474,node,6449043555,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandmoen,Rema 1000,,,,,,Norway,"63.334264,10.360485",coordinates_only,63.334264,10.360485,node,6449043557,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Meråker,Rema 1000,,,,,,Norway,"63.416763,11.73891",coordinates_only,63.416763,11.73891,node,6564682711,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ski storsenter,Rema 1000,,,,,,Norway,"59.7168882,10.8362896",coordinates_only,59.7168882,10.8362896,node,6564682712,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gyldenpris,Rema 1000,,,,,,Norway,"60.381561,5.317367",coordinates_only,60.381561,5.317367,node,6763705112,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Greverud,Rema 1000,,,,,,Norway,"59.774062,10.804235",coordinates_only,59.774062,10.804235,node,6763705113,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Valle,Rema 1000,,,,,,Norway,"59.9168398,10.8067346",coordinates_only,59.9168398,10.8067346,node,6763705114,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mosjøen,Rema 1000,,,,,,Norway,"65.841944,13.189125",coordinates_only,65.841944,13.189125,node,6854003801,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hurrahølet,Rema 1000,,,,,,Norway,"59.584659,11.135378",coordinates_only,59.584659,11.135378,node,6887742913,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stokkenes,Rema 1000,,,,,,Norway,"61.910019,6.002559",coordinates_only,61.910019,6.002559,node,6952663185,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gåseid,Rema 1000,,,,,,Norway,"62.464117,6.266099",coordinates_only,62.464117,6.266099,node,6952663186,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandsli,Rema 1000,,,,,,Norway,"60.292777,5.283379",coordinates_only,60.292777,5.283379,node,6952663187,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bardu,Rema 1000,,,,,,Norway,"68.863257,18.349009",coordinates_only,68.863257,18.349009,node,6952663188,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Futura,Rema 1000,,,,,,Norway,"63.1105681,7.7774125",coordinates_only,63.1105681,7.7774125,node,6952663189,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tau,Rema 1000,,,,,,Norway,"59.065225,5.918757",coordinates_only,59.065225,5.918757,node,7140706032,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Herkules,Rema 1000,,,,,,Norway,"59.196647,9.599745",coordinates_only,59.196647,9.599745,node,7140706033,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kragsgate,Rema 1000,,,,,,Norway,"58.719337,9.226363",coordinates_only,58.719337,9.226363,node,7418589330,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tøyen,Rema 1000,Rema 1000,,,,,Norway,"59.91437,10.774527",coordinates_only,59.91437,10.774527,node,7418589332,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fåberggata,Rema 1000,,,,,,Norway,"61.120118,10.459083",coordinates_only,61.120118,10.459083,node,7418589333,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Elvebakken,Rema 1000,,,,,,Norway,"69.970863,23.371883",coordinates_only,69.970863,23.371883,node,7501640886,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Risavika,Rema 1000,,,,,,Norway,"58.916632,5.60355",coordinates_only,58.916632,5.60355,node,7501640887,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Stridsklev,Rema 1000,,,,,,Norway,"59.1164164,9.6623602",coordinates_only,59.1164164,9.6623602,node,7501640888,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000,Rema 1000,,,,,,Norway,"59.8353934,10.6428893",coordinates_only,59.8353934,10.6428893,node,7625586826,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fjeldberg,Rema 1000,,,,,,Norway,"59.219206,10.9219",coordinates_only,59.219206,10.9219,node,7725813566,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hanstad,Rema 1000,,,,,,Norway,"60.8612907,11.5662535",coordinates_only,60.8612907,11.5662535,node,7725813567,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vardø,Rema 1000,,,,,,Norway,"70.371016,31.119702",coordinates_only,70.371016,31.119702,node,7917373641,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Årum,Rema 1000,,,,,,Norway,"59.259831,11.102216",coordinates_only,59.259831,11.102216,node,7935391572,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Paradis,Rema 1000,,,,,,Norway,"60.336514,5.345176",coordinates_only,60.336514,5.345176,node,7935391573,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Torp,Rema 1000,,,,,,Norway,"59.2487459,11.0259755",coordinates_only,59.2487459,11.0259755,node,8062547968,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Knudsenkvartalet,Rema 1000,,,,,,Norway,"60.3489371,5.2841757",coordinates_only,60.3489371,5.2841757,node,8266607732,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Slitu,Rema 1000,,,,,,Norway,"59.580865,11.279777",coordinates_only,59.580865,11.279777,node,8323301351,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandstad,Rema 1000,,,,,,Norway,"63.520745,9.109149",coordinates_only,63.520745,9.109149,node,8358498725,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vøyenenga,Rema 1000,,,,,,Norway,"59.9087392,10.4787475",coordinates_only,59.9087392,10.4787475,node,8358498726,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Harestua,Rema 1000,,,,,,Norway,"60.207203,10.7164704",coordinates_only,60.207203,10.7164704,node,8358498728,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ranheimsfjæra,Rema 1000,,,,,,Norway,"63.4288382,10.5272783",coordinates_only,63.4288382,10.5272783,node,8358498729,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Verdalen,Rema 1000,,,,,,Norway,"58.781587,5.617843",coordinates_only,58.781587,5.617843,node,8358498730,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Darres gate,Rema 1000,,,,,,Norway,"59.92779,10.752107",coordinates_only,59.92779,10.752107,node,8637215022,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Karihaugen,Rema 1000,,,,,,Norway,"59.9355976,10.9289689",coordinates_only,59.9355976,10.9289689,node,8637215023,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sentrumskvartalet,Rema 1000,,,,,,Norway,"60.1671063,10.2564174",coordinates_only,60.1671063,10.2564174,node,8637215024,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lagunen,Rema 1000,,,,,,Norway,"60.296855,5.326197",coordinates_only,60.296855,5.326197,node,8637215025,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Husmorgården,Rema 1000,,,,,,Norway,"58.2719072,7.971788",coordinates_only,58.2719072,7.971788,node,8637215026,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjørndalssletta,Rema 1000,,,,,,Norway,"58.1625275,8.0213021",coordinates_only,58.1625275,8.0213021,node,8637215027,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bjølsen,Rema 1000,,,,,,Norway,"59.944032,10.760366",coordinates_only,59.944032,10.760366,node,8887724469,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moldegård,Rema 1000,,,,,,Norway,"62.739227,7.185839",coordinates_only,62.739227,7.185839,node,8887724470,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Haukerød,Rema 1000,,,,,,Norway,"59.1477447,10.192083",coordinates_only,59.1477447,10.192083,node,8887724471,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Skjæveland,Rema 1000,,,,,,Norway,"58.813373,5.697682",coordinates_only,58.813373,5.697682,node,8887724472,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Byporten Jessheim,Rema 1000,,,,,,Norway,"60.1346075,11.1604883",coordinates_only,60.1346075,11.1604883,node,8887724473,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Strandtorget,Rema 1000,,,,,,Norway,"61.113852,10.4495968",coordinates_only,61.113852,10.4495968,node,8887724474,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Xhibition,Rema 1000,,,,,,Norway,"60.392815,5.326168",coordinates_only,60.392815,5.326168,node,8887724475,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Brumunddal,Rema 1000,,,,,,Norway,"60.8822786,10.9369476",coordinates_only,60.8822786,10.9369476,node,8914761524,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Flekkefjord,Rema 1000,,,,,,Norway,"58.2935777,6.6638876",coordinates_only,58.2935777,6.6638876,node,8960086351,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Strømme,Rema 1000,,,,,,Norway,"58.1517773,8.0786392",coordinates_only,58.1517773,8.0786392,node,9170106231,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Smelteverket,Rema 1000,,,,,,Norway,"60.065875,6.547046",coordinates_only,60.065875,6.547046,node,9170106232,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sennerudtoppen,Rema 1000,,,,,,Norway,"59.97992,11.240962",coordinates_only,59.97992,11.240962,node,9170106233,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Laksevåg,Rema 1000,,,,,,Norway,"60.389042,5.289571",coordinates_only,60.389042,5.289571,node,9170106234,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Røa næringspark,Rema 1000,,,,,,Norway,"59.940274,10.650809",coordinates_only,59.940274,10.650809,node,9170106235,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Storgata,Rema 1000,,,,,,Norway,"59.9137849,10.751551",coordinates_only,59.9137849,10.751551,node,9608107580,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sorgenfri,Rema 1000,,,,,,Norway,"63.4056535,10.3991604",coordinates_only,63.4056535,10.3991604,node,9608107581,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Risenga,Rema 1000,,,,,,Norway,"59.8264951,10.4482401",coordinates_only,59.8264951,10.4482401,node,9608107582,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Flå,Rema 1000,,,,,,Norway,"60.4301856,9.4574192",coordinates_only,60.4301856,9.4574192,node,9836871168,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vatvedt torg,Rema 1000,,,,,,Norway,"59.2829912,11.1202574",coordinates_only,59.2829912,11.1202574,node,9836871169,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Marikollen torg,Rema 1000,,,,,,Norway,"59.9237598,11.0649808",coordinates_only,59.9237598,11.0649808,node,9836871170,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mosvannet,Rema 1000,,,,,,Norway,"58.9531003,5.7052925",coordinates_only,58.9531003,5.7052925,node,9836871171,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Tananger,Rema 1000,,,,,,Norway,"58.93518,5.586926",coordinates_only,58.93518,5.586926,node,9836871172,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Øvre Rotset,Rema 1000,,,,,,Norway,"62.1408038,6.0914408",coordinates_only,62.1408038,6.0914408,node,9836871173,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Barstølveien,Rema 1000,,,,,,Norway,"58.1800541,8.1297312",coordinates_only,58.1800541,8.1297312,node,10075448146,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Korsvoll,Rema 1000,,,,,,Norway,"59.9630066,10.7657143",coordinates_only,59.9630066,10.7657143,node,10075448147,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Støren,Rema 1000,,,,,,Norway,"63.0423028,10.2860139",coordinates_only,63.0423028,10.2860139,node,10705076342,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nordåsvegen,Rema 1000,,,,,,Norway,"60.8868656,10.9482812",coordinates_only,60.8868656,10.9482812,node,11024848107,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grødem,Rema 1000,,,,,,Norway,"59.0084909,5.6511854",coordinates_only,59.0084909,5.6511854,node,11024848108,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Meierikvartalet,Rema 1000,,,,,,Norway,"59.9552367,11.0513847",coordinates_only,59.9552367,11.0513847,node,11125667953,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hamar Briskeby,Rema 1000,,,,,,Norway,"60.7960744,11.0949697",coordinates_only,60.7960744,11.0949697,node,11145999065,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Moberg,Rema 1000,,,,,,Norway,"60.1805144,5.453274",coordinates_only,60.1805144,5.453274,node,11212343299,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kjempehaugen,Rema 1000,,,,,,Norway,"60.7327194,10.6159915",coordinates_only,60.7327194,10.6159915,node,11294753885,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Menstad,Rema 1000,,,,,,Norway,"59.1713185,9.6433069",coordinates_only,59.1713185,9.6433069,node,11294753886,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Blindheim,Rema 1000,,,,,,Norway,"62.4428969,6.3715814",coordinates_only,62.4428969,6.3715814,node,11529367592,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Frosta,Rema 1000,,,,,,Norway,"63.5871001,10.7393563",coordinates_only,63.5871001,10.7393563,node,11971532245,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vollebekk,Rema 1000,Rema 1000,,,,,Norway,"59.935501,10.8264554",coordinates_only,59.935501,10.8264554,node,12056605690,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Avenyen,Rema 1000,,,,,,Norway,"58.1772074,8.1338002",coordinates_only,58.1772074,8.1338002,node,12056605691,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ørebekk,Rema 1000,,,,,,Norway,"59.234244,10.9034517",coordinates_only,59.234244,10.9034517,node,12056605692,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ullevaal stadion,Rema 1000,,,,,,Norway,"59.9494083,10.7325647",coordinates_only,59.9494083,10.7325647,node,12056605693,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Grenstøl,Rema 1000,,,,,,Norway,"58.6195871,8.907777",coordinates_only,58.6195871,8.907777,node,12056605694,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sykkylven,Rema 1000,,,,,,Norway,"62.3921795,6.5781666",coordinates_only,62.3921795,6.5781666,node,12299720507,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Møllhausen torg,Rema 1000,,,,,,Norway,"59.9269121,10.6770389",coordinates_only,59.9269121,10.6770389,node,12299720508,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Madsebakken,Rema 1000,,,,,,Norway,"59.6738633,9.6761764",coordinates_only,59.6738633,9.6761764,node,12299720509,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Granåsen,Rema 1000,,,,,,Norway,"63.3784438,10.3166545",coordinates_only,63.3784438,10.3166545,node,12549226304,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Leknes,Rema 1000,,,,,,Norway,"68.1447572,13.6201872",coordinates_only,68.1447572,13.6201872,node,12705455137,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Hovden,Rema 1000,,,,,,Norway,"59.560109,7.3522778",coordinates_only,59.560109,7.3522778,node,13335651976,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Helgerudkvartalet,Rema 1000,,,,,,Norway,"59.8914017,10.5256732",coordinates_only,59.8914017,10.5256732,node,13604725257,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Pepperstad,Rema 1000,,,,,,Norway,"59.6056921,10.7141196",coordinates_only,59.6056921,10.7141196,node,13604725258,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Travbanen,Rema 1000,,,,,,Norway,"58.8925218,5.7316754",coordinates_only,58.8925218,5.7316754,node,13604725259,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lysekloster,Rema 1000,,,,,,Norway,"60.2161622,5.4060329",coordinates_only,60.2161622,5.4060329,node,13604725260,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Fiboveien,Rema 1000,,,,,,Norway,"58.1561917,7.1067434",coordinates_only,58.1561917,7.1067434,node,13604725261,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Mustadhagen,Rema 1000,,,,,,Norway,"60.7925378,10.6943835",coordinates_only,60.7925378,10.6943835,node,13604725262,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Spillum,Rema 1000,,,,,,Norway,"64.4575798,11.5320406",coordinates_only,64.4575798,11.5320406,node,13604725263,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Sandane,Rema 1000,,,,,,Norway,"61.7777409,6.2144646",coordinates_only,61.7777409,6.2144646,node,13604725264,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Bergmo,Rema 1000,,,,,,Norway,"62.7468158,7.2177852",coordinates_only,62.7468158,7.2177852,node,13615260091,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nidarvoll,Rema 1000,,,,,,Norway,"63.398586,10.4036565",coordinates_only,63.398586,10.4036565,way,88528304,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gressvik,Rema 1000,,,,,,Norway,"59.211048,10.8909464",coordinates_only,59.211048,10.8909464,way,95389616,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Oppsal,Rema 1000,,,,,,Norway,"59.9014339,10.8478997",coordinates_only,59.9014339,10.8478997,way,140784514,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Svolvær,Rema 1000,,,,,,Norway,"68.2351346,14.5604246",coordinates_only,68.2351346,14.5604246,way,153114151,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Andenes,Rema 1000,,,,,,Norway,"69.3095224,16.0999125",coordinates_only,69.3095224,16.0999125,way,171552311,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Råholt,Rema 1000,,,,,,Norway,"60.286579,11.172483",coordinates_only,60.286579,11.172483,way,219919936,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Elveneset,Rema 1000,,,,,,Norway,"60.307984,5.369798",coordinates_only,60.307984,5.369798,way,251353500,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Vinstra,Rema 1000,,,,,,Norway,"61.5949173,9.7327648",coordinates_only,61.5949173,9.7327648,way,314538519,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Søbakken,Rema 1000,,,,,,Norway,"60.896076,11.583055",coordinates_only,60.896076,11.583055,way,333641115,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lynghaugparken,Rema 1000,,,,,,Norway,"60.3564935,5.2939424",coordinates_only,60.3564935,5.2939424,way,395437006,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Nordfjordeid,Rema 1000,,,,,,Norway,"61.9077064,5.9859226",coordinates_only,61.9077064,5.9859226,way,629914626,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Ringebu,Rema 1000,,,,,,Norway,"61.5305305,10.144702",coordinates_only,61.5305305,10.144702,way,642481307,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kjøkkelvik,Rema 1000,,,,,,Norway,"60.3818008,5.2293235",coordinates_only,60.3818008,5.2293235,way,656616203,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Leknes,Rema 1000,,,,,,Norway,"68.144668,13.6194925",coordinates_only,68.144668,13.6194925,way,657944719,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Torvet,Rema 1000,,,,,,Norway,"63.4299102,10.394298",coordinates_only,63.4299102,10.394298,way,686672110,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Kuven stasjon,Rema 1000,,,,,,Norway,"60.1924779,5.464945",coordinates_only,60.1924779,5.464945,way,813725762,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000,Rema 1000,Rema 1000,,,,,Norway,"59.1028006,10.2230659",coordinates_only,59.1028006,10.2230659,way,826409547,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Gjøvik stadion,Rema 1000,,,,,,Norway,"60.7989707,10.6845284",coordinates_only,60.7989707,10.6845284,way,877544217,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000,Rema 1000,,,,,,Norway,"59.5808636,11.279783",coordinates_only,59.5808636,11.279783,way,888325940,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000 Lampeland,Rema 1000,,,,,,Norway,"59.8352421,9.5805347",coordinates_only,59.8352421,9.5805347,way,941534357,OpenStreetMap via Overpass API
+REMA 1000,REMA 1000,,REMA 1000,,,,,Norway,"61.7757057,6.2134761",coordinates_only,61.7757057,6.2134761,node,2701222294,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000,,,,,,,Norway,"59.490781,10.293714",coordinates_only,59.490781,10.293714,node,3119932153,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000,,,,,,,Norway,"59.5523859,11.3411359",coordinates_only,59.5523859,11.3411359,node,10104573617,OpenStreetMap via Overpass API
+REMA 1000,Rema 1000,,,,,,,Norway,"60.6116121,12.0047235",coordinates_only,60.6116121,12.0047235,way,442915977,OpenStreetMap via Overpass API
+REMA 1000,,,REMA 1000,,,,,Norway,"59.2103637,9.577994",coordinates_only,59.2103637,9.577994,node,6052572949,OpenStreetMap via Overpass API
+REMA 1000,,,Rema 1000,,,,,Norway,"70.6312305,29.7126045",coordinates_only,70.6312305,29.7126045,way,643835635,OpenStreetMap via Overpass API
