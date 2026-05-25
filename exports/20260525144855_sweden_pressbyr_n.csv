@@ -1,0 +1,14 @@
+﻿chain_requested,name,brand,operator,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+Pressbyrån,Pressbyrån,Pressbyrån,,,,,,Sweden,"57.7844647,14.1625563",coordinates_only,57.7844647,14.1625563,node,699755908,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,,,,,Sweden,"57.8719376,11.9682171",coordinates_only,57.8719376,11.9682171,node,5586658462,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,,,,,Sweden,"56.9051821,12.4915543",coordinates_only,56.9051821,12.4915543,node,6071263324,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,Pressbyrån,,Östervångsplan,13,261 44,Landskrona,Sweden,Östervångsplan 13 261 44 Landskrona Sweden,strict,55.8789624,12.8566323,way,1283757229,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,Kungsgatan,28,54530,,Sweden,Kungsgatan 28 54530 Sweden,usable,58.7061434,14.1272474,node,441993855,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"57.7762184,14.1548805",coordinates_only,57.7762184,14.1548805,node,848956370,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"63.8263123,20.2675541",coordinates_only,63.8263123,20.2675541,node,2644095728,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"59.3098853,18.055557",coordinates_only,59.3098853,18.055557,node,2889260990,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"57.6673031,12.2950127",coordinates_only,57.6673031,12.2950127,node,4503178991,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"59.8807433,12.2881164",coordinates_only,59.8807433,12.2881164,node,4661168845,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"59.2538351,15.2437064",coordinates_only,59.2538351,15.2437064,node,9162270417,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"57.8973652,16.4010491",coordinates_only,57.8973652,16.4010491,node,12252870206,OpenStreetMap via Overpass API
+Pressbyrån,Pressbyrån,,,,,,,Sweden,"57.7337187,12.938864",coordinates_only,57.7337187,12.938864,node,13140680101,OpenStreetMap via Overpass API
