@@ -54,11 +54,11 @@
         <div class="workflowPreview">
           <div>
             <strong>1. Request</strong>
-            <span>Chain + country</span>
+            <span>Chain + country + category</span>
           </div>
           <div>
             <strong>2. Fetch</strong>
-            <span>OSM / Overpass</span>
+            <span>Targeted OSM query</span>
           </div>
           <div>
             <strong>3. Clean</strong>
@@ -108,6 +108,20 @@
           </label>
 
           <label>
+            <span>Category</span>
+            <select id="category" name="category">
+              <option value="all">All B2C locations</option>
+              <option value="retail_grocery">Retail & grocery</option>
+              <option value="food_restaurants">Food & restaurants</option>
+              <option value="mobility_fuel">Mobility & fuel</option>
+              <option value="hotels">Hotels & accommodation</option>
+              <option value="services">Services</option>
+              <option value="healthcare_pharmacy">Healthcare & pharmacy</option>
+              <option value="fitness_entertainment">Fitness & entertainment</option>
+            </select>
+          </label>
+
+          <label>
             <span>Output</span>
             <select id="format" name="format">
               <option value="CSV">CSV UTF-8</option>
@@ -130,10 +144,10 @@
         <div class="exampleBlock">
           <div class="exampleHeader">Try an example</div>
           <div class="examples">
-            <button type="button" class="example" data-chain="MAX Hamburgare" data-country="Sweden">MAX / Sweden</button>
-            <button type="button" class="example" data-chain="Kiwi" data-country="Norway">Kiwi / Norway</button>
-            <button type="button" class="example" data-chain="SATS" data-country="Sweden">SATS / Sweden</button>
-            <button type="button" class="example" data-chain="Carrefour" data-country="France">Carrefour / France</button>
+            <button type="button" class="example" data-chain="MAX Hamburgare" data-country="Sweden" data-category="food_restaurants">MAX / Sweden</button>
+            <button type="button" class="example" data-chain="Kiwi" data-country="Norway" data-category="retail_grocery">Kiwi / Norway</button>
+            <button type="button" class="example" data-chain="SATS" data-country="Sweden" data-category="fitness_entertainment">SATS / Sweden</button>
+            <button type="button" class="example" data-chain="Circle K" data-country="Sweden" data-category="mobility_fuel">Circle K / Sweden</button>
           </div>
         </div>
       </section>
@@ -160,10 +174,10 @@
     <section class="categorySection" id="coverage">
       <div class="sectionIntro">
         <p class="sectionLabel">Coverage</p>
-        <h2>Built for broad B2C chains</h2>
+        <h2>Choose a category for faster exports</h2>
         <p>
-          The export engine is designed for consumer-facing locations, not only grocery stores.
-          Results depend on available OpenStreetMap data.
+          Category selection narrows the Overpass queries, which usually makes exports faster
+          and improves relevance. Use “All B2C locations” when you are unsure.
         </p>
       </div>
 
