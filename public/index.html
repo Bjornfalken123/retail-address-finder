@@ -1,10 +1,13 @@
 <!doctype html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Retail Address Finder</title>
-  <meta name="description" content="Exportera adresser och koordinater för B2C-kedjor per land." />
+  <meta
+    name="description"
+    content="Generate CSV exports of store, restaurant and B2C chain locations by country."
+  />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
@@ -22,51 +25,52 @@
         <a href="#coverage">Coverage</a>
       </nav>
 
-      <div class="topPill">B2C location exports</div>
+      <div class="topPill">B2C location intelligence</div>
     </header>
 
     <section class="hero">
       <div class="heroCopy">
         <div class="eyebrow">
           <span class="eyebrowDot"></span>
-          Store, restaurant & B2C location exports
+          Store, restaurant and consumer-location exports
         </div>
 
-        <h1>Find chain locations by country. Export clean CSV files.</h1>
+        <h1>Generate location files for retail chains in any market.</h1>
 
         <p class="lead">
-          Search for retail chains, restaurants, cafés, gas stations, gyms, hotels and other
-          consumer-facing locations. Follow progress live and download the finished CSV directly.
+          Find physical locations for consumer-facing chains by country and category.
+          Export structured CSV files with formatted addresses when available, or coordinates
+          when address data is incomplete.
         </p>
 
         <div class="heroActions">
-          <a class="primaryLink" href="#create">Start an export</a>
-          <a class="secondaryLink" href="#coverage">View supported categories</a>
+          <a class="primaryLink" href="#create">Create an export</a>
+          <a class="secondaryLink" href="#coverage">Explore coverage</a>
         </div>
       </div>
 
-      <aside class="heroPanel" aria-label="Workflow preview">
+      <aside class="heroPanel" aria-label="Export workflow overview">
         <div class="heroPanelHeader">
           <span class="pulse"></span>
-          Live export workflow
+          Automated export workflow
         </div>
 
         <div class="workflowPreview">
           <div>
-            <strong>1. Request</strong>
-            <span>Chain + country + category</span>
+            <strong>1. Define request</strong>
+            <span>Select chain, country and category</span>
           </div>
           <div>
-            <strong>2. Fetch</strong>
-            <span>Targeted OSM query</span>
+            <strong>2. Fetch locations</strong>
+            <span>Run targeted OpenStreetMap queries</span>
           </div>
           <div>
-            <strong>3. Clean</strong>
-            <span>Deduplicate + normalize</span>
+            <strong>3. Process data</strong>
+            <span>Normalize, deduplicate and prepare output</span>
           </div>
           <div>
-            <strong>4. Export</strong>
-            <span>CSV download</span>
+            <strong>4. Download CSV</strong>
+            <span>Access the completed file directly</span>
           </div>
         </div>
       </aside>
@@ -77,7 +81,11 @@
         <div class="cardHeader">
           <div>
             <p class="sectionLabel">New export</p>
-            <h2>Create location file</h2>
+            <h2>Create a location file</h2>
+            <p>
+              Enter a chain, select the market and choose the most relevant category
+              to improve speed and relevance.
+            </p>
           </div>
           <span class="cardBadge">CSV</span>
         </div>
@@ -89,7 +97,7 @@
               id="chain"
               name="chain"
               type="text"
-              placeholder="Ex. MAX Hamburgare, Kiwi, Carrefour"
+              placeholder="e.g. MAX Hamburgare, Kiwi, Carrefour"
               autocomplete="organization"
               required
             />
@@ -101,7 +109,7 @@
               id="country"
               name="country"
               type="text"
-              placeholder="Ex. Sweden, Norway, France"
+              placeholder="e.g. Sweden, Norway, France"
               autocomplete="country-name"
               required
             />
@@ -122,14 +130,14 @@
           </label>
 
           <label>
-            <span>Output</span>
+            <span>Output format</span>
             <select id="format" name="format">
               <option value="CSV">CSV UTF-8</option>
             </select>
           </label>
 
           <label>
-            <span>Source</span>
+            <span>Data source</span>
             <select id="source" name="source">
               <option value="OpenStreetMap">OpenStreetMap / Overpass</option>
             </select>
@@ -142,12 +150,47 @@
         </form>
 
         <div class="exampleBlock">
-          <div class="exampleHeader">Try an example</div>
+          <div class="exampleHeader">Example exports</div>
           <div class="examples">
-            <button type="button" class="example" data-chain="MAX Hamburgare" data-country="Sweden" data-category="food_restaurants">MAX / Sweden</button>
-            <button type="button" class="example" data-chain="Kiwi" data-country="Norway" data-category="retail_grocery">Kiwi / Norway</button>
-            <button type="button" class="example" data-chain="SATS" data-country="Sweden" data-category="fitness_entertainment">SATS / Sweden</button>
-            <button type="button" class="example" data-chain="Circle K" data-country="Sweden" data-category="mobility_fuel">Circle K / Sweden</button>
+            <button
+              type="button"
+              class="example"
+              data-chain="MAX Hamburgare"
+              data-country="Sweden"
+              data-category="food_restaurants"
+            >
+              MAX / Sweden
+            </button>
+
+            <button
+              type="button"
+              class="example"
+              data-chain="Kiwi"
+              data-country="Norway"
+              data-category="retail_grocery"
+            >
+              Kiwi / Norway
+            </button>
+
+            <button
+              type="button"
+              class="example"
+              data-chain="SATS"
+              data-country="Sweden"
+              data-category="fitness_entertainment"
+            >
+              SATS / Sweden
+            </button>
+
+            <button
+              type="button"
+              class="example"
+              data-chain="Circle K"
+              data-country="Sweden"
+              data-category="mobility_fuel"
+            >
+              Circle K / Sweden
+            </button>
           </div>
         </div>
       </section>
@@ -157,6 +200,10 @@
           <div>
             <p class="sectionLabel">Live status</p>
             <h2>Export progress</h2>
+            <p>
+              Follow the export from request to completed CSV. The download button
+              appears automatically when the file is ready.
+            </p>
           </div>
           <span id="statusChip" class="cardBadge mutedBadge">Idle</span>
         </div>
@@ -165,7 +212,7 @@
           <div class="emptyState">
             <div class="emptyIcon">↓</div>
             <h3>No export running</h3>
-            <p>Start an export to see each step here.</p>
+            <p>Create an export to track progress and download the finished CSV here.</p>
           </div>
         </div>
       </section>
@@ -174,10 +221,11 @@
     <section class="categorySection" id="coverage">
       <div class="sectionIntro">
         <p class="sectionLabel">Coverage</p>
-        <h2>Choose a category for faster exports</h2>
+        <h2>Designed for broad B2C location discovery</h2>
         <p>
-          Category selection narrows the Overpass queries, which usually makes exports faster
-          and improves relevance. Use “All B2C locations” when you are unsure.
+          Use categories to narrow the search scope, reduce processing time and improve
+          result relevance. Choose “All B2C locations” when you are unsure how a chain
+          is classified.
         </p>
       </div>
 
@@ -185,32 +233,46 @@
         <div class="categoryCard">
           <span>🛒</span>
           <strong>Retail & grocery</strong>
-          <p>Supermarkets, convenience, fashion, electronics, furniture and general shops.</p>
+          <p>
+            Supermarkets, convenience stores, fashion, electronics, furniture,
+            specialty retail and general shops.
+          </p>
         </div>
 
         <div class="categoryCard">
           <span>🍔</span>
           <strong>Food & restaurants</strong>
-          <p>Fast food, restaurants, cafés, bars, food courts and ice cream chains.</p>
+          <p>
+            Fast food, restaurants, cafés, bars, pubs, food courts and ice cream chains.
+          </p>
         </div>
 
         <div class="categoryCard">
           <span>⛽</span>
           <strong>Mobility & fuel</strong>
-          <p>Gas stations, charging stations, car rental, car sharing and bike rental.</p>
+          <p>
+            Gas stations, EV charging, car rental, car sharing, bike rental and
+            automotive retail or service locations.
+          </p>
         </div>
 
         <div class="categoryCard">
           <span>🏨</span>
           <strong>Hotels & services</strong>
-          <p>Hotels, gyms, banks, parcel lockers, pharmacies, clinics and other services.</p>
+          <p>
+            Hotels, gyms, banks, parcel lockers, pharmacies, clinics, opticians and
+            other consumer-facing service locations.
+          </p>
         </div>
       </div>
     </section>
 
     <footer class="footer">
       <span>Retail Address Finder</span>
-      <span>CSV output includes formatted address when available, otherwise latitude/longitude.</span>
+      <span>
+        CSV exports include chain, category, address fields, formatted address,
+        coordinates, source and OpenStreetMap identifiers.
+      </span>
     </footer>
   </main>
 
