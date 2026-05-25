@@ -6,6 +6,7 @@ export async function onRequestPost(context) {
     const country = String(body.country || "").trim();
     const format = String(body.format || "CSV").trim();
     const source = String(body.source || "OpenStreetMap").trim();
+    const category = String(body.category || "all").trim();
 
     if (!chain || !country) {
       return json({ error: "Ange både kedja och land." }, 400);
@@ -44,6 +45,7 @@ export async function onRequestPost(context) {
             country,
             format,
             source,
+            category,
             job_id: jobId
           }
         })
@@ -61,6 +63,7 @@ export async function onRequestPost(context) {
       fileName,
       chain,
       country,
+      category,
       actionsUrl: `https://github.com/${owner}/${repo}/actions/workflows/${workflow}`
     });
   } catch (error) {
