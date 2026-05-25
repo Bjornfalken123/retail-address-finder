@@ -1,0 +1,727 @@
+﻿chain_requested,name,brand,operator,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+Kiwi,Kiwi Frekhaug,Kiwi,,,,,,Norway,"60.51755,5.239735",coordinates_only,60.51755,5.239735,node,21641553,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rosseland,Kiwi,,,,,,Norway,"58.734589,5.665553",coordinates_only,58.734589,5.665553,node,26198200,OpenStreetMap via Overpass API
+Kiwi,Kiwi Son,Kiwi,,,,,,Norway,"59.525981,10.689079",coordinates_only,59.525981,10.689079,node,213387069,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tigerplassen,Kiwi,,,,,,Norway,"59.4469049,10.6856855",coordinates_only,59.4469049,10.6856855,node,215091726,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moholt,Kiwi,,,,,,Norway,"63.4103851,10.4414846",coordinates_only,63.4103851,10.4414846,node,220636585,OpenStreetMap via Overpass API
+Kiwi,Kiwi Høyden,Kiwi,,,,,,Norway,"59.4193276,10.6830257",coordinates_only,59.4193276,10.6830257,node,225589553,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kringsjå,Kiwi,,,,,,Norway,"59.9639604,10.7330634",coordinates_only,59.9639604,10.7330634,node,243528356,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dombås,Kiwi,,,,,,Norway,"62.07443,9.127469",coordinates_only,62.07443,9.127469,node,247931924,OpenStreetMap via Overpass API
+Kiwi,Kiwi Støren,Kiwi,,,,,,Norway,"63.035632,10.292756",coordinates_only,63.035632,10.292756,node,249229561,OpenStreetMap via Overpass API
+Kiwi,Kiwi Godvik,Kiwi,,,,,,Norway,"60.370839,5.191805",coordinates_only,60.370839,5.191805,node,258171007,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hetlevikåsen,Kiwi,,,,,,Norway,"60.35049,5.227692",coordinates_only,60.35049,5.227692,node,258417885,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lambertseter,Kiwi,,,,,,Norway,"59.870045,10.819918",coordinates_only,59.870045,10.819918,node,261124640,OpenStreetMap via Overpass API
+Kiwi,Kiwi Finstad,Kiwi,,,,,,Norway,"59.717372,10.816058",coordinates_only,59.717372,10.816058,node,264121919,OpenStreetMap via Overpass API
+Kiwi,Kiwi Karlsrud,Kiwi,,,,,,Norway,"59.8800582,10.8040994",coordinates_only,59.8800582,10.8040994,node,264768990,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bryne torg,Kiwi,,,,,,Norway,"58.734259,5.647723",coordinates_only,58.734259,5.647723,node,268660276,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lillestrøm,Kiwi,,,,,,Norway,"59.9564771,11.0466454",coordinates_only,59.9564771,11.0466454,node,274118898,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordsia,Kiwi,,,,,,Norway,"64.021609,11.491033",coordinates_only,64.021609,11.491033,node,278230960,OpenStreetMap via Overpass API
+Kiwi,Kiwi Surnadal,Kiwi,,,,,,Norway,"62.974129,8.725438",coordinates_only,62.974129,8.725438,node,282883638,OpenStreetMap via Overpass API
+Kiwi,Kiwi Frogner Skien,Kiwi,,,,,,Norway,"59.210169,9.620972",coordinates_only,59.210169,9.620972,node,282922025,OpenStreetMap via Overpass API
+Kiwi,Kiwi Myren,Kiwi,,,,,,Norway,"59.20061,9.588886",coordinates_only,59.20061,9.588886,node,283933517,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sandsli,Kiwi,,,,,,Norway,"60.292302,5.285253",coordinates_only,60.292302,5.285253,node,285686388,OpenStreetMap via Overpass API
+Kiwi,Kiwi Strandgaten Bergen,Kiwi,,,,,,Norway,"60.397349,5.311392",coordinates_only,60.397349,5.311392,node,286502510,OpenStreetMap via Overpass API
+Kiwi,Kiwi Smestad,Kiwi,,,,,,Norway,"61.1338758,10.4528283",coordinates_only,61.1338758,10.4528283,node,286549729,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sørås,Kiwi,,,,,,Norway,"60.297522,5.316969",coordinates_only,60.297522,5.316969,node,287406301,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nesttun sentrum,Kiwi,,,,,,Norway,"60.31996,5.353417",coordinates_only,60.31996,5.353417,node,287776658,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rolland,Kiwi,,,,,,Norway,"60.462065,5.329591",coordinates_only,60.462065,5.329591,node,294168549,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hamrehjørnet,Kiwi,,,,,,Norway,"60.382165,5.304135",coordinates_only,60.382165,5.304135,node,309494000,OpenStreetMap via Overpass API
+Kiwi,Kiwi Refsnes,Kiwi,,,,,,Norway,"59.4427198,10.6189463",coordinates_only,59.4427198,10.6189463,node,312135676,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skollenborg,Kiwi,,,,,,Norway,"59.6217112,9.6828272",coordinates_only,59.6217112,9.6828272,node,315897137,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ringebu,Kiwi,,,,,,Norway,"61.529194,10.141484",coordinates_only,61.529194,10.141484,node,322839917,OpenStreetMap via Overpass API
+Kiwi,Kiwi Spydeberg,Kiwi,,,,,,Norway,"59.6190547,11.0787613",coordinates_only,59.6190547,11.0787613,node,329724092,OpenStreetMap via Overpass API
+Kiwi,Kiwi Frognerveien,Kiwi,,,,,,Norway,"59.921817,10.705118",coordinates_only,59.921817,10.705118,node,335585355,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kjeller,Kiwi,,,,,,Norway,"59.969458,11.050971",coordinates_only,59.969458,11.050971,node,338773226,OpenStreetMap via Overpass API
+Kiwi,Kiwi Søreide,Kiwi,,,,,,Norway,"60.315583,5.270493",coordinates_only,60.315583,5.270493,node,339701244,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sjusjøen,Kiwi,,,,,,Norway,"61.152645,10.690827",coordinates_only,61.152645,10.690827,node,345822585,OpenStreetMap via Overpass API
+Kiwi,Kiwi Romsås,Kiwi,,,,,,Norway,"59.963296,10.892321",coordinates_only,59.963296,10.892321,node,355542182,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hovden,Kiwi,,,,,,Norway,"59.559714,7.357667",coordinates_only,59.559714,7.357667,node,356370667,OpenStreetMap via Overpass API
+Kiwi,Kiwi Oasen,Kiwi,,,,,,Norway,"60.348341,5.292608",coordinates_only,60.348341,5.292608,node,356764440,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjølsen,Kiwi,,,,,,Norway,"59.944248,10.759468",coordinates_only,59.944248,10.759468,node,358363208,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rjukan sentrum,Kiwi,,,,,,Norway,"59.878508,8.587976",coordinates_only,59.878508,8.587976,node,359965858,OpenStreetMap via Overpass API
+Kiwi,Kiwi Aurdal,Kiwi,,,,,,Norway,"60.9195678,9.4226092",coordinates_only,60.9195678,9.4226092,node,364962916,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eiganes,Kiwi,,,,,,Norway,"58.9575945,5.6987439",coordinates_only,58.9575945,5.6987439,node,371883790,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fredensborg,Kiwi,,,,,,Norway,"59.9190318,10.7515978",coordinates_only,59.9190318,10.7515978,node,383999730,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ullevål,Kiwi,,,,,,Norway,"59.937675,10.734922",coordinates_only,59.937675,10.734922,node,384003082,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gystad,Kiwi,,,,,,Norway,"60.140008,11.186862",coordinates_only,60.140008,11.186862,node,385145894,OpenStreetMap via Overpass API
+Kiwi,Kiwi Joa,Kiwi,,,,,,Norway,"58.9039292,5.6623126",coordinates_only,58.9039292,5.6623126,node,389050340,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nyborg,Kiwi,,,,,,Norway,"60.467481,5.345964",coordinates_only,60.467481,5.345964,node,390044183,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tananger,Kiwi,,,,,,Norway,"58.936053,5.587208",coordinates_only,58.936053,5.587208,node,401254963,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kråkerøybrua,Kiwi,,,,,,Norway,"59.2061425,10.9370064",coordinates_only,59.2061425,10.9370064,node,401273128,OpenStreetMap via Overpass API
+Kiwi,Kiwi Spikkestad,Kiwi,,,,,,Norway,"59.744579,10.341166",coordinates_only,59.744579,10.341166,node,411008875,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mosterøy,Kiwi,,,,,,Norway,"59.063566,5.677679",coordinates_only,59.063566,5.677679,node,413131146,OpenStreetMap via Overpass API
+Kiwi,Kiwi Borre,Kiwi,,,,,,Norway,"59.3803507,10.4547577",coordinates_only,59.3803507,10.4547577,node,417653848,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sunde,Kiwi,,,,,,Norway,"58.961109,5.610388",coordinates_only,58.961109,5.610388,node,418507891,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bøleråsen senter,Kiwi,,,,,,Norway,"59.76428,10.852293",coordinates_only,59.76428,10.852293,node,427720489,OpenStreetMap via Overpass API
+Kiwi,Kiwi Buvika,Kiwi,,,,,,Norway,"63.3080315,10.1764086",coordinates_only,63.3080315,10.1764086,node,438179081,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holsetgården,Kiwi,,,,,,Norway,"60.7951273,11.0750384",coordinates_only,60.7951273,11.0750384,node,441005396,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sveio,Kiwi,,,,,,Norway,"59.544004,5.35428",coordinates_only,59.544004,5.35428,node,442368336,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sorgenfrigata,Kiwi,,,,,,Norway,"59.9273239,10.7186217",coordinates_only,59.9273239,10.7186217,node,443655216,OpenStreetMap via Overpass API
+Kiwi,Kiwi Råel,Kiwi,,,,,,Norway,"59.2664818,10.4534418",coordinates_only,59.2664818,10.4534418,node,448627213,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gauterød,Kiwi,,,,,,Norway,"59.280063,10.463934",coordinates_only,59.280063,10.463934,node,448627308,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vøyenenga,Kiwi,,,,,,Norway,"59.9089848,10.4776966",coordinates_only,59.9089848,10.4776966,node,448931527,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kjøpmannskjær,Kiwi,,,,,,Norway,"59.177033,10.387169",coordinates_only,59.177033,10.387169,node,454269328,OpenStreetMap via Overpass API
+Kiwi,Kiwi Søm,Kiwi,,,,,,Norway,"58.1519564,8.0576936",coordinates_only,58.1519564,8.0576936,node,460002868,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vestskogen,Kiwi,,,,,,Norway,"59.240298,10.392853",coordinates_only,59.240298,10.392853,node,461302277,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lilleaker,Kiwi,,,,,,Norway,"59.9204316,10.6366183",coordinates_only,59.9204316,10.6366183,node,485597054,OpenStreetMap via Overpass API
+Kiwi,Kiwi Strømsø,Kiwi,,,,,,Norway,"59.7378262,10.2029967",coordinates_only,59.7378262,10.2029967,node,487113815,OpenStreetMap via Overpass API
+Kiwi,Kiwi XL Strømsø senter,Kiwi,,,,,,Norway,"59.7344643,10.2067875",coordinates_only,59.7344643,10.2067875,node,487130350,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øvre Storgate,Kiwi,,,,,,Norway,"59.7441555,10.2025001",coordinates_only,59.7441555,10.2025001,node,487130503,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ytre Enebakk,Kiwi,,,,,,Norway,"59.7233931,11.057042",coordinates_only,59.7233931,11.057042,node,488049033,OpenStreetMap via Overpass API
+Kiwi,Kiwi Strandgata,Kiwi,,,,,,Norway,"60.7935897,10.6948697",coordinates_only,60.7935897,10.6948697,node,488515702,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ålgård,Kiwi,,,,,,Norway,"58.767403,5.860227",coordinates_only,58.767403,5.860227,node,492691632,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brakerøya,Kiwi,,,,,,Norway,"59.7419515,10.2254211",coordinates_only,59.7419515,10.2254211,node,493346155,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jærveien,Kiwi,,,,,,Norway,"58.8484521,5.7295392",coordinates_only,58.8484521,5.7295392,node,496719459,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tertnes,Kiwi,,,,,,Norway,"60.455799,5.295302",coordinates_only,60.455799,5.295302,node,506321915,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bogerud senter,Kiwi,,,,,,Norway,"59.875656,10.842927",coordinates_only,59.875656,10.842927,node,514392270,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mjøndalen,Kiwi,,,,,,Norway,"59.7495929,10.0119942",coordinates_only,59.7495929,10.0119942,node,514406577,OpenStreetMap via Overpass API
+Kiwi,Kiwi Solbergelva,Kiwi,,,,,,Norway,"59.764136,10.078129",coordinates_only,59.764136,10.078129,node,520299346,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hagan,Kiwi,,,,,,Norway,"59.9984301,10.9180204",coordinates_only,59.9984301,10.9180204,node,530200782,OpenStreetMap via Overpass API
+Kiwi,Kiwi Haugsneset,Kiwi,,,,,,Norway,"60.183844,5.474691",coordinates_only,60.183844,5.474691,node,534908832,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lunde,Kiwi,,,,,,Norway,"59.299723,9.102441",coordinates_only,59.299723,9.102441,node,554959514,OpenStreetMap via Overpass API
+Kiwi,Kiwi Toppe,Kiwi,,,,,,Norway,"60.48599,5.271544",coordinates_only,60.48599,5.271544,node,560517961,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hundvåg,Kiwi,,,,,,Norway,"59.001244,5.741438",coordinates_only,59.001244,5.741438,node,568089372,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trosterud,Kiwi,,,,,,Norway,"59.9270387,10.865611",coordinates_only,59.9270387,10.865611,node,568375080,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sønsterudveien,Kiwi,,,,,,Norway,"59.805618,10.80685",coordinates_only,59.805618,10.80685,node,603968238,OpenStreetMap via Overpass API
+Kiwi,Kiwi Oppegård,Kiwi,,,,,,Norway,"59.7655762,10.8139059",coordinates_only,59.7655762,10.8139059,node,603971278,OpenStreetMap via Overpass API
+Kiwi,Kiwi Markveien,Kiwi,,,,,,Norway,"59.9219009,10.7572186",coordinates_only,59.9219009,10.7572186,node,615209027,OpenStreetMap via Overpass API
+Kiwi,Kiwi Haugenstua,Kiwi,,,,,,Norway,"59.95221,10.910612",coordinates_only,59.95221,10.910612,node,638975296,OpenStreetMap via Overpass API
+Kiwi,Kiwi Museumsgata,Kiwi,,,,,,Norway,"59.131885,10.22758",coordinates_only,59.131885,10.22758,node,639260077,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjørgeveien,Kiwi,,,,,,Norway,"60.350774,5.244696",coordinates_only,60.350774,5.244696,node,656525095,OpenStreetMap via Overpass API
+Kiwi,Kiwi XL Ligosenteret,Kiwi,,,,,,Norway,"59.756599,10.124192",coordinates_only,59.756599,10.124192,node,659695925,OpenStreetMap via Overpass API
+Kiwi,Kiwi Austadveien,Kiwi,,,,,,Norway,"59.721038,10.216864",coordinates_only,59.721038,10.216864,node,659739166,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ås,Kiwi,,,,,,Norway,"59.663866,10.793246",coordinates_only,59.663866,10.793246,node,659905570,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sagvåg,Kiwi,,,,,,Norway,"59.775269,5.392934",coordinates_only,59.775269,5.392934,node,663624081,OpenStreetMap via Overpass API
+Kiwi,Kiwi Røyslimoen,Kiwi,,,,,,Norway,"61.099435,10.508721",coordinates_only,61.099435,10.508721,node,669984216,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moi,Kiwi,,,,,,Norway,"58.460948,6.538419",coordinates_only,58.460948,6.538419,node,672667767,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brennåsen,Kiwi,,,,,,Norway,"58.1349473,7.8566075",coordinates_only,58.1349473,7.8566075,node,674525276,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hjemseng,Kiwi,,,,,,Norway,"59.2206357,10.4423176",coordinates_only,59.2206357,10.4423176,node,678879442,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flisnes,Kiwi,,,,,,Norway,"62.43193,6.413219",coordinates_only,62.43193,6.413219,node,702283746,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mindes hus,Kiwi,,,,,,Norway,"63.4670048,10.9217468",coordinates_only,63.4670048,10.9217468,node,709987329,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holmen,Kiwi,,,,,,Norway,"63.480782,10.906989",coordinates_only,63.480782,10.906989,node,718402833,OpenStreetMap via Overpass API
+Kiwi,Kiwi Romedal,Kiwi,,,,,,Norway,"60.736658,11.293452",coordinates_only,60.736658,11.293452,node,732093427,OpenStreetMap via Overpass API
+Kiwi,Kiwi Næroset,Kiwi,,,,,,Norway,"60.975516,10.777649",coordinates_only,60.975516,10.777649,node,732106755,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ridabu,Kiwi,,,,,,Norway,"60.8031332,11.1286507",coordinates_only,60.8031332,11.1286507,node,736926903,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vesterøy,Kiwi,,,,,,Norway,"59.110404,10.909655",coordinates_only,59.110404,10.909655,node,736985117,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grefsenveien,Kiwi,,,,,,Norway,"59.9459017,10.7863356",coordinates_only,59.9459017,10.7863356,node,743380830,OpenStreetMap via Overpass API
+Kiwi,Kiwi Evje,Kiwi,,,,,,Norway,"58.586416,7.806852",coordinates_only,58.586416,7.806852,node,748450783,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lisleby,Kiwi,,,,,,Norway,"59.2333337,10.976439",coordinates_only,59.2333337,10.976439,node,759780616,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skjoldskiftet,Kiwi,,,,,,Norway,"60.313088,5.356997",coordinates_only,60.313088,5.356997,node,768510658,OpenStreetMap via Overpass API
+Kiwi,Kiwi Torggata Horten,Kiwi,,,,,,Norway,"59.417832,10.481578",coordinates_only,59.417832,10.481578,node,772327788,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nesøya,Kiwi,,,,,,Norway,"59.8707454,10.5170196",coordinates_only,59.8707454,10.5170196,node,777401088,OpenStreetMap via Overpass API
+Kiwi,Kiwi Otta,Kiwi,,,,,,Norway,"61.7730039,9.5389048",coordinates_only,61.7730039,9.5389048,node,811371653,OpenStreetMap via Overpass API
+Kiwi,Kiwi Langenes,Kiwi,,,,,,Norway,"58.0748987,7.8623109",coordinates_only,58.0748987,7.8623109,node,821906744,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stryn,Kiwi,,,,,,Norway,"61.903006,6.719597",coordinates_only,61.903006,6.719597,node,836487366,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lom,Kiwi,,,,,,Norway,"61.84062,8.574065",coordinates_only,61.84062,8.574065,node,837952393,OpenStreetMap via Overpass API
+Kiwi,Kiwi Noresund,Kiwi,,,,,,Norway,"60.1798956,9.6257281",coordinates_only,60.1798956,9.6257281,node,840783031,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hånes,Kiwi,,,,,,Norway,"58.1810498,8.0889773",coordinates_only,58.1810498,8.0889773,node,845125932,OpenStreetMap via Overpass API
+Kiwi,Kiwi Slependen,Kiwi,,,,,,Norway,"59.887211,10.5005399",coordinates_only,59.887211,10.5005399,node,845711998,OpenStreetMap via Overpass API
+Kiwi,Kiwi Biri,Kiwi,,,,,,Norway,"60.956234,10.609863",coordinates_only,60.956234,10.609863,node,848962266,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flekkerøy,Kiwi,,,,,,Norway,"58.076363,7.999205",coordinates_only,58.076363,7.999205,node,855603680,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skjærhalden,Kiwi,,,,,,Norway,"59.02835,11.032651",coordinates_only,59.02835,11.032651,node,861353151,OpenStreetMap via Overpass API
+Kiwi,Kiwi Etterstad,Kiwi,,,,,,Norway,"59.913398,10.799881",coordinates_only,59.913398,10.799881,node,866259131,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ensjø,Kiwi,,,,,,Norway,"59.9150276,10.7888626",coordinates_only,59.9150276,10.7888626,node,868458598,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kragerø,Kiwi,,,,,,Norway,"58.86802,9.414239",coordinates_only,58.86802,9.414239,node,871720653,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skjevik,Kiwi,,,,,,Norway,"62.788165,7.536203",coordinates_only,62.788165,7.536203,node,874003015,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kirkegata Levanger,Kiwi,,,,,,Norway,"63.7492093,11.302346",coordinates_only,63.7492093,11.302346,node,877667691,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sauda,Kiwi,,,,,,Norway,"59.650212,6.354745",coordinates_only,59.650212,6.354745,node,884734236,OpenStreetMap via Overpass API
+Kiwi,Kiwi Melløs,Kiwi,,,,,,Norway,"59.421106,10.676611",coordinates_only,59.421106,10.676611,node,897978711,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moveien,Kiwi,,,,,,Norway,"59.142991,10.200218",coordinates_only,59.142991,10.200218,node,926825336,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moan,Kiwi,,,,,,Norway,"63.7402339,11.2824859",coordinates_only,63.7402339,11.2824859,node,946076539,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hegdehaugsveien,Kiwi,,,,,,Norway,"59.9220125,10.7272747",coordinates_only,59.9220125,10.7272747,node,973858944,OpenStreetMap via Overpass API
+Kiwi,Kiwi Solli plass,Kiwi,,,,,,Norway,"59.914566,10.719977",coordinates_only,59.914566,10.719977,node,1029257140,OpenStreetMap via Overpass API
+Kiwi,Kiwi Løten,Kiwi,,,,,,Norway,"60.821115,11.339823",coordinates_only,60.821115,11.339823,node,1064725155,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hvalstad,Kiwi,,,,,,Norway,"59.85852,10.4772121",coordinates_only,59.85852,10.4772121,node,1077169514,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nedenes,Kiwi,,,,,,Norway,"58.41641,8.701199",coordinates_only,58.41641,8.701199,node,1106387271,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ranvikskogen,Kiwi,,,,,,Norway,"59.1167479,10.2146539",coordinates_only,59.1167479,10.2146539,node,1106453605,OpenStreetMap via Overpass API
+Kiwi,Kiwi Konnerud,Kiwi,,,,,,Norway,"59.719246,10.146054",coordinates_only,59.719246,10.146054,node,1119661733,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skøyen,Kiwi,,,,,,Norway,"59.919608,10.686861",coordinates_only,59.919608,10.686861,node,1133968913,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hermansverk,Kiwi,,,,,,Norway,"61.1829158,6.8528706",coordinates_only,61.1829158,6.8528706,node,1198129547,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nøstet,Kiwi,,,,,,Norway,"60.391406,5.314753",coordinates_only,60.391406,5.314753,node,1198695662,OpenStreetMap via Overpass API
+Kiwi,Kiwi Landfalløya,Kiwi,,,,,,Norway,"59.7508931,10.1623269",coordinates_only,59.7508931,10.1623269,node,1215735883,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hof,Kiwi,,,,,,Norway,"59.5296005,10.0882775",coordinates_only,59.5296005,10.0882775,node,1224681119,OpenStreetMap via Overpass API
+Kiwi,Kiwi Arendal sentrum,Kiwi,,,,,,Norway,"58.45925,8.766371",coordinates_only,58.45925,8.766371,node,1228115740,OpenStreetMap via Overpass API
+Kiwi,Kiwi Oppdal,Kiwi,,,,,,Norway,"62.5925845,9.684667",coordinates_only,62.5925845,9.684667,node,1234971955,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ole Olsen,Kiwi,,,,,,Norway,"58.248971,8.376039",coordinates_only,58.248971,8.376039,node,1246262194,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vålerenga,Kiwi,,,,,,Norway,"59.9089625,10.7870007",coordinates_only,59.9089625,10.7870007,node,1258380819,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vitbank,Kiwi,,,,,,Norway,"59.755692,10.261771",coordinates_only,59.755692,10.261771,node,1270698446,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lierbyen,Kiwi,,,,,,Norway,"59.786458,10.241995",coordinates_only,59.786458,10.241995,node,1270700464,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lyngåskrysset,Kiwi,,,,,,Norway,"59.8153018,10.2489551",coordinates_only,59.8153018,10.2489551,node,1270703282,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bødalen,Kiwi,,,,,,Norway,"59.759267,10.4599761",coordinates_only,59.759267,10.4599761,node,1273407095,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trikkesløyfa,Kiwi,,,,,,Norway,"59.940721,10.729069",coordinates_only,59.940721,10.729069,node,1298853011,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rensvik,Kiwi,,,,,,Norway,"63.0909735,7.8092587",coordinates_only,63.0909735,7.8092587,node,1300311258,OpenStreetMap via Overpass API
+Kiwi,Kiwi Schous plass,Kiwi,,,,,,Norway,"59.9192997,10.7646613",coordinates_only,59.9192997,10.7646613,node,1363867000,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brumunddal,Kiwi,,,,,,Norway,"60.8850431,10.9453037",coordinates_only,60.8850431,10.9453037,node,1402309889,OpenStreetMap via Overpass API
+Kiwi,Kiwi Solheim,Kiwi,,,,,,Norway,"59.92704,10.954431",coordinates_only,59.92704,10.954431,node,1410854916,OpenStreetMap via Overpass API
+Kiwi,Kiwi Løkkemyra,Kiwi,,,,,,Norway,"63.108814,7.783521",coordinates_only,63.108814,7.783521,node,1417294594,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sandakerveien,Kiwi,,,,,,Norway,"59.9432398,10.7705432",coordinates_only,59.9432398,10.7705432,node,1422960127,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trysil,Kiwi,,,,,,Norway,"61.3115747,12.2679736",coordinates_only,61.3115747,12.2679736,node,1432260551,OpenStreetMap via Overpass API
+Kiwi,Kiwi Alta sentrum,Kiwi,,,,,,Norway,"69.965763,23.276083",coordinates_only,69.965763,23.276083,node,1459542250,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tasta,Kiwi,,,,,,Norway,"58.977795,5.704908",coordinates_only,58.977795,5.704908,node,1460565415,OpenStreetMap via Overpass API
+Kiwi,Kiwi St. Olavs plass,Kiwi,,,,,,Norway,"59.9179629,10.7408759",coordinates_only,59.9179629,10.7408759,node,1520492077,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trondheimsveien,Kiwi,,,,,,Norway,"59.9230962,10.7714934",coordinates_only,59.9230962,10.7714934,node,1523679562,OpenStreetMap via Overpass API
+Kiwi,Kiwi Københavngata,Kiwi,,,,,,Norway,"59.9272985,10.767197",coordinates_only,59.9272985,10.767197,node,1523679588,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ryen,Kiwi,,,,,,Norway,"59.89348,10.804853",coordinates_only,59.89348,10.804853,node,1541248980,OpenStreetMap via Overpass API
+Kiwi,Kiwi Beitostølen,Kiwi,,,,,,Norway,"61.2428698,8.9209488",coordinates_only,61.2428698,8.9209488,node,1556198893,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lund,Kiwi,,,,,,Norway,"58.1527514,8.0247592",coordinates_only,58.1527514,8.0247592,node,1579838939,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kirkekrysset,Kiwi,,,,,,Norway,"59.805766,10.688781",coordinates_only,59.805766,10.688781,node,1585522373,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jørpeland,Kiwi,,,,,,Norway,"59.022984,6.041534",coordinates_only,59.022984,6.041534,node,1606371412,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grasmyr,Kiwi,,,,,,Norway,"59.030133,9.704575",coordinates_only,59.030133,9.704575,node,1635296235,OpenStreetMap via Overpass API
+Kiwi,Kiwi Østre Elvebakken,Kiwi,,,,,,Norway,"69.9727709,23.3722328",coordinates_only,69.9727709,23.3722328,node,1643391393,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holt Vestvollen,Kiwi,,,,,,Norway,"59.9866101,11.0273615",coordinates_only,59.9866101,11.0273615,node,1652092723,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jerikoveien,Kiwi,,,,,,Norway,"59.936109,10.888394",coordinates_only,59.936109,10.888394,node,1655767719,OpenStreetMap via Overpass API
+Kiwi,Kiwi Håpet,Kiwi,,,,,,Norway,"69.679221,18.93311",coordinates_only,69.679221,18.93311,node,1660844138,OpenStreetMap via Overpass API
+Kiwi,Kiwi Råde,Kiwi,,,,,,Norway,"59.355944,10.847252",coordinates_only,59.355944,10.847252,node,1667001917,OpenStreetMap via Overpass API
+Kiwi,Kiwi Balsfjordgata,Kiwi,,,,,,Norway,"69.6436838,18.9437138",coordinates_only,69.6436838,18.9437138,node,1675837156,OpenStreetMap via Overpass API
+Kiwi,Kiwi Andslimoen,Kiwi,,,,,,Norway,"69.0942722,18.5903684",coordinates_only,69.0942722,18.5903684,node,1683123611,OpenStreetMap via Overpass API
+Kiwi,Kiwi Strømgaten,Kiwi,,,,,,Norway,"60.3874711,5.3280872",coordinates_only,60.3874711,5.3280872,node,1715933279,OpenStreetMap via Overpass API
+Kiwi,Kiwi Birkeveien,Kiwi,,,,,,Norway,"60.36062,5.364789",coordinates_only,60.36062,5.364789,node,1727566202,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jevnaker,Kiwi,,,,,,Norway,"60.2392977,10.3843753",coordinates_only,60.2392977,10.3843753,node,1736049159,OpenStreetMap via Overpass API
+Kiwi,Kiwi Veitvet,Kiwi,,,,,,Norway,"59.944088,10.847804",coordinates_only,59.944088,10.847804,node,1741220715,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gulset,Kiwi,,,,,,Norway,"59.2166713,9.5662098",coordinates_only,59.2166713,9.5662098,node,1748016333,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flaskebekk,Kiwi,,,,,,Norway,"59.84951,10.658757",coordinates_only,59.84951,10.658757,node,1773901334,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vanse,Kiwi,,,,,,Norway,"58.0976663,6.6888851",coordinates_only,58.0976663,6.6888851,node,1786507188,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vangen,Kiwi,,,,,,Norway,"60.6280971,6.4195426",coordinates_only,60.6280971,6.4195426,node,1810728111,OpenStreetMap via Overpass API
+Kiwi,Kiwi Farsund,Kiwi,,,,,,Norway,"58.0957354,6.7951031",coordinates_only,58.0957354,6.7951031,node,1813488094,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tretten,Kiwi,,,,,,Norway,"61.318396,10.300435",coordinates_only,61.318396,10.300435,node,1834315811,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vinstra,Kiwi,,,,,,Norway,"61.5958192,9.7296625",coordinates_only,61.5958192,9.7296625,node,1834319932,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øyer,Kiwi,,,,,,Norway,"61.2439889,10.4384771",coordinates_only,61.2439889,10.4384771,node,1836904082,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kunnskapshuset,Kiwi,,,,,,Norway,"59.787331,5.497085",coordinates_only,59.787331,5.497085,node,1843114877,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vågsbygd senter,Kiwi,,,,,,Norway,"58.1249698,7.9541774",coordinates_only,58.1249698,7.9541774,node,1847099875,OpenStreetMap via Overpass API
+Kiwi,Kiwi Elvegata,Kiwi,,,,,,Norway,"58.1483369,8.0044037",coordinates_only,58.1483369,8.0044037,node,1856154637,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tøyenhaugen,Kiwi,,,,,,Norway,"60.112275,10.861525",coordinates_only,60.112275,10.861525,node,1893803736,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ål,Kiwi,,,,,,Norway,"60.6293869,8.5629223",coordinates_only,60.6293869,8.5629223,node,1945780947,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kambo,Kiwi,,,,,,Norway,"59.482363,10.695529",coordinates_only,59.482363,10.695529,node,1952599619,OpenStreetMap via Overpass API
+Kiwi,Kiwi Heer,Kiwi,,,,,,Norway,"59.68437,10.661078",coordinates_only,59.68437,10.661078,node,1958813029,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordbyhagen,Kiwi,,,,,,Norway,"59.934229,10.994571",coordinates_only,59.934229,10.994571,node,1963751067,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sognsveien,Kiwi,,,,,,Norway,"59.947156,10.731996",coordinates_only,59.947156,10.731996,node,1964284141,OpenStreetMap via Overpass API
+Kiwi,Kiwi Borgenhaugen,Kiwi,,,,,,Norway,"59.2645667,11.1576593",coordinates_only,59.2645667,11.1576593,node,1973442760,OpenStreetMap via Overpass API
+Kiwi,Kiwi Birkebeinersenteret,Kiwi,,,,,,Norway,"60.39994,5.32368",coordinates_only,60.39994,5.32368,node,1975651376,OpenStreetMap via Overpass API
+Kiwi,Kiwi Spangereid,Kiwi,,,,,,Norway,"58.043924,7.143972",coordinates_only,58.043924,7.143972,node,1984044027,OpenStreetMap via Overpass API
+Kiwi,Kiwi Heiane,Kiwi,,,,,,Norway,"59.76148,5.456978",coordinates_only,59.76148,5.456978,node,2038273854,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bygdøy allé,Kiwi,,,,,,Norway,"59.916393,10.712357",coordinates_only,59.916393,10.712357,node,2076928815,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rælingen,Kiwi,,,,,,Norway,"59.932296,11.067295",coordinates_only,59.932296,11.067295,node,2087906987,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vogts gate,Kiwi,,,,,,Norway,"59.93668,10.765864",coordinates_only,59.93668,10.765864,node,2112968283,OpenStreetMap via Overpass API
+Kiwi,Kiwi Valderøy,Kiwi,,,,,,Norway,"62.506884,6.102548",coordinates_only,62.506884,6.102548,node,2113101612,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kongssenteret,Kiwi,,,,,,Norway,"60.1920147,11.9946827",coordinates_only,60.1920147,11.9946827,node,2166712161,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lervig brygge,Kiwi,,,,,,Norway,"58.965318,5.761591",coordinates_only,58.965318,5.761591,node,2180171999,OpenStreetMap via Overpass API
+Kiwi,Kiwi Blakstadheia,Kiwi,,,,,,Norway,"58.4981166,8.6441402",coordinates_only,58.4981166,8.6441402,node,2185251147,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mortensrud,Kiwi,,,,,,Norway,"59.849337,10.830731",coordinates_only,59.849337,10.830731,node,2242403114,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hosle,Kiwi,,,,,,Norway,"59.9363386,10.5839422",coordinates_only,59.9363386,10.5839422,node,2260269729,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjerke,Kiwi,,,,,,Norway,"59.941995,10.808089",coordinates_only,59.941995,10.808089,node,2272979127,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rjukan,Kiwi,,,,,,Norway,"59.880612,8.637606",coordinates_only,59.880612,8.637606,node,2278070272,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sokndal,Kiwi,,,,,,Norway,"58.341988,6.284411",coordinates_only,58.341988,6.284411,node,2296319193,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kyrksæterøra,Kiwi,,,,,,Norway,"63.292211,9.087252",coordinates_only,63.292211,9.087252,node,2296987710,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rena,Kiwi,,,,,,Norway,"61.131534,11.370511",coordinates_only,61.131534,11.370511,node,2312759338,OpenStreetMap via Overpass API
+Kiwi,Kiwi Spelhaugen,Kiwi,,,,,,Norway,"60.349421,5.277053",coordinates_only,60.349421,5.277053,node,2328000381,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ulset,Kiwi,,,,,,Norway,"60.4637531,5.304087",coordinates_only,60.4637531,5.304087,node,2328009314,OpenStreetMap via Overpass API
+Kiwi,Kiwi Arnatveit,Kiwi,,,,,,Norway,"60.407327,5.475971",coordinates_only,60.407327,5.475971,node,2328065316,OpenStreetMap via Overpass API
+Kiwi,Kiwi Indre Arna,Kiwi,,,,,,Norway,"60.424636,5.470661",coordinates_only,60.424636,5.470661,node,2328072244,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stovner,Kiwi,,,,,,Norway,"59.962539,10.922417",coordinates_only,59.962539,10.922417,node,2374341820,OpenStreetMap via Overpass API
+Kiwi,Kiwi Heidal,Kiwi,,,,,,Norway,"61.758687,9.285402",coordinates_only,61.758687,9.285402,node,2376025057,OpenStreetMap via Overpass API
+Kiwi,Kiwi Torvastad,Kiwi,,,,,,Norway,"59.389218,5.273499",coordinates_only,59.389218,5.273499,node,2377643494,OpenStreetMap via Overpass API
+Kiwi,Kiwi Egersund,Kiwi,,,,,,Norway,"58.4516512,6.0015713",coordinates_only,58.4516512,6.0015713,node,2398376129,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øran,Kiwi,,,,,,Norway,"62.558735,7.681698",coordinates_only,62.558735,7.681698,node,2398499235,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sætre,Kiwi,,,,,,Norway,"59.6817814,10.52609",coordinates_only,59.6817814,10.52609,node,2404131371,OpenStreetMap via Overpass API
+Kiwi,Kiwi Minnesund,Kiwi,,,,,,Norway,"60.4032344,11.2425899",coordinates_only,60.4032344,11.2425899,node,2413920669,OpenStreetMap via Overpass API
+Kiwi,Kiwi Allehelgens gate,Kiwi,,,,,,Norway,"60.3933304,5.3278927",coordinates_only,60.3933304,5.3278927,node,2429147842,OpenStreetMap via Overpass API
+Kiwi,Kiwi Storgata,Kiwi,,,,,,Norway,"61.115225,10.465946",coordinates_only,61.115225,10.465946,node,2436891003,OpenStreetMap via Overpass API
+Kiwi,Kiwi Torshov,Kiwi,,,,,,Norway,"59.9388166,10.776884",coordinates_only,59.9388166,10.776884,node,2476542841,OpenStreetMap via Overpass API
+Kiwi,Kiwi Alleen senter,Kiwi,,,,,,Norway,"58.15622,7.10045",coordinates_only,58.15622,7.10045,node,2503087139,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hasbergsveien,Kiwi,,,,,,Norway,"59.6638967,9.644242",coordinates_only,59.6638967,9.644242,node,2510425140,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sand,Kiwi,,,,,,Norway,"60.3924419,11.5369691",coordinates_only,60.3924419,11.5369691,node,2551070655,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nyrud,Kiwi,,,,,,Norway,"65.832966,13.214253",coordinates_only,65.832966,13.214253,node,2611112708,OpenStreetMap via Overpass API
+Kiwi,Kiwi IT Fornebu,Kiwi,,,,,,Norway,"59.8943536,10.6295888",coordinates_only,59.8943536,10.6295888,node,2728294842,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øystese,Kiwi,,,,,,Norway,"60.3867647,6.1994943",coordinates_only,60.3867647,6.1994943,node,2771926129,OpenStreetMap via Overpass API
+Kiwi,Kiwi Prinsdal,Kiwi,,,,,,Norway,"59.833085,10.806909",coordinates_only,59.833085,10.806909,node,2810293401,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kirkegata Haugesund,Kiwi,,,,,,Norway,"59.416019,5.269349",coordinates_only,59.416019,5.269349,node,2817041839,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lagårdsveien,Kiwi,,,,,,Norway,"58.953583,5.741449",coordinates_only,58.953583,5.741449,node,2836727815,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gausdal,Kiwi,,,,,,Norway,"61.226961,10.223106",coordinates_only,61.226961,10.223106,node,2879951487,OpenStreetMap via Overpass API
+Kiwi,Kiwi Follebu,Kiwi,,,,,,Norway,"61.216187,10.285145",coordinates_only,61.216187,10.285145,node,2881860772,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordbyen,Kiwi,,,,,,Norway,"62.752636,7.235178",coordinates_only,62.752636,7.235178,node,2891258285,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bergmo,Kiwi,,,,,,Norway,"62.7447791,7.2144529",coordinates_only,62.7447791,7.2144529,node,2892101398,OpenStreetMap via Overpass API
+Kiwi,Kiwi Deknepollen,Kiwi,,,,,,Norway,"61.9230879,5.1505134",coordinates_only,61.9230879,5.1505134,node,2906221267,OpenStreetMap via Overpass API
+Kiwi,Kiwi Måløy,Kiwi,,,,,,Norway,"61.9331674,5.112828",coordinates_only,61.9331674,5.112828,node,2906221268,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kremmergaarden,Kiwi,,,,,,Norway,"62.471078,6.153832",coordinates_only,62.471078,6.153832,node,2917276340,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lærdal,Kiwi,,,,,,Norway,"61.099074,7.481147",coordinates_only,61.099074,7.481147,node,2951352462,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lyngdal,Kiwi,,,,,,Norway,"58.134168,7.069817",coordinates_only,58.134168,7.069817,node,2958986044,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nardobakken,Kiwi,,,,,,Norway,"63.409712,10.418101",coordinates_only,63.409712,10.418101,node,3004633896,OpenStreetMap via Overpass API
+Kiwi,Kiwi Svolvær sentrum,Kiwi,,,,,,Norway,"68.2351444,14.5627079",coordinates_only,68.2351444,14.5627079,node,3005028361,OpenStreetMap via Overpass API
+Kiwi,Kiwi WM.Thranes gate,Kiwi,,,,,,Norway,"59.923106,10.739524",coordinates_only,59.923106,10.739524,node,3010287638,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kværnerbyen,Kiwi,,,,,,Norway,"59.904644,10.786854",coordinates_only,59.904644,10.786854,node,3012190619,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kirkeby,Kiwi,,,,,,Norway,"60.7850775,10.695633",coordinates_only,60.7850775,10.695633,node,3013363333,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gvarv,Kiwi,,,,,,Norway,"59.387351,9.168782",coordinates_only,59.387351,9.168782,node,3025599722,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ølensvåg,Kiwi,,,,,,Norway,"59.5976279,5.743222",coordinates_only,59.5976279,5.743222,node,3031996531,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sandvika,Kiwi,,,,,,Norway,"59.8911334,10.5272648",coordinates_only,59.8911334,10.5272648,node,3072411413,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sandnessjøen,Kiwi,,,,,,Norway,"66.0173617,12.6323051",coordinates_only,66.0173617,12.6323051,node,3095913943,OpenStreetMap via Overpass API
+Kiwi,Kiwi Torvet,Kiwi,,,,,,Norway,"58.1458575,7.996366",coordinates_only,58.1458575,7.996366,node,3097708056,OpenStreetMap via Overpass API
+Kiwi,Kiwi Storgata 33,Kiwi,,,,,,Norway,"59.91468,10.753084",coordinates_only,59.91468,10.753084,node,3111431401,OpenStreetMap via Overpass API
+Kiwi,Kiwi Orkanger,Kiwi,,,,,,Norway,"63.298351,9.848486",coordinates_only,63.298351,9.848486,node,3112752582,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stavsjø,Kiwi,,,,,,Norway,"60.8043049,10.8392884",coordinates_only,60.8043049,10.8392884,node,3116816225,OpenStreetMap via Overpass API
+Kiwi,Kiwi Spjelkavik,Kiwi,,,,,,Norway,"62.463717,6.364405",coordinates_only,62.463717,6.364405,node,3118728575,OpenStreetMap via Overpass API
+Kiwi,Kiwi Breivika,Kiwi,,,,,,Norway,"62.471863,6.363352",coordinates_only,62.471863,6.363352,node,3118773253,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vikersund,Kiwi,,,,,,Norway,"59.9651806,9.9943521",coordinates_only,59.9651806,9.9943521,node,3120224840,OpenStreetMap via Overpass API
+Kiwi,Kiwi Blystadlia,Kiwi,,,,,,Norway,"59.930905,11.035335",coordinates_only,59.930905,11.035335,node,3122986020,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eidsvoll,Kiwi,,,,,,Norway,"60.3278711,11.2601448",coordinates_only,60.3278711,11.2601448,node,3123084243,OpenStreetMap via Overpass API
+Kiwi,Kiwi Årnes,Kiwi,,,,,,Norway,"60.119168,11.464738",coordinates_only,60.119168,11.464738,node,3123633347,OpenStreetMap via Overpass API
+Kiwi,Kiwi Volda,Kiwi,,,,,,Norway,"62.1467135,6.0889177",coordinates_only,62.1467135,6.0889177,node,3125248076,OpenStreetMap via Overpass API
+Kiwi,Kiwi Falkum,Kiwi,,,,,,Norway,"59.212106,9.588847",coordinates_only,59.212106,9.588847,node,3128635918,OpenStreetMap via Overpass API
+Kiwi,Kiwi Heistad,Kiwi,,,,,,Norway,"59.0750697,9.6839315",coordinates_only,59.0750697,9.6839315,node,3149210029,OpenStreetMap via Overpass API
+Kiwi,Kiwi Borkedalen,Kiwi,,,,,,Norway,"58.2422357,8.3637798",coordinates_only,58.2422357,8.3637798,node,3244857477,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flå,Kiwi,,,,,,Norway,"60.4309453,9.4589012",coordinates_only,60.4309453,9.4589012,node,3251830662,OpenStreetMap via Overpass API
+Kiwi,Kiwi Haus,Kiwi,,,,,,Norway,"60.4531336,5.4953025",coordinates_only,60.4531336,5.4953025,node,3324720970,OpenStreetMap via Overpass API
+Kiwi,Kiwi Røros,Kiwi,,,,,,Norway,"62.5732309,11.3849008",coordinates_only,62.5732309,11.3849008,node,3337647436,OpenStreetMap via Overpass API
+Kiwi,Kiwi Juvik,Kiwi,,,,,,Norway,"60.4304502,5.1887577",coordinates_only,60.4304502,5.1887577,node,3431098743,OpenStreetMap via Overpass API
+Kiwi,Kiwi Florvåg,Kiwi,,,,,,Norway,"60.4202699,5.2393615",coordinates_only,60.4202699,5.2393615,node,3431180477,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kleppestø,Kiwi,,,,,,Norway,"60.409535,5.227473",coordinates_only,60.409535,5.227473,node,3431180478,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lindås senter,Kiwi,,,,,,Norway,"60.739634,5.161158",coordinates_only,60.739634,5.161158,node,3439458793,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fjellhamar,Kiwi,,,,,,Norway,"59.940635,10.983782",coordinates_only,59.940635,10.983782,node,3489591844,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ottestad,Kiwi,,,,,,Norway,"60.7699835,11.1280615",coordinates_only,60.7699835,11.1280615,node,3635742556,OpenStreetMap via Overpass API
+Kiwi,Kiwi Heimdalsvingen,Kiwi,,,,,,Norway,"59.272413,10.427514",coordinates_only,59.272413,10.427514,node,3641004994,OpenStreetMap via Overpass API
+Kiwi,Kiwi Greåker,Kiwi,,,,,,Norway,"59.2678333,11.032122",coordinates_only,59.2678333,11.032122,node,3647999842,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skotterud,Kiwi,,,,,,Norway,"59.9851442,12.1227572",coordinates_only,59.9851442,12.1227572,node,3652633575,OpenStreetMap via Overpass API
+Kiwi,Kiwi Strømmen,Kiwi,,,,,,Norway,"59.947305,11.0091488",coordinates_only,59.947305,11.0091488,node,3679328226,OpenStreetMap via Overpass API
+Kiwi,Kiwi Paradis,Kiwi,,,,,,Norway,"60.332148,5.348989",coordinates_only,60.332148,5.348989,node,3684651176,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tøyen,Kiwi,,,,,,Norway,"59.91372,10.775186",coordinates_only,59.91372,10.775186,node,3726142010,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gulskogen,Kiwi,,,,,,Norway,"59.7423465,10.1606073",coordinates_only,59.7423465,10.1606073,node,3795791373,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bølerlia,Kiwi,,,,,,Norway,"59.87722,10.847353",coordinates_only,59.87722,10.847353,node,3801756517,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lena,Kiwi,,,,,,Norway,"60.6727944,10.8136029",coordinates_only,60.6727944,10.8136029,node,3824161186,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skarnes,Kiwi,,,,,,Norway,"60.2548808,11.6828563",coordinates_only,60.2548808,11.6828563,node,3882525591,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tiller,Kiwi,,,,,,Norway,"63.356558,10.374041",coordinates_only,63.356558,10.374041,node,3988992824,OpenStreetMap via Overpass API
+Kiwi,Kiwi Geilo,Kiwi,,,,,,Norway,"60.534354,8.209496",coordinates_only,60.534354,8.209496,node,3990628503,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kilgata,Kiwi,,,,,,Norway,"59.1277545,10.2358486",coordinates_only,59.1277545,10.2358486,node,4001578391,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fornebuporten,Kiwi,,,,,,Norway,"59.904744,10.6257895",coordinates_only,59.904744,10.6257895,node,4041073479,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hoffsveien,Kiwi,,,,,,Norway,"59.927473,10.676384",coordinates_only,59.927473,10.676384,node,4090297760,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holmlia sentervei,Kiwi,,,,,,Norway,"59.835923,10.796456",coordinates_only,59.835923,10.796456,node,4108830890,OpenStreetMap via Overpass API
+Kiwi,Kiwi Økernveien,Kiwi,,,,,,Norway,"59.93138,10.80687",coordinates_only,59.93138,10.80687,node,4112553691,OpenStreetMap via Overpass API
+Kiwi,Kiwi Atlanterhavsveien,Kiwi,,,,,,Norway,"63.009982,7.432371",coordinates_only,63.009982,7.432371,node,4125876845,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øvre Årdal,Kiwi,,,,,,Norway,"61.308538,7.81322",coordinates_only,61.308538,7.81322,node,4130910141,OpenStreetMap via Overpass API
+Kiwi,Kiwi Volljordet,Kiwi,,,,,,Norway,"60.815546,11.062318",coordinates_only,60.815546,11.062318,node,4158303955,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kleivbrottet,Kiwi,,,,,,Norway,"59.478528,10.316159",coordinates_only,59.478528,10.316159,node,4159421290,OpenStreetMap via Overpass API
+Kiwi,Kiwi Frogner Lillestrøm,Kiwi,,,,,,Norway,"60.0240989,11.1029568",coordinates_only,60.0240989,11.1029568,node,4212043822,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ulsteinvik,Kiwi,,,,,,Norway,"62.3402676,5.855327",coordinates_only,62.3402676,5.855327,node,4214077693,OpenStreetMap via Overpass API
+Kiwi,Kiwi Høyanger,Kiwi,,,,,,Norway,"61.21933,6.073008",coordinates_only,61.21933,6.073008,node,4230430763,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gardermoveien,Kiwi,,,,,,Norway,"60.152958,11.130062",coordinates_only,60.152958,11.130062,node,4241890148,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lykkentreff,Kiwi,,,,,,Norway,"68.690153,15.415394",coordinates_only,68.690153,15.415394,node,4262443947,OpenStreetMap via Overpass API
+Kiwi,Kiwi Leira,Kiwi,,,,,,Norway,"60.969626,9.290996",coordinates_only,60.969626,9.290996,node,4311615683,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nesbyen,Kiwi,,,,,,Norway,"60.569576,9.1038947",coordinates_only,60.569576,9.1038947,node,4329273704,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moberg,Kiwi,,,,,,Norway,"60.181531,5.454275",coordinates_only,60.181531,5.454275,node,4331337030,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flekkefjord,Kiwi,,,,,,Norway,"58.296946,6.661593",coordinates_only,58.296946,6.661593,node,4338331824,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sørlandsparken,Kiwi,,,,,,Norway,"58.1774112,8.1299824",coordinates_only,58.1774112,8.1299824,node,4351098035,OpenStreetMap via Overpass API
+Kiwi,Kiwi Magasin Blå,Kiwi,,,,,,Norway,"58.971791,5.737493",coordinates_only,58.971791,5.737493,node,4361180289,OpenStreetMap via Overpass API
+Kiwi,Kiwi Andebu,Kiwi,,,,,,Norway,"59.304838,10.17807",coordinates_only,59.304838,10.17807,node,4395249116,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kapp,Kiwi,,,,,,Norway,"60.7134495,10.8553471",coordinates_only,60.7134495,10.8553471,node,4427469298,OpenStreetMap via Overpass API
+Kiwi,Kiwi Røa,Kiwi,,,,,,Norway,"59.9461998,10.6451721",coordinates_only,59.9461998,10.6451721,node,4471099699,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kobbervikdalen,Kiwi,,,,,,Norway,"59.6949782,10.246181",coordinates_only,59.6949782,10.246181,node,4501435792,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hvittingfoss,Kiwi,,,,,,Norway,"59.485097,10.013122",coordinates_only,59.485097,10.013122,node,4537497391,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fagereng,Kiwi,,,,,,Norway,"69.646889,18.898359",coordinates_only,69.646889,18.898359,node,4551013938,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stranda,Kiwi,,,,,,Norway,"62.307148,6.945331",coordinates_only,62.307148,6.945331,node,4564629378,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stangeland,Kiwi,,,,,,Norway,"59.278229,5.31199",coordinates_only,59.278229,5.31199,node,4568879211,OpenStreetMap via Overpass API
+Kiwi,Kiwi Munkegata,Kiwi,,,,,,Norway,"63.4330148,10.3941595",coordinates_only,63.4330148,10.3941595,node,4572286867,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vestfossen,Kiwi,,,,,,Norway,"59.7341354,9.8689344",coordinates_only,59.7341354,9.8689344,node,4609304058,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lunner,Kiwi,,,,,,Norway,"60.303393,10.584522",coordinates_only,60.303393,10.584522,node,4625750481,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rosenhoff,Kiwi,,,,,,Norway,"59.9317188,10.7787012",coordinates_only,59.9317188,10.7787012,node,4809566921,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fredrik Langes gate,Kiwi,,,,,,Norway,"69.6496033,18.9572714",coordinates_only,69.6496033,18.9572714,node,4832456421,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nybruveien,Kiwi,,,,,,Norway,"59.755942,10.0289179",coordinates_only,59.755942,10.0289179,node,4881545418,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sunndalsøra,Kiwi,,,,,,Norway,"62.6736192,8.5636442",coordinates_only,62.6736192,8.5636442,node,4950617347,OpenStreetMap via Overpass API
+Kiwi,Kiwi Røn,Kiwi,,,,,,Norway,"61.033881,9.054562",coordinates_only,61.033881,9.054562,node,4988974029,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bergemoen,Kiwi,,,,,,Norway,"58.3429984,8.5550398",coordinates_only,58.3429984,8.5550398,node,4991279850,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stoa øst,Kiwi,,,,,,Norway,"58.4679227,8.7208024",coordinates_only,58.4679227,8.7208024,node,5009498318,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dragveien,Kiwi,,,,,,Norway,"59.903671,10.565138",coordinates_only,59.903671,10.565138,node,5015756521,OpenStreetMap via Overpass API
+Kiwi,Kiwi Austbygd,Kiwi,,,,,,Norway,"59.995047,8.826857",coordinates_only,59.995047,8.826857,node,5058120935,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hellerudveien,Kiwi,,,,,,Norway,"59.917656,10.8509575",coordinates_only,59.917656,10.8509575,node,5075431282,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lindeberg,Kiwi,,,,,,Norway,"59.93274,10.881493",coordinates_only,59.93274,10.881493,node,5111075641,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dalgård,Kiwi,,,,,,Norway,"63.3977115,10.3435796",coordinates_only,63.3977115,10.3435796,node,5119347449,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vingnes,Kiwi,,,,,,Norway,"61.106098,10.443931",coordinates_only,61.106098,10.443931,node,5127503374,OpenStreetMap via Overpass API
+Kiwi,Kiwi Borg,Kiwi,,,,,,Norway,"59.2754085,11.0868582",coordinates_only,59.2754085,11.0868582,node,5139408367,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sørumsand,Kiwi,,,,,,Norway,"59.9865115,11.2470292",coordinates_only,59.9865115,11.2470292,node,5200396122,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ullerudsletta,Kiwi,,,,,,Norway,"59.6677421,10.6470204",coordinates_only,59.6677421,10.6470204,node,5235692721,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vestby,Kiwi,,,,,,Norway,"59.608758,10.743141",coordinates_only,59.608758,10.743141,node,5303136423,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grønligata,Kiwi,,,,,,Norway,"59.410693,10.472742",coordinates_only,59.410693,10.472742,node,5439882353,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skoppum,Kiwi,,,,,,Norway,"59.3853592,10.4046528",coordinates_only,59.3853592,10.4046528,node,5439882362,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holtandalen,Kiwi,,,,,,Norway,"59.416598,10.459921",coordinates_only,59.416598,10.459921,node,5439882380,OpenStreetMap via Overpass API
+Kiwi,Kiwi Finnsnes,Kiwi,,,,,,Norway,"69.2294474,17.9883509",coordinates_only,69.2294474,17.9883509,node,5453705683,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ellingsrud,Kiwi,,,,,,Norway,"59.936117,10.916649",coordinates_only,59.936117,10.916649,node,5606618576,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trollåsen,Kiwi,,,,,,Norway,"59.817518,10.777491",coordinates_only,59.817518,10.777491,node,5648133077,OpenStreetMap via Overpass API
+Kiwi,Kiwi Konows gate,Kiwi,,,,,,Norway,"59.902065,10.768288",coordinates_only,59.902065,10.768288,node,5693181928,OpenStreetMap via Overpass API
+Kiwi,Kiwi Selbu,Kiwi,,,,,,Norway,"63.219164,11.040459",coordinates_only,63.219164,11.040459,node,5717980224,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lillestrøm stasjon,Kiwi,,,,,,Norway,"59.953354,11.04851",coordinates_only,59.953354,11.04851,node,5726566233,OpenStreetMap via Overpass API
+Kiwi,Kiwi Koppang,Kiwi,,,,,,Norway,"61.571433,11.053421",coordinates_only,61.571433,11.053421,node,5821438584,OpenStreetMap via Overpass API
+Kiwi,Kiwi Langneset,Kiwi,,,,,,Norway,"66.3049421,14.133987",coordinates_only,66.3049421,14.133987,node,5822829601,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hammerfest,Kiwi,,,,,,Norway,"70.6782009,23.6680068",coordinates_only,70.6782009,23.6680068,node,5825883189,OpenStreetMap via Overpass API
+Kiwi,Kiwi Meieribygget Ørsta,Kiwi,,,,,,Norway,"62.1991,6.127521",coordinates_only,62.1991,6.127521,node,5841728116,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åskollen,Kiwi,,,,,,Norway,"59.712061,10.25719",coordinates_only,59.712061,10.25719,node,5842227428,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordre Ål,Kiwi,,,,,,Norway,"61.1306678,10.4492641",coordinates_only,61.1306678,10.4492641,node,5844228597,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vear,Kiwi,,,,,,Norway,"59.2634402,10.3624984",coordinates_only,59.2634402,10.3624984,node,5868340200,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brandbu,Kiwi,,,,,,Norway,"60.4188632,10.5090223",coordinates_only,60.4188632,10.5090223,node,5909632553,OpenStreetMap via Overpass API
+Kiwi,Kiwi Forusparken,Kiwi,,,,,,Norway,"58.8898999,5.7372128",coordinates_only,58.8898999,5.7372128,node,5997663507,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stormyra,Kiwi,,,,,,Norway,"67.279795,14.4187076",coordinates_only,67.279795,14.4187076,node,6028427547,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brønnøysund,Kiwi,,,,,,Norway,"65.476737,12.21653",coordinates_only,65.476737,12.21653,node,6028427860,OpenStreetMap via Overpass API
+Kiwi,Kiwi Osan Svolvær,Kiwi,,,,,,Norway,"68.232927,14.5301672",coordinates_only,68.232927,14.5301672,node,6028427861,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flymuseet,Kiwi,,,,,,Norway,"67.2760362,14.4100767",coordinates_only,67.2760362,14.4100767,node,6028428707,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ankenes,Kiwi,,,,,,Norway,"68.4062889,17.4155368",coordinates_only,68.4062889,17.4155368,node,6028428712,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ytteren,Kiwi,,,,,,Norway,"66.340696,14.145391",coordinates_only,66.340696,14.145391,node,6028428721,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sannan,Kiwi,,,,,,Norway,"64.008446,11.503834",coordinates_only,64.008446,11.503834,node,6028555445,OpenStreetMap via Overpass API
+Kiwi,Kiwi Charlottenlund,Kiwi,,,,,,Norway,"63.4312945,10.4962134",coordinates_only,63.4312945,10.4962134,node,6028555859,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sundgata,Kiwi,,,,,,Norway,"62.470964,6.167007",coordinates_only,62.470964,6.167007,node,6029407246,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sykkylven,Kiwi,,,,,,Norway,"62.3913141,6.5816796",coordinates_only,62.3913141,6.5816796,node,6029407256,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fiskarstrand,Kiwi,,,,,,Norway,"62.440239,6.272925",coordinates_only,62.440239,6.272925,node,6029408146,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eide,Kiwi,,,,,,Norway,"62.9104992,7.4333292",coordinates_only,62.9104992,7.4333292,node,6029408150,OpenStreetMap via Overpass API
+Kiwi,Kiwi Malmefjorden,Kiwi,,,,,,Norway,"62.8184882,7.2385168",coordinates_only,62.8184882,7.2385168,node,6029408154,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dale,Kiwi,,,,,,Norway,"63.121604,7.785369",coordinates_only,63.121604,7.785369,node,6029408223,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skjellebreida Volda,Kiwi,,,,,,Norway,"62.145462,6.074314",coordinates_only,62.145462,6.074314,node,6029408343,OpenStreetMap via Overpass API
+Kiwi,Kiwi Langmyrveien,Kiwi,,,,,,Norway,"62.74381,7.169534",coordinates_only,62.74381,7.169534,node,6029408348,OpenStreetMap via Overpass API
+Kiwi,Kiwi Florø,Kiwi,,,,,,Norway,"61.600814,5.044081",coordinates_only,61.600814,5.044081,node,6029789984,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dalsøren,Kiwi,,,,,,Norway,"61.3474997,5.0646409",coordinates_only,61.3474997,5.0646409,node,6029790890,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ågotnes,Kiwi,,,,,,Norway,"60.403703,5.018169",coordinates_only,60.403703,5.018169,node,6029970288,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kvassnesvegen Knarvik,Kiwi,,,,,,Norway,"60.5462289,5.290736",coordinates_only,60.5462289,5.290736,node,6029970290,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ikenberget,Kiwi,,,,,,Norway,"60.561502,5.250591",coordinates_only,60.561502,5.250591,node,6029983982,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øygarden,Kiwi,,,,,,Norway,"60.5126877,4.9107434",coordinates_only,60.5126877,4.9107434,node,6029983984,OpenStreetMap via Overpass API
+Kiwi,Kiwi Palmafossen,Kiwi,,,,,,Norway,"60.6367519,6.4649775",coordinates_only,60.6367519,6.4649775,node,6029984905,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skulestadmo,Kiwi,,,,,,Norway,"60.6601202,6.4350969",coordinates_only,60.6601202,6.4350969,node,6029984916,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jonas Lies Vei,Kiwi,,,,,,Norway,"60.375415,5.348954",coordinates_only,60.375415,5.348954,node,6029984930,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bøhmergaten,Kiwi,,,,,,Norway,"60.375954,5.334567",coordinates_only,60.375954,5.334567,node,6029984931,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gudridflaten,Kiwi,,,,,,Norway,"60.204295,5.453553",coordinates_only,60.204295,5.453553,node,6029984937,OpenStreetMap via Overpass API
+Kiwi,Kiwi Studalen,Kiwi,,,,,,Norway,"59.78038,5.483433",coordinates_only,59.78038,5.483433,node,6029984938,OpenStreetMap via Overpass API
+Kiwi,Kiwi Møvik,Kiwi,,,,,,Norway,"60.326974,5.020469",coordinates_only,60.326974,5.020469,node,6029985588,OpenStreetMap via Overpass API
+Kiwi,Kiwi Birkelundstoppen,Kiwi,,,,,,Norway,"60.344711,5.363939",coordinates_only,60.344711,5.363939,node,6029985604,OpenStreetMap via Overpass API
+Kiwi,Kiwi Randaberg,Kiwi,,,,,,Norway,"58.996557,5.628624",coordinates_only,58.996557,5.628624,node,6030390342,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lundehaugen,Kiwi,,,,,,Norway,"58.829675,5.727136",coordinates_only,58.829675,5.727136,node,6030390345,OpenStreetMap via Overpass API
+Kiwi,Kiwi Norheim,Kiwi,,,,,,Norway,"59.3869027,5.31571",coordinates_only,59.3869027,5.31571,node,6030391812,OpenStreetMap via Overpass API
+Kiwi,Kiwi Isvik,Kiwi,,,,,,Norway,"59.501009,5.577673",coordinates_only,59.501009,5.577673,node,6030391814,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gosen,Kiwi,,,,,,Norway,"58.939299,5.687184",coordinates_only,58.939299,5.687184,node,6030391818,OpenStreetMap via Overpass API
+Kiwi,Kiwi Salhusvegen,Kiwi,,,,,,Norway,"59.3983935,5.2861136",coordinates_only,59.3983935,5.2861136,node,6030391820,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vormedal,Kiwi,,,,,,Norway,"59.354907,5.324339",coordinates_only,59.354907,5.324339,node,6030391823,OpenStreetMap via Overpass API
+Kiwi,Kiwi Middelthon,Kiwi,,,,,,Norway,"58.98305,5.686666",coordinates_only,58.98305,5.686666,node,6030391827,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tau,Kiwi,,,,,,Norway,"59.065167,5.920587",coordinates_only,59.065167,5.920587,node,6030391833,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øysenteret,Kiwi,,,,,,Norway,"59.001442,5.724419",coordinates_only,59.001442,5.724419,node,6030391917,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skåredalen,Kiwi,,,,,,Norway,"59.4103267,5.3190288",coordinates_only,59.4103267,5.3190288,node,6030391918,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hommersåk,Kiwi,,,,,,Norway,"58.912549,5.8526665",coordinates_only,58.912549,5.8526665,node,6030391923,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sola,Kiwi,,,,,,Norway,"58.8828764,5.6516826",coordinates_only,58.8828764,5.6516826,node,6030391939,OpenStreetMap via Overpass API
+Kiwi,Kiwi Auglendsveien,Kiwi,,,,,,Norway,"58.945578,5.719891",coordinates_only,58.945578,5.719891,node,6030391940,OpenStreetMap via Overpass API
+Kiwi,Kiwi Avaldsnes,Kiwi,,,,,,Norway,"59.355019,5.277612",coordinates_only,59.355019,5.277612,node,6030391941,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gard,Kiwi,,,,,,Norway,"59.4252885,5.2707419",coordinates_only,59.4252885,5.2707419,node,6030392065,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åsen,Kiwi,,,,,,Norway,"58.936442,5.723573",coordinates_only,58.936442,5.723573,node,6030392070,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dvergsnes,Kiwi,,,,,,Norway,"58.133626,8.073876",coordinates_only,58.133626,8.073876,node,6052479537,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mandal,Kiwi,,,,,,Norway,"58.027298,7.474532",coordinates_only,58.027298,7.474532,node,6052479642,OpenStreetMap via Overpass API
+Kiwi,Kiwi Myrene,Kiwi,,,,,,Norway,"58.4618706,8.7525477",coordinates_only,58.4618706,8.7525477,node,6052512754,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tvedestrand,Kiwi,,,,,,Norway,"58.6277822,8.917058",coordinates_only,58.6277822,8.917058,node,6052512756,OpenStreetMap via Overpass API
+Kiwi,Kiwi Beha,Kiwi,,,,,,Norway,"59.138071,9.661808",coordinates_only,59.138071,9.661808,node,6052572945,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bølevegen,Kiwi,,,,,,Norway,"59.1940406,9.6211534",coordinates_only,59.1940406,9.6211534,node,6052572946,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bø,Kiwi,,,,,,Norway,"59.4136159,9.0682778",coordinates_only,59.4136159,9.0682778,node,6052573834,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kalstad,Kiwi,,,,,,Norway,"58.872282,9.3756432",coordinates_only,58.872282,9.3756432,node,6052573996,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stathelle,Kiwi,,,,,,Norway,"59.0443978,9.6930226",coordinates_only,59.0443978,9.6930226,node,6052574009,OpenStreetMap via Overpass API
+Kiwi,Kiwi Risingveien,Kiwi,,,,,,Norway,"59.2188291,9.6047575",coordinates_only,59.2188291,9.6047575,node,6052574010,OpenStreetMap via Overpass API
+Kiwi,Kiwi Laskentunet,Kiwi,,,,,,Norway,"59.143766,10.184137",coordinates_only,59.143766,10.184137,node,6052734928,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trysilfjellet,Kiwi,,,,,,Norway,"61.315231,12.255382",coordinates_only,61.315231,12.255382,node,6052793639,OpenStreetMap via Overpass API
+Kiwi,Kiwi Roverud,Kiwi,,,,,,Norway,"60.2525975,12.058415",coordinates_only,60.2525975,12.058415,node,6052793642,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fjeldset,Kiwi,,,,,,Norway,"60.874284,11.57707",coordinates_only,60.874284,11.57707,node,6052794731,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hanstad,Kiwi,,,,,,Norway,"60.861339,11.567853",coordinates_only,60.861339,11.567853,node,6052794734,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ydalir,Kiwi,,,,,,Norway,"60.894649,11.58187",coordinates_only,60.894649,11.58187,node,6052794861,OpenStreetMap via Overpass API
+Kiwi,Kiwi Roa,Kiwi,,,,,,Norway,"60.2879331,10.625745",coordinates_only,60.2879331,10.625745,node,6052844575,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fåvang,Kiwi,,,,,,Norway,"61.454449,10.191785",coordinates_only,61.454449,10.191785,node,6052844577,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eina,Kiwi,,,,,,Norway,"60.629777,10.59805",coordinates_only,60.629777,10.59805,node,6052844687,OpenStreetMap via Overpass API
+Kiwi,Kiwi Venabygdfjellet,Kiwi,,,,,,Norway,"61.648787,10.093651",coordinates_only,61.648787,10.093651,node,6052844688,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kongsberg,Kiwi,,,,,,Norway,"59.678933,9.632538",coordinates_only,59.678933,9.632538,node,6052891471,OpenStreetMap via Overpass API
+Kiwi,Kiwi Røykentorget,Kiwi,,,,,,Norway,"59.7473504,10.3959256",coordinates_only,59.7473504,10.3959256,node,6052891477,OpenStreetMap via Overpass API
+Kiwi,Kiwi Krokstadelva,Kiwi,,,,,,Norway,"59.7572577,10.0041553",coordinates_only,59.7572577,10.0041553,node,6052901219,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lampeland,Kiwi,,,,,,Norway,"59.8354615,9.5785328",coordinates_only,59.8354615,9.5785328,node,6052901220,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gullaug,Kiwi,,,,,,Norway,"59.748736,10.290066",coordinates_only,59.748736,10.290066,node,6052901221,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stenseth,Kiwi,,,,,,Norway,"59.760894,10.032471",coordinates_only,59.760894,10.032471,node,6052901222,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rødberg,Kiwi,,,,,,Norway,"60.2658982,8.9469169",coordinates_only,60.2658982,8.9469169,node,6052901223,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hemsedal,Kiwi,,,,,,Norway,"60.85001,8.614919",coordinates_only,60.85001,8.614919,node,6052901664,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gol,Kiwi,,,,,,Norway,"60.7014853,8.9418426",coordinates_only,60.7014853,8.9418426,node,6052901666,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rortunet,Kiwi,,,,,,Norway,"59.7762457,10.4865682",coordinates_only,59.7762457,10.4865682,node,6052901667,OpenStreetMap via Overpass API
+Kiwi,Kiwi Årum,Kiwi,,,,,,Norway,"59.2608482,11.1003821",coordinates_only,59.2608482,11.1003821,node,6052988456,OpenStreetMap via Overpass API
+Kiwi,Kiwi Onsøyveien,Kiwi,,,,,,Norway,"59.2226368,10.9209406",coordinates_only,59.2226368,10.9209406,node,6052988465,OpenStreetMap via Overpass API
+Kiwi,Kiwi Risum,Kiwi,,,,,,Norway,"59.1175699,11.4112307",coordinates_only,59.1175699,11.4112307,node,6052988467,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rygge,Kiwi,,,,,,Norway,"59.3795792,10.7549524",coordinates_only,59.3795792,10.7549524,node,6052988468,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kurland,Kiwi,,,,,,Norway,"59.2902948,11.1143487",coordinates_only,59.2902948,11.1143487,node,6052988472,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kråkerøyhallen,Kiwi,,,,,,Norway,"59.1995077,10.9089341",coordinates_only,59.1995077,10.9089341,node,6052990184,OpenStreetMap via Overpass API
+Kiwi,Kiwi Trøgstad,Kiwi,,,,,,Norway,"59.641836,11.318758",coordinates_only,59.641836,11.318758,node,6052992363,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sjøgata,Kiwi,,,,,,Norway,"59.4314323,10.6494043",coordinates_only,59.4314323,10.6494043,node,6052992366,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grålum,Kiwi,,,,,,Norway,"59.2946384,11.0681141",coordinates_only,59.2946384,11.0681141,node,6052992372,OpenStreetMap via Overpass API
+Kiwi,Kiwi Elingaardkilen,Kiwi,,,,,,Norway,"59.2653748,10.7898338",coordinates_only,59.2653748,10.7898338,node,6052992388,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brødløs,Kiwi,,,,,,Norway,"59.1404784,11.3805124",coordinates_only,59.1404784,11.3805124,node,6052992411,OpenStreetMap via Overpass API
+Kiwi,Kiwi Billingstad,Kiwi,,,,,,Norway,"59.869347,10.487458",coordinates_only,59.869347,10.487458,node,6053105672,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stabekk,Kiwi,,,,,,Norway,"59.9102009,10.6016922",coordinates_only,59.9102009,10.6016922,node,6053105683,OpenStreetMap via Overpass API
+Kiwi,Kiwi Slynga,Kiwi,,,,,,Norway,"59.946678,11.031216",coordinates_only,59.946678,11.031216,node,6053105843,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nannestad,Kiwi,,,,,,Norway,"60.219484,11.01687",coordinates_only,60.219484,11.01687,node,6053105848,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordkisa,Kiwi,,,,,,Norway,"60.186164,11.262818",coordinates_only,60.186164,11.262818,node,6053105849,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fjellbo,Kiwi,,,,,,Norway,"60.0245479,11.0700667",coordinates_only,60.0245479,11.0700667,node,6053105854,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holter,Kiwi,,,,,,Norway,"60.1378203,11.0222466",coordinates_only,60.1378203,11.0222466,node,6053105874,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fusdal,Kiwi,,,,,,Norway,"59.8333944,10.4426321",coordinates_only,59.8333944,10.4426321,node,6053106049,OpenStreetMap via Overpass API
+Kiwi,Kiwi Maura,Kiwi,,,,,,Norway,"60.253853,11.025121",coordinates_only,60.253853,11.025121,node,6053106050,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skedsmokorset,Kiwi,,,,,,Norway,"60.0042762,11.0337396",coordinates_only,60.0042762,11.0337396,node,6053106056,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lørenfallet,Kiwi,,,,,,Norway,"60.0201564,11.2259415",coordinates_only,60.0201564,11.2259415,node,6053106124,OpenStreetMap via Overpass API
+Kiwi,Kiwi Oppsalstubben,Kiwi,,,,,,Norway,"59.8975381,10.848149",coordinates_only,59.8975381,10.848149,node,6053234925,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rødtvet,Kiwi,,,,,,Norway,"59.953079,10.857129",coordinates_only,59.953079,10.857129,node,6053234992,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordstrand,Kiwi,,,,,,Norway,"59.860502,10.810151",coordinates_only,59.860502,10.810151,node,6053234994,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hasleveien,Kiwi,,,,,,Norway,"59.9278965,10.7786371",coordinates_only,59.9278965,10.7786371,node,6053234998,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hesseng,Kiwi,,,,,,Norway,"69.6874551,29.9986967",coordinates_only,69.6874551,29.9986967,node,6055578365,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åfjord,Kiwi,,,,,,Norway,"63.960389,10.226129",coordinates_only,63.960389,10.226129,node,6055578366,OpenStreetMap via Overpass API
+Kiwi,Kiwi Frøya,Kiwi,,,,,,Norway,"63.729384,8.827556",coordinates_only,63.729384,8.827556,node,6055578367,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kirkenes,Kiwi,,,,,,Norway,"69.7247617,30.0717125",coordinates_only,69.7247617,30.0717125,node,6055578368,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjugn,Kiwi,,,,,,Norway,"63.764904,9.807536",coordinates_only,63.764904,9.807536,node,6055578369,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gangsås,Kiwi,,,,,,Norway,"68.783279,16.5664699",coordinates_only,68.783279,16.5664699,node,6055578370,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rørvik,Kiwi,,,,,,Norway,"64.861012,11.235516",coordinates_only,64.861012,11.235516,node,6055578371,OpenStreetMap via Overpass API
+Kiwi,Kiwi Strinda,Kiwi,,,,,,Norway,"63.418444,10.464204",coordinates_only,63.418444,10.464204,node,6055578372,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rønvika,Kiwi,,,,,,Norway,"67.295466,14.407849",coordinates_only,67.295466,14.407849,node,6055599407,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vadsø,Kiwi,,,,,,Norway,"70.079957,29.718413",coordinates_only,70.079957,29.718413,node,6055599409,OpenStreetMap via Overpass API
+Kiwi,Kiwi Valentinlyst,Kiwi,,,,,,Norway,"63.424203,10.44293",coordinates_only,63.424203,10.44293,node,6055599410,OpenStreetMap via Overpass API
+Kiwi,Kiwi Medkila,Kiwi,,,,,,Norway,"68.762889,16.5595954",coordinates_only,68.762889,16.5595954,node,6055599411,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skodje,Kiwi,,,,,,Norway,"62.5033919,6.6966718",coordinates_only,62.5033919,6.6966718,node,6055652683,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ørsta,Kiwi,,,,,,Norway,"62.202571,6.14414",coordinates_only,62.202571,6.14414,node,6055652684,OpenStreetMap via Overpass API
+Kiwi,Kiwi Klokkersund,Kiwi,,,,,,Norway,"62.4665558,6.245839",coordinates_only,62.4665558,6.245839,node,6055653417,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vestnes,Kiwi,,,,,,Norway,"62.6235206,7.0904334",coordinates_only,62.6235206,7.0904334,node,6055653418,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bruhagen,Kiwi,,,,,,Norway,"63.0522572,7.6319616",coordinates_only,63.0522572,7.6319616,node,6055653419,OpenStreetMap via Overpass API
+Kiwi,Kiwi Myrvåg,Kiwi,,,,,,Norway,"62.277132,5.802988",coordinates_only,62.277132,5.802988,node,6055653420,OpenStreetMap via Overpass API
+Kiwi,Kiwi Langevåg,Kiwi,,,,,,Norway,"62.4407247,6.2001066",coordinates_only,62.4407247,6.2001066,node,6055653421,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nedre Strandgate,Kiwi,,,,,,Norway,"62.469953,6.1402156",coordinates_only,62.469953,6.1402156,node,6055653521,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fjaler,Kiwi,,,,,,Norway,"61.363932,5.399944",coordinates_only,61.363932,5.399944,node,6055653522,OpenStreetMap via Overpass API
+Kiwi,Kiwi Årdalstangen,Kiwi,,,,,,Norway,"61.235572,7.702007",coordinates_only,61.235572,7.702007,node,6055653523,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hatlane,Kiwi,,,,,,Norway,"62.460524,6.268591",coordinates_only,62.460524,6.268591,node,6055653685,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skarbøvik,Kiwi,,,,,,Norway,"62.4668005,6.1144778",coordinates_only,62.4668005,6.1144778,node,6055653686,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grandfjæra,Kiwi,,,,,,Norway,"62.736789,7.181227",coordinates_only,62.736789,7.181227,node,6055653687,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eggesbønes,Kiwi,,,,,,Norway,"62.3258037,5.638086",coordinates_only,62.3258037,5.638086,node,6055653689,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kverve,Kiwi,,,,,,Norway,"62.4912195,6.191448",coordinates_only,62.4912195,6.191448,node,6055653691,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kristiansund sentrum,Kiwi,,,,,,Norway,"63.113002,7.727551",coordinates_only,63.113002,7.727551,node,6055653692,OpenStreetMap via Overpass API
+Kiwi,Kiwi Husnes,Kiwi,,,,,,Norway,"59.8599282,5.7545126",coordinates_only,59.8599282,5.7545126,node,6055752694,OpenStreetMap via Overpass API
+Kiwi,Kiwi HSD,Kiwi,,,,,,Norway,"59.796348,5.187253",coordinates_only,59.796348,5.187253,node,6055752695,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sund senter,Kiwi,,,,,,Norway,"60.270136,5.072738",coordinates_only,60.270136,5.072738,node,6055752696,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åsane storsenter,Kiwi,,,,,,Norway,"60.46632,5.3227187",coordinates_only,60.46632,5.3227187,node,6055752697,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mosterhamn,Kiwi,,,,,,Norway,"59.7028258,5.3749347",coordinates_only,59.7028258,5.3749347,node,6055752698,OpenStreetMap via Overpass API
+Kiwi,Kiwi Laksevåg senter,Kiwi,,,,,,Norway,"60.3894589,5.2865289",coordinates_only,60.3894589,5.2865289,node,6055752699,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjørkheim,Kiwi,,,,,,Norway,"60.40143,5.730795",coordinates_only,60.40143,5.730795,node,6055752700,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hylkje,Kiwi,,,,,,Norway,"60.5096557,5.3478788",coordinates_only,60.5096557,5.3478788,node,6055752701,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rubbestadneset,Kiwi,,,,,,Norway,"59.8151608,5.268399",coordinates_only,59.8151608,5.268399,node,6055752702,OpenStreetMap via Overpass API
+Kiwi,Kiwi Storebotn,Kiwi,,,,,,Norway,"60.4409608,5.1823147",coordinates_only,60.4409608,5.1823147,node,6055752703,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skudesnes,Kiwi,,,,,,Norway,"59.149548,5.255106",coordinates_only,59.149548,5.255106,node,6055780407,OpenStreetMap via Overpass API
+Kiwi,Kiwi Spannavegen,Kiwi,,,,,,Norway,"59.40773,5.294791",coordinates_only,59.40773,5.294791,node,6055780408,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nærbø,Kiwi,,,,,,Norway,"58.668299,5.643917",coordinates_only,58.668299,5.643917,node,6055780409,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vågsgata,Kiwi,,,,,,Norway,"58.853069,5.7399537",coordinates_only,58.853069,5.7399537,node,6055780410,OpenStreetMap via Overpass API
+Kiwi,Kiwi Finnøy,Kiwi,,,,,,Norway,"59.1644108,5.8715043",coordinates_only,59.1644108,5.8715043,node,6055780411,OpenStreetMap via Overpass API
+Kiwi,Kiwi Klepp,Kiwi,,,,,,Norway,"58.775929,5.629393",coordinates_only,58.775929,5.629393,node,6055780412,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kvernaland,Kiwi,,,,,,Norway,"58.779215,5.721216",coordinates_only,58.779215,5.721216,node,6055780414,OpenStreetMap via Overpass API
+Kiwi,Kiwi Magneten,Kiwi,,,,,,Norway,"58.767829,5.849572",coordinates_only,58.767829,5.849572,node,6055780415,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åkra,Kiwi,,,,,,Norway,"59.2595082,5.1936184",coordinates_only,59.2595082,5.1936184,node,6055780416,OpenStreetMap via Overpass API
+Kiwi,Kiwi Verdalen,Kiwi,,,,,,Norway,"58.7814703,5.6184759",coordinates_only,58.7814703,5.6184759,node,6055780417,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lura,Kiwi,,,,,,Norway,"58.8720829,5.739788",coordinates_only,58.8720829,5.739788,node,6055780418,OpenStreetMap via Overpass API
+Kiwi,Kiwi Birkeland,Kiwi,,,,,,Norway,"58.3319794,8.2318399",coordinates_only,58.3319794,8.2318399,node,6055801304,OpenStreetMap via Overpass API
+Kiwi,Kiwi Søndeled,Kiwi,,,,,,Norway,"58.760388,9.075884",coordinates_only,58.760388,9.075884,node,6055801305,OpenStreetMap via Overpass API
+Kiwi,Kiwi Risør,Kiwi,,,,,,Norway,"58.7177,9.214179",coordinates_only,58.7177,9.214179,node,6055801306,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tangvall,Kiwi,,,,,,Norway,"58.0975304,7.8164032",coordinates_only,58.0975304,7.8164032,node,6055801308,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vennesla,Kiwi,,,,,,Norway,"58.2701602,7.9728739",coordinates_only,58.2701602,7.9728739,node,6055801310,OpenStreetMap via Overpass API
+Kiwi,Kiwi Biesletta,Kiwi,,,,,,Norway,"58.346855,8.5971285",coordinates_only,58.346855,8.5971285,node,6055801386,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tingsaker,Kiwi,,,,,,Norway,"58.2616856,8.3948954",coordinates_only,58.2616856,8.3948954,node,6055801387,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjorbekk,Kiwi,,,,,,Norway,"58.4389814,8.7081473",coordinates_only,58.4389814,8.7081473,node,6055801388,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nyli,Kiwi,,,,,,Norway,"58.474111,8.774065",coordinates_only,58.474111,8.774065,node,6055801389,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vegårshei,Kiwi,,,,,,Norway,"58.749234,8.864436",coordinates_only,58.749234,8.864436,node,6055801390,OpenStreetMap via Overpass API
+Kiwi,Kiwi Saltrød,Kiwi,,,,,,Norway,"58.494811,8.848703",coordinates_only,58.494811,8.848703,node,6055801391,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kviteseid,Kiwi,,,,,,Norway,"59.4019517,8.4896397",coordinates_only,59.4019517,8.4896397,node,6055843200,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gimsøy,Kiwi,,,,,,Norway,"59.1931702,9.6104476",coordinates_only,59.1931702,9.6104476,node,6055843201,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tollnes,Kiwi,,,,,,Norway,"59.1533605,9.6392738",coordinates_only,59.1533605,9.6392738,node,6055843203,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skippergata,Kiwi,,,,,,Norway,"59.1359392,9.642382",coordinates_only,59.1359392,9.642382,node,6055843205,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ulefoss,Kiwi,,,,,,Norway,"59.2817581,9.2724262",coordinates_only,59.2817581,9.2724262,node,6055843206,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stridsklev,Kiwi,,,,,,Norway,"59.1103901,9.6671757",coordinates_only,59.1103901,9.6671757,node,6055843207,OpenStreetMap via Overpass API
+Kiwi,Kiwi Porselensfabrikken,Kiwi,,,,,,Norway,"59.140256,9.639239",coordinates_only,59.140256,9.639239,node,6055843208,OpenStreetMap via Overpass API
+Kiwi,Kiwi Herøya,Kiwi,,,,,,Norway,"59.1155619,9.6490761",coordinates_only,59.1155619,9.6490761,node,6055843209,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kjørbekkdalen,Kiwi,,,,,,Norway,"59.1746069,9.6275697",coordinates_only,59.1746069,9.6275697,node,6055843708,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stokke,Kiwi,,,,,,Norway,"59.2214133,10.2989708",coordinates_only,59.2214133,10.2989708,node,6055843709,OpenStreetMap via Overpass API
+Kiwi,Kiwi Torstrand,Kiwi,,,,,,Norway,"59.0473169,10.0466005",coordinates_only,59.0473169,10.0466005,node,6055843710,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordre Jarlsberg brygge,Kiwi,,,,,,Norway,"59.5651456,10.26848",coordinates_only,59.5651456,10.26848,node,6055843711,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sande,Kiwi,,,,,,Norway,"59.594516,10.207813",coordinates_only,59.594516,10.207813,node,6055843712,OpenStreetMap via Overpass API
+Kiwi,Kiwi Barkåker,Kiwi,,,,,,Norway,"59.3188398,10.3884945",coordinates_only,59.3188398,10.3884945,node,6055843713,OpenStreetMap via Overpass API
+Kiwi,Kiwi Foyn,Kiwi,,,,,,Norway,"59.266989,10.407302",coordinates_only,59.266989,10.407302,node,6055843714,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nanset,Kiwi,,,,,,Norway,"59.066135,10.04212",coordinates_only,59.066135,10.04212,node,6055843715,OpenStreetMap via Overpass API
+Kiwi,Kiwi Svelvik senter,Kiwi,,,,,,Norway,"59.617647,10.40946",coordinates_only,59.617647,10.40946,node,6055843716,OpenStreetMap via Overpass API
+Kiwi,Kiwi Frydenberg,Kiwi,,,,,,Norway,"59.2210743,10.9315515",coordinates_only,59.2210743,10.9315515,node,6055856845,OpenStreetMap via Overpass API
+Kiwi,Kiwi Pancoveien,Kiwi,,,,,,Norway,"59.2339778,10.9052125",coordinates_only,59.2339778,10.9052125,node,6055856846,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tomter,Kiwi,,,,,,Norway,"59.659563,11.0007992",coordinates_only,59.659563,11.0007992,node,6055856847,OpenStreetMap via Overpass API
+Kiwi,Kiwi Knapstad,Kiwi,,,,,,Norway,"59.620639,11.027638",coordinates_only,59.620639,11.027638,node,6055856848,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mysen,Kiwi,,,,,,Norway,"59.552784,11.33545",coordinates_only,59.552784,11.33545,node,6055856849,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vammaveien,Kiwi,,,,,,Norway,"59.58068,11.161497",coordinates_only,59.58068,11.161497,node,6055856850,OpenStreetMap via Overpass API
+Kiwi,Kiwi Olav Vs gate,Kiwi,,,,,,Norway,"59.1198399,11.3897506",coordinates_only,59.1198399,11.3897506,node,6055856851,OpenStreetMap via Overpass API
+Kiwi,Kiwi Borgarveien,Kiwi,,,,,,Norway,"59.2048052,10.9745867",coordinates_only,59.2048052,10.9745867,node,6055856852,OpenStreetMap via Overpass API
+Kiwi,Kiwi Rodeløkka,Kiwi,,,,,,Norway,"59.9243959,10.7656121",coordinates_only,59.9243959,10.7656121,node,6055882859,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ammerud,Kiwi,,,,,,Norway,"59.9590014,10.8701566",coordinates_only,59.9590014,10.8701566,node,6055882860,OpenStreetMap via Overpass API
+Kiwi,Kiwi Brobekk,Kiwi,,,,,,Norway,"59.9383765,10.8261044",coordinates_only,59.9383765,10.8261044,node,6055882861,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bislett,Kiwi,,,,,,Norway,"59.9281825,10.7327287",coordinates_only,59.9281825,10.7327287,node,6055882863,OpenStreetMap via Overpass API
+Kiwi,Kiwi Byporten,Kiwi,,,,,,Norway,"59.9116698,10.7525964",coordinates_only,59.9116698,10.7525964,node,6055882864,OpenStreetMap via Overpass API
+Kiwi,KIWI Cecilie Thoresens vei,Kiwi,,,,,,Norway,"59.8758879,10.8098173",coordinates_only,59.8758879,10.8098173,node,6055882865,OpenStreetMap via Overpass API
+Kiwi,Kiwi Løren,Kiwi,,,,,,Norway,"59.9278542,10.7893412",coordinates_only,59.9278542,10.7893412,node,6055882866,OpenStreetMap via Overpass API
+Kiwi,Kiwi Slemdal,Kiwi,,,,,,Norway,"59.950399,10.692664",coordinates_only,59.950399,10.692664,node,6055882867,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jordal,Kiwi,,,,,,Norway,"59.9120688,10.7865055",coordinates_only,59.9120688,10.7865055,node,6055885703,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tonsenhagen,Kiwi,,,,,,Norway,"59.9476721,10.8227774",coordinates_only,59.9476721,10.8227774,node,6055885704,OpenStreetMap via Overpass API
+Kiwi,Kiwi Briskeby,Kiwi,,,,,,Norway,"59.922633,10.715806",coordinates_only,59.922633,10.715806,node,6055885705,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hovinveien,Kiwi,,,,,,Norway,"59.921944,10.7928091",coordinates_only,59.921944,10.7928091,node,6055885706,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hov,Kiwi,,,,,,Norway,"60.6995523,10.3523825",coordinates_only,60.6995523,10.3523825,node,6055919709,OpenStreetMap via Overpass API
+Kiwi,Kiwi Jaren,Kiwi,,,,,,Norway,"60.3945719,10.5579213",coordinates_only,60.3945719,10.5579213,node,6055919710,OpenStreetMap via Overpass API
+Kiwi,Kiwi Raufoss,Kiwi,,,,,,Norway,"60.7303333,10.6167009",coordinates_only,60.7303333,10.6167009,node,6055919711,OpenStreetMap via Overpass API
+Kiwi,Kiwi Harestua,Kiwi,,,,,,Norway,"60.2028425,10.7151698",coordinates_only,60.2028425,10.7151698,node,6055919712,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gjøvik,Kiwi,,,,,,Norway,"60.797515,10.689722",coordinates_only,60.797515,10.689722,node,6055919713,OpenStreetMap via Overpass API
+Kiwi,Kiwi Harpefoss,Kiwi,,,,,,Norway,"61.5778452,9.8589121",coordinates_only,61.5778452,9.8589121,node,6055919714,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vågå,Kiwi,,,,,,Norway,"61.8777777,9.0971227",coordinates_only,61.8777777,9.0971227,node,6055919715,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skreia,Kiwi,,,,,,Norway,"60.650986,10.9390889",coordinates_only,60.650986,10.9390889,node,6055919716,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kvam,Kiwi,,,,,,Norway,"61.6652394,9.6992819",coordinates_only,61.6652394,9.6992819,node,6055919717,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stampa,Kiwi,,,,,,Norway,"61.1242506,10.4687284",coordinates_only,61.1242506,10.4687284,node,6055919718,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hønengata,Kiwi,,,,,,Norway,"60.177415,10.267187",coordinates_only,60.177415,10.267187,node,6055919902,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åmot sentrum,Kiwi,,,,,,Norway,"59.8926605,9.9241016",coordinates_only,59.8926605,9.9241016,node,6055919903,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moane,Kiwi,,,,,,Norway,"59.6258852,9.6252303",coordinates_only,59.6258852,9.6252303,node,6055919904,OpenStreetMap via Overpass API
+Kiwi,Kiwi Åmot,Kiwi,,,,,,Norway,"59.9003461,9.906232",coordinates_only,59.9003461,9.906232,node,6055919905,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hokksund,Kiwi,,,,,,Norway,"59.772226,9.908367",coordinates_only,59.772226,9.908367,node,6055919907,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tofte,Kiwi,,,,,,Norway,"59.542915,10.561875",coordinates_only,59.542915,10.561875,node,6055919908,OpenStreetMap via Overpass API
+Kiwi,Kiwi Osloveien,Kiwi,,,,,,Norway,"60.1523847,10.2531038",coordinates_only,60.1523847,10.2531038,node,6055919909,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tynset,Kiwi,,,,,,Norway,"62.2774392,10.7738592",coordinates_only,62.2774392,10.7738592,node,6055919912,OpenStreetMap via Overpass API
+Kiwi,Kiwi Moelv,Kiwi,,,,,,Norway,"60.9289617,10.7005492",coordinates_only,60.9289617,10.7005492,node,6055919913,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gjemselund,Kiwi,,,,,,Norway,"60.1939497,11.9906348",coordinates_only,60.1939497,11.9906348,node,6055919914,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mørkvedvegen,Kiwi,,,,,,Norway,"60.879416,10.9545374",coordinates_only,60.879416,10.9545374,node,6055919915,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hagafoss,Kiwi,,,,,,Norway,"60.5978422,8.3458192",coordinates_only,60.5978422,8.3458192,node,6055920297,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gomsrud,Kiwi,,,,,,Norway,"59.6418625,9.6594031",coordinates_only,59.6418625,9.6594031,node,6055920298,OpenStreetMap via Overpass API
+Kiwi,Kiwi Semsmoen,Kiwi,,,,,,Norway,"59.7714931,9.8817749",coordinates_only,59.7714931,9.8817749,node,6055920299,OpenStreetMap via Overpass API
+Kiwi,Kiwi Baneveien,Kiwi,,,,,,Norway,"59.6737342,9.6511391",coordinates_only,59.6737342,9.6511391,node,6055920300,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sokna,Kiwi,,,,,,Norway,"60.2397096,9.9248164",coordinates_only,60.2397096,9.9248164,node,6055920301,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lierskogen,Kiwi,,,,,,Norway,"59.8180841,10.3280001",coordinates_only,59.8180841,10.3280001,node,6055920302,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vik,Kiwi,,,,,,Norway,"60.0776675,10.2807555",coordinates_only,60.0776675,10.2807555,node,6055920303,OpenStreetMap via Overpass API
+Kiwi,Kiwi Søre Ål,Kiwi,,,,,,Norway,"61.0999683,10.4738558",coordinates_only,61.0999683,10.4738558,node,6055920304,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fagernes,Kiwi,,,,,,Norway,"60.985409,9.241103",coordinates_only,60.985409,9.241103,node,6055920305,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dokka,Kiwi,,,,,,Norway,"60.836392,10.068815",coordinates_only,60.836392,10.068815,node,6055920307,OpenStreetMap via Overpass API
+Kiwi,Kiwi Reinsvoll,Kiwi,,,,,,Norway,"60.6839239,10.6214331",coordinates_only,60.6839239,10.6214331,node,6055920308,OpenStreetMap via Overpass API
+Kiwi,Kiwi CC Mart'n Hamar,Kiwi,,,,,,Norway,"60.796078,11.0892988",coordinates_only,60.796078,11.0892988,node,6055920309,OpenStreetMap via Overpass API
+Kiwi,Kiwi Magnor,Kiwi,,,,,,Norway,"59.9491005,12.2038694",coordinates_only,59.9491005,12.2038694,node,6055920310,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nydal,Kiwi,,,,,,Norway,"60.8440269,11.0446194",coordinates_only,60.8440269,11.0446194,node,6055920311,OpenStreetMap via Overpass API
+Kiwi,Kiwi Våler,Kiwi,,,,,,Norway,"60.6749559,11.834425",coordinates_only,60.6749559,11.834425,node,6055920312,OpenStreetMap via Overpass API
+Kiwi,Kiwi Meierigården Løten,Kiwi,,,,,,Norway,"60.8204789,11.3445214",coordinates_only,60.8204789,11.3445214,node,6055920313,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kongsvinger,Kiwi,,,,,,Norway,"60.1867644,12.0083334",coordinates_only,60.1867644,12.0083334,node,6055920314,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kirkenær,Kiwi,,,,,,Norway,"60.4572842,12.0596776",coordinates_only,60.4572842,12.0596776,node,6055920315,OpenStreetMap via Overpass API
+Kiwi,Kiwi Flisa,Kiwi,,,,,,Norway,"60.611176,12.013106",coordinates_only,60.611176,12.013106,node,6055920316,OpenStreetMap via Overpass API
+Kiwi,Kiwi Auli,Kiwi,,,,,,Norway,"60.0335401,11.3523414",coordinates_only,60.0335401,11.3523414,node,6058635349,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kjørbo,Kiwi,,,,,,Norway,"59.887208,10.518589",coordinates_only,59.887208,10.518589,node,6058635350,OpenStreetMap via Overpass API
+Kiwi,Kiwi Meierigården,Kiwi,,,,,,Norway,"60.1436634,11.1618698",coordinates_only,60.1436634,11.1618698,node,6058635351,OpenStreetMap via Overpass API
+Kiwi,Kiwi Heggedal,Kiwi,,,,,,Norway,"59.786624,10.436344",coordinates_only,59.786624,10.436344,node,6058635353,OpenStreetMap via Overpass API
+Kiwi,Kiwi Råholt,Kiwi,,,,,,Norway,"60.2811452,11.1762711",coordinates_only,60.2811452,11.1762711,node,6058635354,OpenStreetMap via Overpass API
+Kiwi,Kiwi KB Kløfta,Kiwi,,,,,,Norway,"60.072695,11.13571",coordinates_only,60.072695,11.13571,node,6058635355,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fagerstrand,Kiwi,,,,,,Norway,"59.7458441,10.6081872",coordinates_only,59.7458441,10.6081872,node,6058636045,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bjørkelangen,Kiwi,,,,,,Norway,"59.8837394,11.5707851",coordinates_only,59.8837394,11.5707851,node,6058636047,OpenStreetMap via Overpass API
+Kiwi,Kiwi Løken,Kiwi,,,,,,Norway,"59.795099,11.464167",coordinates_only,59.795099,11.464167,node,6058636048,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vettre,Kiwi,,,,,,Norway,"59.8286754,10.472625",coordinates_only,59.8286754,10.472625,node,6058636049,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vormsund,Kiwi,,,,,,Norway,"60.1516727,11.4115801",coordinates_only,60.1516727,11.4115801,node,6058636050,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eiksmarka,Kiwi,,,,,,Norway,"59.9472176,10.6223269",coordinates_only,59.9472176,10.6223269,node,6058636052,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sletta,Kiwi,,,,,,Norway,"59.5182824,10.7118635",coordinates_only,59.5182824,10.7118635,node,6058636053,OpenStreetMap via Overpass API
+Kiwi,Kiwi Aurskog,Kiwi,,,,,,Norway,"59.9276858,11.4457002",coordinates_only,59.9276858,11.4457002,node,6058636054,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sorgenfri,Kiwi,,,,,,Norway,"63.405644,10.400472",coordinates_only,63.405644,10.400472,node,6135905557,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mæhlumsløkka,Kiwi,,,,,,Norway,"60.8076699,11.0796201",coordinates_only,60.8076699,11.0796201,node,6223061721,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordbyveien,Kiwi,,,,,,Norway,"59.7194844,10.8087279",coordinates_only,59.7194844,10.8087279,node,6223061722,OpenStreetMap via Overpass API
+Kiwi,Kiwi Krøgenes,Kiwi,,,,,,Norway,"58.4733289,8.8160438",coordinates_only,58.4733289,8.8160438,node,6223061724,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bondi,Kiwi,,,,,,Norway,"59.81929,10.4409868",coordinates_only,59.81929,10.4409868,node,6269524971,OpenStreetMap via Overpass API
+Kiwi,Kiwi Damsgårdssundet,Kiwi,,,,,,Norway,"60.3796074,5.3247694",coordinates_only,60.3796074,5.3247694,node,6365979414,OpenStreetMap via Overpass API
+Kiwi,Kiwi Farriseidet,Kiwi,,,,,,Norway,"59.054436,10.009849",coordinates_only,59.054436,10.009849,node,6449138727,OpenStreetMap via Overpass API
+Kiwi,Kiwi Midtun,Kiwi,,,,,,Norway,"60.3205613,5.3696897",coordinates_only,60.3205613,5.3696897,node,6449138729,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ski stasjon,Kiwi,,,,,,Norway,"59.720284,10.833206",coordinates_only,59.720284,10.833206,node,6755212560,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lerberg,Kiwi,,,,,,Norway,"59.7786732,9.91755",coordinates_only,59.7786732,9.91755,node,6762237254,OpenStreetMap via Overpass API
+Kiwi,Kiwi Meierikvartalet,Kiwi,,,,,,Norway,"67.2837457,14.3863445",coordinates_only,67.2837457,14.3863445,node,6763808127,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bogstad,Kiwi,,,,,,Norway,"59.9626355,10.6443091",coordinates_only,59.9626355,10.6443091,node,6763808133,OpenStreetMap via Overpass API
+Kiwi,KIWI Skjeberg,Kiwi,,,,,,Norway,"59.267959,11.169461",coordinates_only,59.267959,11.169461,node,6864100545,OpenStreetMap via Overpass API
+Kiwi,Kiwi Askim,Kiwi,,,,,,Norway,"59.5814151,11.1694673",coordinates_only,59.5814151,11.1694673,node,6887742914,OpenStreetMap via Overpass API
+Kiwi,Kiwi Eiekrysset,Kiwi,,,,,,Norway,"58.4605773,6.0014885",coordinates_only,58.4605773,6.0014885,node,6952558038,OpenStreetMap via Overpass API
+Kiwi,Kiwi Myrvoll,Kiwi,,,,,,Norway,"59.7882621,10.8009415",coordinates_only,59.7882621,10.8009415,node,7101202198,OpenStreetMap via Overpass API
+Kiwi,Kiwi Holme,Kiwi,,,,,,Norway,"60.530734,5.156463",coordinates_only,60.530734,5.156463,node,7140763762,OpenStreetMap via Overpass API
+Kiwi,Kiwi Storhamar,Kiwi,,,,,,Norway,"60.803662,11.0445609",coordinates_only,60.803662,11.0445609,node,7140763763,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gard senter,Kiwi,,,,,,Norway,"59.4271342,5.2638899",coordinates_only,59.4271342,5.2638899,node,7140763764,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vallekrysset,Kiwi,,,,,,Norway,"62.4790555,6.6644636",coordinates_only,62.4790555,6.6644636,node,7140763765,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ågotnes torg,Kiwi,,,,,,Norway,"60.4031546,5.0003466",coordinates_only,60.4031546,5.0003466,node,7140763766,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordfjordeid,Kiwi,,,,,,Norway,"61.9099355,5.9954311",coordinates_only,61.9099355,5.9954311,node,7140763767,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hillevåg,Kiwi,,,,,,Norway,"58.9498367,5.7416278",coordinates_only,58.9498367,5.7416278,node,7286550341,OpenStreetMap via Overpass API
+Kiwi,Kiwi Klokkarstua,Kiwi,,,,,,Norway,"59.6197904,10.471065",coordinates_only,59.6197904,10.471065,node,7400854581,OpenStreetMap via Overpass API
+Kiwi,Kiwi Marnargården,Kiwi,,,,,,Norway,"58.029141,7.460065",coordinates_only,58.029141,7.460065,node,7501585270,OpenStreetMap via Overpass API
+Kiwi,Kiwi Barcode,Kiwi,,,,,,Norway,"59.9072958,10.7613004",coordinates_only,59.9072958,10.7613004,node,7548950157,OpenStreetMap via Overpass API
+Kiwi,Kiwi Førde,Kiwi,,,,,,Norway,"61.4459069,5.8882481",coordinates_only,61.4459069,5.8882481,node,7589882170,OpenStreetMap via Overpass API
+Kiwi,Kiwi Lilleby,Kiwi,,,,,,Norway,"63.4422944,10.4337775",coordinates_only,63.4422944,10.4337775,node,7643844514,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grindalsmoen,Kiwi,,,,,,Norway,"60.8851249,11.5323766",coordinates_only,60.8851249,11.5323766,node,7715636771,OpenStreetMap via Overpass API
+Kiwi,Kiwi Linderud senter,Kiwi,,,,,,Norway,"59.9431024,10.8363484",coordinates_only,59.9431024,10.8363484,node,7935635654,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sofiemyr,Kiwi,,,,,,Norway,"59.7963405,10.8222417",coordinates_only,59.7963405,10.8222417,node,8359649286,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sølvparken,Kiwi,,,,,,Norway,"59.6687308,9.6537908",coordinates_only,59.6687308,9.6537908,node,8359649290,OpenStreetMap via Overpass API
+Kiwi,Kiwi Narvikfjellet,Kiwi,,,,,,Norway,"68.4376944,17.449249",coordinates_only,68.4376944,17.449249,node,8359649291,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tvedtsenteret,Kiwi,,,,,,Norway,"58.8968125,5.7037161",coordinates_only,58.8968125,5.7037161,node,8359649292,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bankveien,Kiwi,,,,,,Norway,"59.8346574,10.4328489",coordinates_only,59.8346574,10.4328489,node,8637285060,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stakkevollvegen 11,Kiwi,,,,,,Norway,"69.6607829,18.9680388",coordinates_only,69.6607829,18.9680388,node,8637285061,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ryenstubben,Kiwi,,,,,,Norway,"59.8984759,10.8057028",coordinates_only,59.8984759,10.8057028,node,8637285062,OpenStreetMap via Overpass API
+Kiwi,Kiwi Isrenna,Kiwi,,,,,,Norway,"69.6837558,19.0004857",coordinates_only,69.6837558,19.0004857,node,8637285063,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mæhlumsløkka,Kiwi,,,,,,Norway,"60.808198,11.08023",coordinates_only,60.808198,11.08023,node,9015069087,OpenStreetMap via Overpass API
+Kiwi,Kiwi Porsmyrveien,Kiwi,,,,,,Norway,"58.8794781,5.7266859",coordinates_only,58.8794781,5.7266859,node,9168854306,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bekkestua,Kiwi,,,,,,Norway,"59.9189194,10.5870394",coordinates_only,59.9189194,10.5870394,node,9168854307,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stange bruk,Kiwi,,,,,,Norway,"60.7204313,11.1949039",coordinates_only,60.7204313,11.1949039,node,9168854313,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ringveien Tranby,Kiwi,,,,,,Norway,"59.816627,10.2883717",coordinates_only,59.816627,10.2883717,node,9426334998,OpenStreetMap via Overpass API
+Kiwi,Kiwi Storo,Kiwi,,,,,,Norway,"59.9464414,10.7762118",coordinates_only,59.9464414,10.7762118,node,9426334999,OpenStreetMap via Overpass API
+Kiwi,Kiwi Torggata Oslo,Kiwi,,,,,,Norway,"59.9133526,10.7468576",coordinates_only,59.9133526,10.7468576,node,9608140365,OpenStreetMap via Overpass API
+Kiwi,Kiwi Augerød,Kiwi,,,,,,Norway,"59.4691886,10.7844154",coordinates_only,59.4691886,10.7844154,node,9608140366,OpenStreetMap via Overpass API
+Kiwi,Kiwi Havnegata Sortland,Kiwi,,,,,,Norway,"68.7035659,15.4148543",coordinates_only,68.7035659,15.4148543,node,9608140367,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ølen torg,Kiwi,,,,,,Norway,"59.6038413,5.8074307",coordinates_only,59.6038413,5.8074307,node,9608140368,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sellebakk,Kiwi,,,,,,Norway,"59.2278115,10.9969567",coordinates_only,59.2278115,10.9969567,node,9608140369,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fritzøe brygge,Kiwi,,,,,,Norway,"59.050208,10.0215946",coordinates_only,59.050208,10.0215946,node,9608140370,OpenStreetMap via Overpass API
+Kiwi,Kiwi Saltnes,Kiwi,,,,,,Norway,"59.2874343,10.7563791",coordinates_only,59.2874343,10.7563791,node,9841851838,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gausel,Kiwi,,,,,,Norway,"58.9104221,5.7277832",coordinates_only,58.9104221,5.7277832,node,9965515687,OpenStreetMap via Overpass API
+Kiwi,Kiwi Maskinsvingen,Kiwi,,,,,,Norway,"69.968646,23.2693596",coordinates_only,69.968646,23.2693596,node,10015585556,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hommelvik,Kiwi,,,,,,Norway,"63.4147882,10.8094011",coordinates_only,63.4147882,10.8094011,node,10075703636,OpenStreetMap via Overpass API
+Kiwi,Kiwi Markens,Kiwi,,,,,,Norway,"58.1453162,7.9924537",coordinates_only,58.1453162,7.9924537,node,10075703637,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grimstad,Kiwi,,,,,,Norway,"58.3400767,8.5823987",coordinates_only,58.3400767,8.5823987,node,10075703638,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bryggen Hommersåk,Kiwi,,,,,,Norway,"58.9292007,5.8507469",coordinates_only,58.9292007,5.8507469,node,10075703639,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tangen,Kiwi,,,,,,Norway,"59.7298759,10.2305889",coordinates_only,59.7298759,10.2305889,node,10220659318,OpenStreetMap via Overpass API
+Kiwi,Kiwi Havstad,Kiwi,,,,,,Norway,"63.4063034,10.3585812",coordinates_only,63.4063034,10.3585812,node,10650480128,OpenStreetMap via Overpass API
+Kiwi,Kiwi Humlehaugen,Kiwi,,,,,,Norway,"63.424395,10.5346229",coordinates_only,63.424395,10.5346229,node,10685175725,OpenStreetMap via Overpass API
+Kiwi,Kiwi Krokeideveien,Kiwi,,,,,,Norway,"60.2622846,5.342408",coordinates_only,60.2622846,5.342408,node,10685175726,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hilleren,Kiwi,,,,,,Norway,"60.3380414,5.2008456",coordinates_only,60.3380414,5.2008456,node,10685175727,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nordås,Kiwi,,,,,,Norway,"60.3055135,5.3264868",coordinates_only,60.3055135,5.3264868,node,10685175728,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ullern allé,Kiwi,,,,,,Norway,"59.9268362,10.6422562",coordinates_only,59.9268362,10.6422562,node,10685175729,OpenStreetMap via Overpass API
+Kiwi,Kiwi Elverum,Kiwi,,,,,,Norway,"60.885055,11.5627048",coordinates_only,60.885055,11.5627048,node,10685175730,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dikeveien,Kiwi,,,,,,Norway,"59.2524416,10.9982041",coordinates_only,59.2524416,10.9982041,node,10685175731,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kronstad X,Kiwi,,,,,,Norway,"60.3716953,5.3473957",coordinates_only,60.3716953,5.3473957,node,11027127009,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hamresanden,Kiwi,,,,,,Norway,"58.1929309,8.0857389",coordinates_only,58.1929309,8.0857389,node,11027127010,OpenStreetMap via Overpass API
+Kiwi,Kiwi,Kiwi,,,,,,Norway,"61.902946,6.7194591",coordinates_only,61.902946,6.7194591,node,11162775064,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skolebakken,Kiwi,,,,,,Norway,"59.8107455,10.8034734",coordinates_only,59.8107455,10.8034734,node,11280002548,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hunndalen,Kiwi,,,,,,Norway,"60.7864678,10.644497",coordinates_only,60.7864678,10.644497,node,11280002549,OpenStreetMap via Overpass API
+Kiwi,Kiwi Steinberg,Kiwi,,,,,,Norway,"59.7558188,9.9833352",coordinates_only,59.7558188,9.9833352,node,11280002550,OpenStreetMap via Overpass API
+Kiwi,Kiwi Adamstuen,Kiwi,,,,,,Norway,"59.9316961,10.7361029",coordinates_only,59.9316961,10.7361029,node,11508953999,OpenStreetMap via Overpass API
+Kiwi,Kiwi Mørkved,Kiwi,,,,,,Norway,"67.2844332,14.5680432",coordinates_only,67.2844332,14.5680432,node,12055321020,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ringhuset,Kiwi,,,,,,Norway,"59.9332004,10.7043967",coordinates_only,59.9332004,10.7043967,node,12055321021,OpenStreetMap via Overpass API
+Kiwi,Kiwi Veum,Kiwi,,,,,,Norway,"59.252183,10.9309438",coordinates_only,59.252183,10.9309438,node,12055321022,OpenStreetMap via Overpass API
+Kiwi,Kiwi Øya,Kiwi,,,,,,Norway,"59.0435979,10.0593572",coordinates_only,59.0435979,10.0593572,node,12055321023,OpenStreetMap via Overpass API
+Kiwi,Kiwi Sorgenfri allé,Kiwi,,,,,,Norway,"59.2221551,10.9920773",coordinates_only,59.2221551,10.9920773,node,12055321024,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hauketo,Kiwi,,,,,,Norway,"59.8471986,10.804648",coordinates_only,59.8471986,10.804648,node,12055321025,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grønland Basar,Kiwi,,,,,,Norway,"59.9129659,10.7640823",coordinates_only,59.9129659,10.7640823,node,12055321026,OpenStreetMap via Overpass API
+Kiwi,Kiwi Notodden,Kiwi,,,,,,Norway,"59.5569158,9.2536577",coordinates_only,59.5569158,9.2536577,node,12055321027,OpenStreetMap via Overpass API
+Kiwi,Kiwi Nørve,Kiwi,,,,,,Norway,"62.4715455,6.2065124",coordinates_only,62.4715455,6.2065124,node,12055321028,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ingeberg,Kiwi,,,,,,Norway,"60.8272534,11.1264421",coordinates_only,60.8272534,11.1264421,node,12258561474,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grenlandsporten,Kiwi,,,,,,Norway,"59.0881186,9.8194706",coordinates_only,59.0881186,9.8194706,node,12299918767,OpenStreetMap via Overpass API
+Kiwi,Kiwi Carl Berner,Kiwi,,,,,,Norway,"59.9258293,10.7755142",coordinates_only,59.9258293,10.7755142,node,12647251022,OpenStreetMap via Overpass API
+Kiwi,KIWI Lambertseter Senter,Kiwi,Kiwi Lambertseter Senter,,,,,Norway,"59.8725271,10.8113807",coordinates_only,59.8725271,10.8113807,node,12889858275,OpenStreetMap via Overpass API
+Kiwi,Kiwi,Kiwi,,,,,,Norway,"61.1013216,10.6895695",coordinates_only,61.1013216,10.6895695,node,12916790857,OpenStreetMap via Overpass API
+Kiwi,Kiwi Middelthun,Kiwi,Kiwi,,,,,Norway,"59.9280477,10.7093847",coordinates_only,59.9280477,10.7093847,node,13758304772,OpenStreetMap via Overpass API
+Kiwi,Kiwi,Kiwi,,,,,,Norway,"59.7803804,5.4834493",coordinates_only,59.7803804,5.4834493,way,43686416,OpenStreetMap via Overpass API
+Kiwi,Kiwi Vestkilen,Kiwi,,,,,,Norway,"59.209436,10.888203",coordinates_only,59.209436,10.888203,way,54749516,OpenStreetMap via Overpass API
+Kiwi,Kiwi Fjeldset,Kiwi,,,,,,Norway,"60.874298,11.5770915",coordinates_only,60.874298,11.5770915,way,333172528,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hanstad,Kiwi,,,,,,Norway,"60.8613474,11.5678421",coordinates_only,60.8613474,11.5678421,way,333354266,OpenStreetMap via Overpass API
+Kiwi,Kiwi,Kiwi,,,,,,Norway,"59.272409,10.4275275",coordinates_only,59.272409,10.4275275,way,359374701,OpenStreetMap via Overpass API
+Kiwi,Kiwi,Kiwi,,,,,,Norway,"59.641896,11.3187015",coordinates_only,59.641896,11.3187015,way,395598517,OpenStreetMap via Overpass API
+Kiwi,Kiwi Tuven,Kiwi,,,,,,Norway,"59.5677722,9.2147263",coordinates_only,59.5677722,9.2147263,way,432868540,OpenStreetMap via Overpass API
+Kiwi,Kiwi Bergenhuskrysset,Kiwi,,,,,,Norway,"59.4169815,11.350128",coordinates_only,59.4169815,11.350128,way,440618462,OpenStreetMap via Overpass API
+Kiwi,Kiwi Dal,Kiwi,,,,,,Norway,"60.2582575,11.1868472",coordinates_only,60.2582575,11.1868472,way,487630076,OpenStreetMap via Overpass API
+Kiwi,Kiwi Skiptvet,Kiwi,,,,,,Norway,"59.4724188,11.1630308",coordinates_only,59.4724188,11.1630308,way,605207595,OpenStreetMap via Overpass API
+Kiwi,Kiwi Gran,Kiwi,,,,,,Norway,"60.3540246,10.5746174",coordinates_only,60.3540246,10.5746174,way,635294267,OpenStreetMap via Overpass API
+Kiwi,Kiwi Olsvik,Kiwi,,,,,,Norway,"60.3822405,5.2191155",coordinates_only,60.3822405,5.2191155,way,655172256,OpenStreetMap via Overpass API
+Kiwi,Kiwi Kløfta,Kiwi,,,,,,Norway,"60.0747925,11.1406675",coordinates_only,60.0747925,11.1406675,way,691940001,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hallingby,Kiwi,,,,,,Norway,"60.2724907,10.1845376",coordinates_only,60.2724907,10.1845376,way,773888288,OpenStreetMap via Overpass API
+Kiwi,Kiwi Valle,Kiwi,,,,,,Norway,"60.2918476,5.3801456",coordinates_only,60.2918476,5.3801456,way,779451589,OpenStreetMap via Overpass API
+Kiwi,Kiwi Hurrahølet,Kiwi,,,,,,Norway,"59.5856623,11.1340262",coordinates_only,59.5856623,11.1340262,way,809726465,OpenStreetMap via Overpass API
+Kiwi,Kiwi Idrettsvegen,Kiwi,,,,,,Norway,"60.1973915,5.459131",coordinates_only,60.1973915,5.459131,way,844776058,OpenStreetMap via Overpass API
+Kiwi,Kiwi Grua,Kiwi,,,,,,Norway,"60.2567911,10.6604364",coordinates_only,60.2567911,10.6604364,way,892610419,OpenStreetMap via Overpass API
+Kiwi,Kiwi Leknes,Kiwi,,,,,,Norway,"68.1431429,13.6176064",coordinates_only,68.1431429,13.6176064,way,1081943194,OpenStreetMap via Overpass API
+Kiwi,Kiwi Svinesundsveien,Kiwi,,,,,,Norway,"59.1210289,11.3053776",coordinates_only,59.1210289,11.3053776,way,1285838829,OpenStreetMap via Overpass API
+Kiwi,Kiwi Ulven,Kiwi,,,,,,Norway,"59.9259928,10.8127521",coordinates_only,59.9259928,10.8127521,way,1354174068,OpenStreetMap via Overpass API
+Kiwi,Kiwi Stabekk stasjon,Kiwi,,,,,,Norway,"59.9084668,10.6052543",coordinates_only,59.9084668,10.6052543,way,1450334493,OpenStreetMap via Overpass API
+Kiwi,Kiwi Leira,,,,,,,Norway,"60.9733515,9.2837152",coordinates_only,60.9733515,9.2837152,node,544573047,OpenStreetMap via Overpass API
+Kiwi,Kiwi,,,,,,,Norway,"60.9560936,10.6100561",coordinates_only,60.9560936,10.6100561,node,11392610346,OpenStreetMap via Overpass API
+Kiwi,Kiwi,,,,,,,Norway,"59.0506425,10.0202962",coordinates_only,59.0506425,10.0202962,node,13061629432,OpenStreetMap via Overpass API
+Kiwi,Kiwi,,,,,,,Norway,"58.1472435,7.9921612",coordinates_only,58.1472435,7.9921612,node,13161488547,OpenStreetMap via Overpass API
+Kiwi,Kiwi Etterstad,,Kiwi,,,,,Norway,"59.9132409,10.7996495",coordinates_only,59.9132409,10.7996495,node,13448930556,OpenStreetMap via Overpass API
+Kiwi,KIWI Flekkerøy,,,,,,,Norway,"58.076501,7.999012",coordinates_only,58.076501,7.999012,way,643512849,OpenStreetMap via Overpass API
