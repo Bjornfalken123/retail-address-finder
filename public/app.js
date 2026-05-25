@@ -2,6 +2,7 @@ const form = document.querySelector("#exportForm");
 const result = document.querySelector("#result");
 const chainInput = document.querySelector("#chain");
 const countryInput = document.querySelector("#country");
+const categoryInput = document.querySelector("#category");
 const formatInput = document.querySelector("#format");
 const sourceInput = document.querySelector("#source");
 const statusChip = document.querySelector("#statusChip");
@@ -15,7 +16,7 @@ const steps = [
   },
   {
     title: "Hämtar data",
-    text: "Vi söker efter matchande platser i det valda landet."
+    text: "Vi söker efter matchande platser i vald kategori."
   },
   {
     title: "Bearbetar adresser",
@@ -35,6 +36,11 @@ document.querySelectorAll(".example").forEach((button) => {
   button.addEventListener("click", () => {
     chainInput.value = button.dataset.chain;
     countryInput.value = button.dataset.country;
+
+    if (categoryInput && button.dataset.category) {
+      categoryInput.value = button.dataset.category;
+    }
+
     chainInput.focus();
   });
 });
@@ -44,6 +50,7 @@ form.addEventListener("submit", async (event) => {
 
   const chain = chainInput.value.trim();
   const country = countryInput.value.trim();
+  const category = categoryInput ? categoryInput.value : "all";
   const format = formatInput ? formatInput.value : "CSV";
   const source = sourceInput ? sourceInput.value : "OpenStreetMap";
   const submitButton = form.querySelector("button");
@@ -78,6 +85,7 @@ form.addEventListener("submit", async (event) => {
       body: JSON.stringify({
         chain,
         country,
+        category,
         format,
         source
       })
@@ -94,7 +102,7 @@ form.addEventListener("submit", async (event) => {
       progress: 28,
       badge: "Arbetar",
       title: "Hämtar data",
-      subtitle: `Exporten är startad. Vi hämtar platser för ${chain} i ${country}.`,
+      subtitle: `Exporten är startad. Vi hämtar ${getCategoryLabel(category).toLowerCase()} för ${chain} i ${country}.`,
       actionsUrl: data.actionsUrl
     });
 
@@ -102,7 +110,8 @@ form.addEventListener("submit", async (event) => {
       fileName: data.fileName,
       actionsUrl: data.actionsUrl,
       chain,
-      country
+      country,
+      category
     });
   } catch (error) {
     showError(error.message);
@@ -111,7 +120,7 @@ form.addEventListener("submit", async (event) => {
   }
 });
 
-function startPolling({ fileName, actionsUrl, chain, country }) {
+function startPolling({ fileName, actionsUrl, chain, country, category }) {
   let attempts = 0;
   const maxAttempts = 150;
 
@@ -127,7 +136,10 @@ function startPolling({ fileName, actionsUrl, chain, country }) {
       progress: phase.progress,
       badge: phase.badge,
       title: phase.title,
-      subtitle: phase.subtitle.replace("{chain}", chain).replace("{country}", country),
+      subtitle: phase.subtitle
+        .replace("{chain}", chain)
+        .replace("{country}", country)
+        .replace("{category}", getCategoryLabel(category).toLowerCase()),
       actionsUrl
     });
 
@@ -182,7 +194,7 @@ function getPhase(attempts) {
       progress: 32,
       badge: "Hämtar",
       title: "Hämtar data",
-      subtitle: "Vi söker efter platser för {chain} i {country}."
+      subtitle: "Vi söker efter {category} för {chain} i {country}."
     };
   }
 
@@ -283,6 +295,21 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
       </p>
     </div>
   `;
+}
+
+function getCategoryLabel(value) {
+  const labels = {
+    all: "All B2C locations",
+    retail_grocery: "Retail & grocery",
+    food_restaurants: "Food & restaurants",
+    mobility_fuel: "Mobility & fuel",
+    hotels: "Hotels & accommodation",
+    services: "Services",
+    healthcare_pharmacy: "Healthcare & pharmacy",
+    fitness_entertainment: "Fitness & entertainment"
+  };
+
+  return labels[value] || "All B2C locations";
 }
 
 function showError(message) {
