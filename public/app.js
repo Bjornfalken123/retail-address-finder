@@ -1,107 +1,200 @@
-const form = document.querySelector('#requestForm');
-const chainEl = document.querySelector('#chain');
-const countryEl = document.querySelector('#country');
-const formatEl = document.querySelector('#format');
-const sourceEl = document.querySelector('#source');
-const actionsLink = document.querySelector('#actionsLink');
+const form = document.querySelector("#exportForm");
+const result = document.querySelector("#result");
+const chainInput = document.querySelector("#chain");
+const countryInput = document.querySelector("#country");
 
-const steps = Array.from(document.querySelectorAll('.step'));
-const stats = {
-  storesFound: document.querySelector('#storesFound'),
-  validAddresses: document.querySelector('#validAddresses'),
-  missingPostcodes: document.querySelector('#missingPostcodes'),
-  duplicatesRemoved: document.querySelector('#duplicatesRemoved'),
-  rowsReady: document.querySelector('#rowsReady'),
-};
+let pollTimer = null;
 
-form.addEventListener('submit', async (event) => {
+document.querySelectorAll(".example").forEach((button) => {
+  button.addEventListener("click", () => {
+    chainInput.value = button.dataset.chain;
+    countryInput.value = button.dataset.country;
+    chainInput.focus();
+  });
+});
+
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const chain = chainEl.value.trim();
-  const country = countryEl.value.trim();
-  const format = formatEl.value.trim();
-  const source = sourceEl.value.trim();
-  if (!chain || !country) return;
 
-  setVisualStatus('queued', chain, country);
-  const button = form.querySelector('button');
-  button.disabled = true;
-  button.textContent = 'Starting export...';
+  const chain = chainInput.value.trim();
+  const country = countryInput.value.trim();
+
+  if (!chain || !country) {
+    showResult("Fyll i både kedja och land.", "error");
+    return;
+  }
+
+  const submitButton = form.querySelector("button");
+  submitButton.disabled = true;
+
+  showStatus({
+    title: "Startar export",
+    message: "Skickar request till GitHub Actions...",
+    step: 1
+  });
 
   try {
-    const res = await fetch('/api/start', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ chain, country, format, source }),
+    const response = await fetch("/api/start", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        chain,
+        country,
+        format: "CSV",
+        source: "OpenStreetMap"
+      })
     });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || 'Could not start export');
 
-    actionsLink.href = data.actionsUrl;
-    actionsLink.classList.remove('disabled');
-    document.querySelector('#downloadText').textContent = 'Exporten är startad. Följ körningen i GitHub Actions. När den är klar finns CSV:n som artifact och i exports-mappen.';
-    simulateProgress(chain, country);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Kunde inte starta exporten.");
+    }
+
+    showStatus({
+      title: "Exporten är startad",
+      message: "GitHub Actions kör hämtningen. Vi kontrollerar när filen är klar.",
+      step: 2,
+      actionsUrl: data.actionsUrl
+    });
+
+    startPolling(data.fileName, data.actionsUrl);
+
   } catch (error) {
-    document.querySelector('#downloadText').textContent = error.message;
+    showResult(`<strong>Fel:</strong> ${escapeHtml(error.message)}`, "error");
   } finally {
-    button.disabled = false;
-    button.textContent = 'Generate file →';
+    submitButton.disabled = false;
   }
 });
 
-function setVisualStatus(status, chain, country) {
-  document.querySelector('#requestTitle').textContent = `${chain} — ${country}`;
-  document.querySelector('#jobId').textContent = `ID: ${crypto.randomUUID().slice(0, 13)}`;
-  document.querySelector('#requestedTime').textContent = new Date().toLocaleString();
-  document.querySelector('#coverageCountry').textContent = country;
-  steps.forEach((step, i) => {
-    step.classList.remove('done', 'active');
-    if (i === 0) step.classList.add('active');
-  });
+function startPolling(fileName, actionsUrl) {
+  if (pollTimer) {
+    clearInterval(pollTimer);
+  }
+
+  let attempts = 0;
+  const maxAttempts = 120;
+
+  pollTimer = setInterval(async () => {
+    attempts += 1;
+
+    showStatus({
+      title: "Exporten körs",
+      message: `Kontrollerar om CSV-filen är klar... (${attempts})`,
+      step: 3,
+      actionsUrl
+    });
+
+    try {
+      const response = await fetch(`/api/status?file=${encodeURIComponent(fileName)}`);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Kunde inte läsa status.");
+      }
+
+      if (data.ready) {
+        clearInterval(pollTimer);
+        pollTimer = null;
+
+        showReady({
+          fileName,
+          downloadUrl: data.downloadUrl,
+          size: data.size,
+          actionsUrl
+        });
+      }
+
+      if (attempts >= maxAttempts) {
+        clearInterval(pollTimer);
+        pollTimer = null;
+
+        showStatus({
+          title: "Exporten tar längre tid än väntat",
+          message: "Öppna GitHub Actions för att följa körningen. Filen kan fortfarande bli klar.",
+          step: 3,
+          actionsUrl
+        });
+      }
+    } catch (error) {
+      clearInterval(pollTimer);
+      pollTimer = null;
+      showResult(`<strong>Statusfel:</strong> ${escapeHtml(error.message)}`, "error");
+    }
+  }, 7000);
 }
 
-function simulateProgress(chain, country) {
-  const values = [
-    { step: 1, stores: 320, valid: 280, missing: 11, dupes: 4, rows: 276 },
-    { step: 2, stores: 880, valid: 812, missing: 23, dupes: 19, rows: 793 },
-    { step: 3, stores: 1248, valid: 1192, missing: 23, dupes: 56, rows: 1136 },
+function showStatus({ title, message, step, actionsUrl }) {
+  result.classList.remove("hidden");
+
+  const steps = [
+    { id: 1, label: "Startar" },
+    { id: 2, label: "Kör export" },
+    { id: 3, label: "Kontrollerar fil" },
+    { id: 4, label: "Klar" }
   ];
-  values.forEach((v, idx) => {
-    setTimeout(() => {
-      steps.forEach((s, i) => {
-        s.classList.toggle('done', i < v.step);
-        s.classList.toggle('active', i === v.step);
-      });
-      stats.storesFound.textContent = v.stores.toLocaleString();
-      stats.validAddresses.textContent = v.valid.toLocaleString();
-      stats.missingPostcodes.textContent = v.missing.toLocaleString();
-      stats.duplicatesRemoved.textContent = v.dupes.toLocaleString();
-      stats.rowsReady.textContent = v.rows.toLocaleString();
-      addSamples(chain, country);
-      addRecentJob(chain, country, idx === values.length - 1 ? 'Processing' : 'Processing');
-    }, (idx + 1) * 1000);
-  });
+
+  result.innerHTML = `
+    <div class="statusBox">
+      <h3>${escapeHtml(title)}</h3>
+      <p>${escapeHtml(message)}</p>
+
+      <div class="steps">
+        ${steps.map((item) => `
+          <div class="step ${item.id <= step ? "active" : ""}">
+            <span>${item.id}</span>
+            <small>${item.label}</small>
+          </div>
+        `).join("")}
+      </div>
+
+      ${actionsUrl ? `
+        <p class="smallText">
+          <a href="${actionsUrl}" target="_blank" rel="noreferrer">Öppna GitHub Actions</a>
+        </p>
+      ` : ""}
+    </div>
+  `;
 }
 
-function addSamples(chain, country) {
-  const tbody = document.querySelector('#sampleRows');
-  const countryName = country || 'Norway';
-  const samples = [
-    [`${chain} Central`, `Storgata 10 0155 Oslo ${countryName}`, '0155', 'OpenStreetMap'],
-    [`${chain} West`, `Bogstadveien 64 0366 Oslo ${countryName}`, '0366', 'OpenStreetMap'],
-    [`${chain} North`, `Thorvald Meyers gate 45 0555 Oslo ${countryName}`, '0555', 'OpenStreetMap'],
-    [`${chain} East`, `Torggata 20 0181 Oslo ${countryName}`, '0181', 'OpenStreetMap'],
-  ];
-  tbody.innerHTML = samples.map(row => `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('');
-  document.querySelector('#sampleCount').textContent = 'Preview rows';
+function showReady({ fileName, downloadUrl, size, actionsUrl }) {
+  const sizeText = size ? `${Math.round(size / 1024)} KB` : "CSV";
+
+  result.classList.remove("hidden");
+  result.innerHTML = `
+    <div class="statusBox ready">
+      <h3>CSV-filen är klar</h3>
+      <p>Exporten har skapats och kan laddas ner direkt.</p>
+
+      <div class="fileCard">
+        <strong>${escapeHtml(fileName)}</strong>
+        <span>${escapeHtml(sizeText)}</span>
+      </div>
+
+      <a class="downloadButton" href="${downloadUrl}">
+        Download CSV
+      </a>
+
+      <p class="smallText">
+        <a href="${actionsUrl}" target="_blank" rel="noreferrer">Visa körningen i GitHub Actions</a>
+      </p>
+    </div>
+  `;
 }
 
-function addRecentJob(chain, country, status) {
-  const tbody = document.querySelector('#recentJobs');
-  const row = document.createElement('tr');
-  row.innerHTML = `<td>#new</td><td>${escapeHtml(chain)}</td><td>${escapeHtml(country)}</td><td><span class="badge processing">${status}</span></td><td>—</td><td>CSV</td><td>…</td>`;
-  tbody.prepend(row);
+function showResult(html, type = "info") {
+  result.classList.remove("hidden");
+  result.innerHTML = `<div class="${type}">${html}</div>`;
 }
 
 function escapeHtml(value) {
-  return String(value).replace(/[&<>'"]/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#039;', '"':'&quot;' }[char]));
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;"
+  }[char]));
 }
