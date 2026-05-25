@@ -11,6 +11,16 @@ on:
         description: "Country in English, for example Norway"
         required: true
         type: string
+      format:
+        description: "Output format, for example CSV"
+        required: false
+        default: "CSV"
+        type: string
+      source:
+        description: "Data source preference"
+        required: false
+        default: "OpenStreetMap"
+        type: string
 
 permissions:
   contents: write
