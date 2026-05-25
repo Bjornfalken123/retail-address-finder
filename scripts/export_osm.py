@@ -78,31 +78,63 @@ CATEGORY_SELECTORS = {
     ],
 
     "food_restaurants": [
-        '["amenity"~"fast_food|restaurant|cafe|bar|pub|ice_cream|food_court"]',
+        '["amenity"="fast_food"]',
+        '["amenity"="restaurant"]',
+        '["amenity"="cafe"]',
+        '["amenity"="bar"]',
+        '["amenity"="pub"]',
+        '["amenity"="ice_cream"]',
+        '["amenity"="food_court"]',
     ],
 
     "mobility_fuel": [
-        '["amenity"~"fuel|car_rental|car_sharing|bicycle_rental|charging_station"]',
-        '["shop"~"car|car_repair|tyres"]',
+        '["amenity"="fuel"]',
+        '["amenity"="charging_station"]',
+        '["amenity"="car_rental"]',
+        '["amenity"="car_sharing"]',
+        '["amenity"="bicycle_rental"]',
+        '["shop"="car"]',
+        '["shop"="car_repair"]',
+        '["shop"="tyres"]',
     ],
 
     "hotels": [
-        '["tourism"~"hotel|motel|hostel|guest_house|apartment"]',
+        '["tourism"="hotel"]',
+        '["tourism"="motel"]',
+        '["tourism"="hostel"]',
+        '["tourism"="guest_house"]',
+        '["tourism"="apartment"]',
     ],
 
     "services": [
-        '["amenity"~"bank|atm|post_office|parcel_locker"]',
-        '["shop"~"hairdresser|beauty|cosmetics|optician"]',
+        '["amenity"="bank"]',
+        '["amenity"="atm"]',
+        '["amenity"="post_office"]',
+        '["amenity"="parcel_locker"]',
+        '["shop"="hairdresser"]',
+        '["shop"="beauty"]',
+        '["shop"="cosmetics"]',
+        '["shop"="optician"]',
     ],
 
     "healthcare_pharmacy": [
-        '["amenity"~"pharmacy|clinic|dentist|doctors|veterinary"]',
-        '["shop"~"chemist|optician"]',
+        '["amenity"="pharmacy"]',
+        '["amenity"="clinic"]',
+        '["amenity"="dentist"]',
+        '["amenity"="doctors"]',
+        '["amenity"="veterinary"]',
+        '["shop"="chemist"]',
+        '["shop"="optician"]',
     ],
 
     "fitness_entertainment": [
-        '["leisure"~"fitness_centre|sports_centre|bowling_alley|cinema|amusement_arcade"]',
-        '["amenity"~"cinema|theatre"]',
+        '["leisure"="fitness_centre"]',
+        '["leisure"="sports_centre"]',
+        '["leisure"="bowling_alley"]',
+        '["leisure"="cinema"]',
+        '["leisure"="amusement_arcade"]',
+        '["amenity"="cinema"]',
+        '["amenity"="theatre"]',
     ],
 }
 
@@ -119,15 +151,37 @@ def safe_filename(value: str) -> str:
     return value.strip("_") or "export"
 
 
+def get_chain_aliases(chain: str) -> list[str]:
+    normalized = chain.strip().lower()
+
+    aliases = {
+        "max hamburgare": ["MAX", "Max", "MAX Burgers", "Max Hamburgare"],
+        "max": ["MAX", "Max", "MAX Burgers", "Max Hamburgare"],
+        "mcdonalds": ["McDonald's", "McDonalds", "McDonald’s"],
+        "mcdonald's": ["McDonald's", "McDonalds", "McDonald’s"],
+        "burger king": ["Burger King"],
+        "kfc": ["KFC"],
+        "rema 1000": ["REMA 1000", "Rema 1000"],
+        "circle k": ["Circle K"],
+    }
+
+    return aliases.get(normalized, [chain.strip()])
+
+
 def overpass_regex_for_chain(chain: str) -> str:
     """
-    Escape regex special characters but do not escape spaces.
-    This avoids some Overpass 406 errors for names like 'REMA 1000'.
+    Build a safe Overpass regex.
+    Also supports aliases, e.g. 'Max Hamburgare' -> 'MAX|Max|MAX Burgers'.
     """
-    chain = chain.strip()
-    escaped = re.sub(r"([.^$*+?{}\[\]\\|()])", r"\\\1", chain)
-    escaped = re.sub(r"\s+", " ", escaped)
-    return escaped
+    aliases = get_chain_aliases(chain)
+
+    escaped_aliases = []
+    for alias in aliases:
+        escaped = re.sub(r"([.^$*+?{}\[\]\\|()])", r"\\\1", alias.strip())
+        escaped = re.sub(r"\s+", " ", escaped)
+        escaped_aliases.append(escaped)
+
+    return "|".join(escaped_aliases)
 
 
 def build_query(country_iso: str, chain: str, search_key: str, selector: str) -> str:
@@ -428,7 +482,7 @@ def main():
                 f"Total unique rows: {len(all_rows)}."
             )
 
-            time.sleep(1)
+            time.sleep(0.4)
 
     rows = dedupe(all_rows)
 
