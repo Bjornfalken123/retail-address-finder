@@ -860,3 +860,166 @@ a {
     grid-column: 2;
   }
 }
+.modeSelector {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.modeSelector legend {
+  display: block;
+  margin-bottom: 8px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.modeOption {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 18px;
+  min-height: 126px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, #ffffff, #fbfdff);
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease,
+    background 0.18s ease;
+}
+
+.modeOption:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 120, 212, 0.28);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+.modeOption input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modeOption span {
+  display: grid;
+  gap: 8px;
+  padding-right: 4px;
+}
+
+.modeOption span::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  margin-bottom: 2px;
+  background: #eef6ff;
+  border: 1px solid #d9ebff;
+}
+
+.modeOption:first-of-type span::before {
+  content: "⌁";
+  color: #0078d4;
+  font-weight: 950;
+  font-size: 20px;
+}
+
+.modeOption:last-of-type span::before {
+  content: "▦";
+  color: #008ca0;
+  font-weight: 950;
+  font-size: 18px;
+}
+
+.modeOption strong {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.modeOption small {
+  max-width: 92%;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 650;
+}
+
+.modeOption::after {
+  content: "";
+  position: absolute;
+  inset: auto 16px 16px auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 2px solid #d0d8e4;
+  background: #ffffff;
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.modeOption:has(input:checked) {
+  border-color: rgba(0, 120, 212, 0.48);
+  background:
+    radial-gradient(circle at top right, rgba(22, 199, 201, 0.16), transparent 10rem),
+    linear-gradient(180deg, #ffffff, #f5fbff);
+  box-shadow:
+    0 18px 42px rgba(0, 120, 212, 0.13),
+    inset 0 0 0 1px rgba(22, 199, 201, 0.18);
+}
+
+.modeOption:has(input:checked)::after {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  background: linear-gradient(135deg, #19c7c7, #0078d4);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 950;
+  box-shadow: 0 8px 18px rgba(0, 120, 212, 0.22);
+}
+
+.modeOption:has(input:checked) strong {
+  color: var(--accent-dark);
+}
+
+.modeOption:has(input:checked) span::before {
+  background: #ffffff;
+  border-color: rgba(0, 120, 212, 0.22);
+  box-shadow: 0 10px 20px rgba(0, 120, 212, 0.08);
+}
+
+@media (min-width: 720px) {
+  .modeSelector {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .modeSelector legend {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .modeOption {
+    min-height: auto;
+    padding: 16px 52px 16px 16px;
+  }
+
+  .modeOption::after {
+    top: 18px;
+    right: 16px;
+    bottom: auto;
+  }
+}
