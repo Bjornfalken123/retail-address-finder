@@ -3,13 +3,29 @@ name: Export custom store addresses
 on:
   workflow_dispatch:
     inputs:
+      export_mode:
+        description: "Export mode: chain or category"
+        required: false
+        default: "chain"
+        type: string
       chain:
-        description: "Store chain, for example REMA 1000"
-        required: true
+        description: "Store chain, for example MAX or Carrefour. Optional for category exports."
+        required: false
+        default: ""
         type: string
       country:
-        description: "Country in English, for example Norway"
+        description: "Country in English, for example Sweden or Norway"
         required: true
+        type: string
+      category:
+        description: "B2C category filter"
+        required: false
+        default: "all"
+        type: string
+      subtype:
+        description: "Subtype filter, for example fast_food or pharmacy"
+        required: false
+        default: "auto"
         type: string
       format:
         description: "Output format"
@@ -20,11 +36,6 @@ on:
         description: "Data source preference"
         required: false
         default: "OpenStreetMap"
-        type: string
-      category:
-        description: "B2C category filter"
-        required: false
-        default: "all"
         type: string
       job_id:
         description: "Unique job id from website"
@@ -58,20 +69,24 @@ jobs:
 
       - name: Show request
         run: |
+          echo "Export mode: ${{ inputs.export_mode }}"
           echo "Chain: ${{ inputs.chain }}"
           echo "Country: ${{ inputs.country }}"
+          echo "Category: ${{ inputs.category }}"
+          echo "Subtype: ${{ inputs.subtype }}"
           echo "Format: ${{ inputs.format }}"
           echo "Source: ${{ inputs.source }}"
-          echo "Category: ${{ inputs.category }}"
           echo "Job ID: ${{ inputs.job_id }}"
 
       - name: Run export script
         run: |
           mkdir -p exports
           python -u scripts/export_osm.py \
+            --export-mode "${{ inputs.export_mode }}" \
             --country "${{ inputs.country }}" \
             --chain "${{ inputs.chain }}" \
             --category "${{ inputs.category }}" \
+            --subtype "${{ inputs.subtype }}" \
             --out "exports/${{ inputs.job_id }}.csv"
 
       - name: Upload CSV as artifact
