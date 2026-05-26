@@ -745,3 +745,118 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.modeSelector {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.modeSelector legend {
+  display: block;
+  margin-bottom: 8px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.modeOption {
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 12px;
+  align-items: start;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease,
+    background 0.18s ease;
+}
+
+.modeOption:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0, 120, 212, 0.28);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+.modeOption input {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  accent-color: var(--accent);
+}
+
+.modeOption span {
+  display: grid;
+  gap: 4px;
+}
+
+.modeOption strong {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.modeOption small {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 650;
+}
+
+.modeOption:has(input:checked) {
+  border-color: rgba(0, 120, 212, 0.45);
+  background:
+    radial-gradient(circle at top right, rgba(22, 199, 201, 0.14), transparent 8rem),
+    linear-gradient(180deg, #ffffff, #f6fbff);
+  box-shadow:
+    0 16px 36px rgba(0, 120, 212, 0.11),
+    inset 0 0 0 1px rgba(22, 199, 201, 0.18);
+}
+
+.modeOption:has(input:checked)::after {
+  content: "Selected";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #ecf7fb;
+  color: #008ca0;
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.modeOption:has(input:checked) strong {
+  color: var(--accent-dark);
+}
+
+@media (min-width: 720px) {
+  .modeSelector {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .modeSelector legend {
+    grid-column: 1 / -1;
+  }
+
+  .modeOption {
+    min-height: 116px;
+  }
+}
+
+@media (max-width: 560px) {
+  .modeOption:has(input:checked)::after {
+    position: static;
+    width: fit-content;
+    margin-top: 6px;
+    grid-column: 2;
+  }
+}
