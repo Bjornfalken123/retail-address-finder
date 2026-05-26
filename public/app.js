@@ -1,13 +1,95 @@
 const form = document.querySelector("#exportForm");
 const result = document.querySelector("#result");
+
 const chainInput = document.querySelector("#chain");
 const countryInput = document.querySelector("#country");
 const categoryInput = document.querySelector("#category");
+const subtypeInput = document.querySelector("#subtype");
 const formatInput = document.querySelector("#format");
 const sourceInput = document.querySelector("#source");
 const statusChip = document.querySelector("#statusChip");
 
+const chainGroup = document.querySelector("#chainGroup");
+const subtypeGroup = document.querySelector("#subtypeGroup");
+
 let pollTimer = null;
+
+const subtypeOptions = {
+  all: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All B2C locations"]
+  ],
+
+  retail_grocery: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All retail & grocery"],
+    ["supermarket", "Supermarkets"],
+    ["convenience", "Convenience stores"],
+    ["fashion", "Fashion & clothing"],
+    ["electronics", "Electronics"],
+    ["furniture", "Furniture & home"],
+    ["general_shop", "General shops"]
+  ],
+
+  food_restaurants: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All food & restaurants"],
+    ["fast_food", "Fast food"],
+    ["restaurant", "Restaurants"],
+    ["cafe", "Cafés"],
+    ["bar_pub", "Bars & pubs"],
+    ["food_court", "Food courts"],
+    ["ice_cream", "Ice cream"]
+  ],
+
+  mobility_fuel: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All mobility & fuel"],
+    ["fuel", "Fuel stations"],
+    ["charging", "EV charging stations"],
+    ["car_rental", "Car rental"],
+    ["car_service", "Car sales & repair"],
+    ["bike_rental", "Bike rental"]
+  ],
+
+  hotels: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All accommodation"],
+    ["hotel", "Hotels"],
+    ["motel", "Motels"],
+    ["hostel", "Hostels"],
+    ["guest_house", "Guest houses"]
+  ],
+
+  services: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All services"],
+    ["bank", "Banks & ATMs"],
+    ["post_parcel", "Post offices & parcel lockers"],
+    ["beauty", "Beauty, hair & cosmetics"],
+    ["optician", "Opticians"]
+  ],
+
+  healthcare_pharmacy: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All healthcare & pharmacy"],
+    ["pharmacy", "Pharmacies"],
+    ["clinic", "Clinics"],
+    ["dentist", "Dentists"],
+    ["doctors", "Doctors"],
+    ["veterinary", "Veterinary"]
+  ],
+
+  fitness_entertainment: [
+    ["auto", "Auto-detect best match"],
+    ["all", "All fitness & entertainment"],
+    ["fitness", "Gyms & fitness centres"],
+    ["sports", "Sports centres"],
+    ["cinema", "Cinemas & theatres"],
+    ["bowling", "Bowling"],
+    ["arcade", "Arcades"]
+  ]
+};
 
 const steps = [
   {
@@ -32,31 +114,117 @@ const steps = [
   }
 ];
 
-document.querySelectorAll(".example").forEach((button) => {
-  button.addEventListener("click", () => {
-    chainInput.value = button.dataset.chain;
-    countryInput.value = button.dataset.country;
+init();
 
-    if (categoryInput && button.dataset.category) {
-      categoryInput.value = button.dataset.category;
-    }
+function init() {
+  populateSubtypeOptions();
 
-    chainInput.focus();
+  document.querySelectorAll('input[name="exportMode"]').forEach((radio) => {
+    radio.addEventListener("change", updateModeUI);
   });
-});
+
+  categoryInput.addEventListener("change", () => {
+    populateSubtypeOptions();
+    updateModeUI();
+  });
+
+  document.querySelectorAll(".example").forEach((button) => {
+    button.addEventListener("click", () => {
+      const mode = button.dataset.mode || "chain";
+
+      setExportMode(mode);
+
+      chainInput.value = button.dataset.chain || "";
+      countryInput.value = button.dataset.country || "";
+
+      if (button.dataset.category) {
+        categoryInput.value = button.dataset.category;
+      }
+
+      populateSubtypeOptions();
+
+      if (button.dataset.subtype && subtypeInput) {
+        subtypeInput.value = button.dataset.subtype;
+      }
+
+      updateModeUI();
+      countryInput.focus();
+    });
+  });
+
+  updateModeUI();
+}
+
+function getExportMode() {
+  const checked = document.querySelector('input[name="exportMode"]:checked');
+  return checked ? checked.value : "chain";
+}
+
+function setExportMode(mode) {
+  const radio = document.querySelector(`input[name="exportMode"][value="${mode}"]`);
+  if (radio) {
+    radio.checked = true;
+  }
+}
+
+function updateModeUI() {
+  const mode = getExportMode();
+
+  if (mode === "category") {
+    chainGroup.style.display = "none";
+    chainInput.required = false;
+    chainInput.value = "";
+    subtypeGroup.style.display = "grid";
+
+    if (subtypeInput.value === "auto") {
+      subtypeInput.value = "all";
+    }
+  } else {
+    chainGroup.style.display = "grid";
+    chainInput.required = true;
+    subtypeGroup.style.display = "grid";
+
+    if (!subtypeInput.value) {
+      subtypeInput.value = "auto";
+    }
+  }
+}
+
+function populateSubtypeOptions() {
+  const category = categoryInput.value || "all";
+  const options = subtypeOptions[category] || subtypeOptions.all;
+  const currentValue = subtypeInput.value;
+
+  subtypeInput.innerHTML = options
+    .map(([value, label]) => `<option value="${value}">${label}</option>`)
+    .join("");
+
+  if (options.some(([value]) => value === currentValue)) {
+    subtypeInput.value = currentValue;
+  } else {
+    subtypeInput.value = options[0][0];
+  }
+}
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+  const exportMode = getExportMode();
   const chain = chainInput.value.trim();
   const country = countryInput.value.trim();
   const category = categoryInput ? categoryInput.value : "all";
+  const subtype = subtypeInput ? subtypeInput.value : "auto";
   const format = formatInput ? formatInput.value : "CSV";
   const source = sourceInput ? sourceInput.value : "OpenStreetMap";
   const submitButton = form.querySelector("button");
 
-  if (!chain || !country) {
-    showError("Please enter both a chain and a country.");
+  if (!country) {
+    showError("Please enter a country.");
+    return;
+  }
+
+  if (exportMode === "chain" && !chain) {
+    showError("Please enter a chain or brand.");
     return;
   }
 
@@ -64,6 +232,11 @@ form.addEventListener("submit", async (event) => {
     clearInterval(pollTimer);
     pollTimer = null;
   }
+
+  const exportTitle =
+    exportMode === "chain"
+      ? `${chain} locations in ${country}`
+      : `${getSubtypeLabel(category, subtype)} in ${country}`;
 
   submitButton.disabled = true;
   setChip("Starting", "running");
@@ -73,12 +246,11 @@ form.addEventListener("submit", async (event) => {
     progress: 8,
     badge: "Starting",
     title: "Preparing your export",
-    subtitle: `${chain} locations in ${country} will be searched using the selected category filter.`,
-    meta: [
-      { label: "Chain", value: chain },
-      { label: "Country", value: country },
-      { label: "Category", value: getCategoryLabel(category) }
-    ]
+    subtitle:
+      exportMode === "chain"
+        ? `${chain} locations in ${country} will be searched using the selected category filter.`
+        : `All ${getSubtypeLabel(category, subtype).toLowerCase()} in ${country} will be exported.`,
+    meta: buildMeta({ exportMode, chain, country, category, subtype })
   });
 
   try {
@@ -88,9 +260,11 @@ form.addEventListener("submit", async (event) => {
         "content-type": "application/json"
       },
       body: JSON.stringify({
+        exportMode,
         chain,
         country,
         category,
+        subtype,
         format,
         source
       })
@@ -107,21 +281,23 @@ form.addEventListener("submit", async (event) => {
       progress: 28,
       badge: "Running",
       title: "Finding locations",
-      subtitle: `The export is running. We are searching for ${getCategoryLabel(category).toLowerCase()} matching ${chain} in ${country}.`,
+      subtitle:
+        exportMode === "chain"
+          ? `The export is running. We are searching for ${getCategoryLabel(category).toLowerCase()} matching ${chain} in ${country}.`
+          : `The export is running. We are searching for ${getSubtypeLabel(category, subtype).toLowerCase()} in ${country}.`,
       actionsUrl: data.actionsUrl,
-      meta: [
-        { label: "Chain", value: chain },
-        { label: "Country", value: country },
-        { label: "Category", value: getCategoryLabel(category) }
-      ]
+      meta: buildMeta({ exportMode, chain, country, category, subtype })
     });
 
     startPolling({
       fileName: data.fileName,
       actionsUrl: data.actionsUrl,
+      exportMode,
       chain,
       country,
-      category
+      category,
+      subtype,
+      exportTitle
     });
   } catch (error) {
     showError(error.message);
@@ -130,7 +306,7 @@ form.addEventListener("submit", async (event) => {
   }
 });
 
-function startPolling({ fileName, actionsUrl, chain, country, category }) {
+function startPolling({ fileName, actionsUrl, exportMode, chain, country, category, subtype, exportTitle }) {
   let attempts = 0;
   const maxAttempts = 150;
 
@@ -147,15 +323,13 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
       badge: phase.badge,
       title: phase.title,
       subtitle: phase.subtitle
-        .replace("{chain}", chain)
+        .replace("{exportTitle}", exportTitle)
+        .replace("{chain}", chain || "selected category")
         .replace("{country}", country)
-        .replace("{category}", getCategoryLabel(category).toLowerCase()),
+        .replace("{category}", getCategoryLabel(category).toLowerCase())
+        .replace("{subtype}", getSubtypeLabel(category, subtype).toLowerCase()),
       actionsUrl,
-      meta: [
-        { label: "Chain", value: chain },
-        { label: "Country", value: country },
-        { label: "Category", value: getCategoryLabel(category) }
-      ]
+      meta: buildMeta({ exportMode, chain, country, category, subtype })
     });
 
     try {
@@ -177,9 +351,11 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
           downloadUrl: data.downloadUrl,
           size: data.size,
           actionsUrl,
+          exportMode,
           chain,
           country,
-          category
+          category,
+          subtype
         });
       }
 
@@ -195,11 +371,7 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
           title: "The export is still running",
           subtitle: "Large exports can take longer than expected. You can keep this page open and check again shortly.",
           actionsUrl,
-          meta: [
-            { label: "Chain", value: chain },
-            { label: "Country", value: country },
-            { label: "Category", value: getCategoryLabel(category) }
-          ]
+          meta: buildMeta({ exportMode, chain, country, category, subtype })
         });
       }
     } catch (error) {
@@ -217,7 +389,7 @@ function getPhase(attempts) {
       progress: 32,
       badge: "Finding",
       title: "Finding locations",
-      subtitle: "We are searching for {category} matching {chain} in {country}."
+      subtitle: "We are searching for {exportTitle}."
     };
   }
 
@@ -295,7 +467,7 @@ function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUr
   `;
 }
 
-function renderReady({ fileName, downloadUrl, size, actionsUrl, chain, country, category }) {
+function renderReady({ fileName, downloadUrl, size, actionsUrl, exportMode, chain, country, category, subtype }) {
   const sizeText = size ? `${Math.max(1, Math.round(size / 1024))} KB` : "CSV";
 
   result.className = "result";
@@ -311,18 +483,12 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl, chain, country, 
       </div>
 
       <div class="exportMeta">
-        <div>
-          <span>Chain</span>
-          <strong>${escapeHtml(chain)}</strong>
-        </div>
-        <div>
-          <span>Country</span>
-          <strong>${escapeHtml(country)}</strong>
-        </div>
-        <div>
-          <span>Category</span>
-          <strong>${escapeHtml(getCategoryLabel(category))}</strong>
-        </div>
+        ${buildMeta({ exportMode, chain, country, category, subtype }).map((item) => `
+          <div>
+            <span>${escapeHtml(item.label)}</span>
+            <strong>${escapeHtml(item.value)}</strong>
+          </div>
+        `).join("")}
       </div>
 
       <div class="progressTrack">
@@ -345,7 +511,7 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl, chain, country, 
       </a>
 
       <p class="smallText">
-        The CSV includes chain, category, address fields, formatted address, coordinates and source identifiers.
+        The CSV includes category, address fields, formatted address, coordinates and source identifiers.
       </p>
 
       ${actionsUrl ? `
@@ -356,6 +522,22 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl, chain, country, 
       ` : ""}
     </div>
   `;
+}
+
+function buildMeta({ exportMode, chain, country, category, subtype }) {
+  const meta = [
+    { label: "Export type", value: exportMode === "chain" ? "Specific chain" : "Entire category" },
+    { label: "Country", value: country },
+    { label: "Category", value: getCategoryLabel(category) }
+  ];
+
+  if (exportMode === "chain") {
+    meta.splice(1, 0, { label: "Chain", value: chain });
+  } else {
+    meta.splice(1, 0, { label: "Subtype", value: getSubtypeLabel(category, subtype) });
+  }
+
+  return meta;
 }
 
 function getCategoryLabel(value) {
@@ -371,6 +553,12 @@ function getCategoryLabel(value) {
   };
 
   return labels[value] || "All B2C locations";
+}
+
+function getSubtypeLabel(category, subtype) {
+  const options = subtypeOptions[category] || subtypeOptions.all;
+  const match = options.find(([value]) => value === subtype);
+  return match ? match[1] : "Auto-detect best match";
 }
 
 function showError(message) {
