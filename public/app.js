@@ -16,12 +16,12 @@ let pollTimer = null;
 
 const subtypeOptions = {
   all: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All B2C locations"]
   ],
 
   retail_grocery: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All retail & grocery"],
     ["supermarket", "Supermarkets"],
     ["convenience", "Convenience stores"],
@@ -32,7 +32,7 @@ const subtypeOptions = {
   ],
 
   food_restaurants: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All food & restaurants"],
     ["fast_food", "Fast food"],
     ["restaurant", "Restaurants"],
@@ -43,7 +43,7 @@ const subtypeOptions = {
   ],
 
   mobility_fuel: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All mobility & fuel"],
     ["fuel", "Fuel stations"],
     ["charging", "EV charging stations"],
@@ -53,7 +53,7 @@ const subtypeOptions = {
   ],
 
   hotels: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All accommodation"],
     ["hotel", "Hotels"],
     ["motel", "Motels"],
@@ -62,7 +62,7 @@ const subtypeOptions = {
   ],
 
   services: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All services"],
     ["bank", "Banks & ATMs"],
     ["post_parcel", "Post offices & parcel lockers"],
@@ -71,7 +71,7 @@ const subtypeOptions = {
   ],
 
   healthcare_pharmacy: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All healthcare & pharmacy"],
     ["pharmacy", "Pharmacies"],
     ["clinic", "Clinics"],
@@ -81,7 +81,7 @@ const subtypeOptions = {
   ],
 
   fitness_entertainment: [
-    ["auto", "Auto-detect best match"],
+    ["auto", "Smart match — recommended"],
     ["all", "All fitness & entertainment"],
     ["fitness", "Gyms & fitness centres"],
     ["sports", "Sports centres"],
@@ -170,6 +170,8 @@ function setExportMode(mode) {
 function updateModeUI() {
   const mode = getExportMode();
 
+  populateSubtypeOptions();
+
   if (mode === "category") {
     chainGroup.style.display = "none";
     chainInput.required = false;
@@ -191,18 +193,24 @@ function updateModeUI() {
 }
 
 function populateSubtypeOptions() {
+  const mode = getExportMode();
   const category = categoryInput.value || "all";
   const options = subtypeOptions[category] || subtypeOptions.all;
   const currentValue = subtypeInput.value;
 
-  subtypeInput.innerHTML = options
+  const visibleOptions =
+    mode === "category"
+      ? options.filter(([value]) => value !== "auto")
+      : options;
+
+  subtypeInput.innerHTML = visibleOptions
     .map(([value, label]) => `<option value="${value}">${label}</option>`)
     .join("");
 
-  if (options.some(([value]) => value === currentValue)) {
+  if (visibleOptions.some(([value]) => value === currentValue)) {
     subtypeInput.value = currentValue;
   } else {
-    subtypeInput.value = options[0][0];
+    subtypeInput.value = visibleOptions[0][0];
   }
 }
 
@@ -558,7 +566,7 @@ function getCategoryLabel(value) {
 function getSubtypeLabel(category, subtype) {
   const options = subtypeOptions[category] || subtypeOptions.all;
   const match = options.find(([value]) => value === subtype);
-  return match ? match[1] : "Auto-detect best match";
+  return match ? match[1] : "Smart match — recommended";
 }
 
 function showError(message) {
