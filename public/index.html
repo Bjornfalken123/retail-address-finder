@@ -35,12 +35,11 @@
           Store, restaurant and consumer-location exports
         </div>
 
-        <h1>Generate location files for retail chains in any market.</h1>
+        <h1>Generate location files for chains or entire categories.</h1>
 
         <p class="lead">
-          Find physical locations for consumer-facing chains by country and category.
-          Export structured CSV files with formatted addresses when available, or coordinates
-          when address data is incomplete.
+          Export structured CSV files for a specific chain, or pull an entire category
+          such as pharmacies, fast food restaurants, hotels, fuel stations or gyms.
         </p>
 
         <div class="heroActions">
@@ -57,12 +56,12 @@
 
         <div class="workflowPreview">
           <div>
-            <strong>1. Define request</strong>
-            <span>Select chain, country and category</span>
+            <strong>1. Choose export type</strong>
+            <span>Specific chain or entire category</span>
           </div>
           <div>
-            <strong>2. Fetch locations</strong>
-            <span>Run targeted OpenStreetMap queries</span>
+            <strong>2. Target the market</strong>
+            <span>Select country, category and subtype</span>
           </div>
           <div>
             <strong>3. Process data</strong>
@@ -83,25 +82,42 @@
             <p class="sectionLabel">New export</p>
             <h2>Create a location file</h2>
             <p>
-              Enter a chain, select the market and choose the most relevant category
-              to improve speed and relevance.
+              Export one chain, or select an entire category such as pharmacies,
+              fast food restaurants, hotels or fuel stations.
             </p>
           </div>
           <span class="cardBadge">CSV</span>
         </div>
 
         <form id="exportForm" class="exportForm">
-          <label>
-            <span>Chain</span>
-            <input
-              id="chain"
-              name="chain"
-              type="text"
-              placeholder="e.g. MAX Hamburgare, Kiwi, Carrefour"
-              autocomplete="organization"
-              required
-            />
-          </label>
+          <fieldset class="modeSelector">
+            <legend>Export type</legend>
+
+            <label class="modeOption">
+              <input
+                type="radio"
+                name="exportMode"
+                value="chain"
+                checked
+              />
+              <span>
+                <strong>Specific chain</strong>
+                <small>Find locations for one brand or chain, such as MAX, Carrefour or SATS.</small>
+              </span>
+            </label>
+
+            <label class="modeOption">
+              <input
+                type="radio"
+                name="exportMode"
+                value="category"
+              />
+              <span>
+                <strong>Entire category</strong>
+                <small>Export all locations of a selected type, such as pharmacies or fast food restaurants.</small>
+              </span>
+            </label>
+          </fieldset>
 
           <label>
             <span>Country</span>
@@ -118,7 +134,6 @@
           <label>
             <span>Category</span>
             <select id="category" name="category">
-              <option value="all">All B2C locations</option>
               <option value="retail_grocery">Retail & grocery</option>
               <option value="food_restaurants">Food & restaurants</option>
               <option value="mobility_fuel">Mobility & fuel</option>
@@ -126,7 +141,26 @@
               <option value="services">Services</option>
               <option value="healthcare_pharmacy">Healthcare & pharmacy</option>
               <option value="fitness_entertainment">Fitness & entertainment</option>
+              <option value="all">All B2C locations</option>
             </select>
+          </label>
+
+          <label id="subtypeGroup">
+            <span>Subtype</span>
+            <select id="subtype" name="subtype">
+              <option value="auto">Auto-detect best match</option>
+            </select>
+          </label>
+
+          <label id="chainGroup">
+            <span>Chain or brand</span>
+            <input
+              id="chain"
+              name="chain"
+              type="text"
+              placeholder="e.g. MAX, Carrefour, Circle K"
+              autocomplete="organization"
+            />
           </label>
 
           <label>
@@ -155,41 +189,49 @@
             <button
               type="button"
               class="example"
-              data-chain="MAX Hamburgare"
+              data-mode="chain"
+              data-chain="MAX"
               data-country="Sweden"
               data-category="food_restaurants"
+              data-subtype="auto"
             >
-              MAX / Sweden
+              MAX locations / Sweden
             </button>
 
             <button
               type="button"
               class="example"
-              data-chain="Kiwi"
+              data-mode="category"
+              data-chain=""
+              data-country="Sweden"
+              data-category="healthcare_pharmacy"
+              data-subtype="pharmacy"
+            >
+              All pharmacies / Sweden
+            </button>
+
+            <button
+              type="button"
+              class="example"
+              data-mode="category"
+              data-chain=""
               data-country="Norway"
-              data-category="retail_grocery"
+              data-category="food_restaurants"
+              data-subtype="fast_food"
             >
-              Kiwi / Norway
+              All fast food / Norway
             </button>
 
             <button
               type="button"
               class="example"
-              data-chain="SATS"
-              data-country="Sweden"
-              data-category="fitness_entertainment"
-            >
-              SATS / Sweden
-            </button>
-
-            <button
-              type="button"
-              class="example"
-              data-chain="Circle K"
-              data-country="Sweden"
+              data-mode="category"
+              data-chain=""
+              data-country="Germany"
               data-category="mobility_fuel"
+              data-subtype="fuel"
             >
-              Circle K / Sweden
+              All fuel stations / Germany
             </button>
           </div>
         </div>
@@ -221,11 +263,11 @@
     <section class="categorySection" id="coverage">
       <div class="sectionIntro">
         <p class="sectionLabel">Coverage</p>
-        <h2>Designed for broad B2C location discovery</h2>
+        <h2>Designed for chain and category-level location discovery</h2>
         <p>
-          Use categories to narrow the search scope, reduce processing time and improve
-          result relevance. Choose “All B2C locations” when you are unsure how a chain
-          is classified.
+          Use specific-chain exports when you know the brand. Use entire-category exports
+          when you want all locations of a type in a country, such as all pharmacies,
+          all fast food restaurants or all hotels.
         </p>
       </div>
 
@@ -270,7 +312,7 @@
     <footer class="footer">
       <span>Retail Address Finder</span>
       <span>
-        CSV exports include chain, category, address fields, formatted address,
+        CSV exports include category, address fields, formatted address,
         coordinates, source and OpenStreetMap identifiers.
       </span>
     </footer>
