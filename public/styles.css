@@ -684,3 +684,64 @@ a {
     flex-direction: column;
   }
 }
+.exportMeta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.exportMeta div {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 13px 14px;
+}
+
+.exportMeta span,
+.fileCard span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  margin-bottom: 4px;
+}
+
+.exportMeta strong,
+.fileCard strong {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.technicalDetails {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.technicalDetails summary {
+  cursor: pointer;
+  font-weight: 850;
+  color: var(--muted);
+}
+
+.technicalDetails a {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.readyBox .downloadButton {
+  width: 100%;
+  margin-top: 4px;
+  min-height: 50px;
+}
+
+@media (max-width: 640px) {
+  .exportMeta {
+    grid-template-columns: 1fr;
+  }
+}
