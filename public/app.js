@@ -11,24 +11,24 @@ let pollTimer = null;
 
 const steps = [
   {
-    title: "Starting export",
-    text: "We send your request to the export engine."
+    title: "Request received",
+    text: "Your export has been queued and is ready to run."
   },
   {
-    title: "Fetching data",
-    text: "We search for matching locations in the selected category."
+    title: "Finding locations",
+    text: "We are searching for matching locations in the selected market and category."
   },
   {
-    title: "Processing addresses",
-    text: "We clean the results, remove duplicates and standardize address data."
+    title: "Cleaning data",
+    text: "We are removing duplicates and standardizing the output."
   },
   {
-    title: "Creating CSV",
-    text: "We prepare the file for download."
+    title: "Building file",
+    text: "We are preparing the CSV file for download."
   },
   {
-    title: "Ready",
-    text: "Your CSV file is ready to download."
+    title: "Ready to download",
+    text: "Your completed export is available."
   }
 ];
 
@@ -56,7 +56,7 @@ form.addEventListener("submit", async (event) => {
   const submitButton = form.querySelector("button");
 
   if (!chain || !country) {
-    showError("Please enter both chain and country.");
+    showError("Please enter both a chain and a country.");
     return;
   }
 
@@ -72,8 +72,13 @@ form.addEventListener("submit", async (event) => {
     currentStep: 0,
     progress: 8,
     badge: "Starting",
-    title: "Starting export",
-    subtitle: `Preparing export for ${chain} in ${country}.`
+    title: "Preparing your export",
+    subtitle: `${chain} locations in ${country} will be searched using the selected category filter.`,
+    meta: [
+      { label: "Chain", value: chain },
+      { label: "Country", value: country },
+      { label: "Category", value: getCategoryLabel(category) }
+    ]
   });
 
   try {
@@ -100,10 +105,15 @@ form.addEventListener("submit", async (event) => {
     renderStatus({
       currentStep: 1,
       progress: 28,
-      badge: "Working",
-      title: "Fetching data",
-      subtitle: `The export has started. We are fetching ${getCategoryLabel(category).toLowerCase()} for ${chain} in ${country}.`,
-      actionsUrl: data.actionsUrl
+      badge: "Running",
+      title: "Finding locations",
+      subtitle: `The export is running. We are searching for ${getCategoryLabel(category).toLowerCase()} matching ${chain} in ${country}.`,
+      actionsUrl: data.actionsUrl,
+      meta: [
+        { label: "Chain", value: chain },
+        { label: "Country", value: country },
+        { label: "Category", value: getCategoryLabel(category) }
+      ]
     });
 
     startPolling({
@@ -140,7 +150,12 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
         .replace("{chain}", chain)
         .replace("{country}", country)
         .replace("{category}", getCategoryLabel(category).toLowerCase()),
-      actionsUrl
+      actionsUrl,
+      meta: [
+        { label: "Chain", value: chain },
+        { label: "Country", value: country },
+        { label: "Category", value: getCategoryLabel(category) }
+      ]
     });
 
     try {
@@ -161,22 +176,30 @@ function startPolling({ fileName, actionsUrl, chain, country, category }) {
           fileName,
           downloadUrl: data.downloadUrl,
           size: data.size,
-          actionsUrl
+          actionsUrl,
+          chain,
+          country,
+          category
         });
       }
 
       if (attempts >= maxAttempts) {
         clearInterval(pollTimer);
         pollTimer = null;
-        setChip("Taking longer", "slow");
+        setChip("Still running", "slow");
 
         renderStatus({
           currentStep: 3,
           progress: 82,
-          badge: "Taking longer",
-          title: "The export is taking longer than expected",
-          subtitle: "The job may still complete. You can open GitHub Actions for technical details.",
-          actionsUrl
+          badge: "Still running",
+          title: "The export is still running",
+          subtitle: "Large exports can take longer than expected. You can keep this page open and check again shortly.",
+          actionsUrl,
+          meta: [
+            { label: "Chain", value: chain },
+            { label: "Country", value: country },
+            { label: "Category", value: getCategoryLabel(category) }
+          ]
         });
       }
     } catch (error) {
@@ -192,9 +215,9 @@ function getPhase(attempts) {
     return {
       step: 1,
       progress: 32,
-      badge: "Fetching",
-      title: "Fetching data",
-      subtitle: "We are searching for {category} for {chain} in {country}."
+      badge: "Finding",
+      title: "Finding locations",
+      subtitle: "We are searching for {category} matching {chain} in {country}."
     };
   }
 
@@ -202,22 +225,22 @@ function getPhase(attempts) {
     return {
       step: 2,
       progress: 58,
-      badge: "Processing",
-      title: "Processing addresses",
-      subtitle: "We are cleaning, deduplicating and standardizing the results."
+      badge: "Cleaning",
+      title: "Cleaning data",
+      subtitle: "We are validating results, removing duplicates and preparing structured address data."
     };
   }
 
   return {
     step: 3,
     progress: 78,
-    badge: "Creating file",
-    title: "Creating CSV",
-    subtitle: "We are preparing the file. It will appear here as soon as it is ready."
+    badge: "Building file",
+    title: "Building CSV file",
+    subtitle: "Your export is being finalized. The download button will appear here when it is ready."
   };
 }
 
-function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUrl }) {
+function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUrl, meta = [] }) {
   result.className = "result";
 
   result.innerHTML = `
@@ -229,6 +252,17 @@ function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUr
         </div>
         <div class="statusBadge">${escapeHtml(badge)}</div>
       </div>
+
+      ${meta.length ? `
+        <div class="exportMeta">
+          ${meta.map((item) => `
+            <div>
+              <span>${escapeHtml(item.label)}</span>
+              <strong>${escapeHtml(item.value)}</strong>
+            </div>
+          `).join("")}
+        </div>
+      ` : ""}
 
       <div class="progressTrack" aria-label="Export progress">
         <div class="progressBar" style="width: ${progress}%"></div>
@@ -252,15 +286,16 @@ function renderStatus({ currentStep, progress, badge, title, subtitle, actionsUr
       </div>
 
       ${actionsUrl ? `
-        <p class="smallText">
-          The export runs in the background. <a href="${actionsUrl}" target="_blank" rel="noreferrer">Open technical log in GitHub Actions</a>
-        </p>
+        <details class="technicalDetails">
+          <summary>Technical details</summary>
+          <a href="${actionsUrl}" target="_blank" rel="noreferrer">View background run</a>
+        </details>
       ` : ""}
     </div>
   `;
 }
 
-function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
+function renderReady({ fileName, downloadUrl, size, actionsUrl, chain, country, category }) {
   const sizeText = size ? `${Math.max(1, Math.round(size / 1024))} KB` : "CSV";
 
   result.className = "result";
@@ -269,10 +304,25 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
     <div class="readyBox">
       <div class="statusTitle">
         <div>
-          <h3>CSV file is ready</h3>
-          <p>The export is complete and ready to download.</p>
+          <h3>Your export is ready</h3>
+          <p>The CSV file has been created and is ready to download.</p>
         </div>
         <div class="statusBadge">Ready</div>
+      </div>
+
+      <div class="exportMeta">
+        <div>
+          <span>Chain</span>
+          <strong>${escapeHtml(chain)}</strong>
+        </div>
+        <div>
+          <span>Country</span>
+          <strong>${escapeHtml(country)}</strong>
+        </div>
+        <div>
+          <span>Category</span>
+          <strong>${escapeHtml(getCategoryLabel(category))}</strong>
+        </div>
       </div>
 
       <div class="progressTrack">
@@ -280,8 +330,14 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
       </div>
 
       <div class="fileCard">
-        <strong>${escapeHtml(fileName)}</strong>
-        <span>${escapeHtml(sizeText)}</span>
+        <div>
+          <span>Generated file</span>
+          <strong>${escapeHtml(fileName)}</strong>
+        </div>
+        <div>
+          <span>Size</span>
+          <strong>${escapeHtml(sizeText)}</strong>
+        </div>
       </div>
 
       <a class="downloadButton" href="${downloadUrl}">
@@ -289,10 +345,15 @@ function renderReady({ fileName, downloadUrl, size, actionsUrl }) {
       </a>
 
       <p class="smallText">
-        The file is also saved in GitHub under <strong>exports</strong>.
-        <br>
-        <a href="${actionsUrl}" target="_blank" rel="noreferrer">View run in GitHub Actions</a>
+        The CSV includes chain, category, address fields, formatted address, coordinates and source identifiers.
       </p>
+
+      ${actionsUrl ? `
+        <details class="technicalDetails">
+          <summary>Technical details</summary>
+          <a href="${actionsUrl}" target="_blank" rel="noreferrer">View background run</a>
+        </details>
+      ` : ""}
     </div>
   `;
 }
