@@ -1,0 +1,7 @@
+﻿chain_requested,name,brand,operator,category,shop,amenity,tourism,leisure,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+Apoteket Hjärta,Apoteket Hjärtat,,,Healthcare / pharmacy,,pharmacy,,,Magasinsgatan,10,668 30,Ed,Sweden,Magasinsgatan 10 668 30 Ed Sweden,strict,58.9129642,11.9341915,node,278977576,OpenStreetMap via Overpass API
+Apoteket Hjärta,Apoteket Hjärtat,Apoteket Hjärtat,Apoteket Hjärtat,Healthcare / pharmacy,,pharmacy,,,,,,,Sweden,"59.2556506,18.1778772",coordinates_only,59.2556506,18.1778772,node,490131300,OpenStreetMap via Overpass API
+Apoteket Hjärta,Apoteket Hjärtat,,Apoteket,Healthcare / pharmacy,,pharmacy,,,,,,,Sweden,"57.7144593,12.8660854",coordinates_only,57.7144593,12.8660854,node,10309371245,OpenStreetMap via Overpass API
+Apoteket Hjärta,Apoteket Hjärtat,Apotek,,Healthcare / pharmacy,,pharmacy,,,,,,,Sweden,"58.5811567,15.9139501",coordinates_only,58.5811567,15.9139501,node,12243850288,OpenStreetMap via Overpass API
+Apoteket Hjärta,Apoteket Hjärtat ICA,,,Healthcare / pharmacy,,pharmacy,,,,,,,Sweden,"56.0657675,12.7204755",coordinates_only,56.0657675,12.7204755,node,13189594606,OpenStreetMap via Overpass API
+Apoteket Hjärta,Apoteket Hjärtat,Apotek Hjärtat,,Healthcare / pharmacy,,pharmacy,,,Hagvägen,13,83148,Östersund,Sweden,Hagvägen 13 83148 Östersund Sweden,strict,63.1707362,14.6913083,node,13761593408,OpenStreetMap via Overpass API
