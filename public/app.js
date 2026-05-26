@@ -8,11 +8,72 @@ const subtypeInput = document.querySelector("#subtype");
 const formatInput = document.querySelector("#format");
 const sourceInput = document.querySelector("#source");
 const statusChip = document.querySelector("#statusChip");
+const chainSuggestionsList = document.querySelector("#chainSuggestions");
 
 const chainGroup = document.querySelector("#chainGroup");
 const subtypeGroup = document.querySelector("#subtypeGroup");
 
 let pollTimer = null;
+
+const chainSuggestions = [
+  { name: "7-Eleven", aliases: ["7 eleven", "seven eleven"], category: "retail_grocery", subtype: "auto" },
+  { name: "Albert Heijn", aliases: ["ah"], category: "retail_grocery", subtype: "auto" },
+  { name: "Aldi", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "Apoteket", aliases: [], category: "healthcare_pharmacy", subtype: "auto" },
+  { name: "Basic-Fit", aliases: ["basic fit"], category: "fitness_entertainment", subtype: "auto" },
+  { name: "Best Western", aliases: [], category: "hotels", subtype: "auto" },
+  { name: "Boots", aliases: [], category: "healthcare_pharmacy", subtype: "auto" },
+  { name: "BP", aliases: [], category: "mobility_fuel", subtype: "auto" },
+  { name: "Burger King", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "Carrefour", aliases: ["carrefour market", "carrefour express"], category: "retail_grocery", subtype: "auto" },
+  { name: "Circle K", aliases: [], category: "mobility_fuel", subtype: "auto" },
+  { name: "Coop", aliases: ["coop supermarket"], category: "retail_grocery", subtype: "auto" },
+  { name: "Costa Coffee", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "DHL", aliases: [], category: "services", subtype: "auto" },
+  { name: "Domino's", aliases: ["dominos", "domino's pizza"], category: "food_restaurants", subtype: "auto" },
+  { name: "Elgiganten", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "Esso", aliases: [], category: "mobility_fuel", subtype: "auto" },
+  { name: "Espresso House", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "FedEx", aliases: [], category: "services", subtype: "auto" },
+  { name: "Fitness24Seven", aliases: ["fitness 24 seven"], category: "fitness_entertainment", subtype: "auto" },
+  { name: "H&M", aliases: ["hm", "hennes & mauritz"], category: "retail_grocery", subtype: "auto" },
+  { name: "Handelsbanken", aliases: [], category: "services", subtype: "auto" },
+  { name: "Hilton", aliases: [], category: "hotels", subtype: "auto" },
+  { name: "ICA", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "IKEA", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "Instabox", aliases: [], category: "services", subtype: "auto" },
+  { name: "Joe & The Juice", aliases: ["joe and the juice"], category: "food_restaurants", subtype: "auto" },
+  { name: "KFC", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "Kiwi", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "Lidl", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "LloydsApotek", aliases: ["lloyds apotek"], category: "healthcare_pharmacy", subtype: "auto" },
+  { name: "Marriott", aliases: [], category: "hotels", subtype: "auto" },
+  { name: "MAX", aliases: ["max hamburgare", "max burgers"], category: "food_restaurants", subtype: "auto" },
+  { name: "McDonald's", aliases: ["mcdonalds", "mcdonald’s"], category: "food_restaurants", subtype: "auto" },
+  { name: "MediaMarkt", aliases: ["media markt"], category: "retail_grocery", subtype: "auto" },
+  { name: "Netto", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "Nordea", aliases: [], category: "services", subtype: "auto" },
+  { name: "Nordic Wellness", aliases: [], category: "fitness_entertainment", subtype: "auto" },
+  { name: "OKQ8", aliases: [], category: "mobility_fuel", subtype: "auto" },
+  { name: "Pizza Hut", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "PostNord", aliases: [], category: "services", subtype: "auto" },
+  { name: "Preem", aliases: [], category: "mobility_fuel", subtype: "auto" },
+  { name: "Radisson", aliases: [], category: "hotels", subtype: "auto" },
+  { name: "REMA 1000", aliases: ["rema"], category: "retail_grocery", subtype: "auto" },
+  { name: "SATS", aliases: [], category: "fitness_entertainment", subtype: "auto" },
+  { name: "Scandic", aliases: [], category: "hotels", subtype: "auto" },
+  { name: "SEB", aliases: [], category: "services", subtype: "auto" },
+  { name: "Shell", aliases: [], category: "mobility_fuel", subtype: "auto" },
+  { name: "SPAR", aliases: ["spar"], category: "retail_grocery", subtype: "auto" },
+  { name: "Starbucks", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "Subway", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "Swedbank", aliases: [], category: "services", subtype: "auto" },
+  { name: "Taco Bell", aliases: [], category: "food_restaurants", subtype: "auto" },
+  { name: "Tesco", aliases: [], category: "retail_grocery", subtype: "auto" },
+  { name: "UPS", aliases: [], category: "services", subtype: "auto" },
+  { name: "Walgreens", aliases: [], category: "healthcare_pharmacy", subtype: "auto" },
+  { name: "Zara", aliases: [], category: "retail_grocery", subtype: "auto" }
+];
 
 const subtypeOptions = {
   all: [
@@ -117,6 +178,7 @@ const steps = [
 init();
 
 function init() {
+  populateChainSuggestions();
   populateSubtypeOptions();
 
   document.querySelectorAll('input[name="exportMode"]').forEach((radio) => {
@@ -127,6 +189,9 @@ function init() {
     populateSubtypeOptions();
     updateModeUI();
   });
+
+  chainInput.addEventListener("change", applyChainSuggestion);
+  chainInput.addEventListener("blur", applyChainSuggestion);
 
   document.querySelectorAll(".example").forEach((button) => {
     button.addEventListener("click", () => {
@@ -151,6 +216,38 @@ function init() {
       countryInput.focus();
     });
   });
+
+  updateModeUI();
+}
+
+function populateChainSuggestions() {
+  if (!chainSuggestionsList) return;
+
+  chainSuggestionsList.innerHTML = chainSuggestions
+    .map((item) => `<option value="${escapeHtml(item.name)}"></option>`)
+    .join("");
+}
+
+function applyChainSuggestion() {
+  const value = normalizeText(chainInput.value);
+  if (!value) return;
+
+  const match = chainSuggestions.find((item) => {
+    const names = [item.name, ...(item.aliases || [])];
+    return names.some((name) => normalizeText(name) === value);
+  });
+
+  if (!match) return;
+
+  setExportMode("chain");
+  chainInput.value = match.name;
+  categoryInput.value = match.category;
+
+  populateSubtypeOptions();
+
+  if (subtypeInput) {
+    subtypeInput.value = match.subtype || "auto";
+  }
 
   updateModeUI();
 }
@@ -600,6 +697,14 @@ function setChip(text, mode) {
     statusChip.style.background = "#ecf7fb";
     statusChip.style.color = "#008ca0";
   }
+}
+
+function normalizeText(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace("’", "'")
+    .replace(/\s+/g, " ");
 }
 
 function escapeHtml(value) {
