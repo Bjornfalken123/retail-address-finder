@@ -1,0 +1,93 @@
+﻿chain_requested,name,brand,operator,category,shop,amenity,tourism,leisure,street,housenumber,postcode,city,country,address_formatted,address_quality,latitude,longitude,osm_type,osm_id,source
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.6983644,11.9418688",coordinates_only,57.6983644,11.9418688,node,367839515,OpenStreetMap via Overpass API
+SATS,SATS Väsby,Sats,,Fitness / sports,,,,fitness_centre,Kanalvägen,1B,194 61,Upplands Väsby,Sweden,Kanalvägen 1B 194 61 Upplands Väsby Sweden,strict,59.4970213,17.925344,node,429235090,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,Dialoggatan,3,,,Sweden,Dialoggatan 3 Sweden,usable,59.2996578,17.9921427,node,759976759,OpenStreetMap via Overpass API
+SATS,SATS Haninge,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.1755049,18.1429637",coordinates_only,59.1755049,18.1429637,node,774764278,OpenStreetMap via Overpass API
+SATS,SATS Gärdet,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3420874,18.1130337",coordinates_only,59.3420874,18.1130337,node,1098420757,OpenStreetMap via Overpass API
+SATS,SATS Fridhemsplan,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3335304,18.032319",coordinates_only,59.3335304,18.032319,node,1106067775,OpenStreetMap via Overpass API
+SATS,SATS Zenit (Mäster Samuelsgatan),Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3324664,18.0604223",coordinates_only,59.3324664,18.0604223,node,1106752208,OpenStreetMap via Overpass API
+SATS,SATS Hornstull,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3158394,18.0320556",coordinates_only,59.3158394,18.0320556,node,1116959214,OpenStreetMap via Overpass API
+SATS,SATS Tule,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3463847,18.057837",coordinates_only,59.3463847,18.057837,node,1170179637,OpenStreetMap via Overpass API
+SATS,Sats,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3091841,18.0284825",coordinates_only,59.3091841,18.0284825,node,1249794632,OpenStreetMap via Overpass API
+SATS,SATS Viggbyholm (Täby),Sats,,Fitness / sports,,,,fitness_centre,Bergtorpsvägen,43A,183 64,Täby,Sweden,Bergtorpsvägen 43A 183 64 Täby Sweden,strict,59.4422884,18.096102,node,1349320717,OpenStreetMap via Overpass API
+SATS,SATS,Sats,SATS,Fitness / sports,,,,fitness_centre,Hälsovägen,47,254 42,Helsingborg,Sweden,Hälsovägen 47 254 42 Helsingborg Sweden,strict,56.0570408,12.7013407,node,1374024299,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"55.6134182,12.9854841",coordinates_only,55.6134182,12.9854841,node,1677336138,OpenStreetMap via Overpass API
+SATS,SATS Hornsbergs strand,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3395589,18.0124922",coordinates_only,59.3395589,18.0124922,node,1812890078,OpenStreetMap via Overpass API
+SATS,SATS Signalfabriken (Sundbyberg),Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3623751,17.9657573",coordinates_only,59.3623751,17.9657573,node,1831229106,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.7055353,11.9701975",coordinates_only,57.7055353,11.9701975,node,2144014660,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.7091853,11.9210175",coordinates_only,57.7091853,11.9210175,node,2213848937,OpenStreetMap via Overpass API
+SATS,SATS Älvsjö,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.2810159,18.0142423",coordinates_only,59.2810159,18.0142423,node,2266294833,OpenStreetMap via Overpass API
+SATS,SATS Jakobsberg,Sats,,Fitness / sports,,,,fitness_centre,Ynglingavägen,1-3,17757,Järfälla,Sweden,Ynglingavägen 1-3 17757 Järfälla Sweden,strict,59.4248516,17.8338682,node,2500399124,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.719865,11.850093",coordinates_only,57.719865,11.850093,node,3092112065,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,Torpavallsgatan,4B,416 73,Göteborg,Sweden,Torpavallsgatan 4B 416 73 Göteborg Sweden,strict,57.7236026,12.0272907,node,3129501811,OpenStreetMap via Overpass API
+SATS,SATS Sportpalatset (S:t Eriksbron),Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3364062,18.0343819",coordinates_only,59.3364062,18.0343819,node,3320046566,OpenStreetMap via Overpass API
+SATS,SATS Tuletorget (Sundbyberg),Sats,,Fitness / sports,,,,fitness_centre,Tulegatan,,,,Sweden,Tulegatan Sweden,usable,59.3645244,17.9748102,node,3410462166,OpenStreetMap via Overpass API
+SATS,SATS Sveavägen,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3400035,18.0589451",coordinates_only,59.3400035,18.0589451,node,3459181380,OpenStreetMap via Overpass API
+SATS,SATS Alvik,Sats,,Fitness / sports,,,,fitness_centre,Gustavslundsvägen,159,167 51,Bromma,Sweden,Gustavslundsvägen 159 167 51 Bromma Sweden,strict,59.3322677,17.9821,node,3656285026,OpenStreetMap via Overpass API
+SATS,SATS Södra Station,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3118569,18.0573449",coordinates_only,59.3118569,18.0573449,node,3659265605,OpenStreetMap via Overpass API
+SATS,SATS Slakthuset,Sats,,Fitness / sports,,,,fitness_centre,Rökerigatan,8,,,Sweden,Rökerigatan 8 Sweden,usable,59.2928478,18.0791885,node,4936848751,OpenStreetMap via Overpass API
+SATS,SATS SoFo,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3137077,18.0760106",coordinates_only,59.3137077,18.0760106,node,5059505342,OpenStreetMap via Overpass API
+SATS,SATS Torsplan,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.346456,18.0320956",coordinates_only,59.346456,18.0320956,node,5135815656,OpenStreetMap via Overpass API
+SATS,SATS Sjöstaden,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3051832,18.0952162",coordinates_only,59.3051832,18.0952162,node,5162449789,OpenStreetMap via Overpass API
+SATS,SATS Sickla,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3055852,18.1299763",coordinates_only,59.3055852,18.1299763,node,5263390936,OpenStreetMap via Overpass API
+SATS,SATS Danderyd,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.4007823,18.0383257",coordinates_only,59.4007823,18.0383257,node,5332103406,OpenStreetMap via Overpass API
+SATS,SATS Dalénum,Sats,SATS,Fitness / sports,,,,fitness_centre,Agavägen,58,18155,Lidingö,Sweden,Agavägen 58 18155 Lidingö Sweden,strict,59.3454693,18.1571271,node,5615372421,OpenStreetMap via Overpass API
+SATS,SATS NK (fd. Regeringsgatan),Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3331802,18.0675793",coordinates_only,59.3331802,18.0675793,node,5865865852,OpenStreetMap via Overpass API
+SATS,SATS Stureplan,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3342965,18.0754368",coordinates_only,59.3342965,18.0754368,node,6093862124,OpenStreetMap via Overpass API
+SATS,SATS Edsberg,Sats,,Fitness / sports,,,,fitness_centre,Hovslagarevägen,2,19254,Sollentuna,Sweden,Hovslagarevägen 2 19254 Sollentuna Sweden,strict,59.4466122,17.9518673,node,6539128685,OpenStreetMap via Overpass API
+SATS,SATS Mall of Scandinavia,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.369221,18.0054867",coordinates_only,59.369221,18.0054867,node,6864976557,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.4020953,17.9463037",coordinates_only,59.4020953,17.9463037,node,6992575200,OpenStreetMap via Overpass API
+SATS,SATS Odenplan,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3429339,18.0519433",coordinates_only,59.3429339,18.0519433,node,7044075001,OpenStreetMap via Overpass API
+SATS,SATS Spårvagnshallarna,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3416358,18.0640971",coordinates_only,59.3416358,18.0640971,node,7045288724,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"58.5918002,16.190792",coordinates_only,58.5918002,16.190792,node,8024946214,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.4371763,17.9274105",coordinates_only,59.4371763,17.9274105,node,8121052976,OpenStreetMap via Overpass API
+SATS,SATS Åre,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"63.398393,13.074923",coordinates_only,63.398393,13.074923,node,9015550160,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"56.6697709,12.870963",coordinates_only,56.6697709,12.870963,node,9015550161,OpenStreetMap via Overpass API
+SATS,SATS Bålsta,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.5525347,17.5559274",coordinates_only,59.5525347,17.5559274,node,9015550162,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"55.5823322,13.0038832",coordinates_only,55.5823322,13.0038832,node,9015550163,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"55.6032233,13.0051003",coordinates_only,55.6032233,13.0051003,node,9015550164,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.727969,12.005116",coordinates_only,57.727969,12.005116,node,9015550166,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.6999629,11.9897508",coordinates_only,57.6999629,11.9897508,node,9015550167,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.6393312,11.9504501",coordinates_only,57.6393312,11.9504501,node,9015550169,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.656173,12.11711",coordinates_only,57.656173,12.11711,node,9015550170,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.693203,11.9708347",coordinates_only,57.693203,11.9708347,node,9015550171,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.6404124,11.9471024",coordinates_only,57.6404124,11.9471024,node,9015550172,OpenStreetMap via Overpass API
+SATS,SATS Åkersberga Centrum,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.479622,18.298194",coordinates_only,59.479622,18.298194,node,9015550173,OpenStreetMap via Overpass API
+SATS,SATS Vällingby C,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.363471,17.872721",coordinates_only,59.363471,17.872721,node,9015550175,OpenStreetMap via Overpass API
+SATS,SATS Vinsta,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.372261,17.859616",coordinates_only,59.372261,17.859616,node,9015550176,OpenStreetMap via Overpass API
+SATS,SATS Vasastan,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.34576,18.036936",coordinates_only,59.34576,18.036936,node,9015550178,OpenStreetMap via Overpass API
+SATS,SATS Vasagatan,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.331428,18.058117",coordinates_only,59.331428,18.058117,node,9015550179,OpenStreetMap via Overpass API
+SATS,SATS Ursvik,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3813935,17.9368781",coordinates_only,59.3813935,17.9368781,node,9015550180,OpenStreetMap via Overpass API
+SATS,SATS Täby Centrum,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.444595,18.070986",coordinates_only,59.444595,18.070986,node,9015550181,OpenStreetMap via Overpass API
+SATS,SATS Tyresö,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.2425255,18.2141958",coordinates_only,59.2425255,18.2141958,node,9015550182,OpenStreetMap via Overpass API
+SATS,SATS Sågvägen,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.479429,18.2883",coordinates_only,59.479429,18.2883,node,9015550184,OpenStreetMap via Overpass API
+SATS,SATS Södermalm,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3130919,18.0686682",coordinates_only,59.3130919,18.0686682,node,9015550185,OpenStreetMap via Overpass API
+SATS,SATS Sollentuna,Sats,,Fitness / sports,,,,fitness_centre,Sollentunavägen,163C,19147,Sollentuna,Sweden,Sollentunavägen 163C 19147 Sollentuna Sweden,strict,59.4279541,17.9526407,node,9015550187,OpenStreetMap via Overpass API
+SATS,SATS Sigtuna,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.616741,17.722382",coordinates_only,59.616741,17.722382,node,9015550188,OpenStreetMap via Overpass API
+SATS,SATS Scheelegatan,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3330914,18.0447785",coordinates_only,59.3330914,18.0447785,node,9015550189,OpenStreetMap via Overpass API
+SATS,SATS Saltsjöbaden,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.2853827,18.2756159",coordinates_only,59.2853827,18.2756159,node,9015550190,OpenStreetMap via Overpass API
+SATS,SATS Näsby Slott,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.423882,18.086925",coordinates_only,59.423882,18.086925,node,9015550191,OpenStreetMap via Overpass API
+SATS,SATS Näsby Park,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.4306061,18.0955791",coordinates_only,59.4306061,18.0955791,node,9015550192,OpenStreetMap via Overpass API
+SATS,SATS Nacka Strand,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.316254,18.162342",coordinates_only,59.316254,18.162342,node,9015550193,OpenStreetMap via Overpass API
+SATS,SATS Mölnvik,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.313268,18.429602",coordinates_only,59.313268,18.429602,node,9015550194,OpenStreetMap via Overpass API
+SATS,SATS Märsta,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.6185352,17.8486195",coordinates_only,59.6185352,17.8486195,node,9015550195,OpenStreetMap via Overpass API
+SATS,SATS Liljeholmstorget,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.309834,18.022026",coordinates_only,59.309834,18.022026,node,9015550196,OpenStreetMap via Overpass API
+SATS,SATS Kungens Kurva,Sats,,Fitness / sports,,,,fitness_centre,Dialoggatan,2,141 75,Kungens kurva,Sweden,Dialoggatan 2 141 75 Kungens kurva Sweden,strict,59.2672346,17.9093913,node,9015550197,OpenStreetMap via Overpass API
+SATS,SATS Kista,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.401624,17.946435",coordinates_only,59.401624,17.946435,node,9015550198,OpenStreetMap via Overpass API
+SATS,SATS Hötorget,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3347481,18.0648227",coordinates_only,59.3347481,18.0648227,node,9015550199,OpenStreetMap via Overpass API
+SATS,SATS Huddinge,Sats,,Fitness / sports,,,,fitness_centre,Sjödalstorget,3,141 47,Huddinge,Sweden,Sjödalstorget 3 141 47 Huddinge Sweden,strict,59.2354764,17.9812708,node,9015550200,OpenStreetMap via Overpass API
+SATS,SATS Hamnen,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3231323,18.3804235",coordinates_only,59.3231323,18.3804235,node,9015550201,OpenStreetMap via Overpass API
+SATS,SATS Globen,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.2943151,18.079897",coordinates_only,59.2943151,18.079897,node,9015550202,OpenStreetMap via Overpass API
+SATS,SATS Farsta,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.241227,18.094327",coordinates_only,59.241227,18.094327,node,9015550203,OpenStreetMap via Overpass API
+SATS,SATS Ella Gård,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.440967,18.060007",coordinates_only,59.440967,18.060007,node,9015550204,OpenStreetMap via Overpass API
+SATS,SATS Arninge,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.4594593,18.1388631",coordinates_only,59.4594593,18.1388631,node,9015550205,OpenStreetMap via Overpass API
+SATS,SATS Bromma Blocks,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3533955,17.9566347",coordinates_only,59.3533955,17.9566347,node,9702798731,OpenStreetMap via Overpass API
+SATS,Sats,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.310685,18.1644114",coordinates_only,59.310685,18.1644114,node,10255524209,OpenStreetMap via Overpass API
+SATS,Sats,Sats,,Fitness / sports,,,,fitness_centre,Glasblåsaregatan,19,21645,,Sweden,Glasblåsaregatan 19 21645 Sweden,usable,55.5892065,12.9330586,node,10572457409,OpenStreetMap via Overpass API
+SATS,Sats,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3356023,18.0702894",coordinates_only,59.3356023,18.0702894,node,12161968370,OpenStreetMap via Overpass API
+SATS,SATS Hyllie,,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"55.5664839,12.9752082",coordinates_only,55.5664839,12.9752082,node,13666459609,OpenStreetMap via Overpass API
+SATS,SATS Hyllie Corner,,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"55.5612867,12.9753065",coordinates_only,55.5612867,12.9753065,node,13666982301,OpenStreetMap via Overpass API
+SATS,Sats Stadion,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3431958,18.0855209",coordinates_only,59.3431958,18.0855209,way,32948649,OpenStreetMap via Overpass API
+SATS,SATS Värmdö,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"59.3103725,18.4210031",coordinates_only,59.3103725,18.4210031,way,242266643,OpenStreetMap via Overpass API
+SATS,SATS,Sats,,Fitness / sports,,,,fitness_centre,,,,,Sweden,"57.4936313,12.0741618",coordinates_only,57.4936313,12.0741618,way,1304821400,OpenStreetMap via Overpass API
+SATS,Sats,Sats,SATS,Fitness / sports,,,,fitness_centre,,,,,Sweden,"56.6697732,12.8709637",coordinates_only,56.6697732,12.8709637,way,1354255479,OpenStreetMap via Overpass API
