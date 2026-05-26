@@ -152,17 +152,30 @@
             </select>
           </label>
 
-          <label id="chainGroup">
+          <label id="chainGroup" class="autocompleteField">
             <span>Chain or brand</span>
             <input
               id="chain"
               name="chain"
               type="text"
               placeholder="e.g. MAX, Carrefour, Circle K"
-              autocomplete="organization"
-              list="chainSuggestions"
+              autocomplete="off"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="chainSuggestionPanel"
             />
-            <datalist id="chainSuggestions"></datalist>
+
+            <div
+              id="chainSuggestionPanel"
+              class="suggestionPanel"
+              role="listbox"
+              aria-label="Chain suggestions"
+              hidden
+            ></div>
+
+            <small id="chainHint" class="fieldHint">
+              Start typing to search known chains. Selecting a suggestion will set category automatically.
+            </small>
           </label>
 
           <label>
