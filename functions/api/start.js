@@ -2,14 +2,24 @@ export async function onRequestPost(context) {
   try {
     const body = await context.request.json();
 
+    const exportMode = String(body.exportMode || "chain").trim();
     const chain = String(body.chain || "").trim();
     const country = String(body.country || "").trim();
+    const category = String(body.category || "all").trim();
+    const subtype = String(body.subtype || "auto").trim();
     const format = String(body.format || "CSV").trim();
     const source = String(body.source || "OpenStreetMap").trim();
-    const category = String(body.category || "all").trim();
 
-    if (!chain || !country) {
-      return json({ error: "Ange både kedja och land." }, 400);
+    if (!country) {
+      return json({ error: "Please enter a country." }, 400);
+    }
+
+    if (exportMode === "chain" && !chain) {
+      return json({ error: "Please enter a chain or brand." }, 400);
+    }
+
+    if (!["chain", "category"].includes(exportMode)) {
+      return json({ error: "Invalid export mode." }, 400);
     }
 
     const env = context.env;
@@ -21,11 +31,18 @@ export async function onRequestPost(context) {
 
     if (!owner || !repo || !token) {
       return json({
-        error: "Cloudflare saknar GitHub-inställningar. Kontrollera GITHUB_OWNER, GITHUB_REPO och GITHUB_TOKEN."
+        error: "Cloudflare is missing GitHub settings. Check GITHUB_OWNER, GITHUB_REPO and GITHUB_TOKEN."
       }, 500);
     }
 
-    const jobId = createJobId(country, chain);
+    const jobId = createJobId({
+      exportMode,
+      country,
+      chain,
+      category,
+      subtype
+    });
+
     const fileName = `${jobId}.csv`;
 
     const response = await fetch(
@@ -41,11 +58,13 @@ export async function onRequestPost(context) {
         body: JSON.stringify({
           ref,
           inputs: {
+            export_mode: exportMode,
             chain,
             country,
+            category,
+            subtype,
             format,
             source,
-            category,
             job_id: jobId
           }
         })
@@ -54,25 +73,32 @@ export async function onRequestPost(context) {
 
     if (!response.ok) {
       const text = await response.text();
-      return json({ error: `GitHub svarade ${response.status}: ${text}` }, 500);
+      return json({ error: `GitHub responded ${response.status}: ${text}` }, 500);
     }
 
     return json({
       ok: true,
       jobId,
       fileName,
+      exportMode,
       chain,
       country,
       category,
+      subtype,
       actionsUrl: `https://github.com/${owner}/${repo}/actions/workflows/${workflow}`
     });
   } catch (error) {
-    return json({ error: error.message || "Okänt fel." }, 500);
+    return json({ error: error.message || "Unknown error." }, 500);
   }
 }
 
-function createJobId(country, chain) {
-  const clean = `${country}_${chain}`
+function createJobId({ exportMode, country, chain, category, subtype }) {
+  const raw =
+    exportMode === "chain"
+      ? `${country}_${chain || "chain"}_${category}_${subtype}`
+      : `${country}_${category}_${subtype}`;
+
+  const clean = raw
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "_")
     .replace(/^_+|_+$/g, "");
