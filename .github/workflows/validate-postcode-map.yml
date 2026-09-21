@@ -1,0 +1,62 @@
+name: Validate postcode map
+
+on:
+  pull_request:
+    paths:
+      - "scripts/build_postcodes.py"
+      - "public/postcode-map/**"
+      - ".github/workflows/sync-postcodes.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build postcode dataset from GeoNames
+        run: python scripts/build_postcodes.py
+
+      - name: Validate generated dataset
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path("public/data/postcodes-se.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          rows = data["postcodes"]
+          codes = {row["code"] for row in rows}
+
+          assert len(rows) >= 5000, len(rows)
+          assert len(codes) == len(rows), "Duplicate postcode codes in generated dataset"
+          assert data["meta"]["source"].startswith("GeoNames")
+          assert data["meta"]["license"] == "CC BY 4.0"
+
+          for code in ("11234", "16731", "17173"):
+              assert code in codes, f"Known postcode missing: {code}"
+
+          for row in rows:
+              assert len(row["code"]) == 5 and row["code"].isdigit()
+              assert -90 <= row["lat"] <= 90
+              assert -180 <= row["lng"] <= 180
+
+          print({
+              "unique_postcodes": len(rows),
+              "source_last_modified": data["meta"].get("sourceLastModified"),
+              "source_rows": data["meta"].get("sourceRows"),
+          })
+          PY
+
+      - name: Syntax-check postcode frontend
+        run: node --check public/postcode-map/app.js
