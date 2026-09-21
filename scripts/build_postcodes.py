@@ -19,6 +19,7 @@ from pathlib import Path
 
 SOURCE_URL = "https://download.geonames.org/export/zip/SE.zip"
 OUT = Path("public/data/postcodes-se.json")
+OSM_OVERLAY = Path("public/data/postcodes-osm.json")
 
 
 def clean_code(value: str) -> str | None:
@@ -117,6 +118,73 @@ def main() -> None:
             (round(item["lat"], 5), round(item["lng"], 5))
         ]
 
+    # Merge a higher-precision OSM address centroid overlay when available.
+    # GeoNames remains the fallback for codes with no usable OSM address data.
+    osm_meta = None
+    osm_rows = {}
+    if OSM_OVERLAY.exists():
+        osm_payload = json.loads(OSM_OVERLAY.read_text(encoding="utf-8"))
+        osm_meta = osm_payload.get("meta") or {}
+        for row in osm_payload.get("postcodes") or []:
+            code = clean_code(row.get("code", ""))
+            if not code:
+                continue
+            try:
+                lat = float(row["lat"])
+                lng = float(row["lng"])
+                samples = int(row.get("samples") or 0)
+            except (KeyError, TypeError, ValueError):
+                continue
+            if samples < 1 or not (math.isfinite(lat) and math.isfinite(lng)):
+                continue
+            osm_rows[code] = {
+                "lat": round(lat, 7),
+                "lng": round(lng, 7),
+                "samples": samples,
+                "city": str(row.get("city") or "").strip(),
+                "bbox": row.get("bbox"),
+            }
+
+    by_code = {item["code"]: item for item in postcodes}
+
+    for code, osm in osm_rows.items():
+        existing = by_code.get(code)
+        if existing is None:
+            existing = {
+                "code": code,
+                "city": osm["city"],
+                "county": "",
+                "municipality": "",
+                "lat": osm["lat"],
+                "lng": osm["lng"],
+                "accuracy": 0,
+                "sourceRows": 0,
+                "sharedCoordinateCount": 0,
+            }
+            postcodes.append(existing)
+            by_code[code] = existing
+
+        existing["geonamesLat"] = existing.get("lat")
+        existing["geonamesLng"] = existing.get("lng")
+        existing["lat"] = osm["lat"]
+        existing["lng"] = osm["lng"]
+        if osm["city"] and not existing.get("city"):
+            existing["city"] = osm["city"]
+        existing["coordinateSource"] = "osm-address-centroid"
+        existing["osmSampleCount"] = osm["samples"]
+        existing["osmBbox"] = osm["bbox"]
+        existing["precision"] = "address-derived-high" if osm["samples"] >= 3 else "address-derived"
+
+    for item in postcodes:
+        if item.get("coordinateSource") == "osm-address-centroid":
+            continue
+        shared = int(item.get("sharedCoordinateCount") or 0)
+        item["coordinateSource"] = "geonames"
+        item["osmSampleCount"] = 0
+        item["precision"] = "low" if shared >= 20 else "fallback"
+
+    postcodes.sort(key=lambda item: item["code"])
+
     payload = {
         "meta": {
             "source": "GeoNames Swedish postal code dump (SE.zip)",
@@ -127,10 +195,12 @@ def main() -> None:
             "attributionUrl": "https://www.geonames.org/",
             "sourceRows": source_rows,
             "uniquePostcodes": len(postcodes),
+            "osmOverlayPostcodes": len(osm_rows),
+            "osmOverlay": osm_meta,
             "method": (
                 "One point per 5-digit postcode. When GeoNames has multiple rows "
                 "for a code, rows with the highest accuracy are retained and their "
-                "coordinates are averaged."
+                "coordinates are averaged. When an OpenStreetMap address-centroid overlay is available, it replaces the GeoNames point for that postcode."
             ),
         },
         "postcodes": postcodes,
