@@ -262,7 +262,9 @@
         fillColor: "#e06c1b",
         fillOpacity: 0.85,
         weight: 1.4
-      }).bindTooltip(formatPostcode(point.code)).addTo(importedLayer);
+      }).bindTooltip(
+        `${formatPostcode(point.code)} · ${point.coordinateSource === "osm-address-centroid" ? "OSM-adresscentrum" : point.precision === "low" ? "ungefärlig postortspunkt" : "GeoNames fallback"}`
+      ).addTo(importedLayer);
     });
   }
 
@@ -275,7 +277,7 @@
 
   function getMatchedRecords() {
     if (!state.circles.length) return [];
-    return state.postcodes.filter(pointInsideAnyCircle);
+    return state.postcodes.filter(point => point.precision !== "low" && pointInsideAnyCircle(point));
   }
 
   function renderMatchedMarkers(records) {
@@ -295,7 +297,10 @@
   function countRecordsForCircle(item) {
     const center = item.layer.getLatLng();
     const radius = item.layer.getRadius();
-    return state.postcodes.filter(point => haversineMeters({ lat: center.lat, lng: center.lng }, point) <= radius).length;
+    return state.postcodes.filter(
+      point => point.precision !== "low" &&
+        haversineMeters({ lat: center.lat, lng: center.lng }, point) <= radius
+    ).length;
   }
 
   function updateCircleList() {
@@ -378,6 +383,7 @@
     });
     state.importedCodes = found.map(r => r.code);
     state.missingCodes = missing;
+    const lowPrecision = found.filter(r => r.precision === "low");
     renderImportedMarkers(found);
     clearCircleLayers();
 
@@ -393,7 +399,12 @@
     groups.forEach((group, index) => createAutoCircle(group, minRadius, index));
     updateResults();
     zoomToLayers();
-    setStatus(`${found.length} av ${codes.length} postnummer matchade och grupperades i ${groups.length} cirklar med maxradie ${(maxRadius / 1000).toFixed(1).replace(".", ",")} km.${missing.length ? ` ${missing.length} saknas i underlaget.` : ""}`, "ok");
+    setStatus(
+      `${found.length} av ${codes.length} postnummer matchade och grupperades i ${groups.length} cirklar med maxradie ${(maxRadius / 1000).toFixed(1).replace(".", ",")} km.` +
+      `${lowPrecision.length ? ` ${lowPrecision.length} har bara lågprecisions-fallback och räknas inte i cirkel→postnummer.` : ""}` +
+      `${missing.length ? ` ${missing.length} saknas i underlaget.` : ""}`,
+      lowPrecision.length || missing.length ? "" : "ok"
+    );
   }
 
   async function readFile(file) {
@@ -527,7 +538,10 @@
           municipality: row.municipality || "",
           county: row.county || "",
           accuracy: Number(row.accuracy) || 0,
-          sharedCoordinateCount: Number(row.sharedCoordinateCount) || 1
+          sharedCoordinateCount: Number(row.sharedCoordinateCount) || 1,
+          coordinateSource: row.coordinateSource || "geonames",
+          osmSampleCount: Number(row.osmSampleCount) || 0,
+          precision: row.precision || "fallback"
         }];
       });
 
@@ -540,8 +554,10 @@
       setDataReady(true);
 
       const sourceDate = meta?.sourceLastModified || meta?.generatedAt || "okänt datum";
+      const osmCount = Number(meta?.osmOverlayPostcodes) || 0;
+      const lowCount = state.postcodes.filter(row => row.precision === "low").length;
       setStatus(
-        `${state.postcodes.length.toLocaleString("sv-SE")} unika svenska postnummer verifierade. Källa: GeoNames. Datadatum: ${sourceDate}.`,
+        `${state.postcodes.length.toLocaleString("sv-SE")} postnummer laddade. ${osmCount.toLocaleString("sv-SE")} har OSM-adressbaserad position; ${lowCount.toLocaleString("sv-SE")} lågprecisions-fallbacks exkluderas från cirkelurval. GeoNames-datum: ${sourceDate}.`,
         "ok"
       );
     })
