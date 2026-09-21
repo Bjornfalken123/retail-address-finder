@@ -173,7 +173,7 @@ def main() -> None:
         existing["coordinateSource"] = "osm-address-centroid"
         existing["osmSampleCount"] = osm["samples"]
         existing["osmBbox"] = osm["bbox"]
-        existing["precision"] = "address-derived"
+        existing["precision"] = "address-derived-high" if osm["samples"] >= 3 else "address-derived"
 
     for item in postcodes:
         if item.get("coordinateSource") == "osm-address-centroid":
