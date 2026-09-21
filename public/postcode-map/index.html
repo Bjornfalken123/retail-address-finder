@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Postnummerkartan · Retail Address Finder</title>
+  <meta name="description" content="Importera svenska postnummer och skapa områdescirklar, eller rita cirklar på kartan och exportera postnummer." />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="appShell">
+    <header class="topbar">
+      <a class="brand" href="/">⌖ <span>Retail Address Finder</span></a>
+      <div class="topbarTitle">Postnummerkartan</div>
+      <a class="backLink" href="/">Till adressverktyget</a>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar">
+        <div class="intro">
+          <div class="eyebrow">Sverige · postnummer & områden</div>
+          <h1>Bygg målområden från postnummer — eller tvärtom.</h1>
+          <p>Importera en lista och skapa redigerbara cirklar automatiskt, eller rita cirklar på kartan och få ut postnumren som träffas.</p>
+        </div>
+
+        <div class="modeTabs" role="tablist" aria-label="Arbetsläge">
+          <button id="modeImport" class="modeTab active" type="button">Postnummer → cirklar</button>
+          <button id="modeDraw" class="modeTab" type="button">Cirklar → postnummer</button>
+        </div>
+
+        <section id="importPanel" class="panel">
+          <div class="panelHeader">
+            <div><span class="step">1</span><h2>Importera postnummer</h2></div>
+            <button id="clearImport" class="textButton" type="button">Rensa</button>
+          </div>
+
+          <label class="field">
+            <span>Klistra in postnummer</span>
+            <textarea id="postcodeInput" rows="7" placeholder="112 34&#10;112 35&#10;113 20"></textarea>
+            <small>En per rad, eller separerade med komma, semikolon eller mellanslag.</small>
+          </label>
+
+          <label class="uploadBox" for="csvFile">
+            <input id="csvFile" type="file" accept=".csv,.txt,text/csv,text/plain" />
+            <strong>Ladda CSV eller TXT</strong>
+            <span>Vi hittar femsiffriga svenska postnummer automatiskt.</span>
+          </label>
+
+          <div class="fieldRow">
+            <label class="field compact">
+              <span>Klusteravstånd</span>
+              <select id="clusterDistance">
+                <option value="1500">1,5 km</option>
+                <option value="2500">2,5 km</option>
+                <option value="3500" selected>3,5 km</option>
+                <option value="5000">5 km</option>
+                <option value="7500">7,5 km</option>
+                <option value="10000">10 km</option>
+              </select>
+            </label>
+            <label class="field compact">
+              <span>Minsta radie</span>
+              <select id="minimumRadius">
+                <option value="500">0,5 km</option>
+                <option value="1000" selected>1 km</option>
+                <option value="1500">1,5 km</option>
+                <option value="2500">2,5 km</option>
+              </select>
+            </label>
+          </div>
+
+          <button id="buildCircles" class="primaryButton" type="button">Skapa cirklar från listan</button>
+        </section>
+
+        <section id="drawPanel" class="panel hidden">
+          <div class="panelHeader"><div><span class="step">1</span><h2>Rita områden</h2></div></div>
+          <p class="panelCopy">Välj cirkelverktyget på kartan, klicka ut centrum och dra till önskad radie. Du kan skapa flera cirklar och redigera dem efteråt.</p>
+          <div class="hintCard">
+            <strong>Urval</strong>
+            <span>Ett postnummer räknas med när dess representativa koordinat ligger inne i minst en cirkel.</span>
+          </div>
+          <button id="startCircle" class="primaryButton" type="button">Rita en cirkel</button>
+          <button id="clearCircles" class="secondaryButton" type="button">Ta bort alla cirklar</button>
+        </section>
+
+        <section class="panel resultsPanel">
+          <div class="panelHeader">
+            <div><span class="step">2</span><h2>Resultat</h2></div>
+            <span id="resultCount" class="countBadge">0 postnummer</span>
+          </div>
+
+          <div class="statsGrid">
+            <div><strong id="circleCount">0</strong><span>cirklar</span></div>
+            <div><strong id="matchedCount">0</strong><span>träffade</span></div>
+            <div><strong id="missingCount">0</strong><span>saknas</span></div>
+          </div>
+
+          <div id="circleList" class="circleList"></div>
+
+          <div class="resultActions">
+            <button id="copyPostcodes" class="secondaryButton" type="button">Kopiera postnummer</button>
+            <button id="exportCsv" class="secondaryButton" type="button">Exportera CSV</button>
+            <button id="exportGeojson" class="secondaryButton" type="button">Exportera GeoJSON</button>
+          </div>
+
+          <details class="postcodeDetails">
+            <summary>Visa postnummerlista</summary>
+            <div id="postcodeList" class="postcodeList empty">Inga postnummer valda ännu.</div>
+          </details>
+        </section>
+
+        <div id="status" class="status">Läser in svenskt postnummerunderlag…</div>
+        <p class="footnote">MVP:n använder representativa koordinater för postnummer. Nästa nivå är riktiga postnummerpolygoner för överlappsberäkning.</p>
+      </aside>
+
+      <section class="mapWrap">
+        <div id="map" aria-label="Karta över postnummer och områdescirklar"></div>
+        <div class="mapLegend">
+          <span><i class="dot imported"></i> Importerat postnummer</span>
+          <span><i class="dot matched"></i> Träffat postnummer</span>
+          <span><i class="ring"></i> Områdescirkel</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
