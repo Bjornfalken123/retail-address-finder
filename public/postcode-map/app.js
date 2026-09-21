@@ -83,7 +83,7 @@
   }
 
   function parsePostcodes(text) {
-    const matches = String(text ?? "").match(/(?<!\d)\d{3}\s?\d{2}(?!\d)/g) || [];
+    const matches = String(text ?? "").match(/\b\d{3}\s?\d{2}\b/g) || [];
     return [...new Set(matches.map(normalizePostcode).filter(Boolean))];
   }
 
@@ -241,7 +241,7 @@
   function createAutoCircle(points, minRadius, index) {
     const center = averageCenter(points);
     const farthest = Math.max(...points.map(p => haversineMeters(center, p)), 0);
-    const radius = Math.max(minRadius, farthest + 300);
+    const radius = Math.max(minRadius, farthest);
     const layer = L.circle([center.lat, center.lng], {
       radius,
       color: "#155eef",
