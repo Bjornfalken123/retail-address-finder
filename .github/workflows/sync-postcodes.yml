@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/sync-postcodes.yml"
       - "scripts/build_postcodes.py"
+      - "scripts/build_osm_postcode_centroids.py"
       - "public/postcode-map/**"
   schedule:
     - cron: "17 5 2 * *"
@@ -15,6 +16,7 @@ on:
     paths:
       - ".github/workflows/sync-postcodes.yml"
       - "scripts/build_postcodes.py"
+      - "scripts/build_osm_postcode_centroids.py"
 
 permissions:
   contents: write
@@ -22,7 +24,7 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 35
 
     steps:
       - name: Check out repository
@@ -33,22 +35,49 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Build postcode dataset
+      - name: Install OSM parser
+        run: python -m pip install --disable-pip-version-check osmium
+
+      - name: Download current Sweden OSM extract
+        run: |
+          curl --fail --location --retry 3 --retry-delay 5             --output /tmp/sweden-latest.osm.pbf             https://download.geofabrik.de/europe/sweden-latest.osm.pbf
+          test -s /tmp/sweden-latest.osm.pbf
+          ls -lh /tmp/sweden-latest.osm.pbf
+
+      - name: Build OSM postcode precision overlay
+        run: |
+          python scripts/build_osm_postcode_centroids.py             /tmp/sweden-latest.osm.pbf             public/data/postcodes-osm.json
+
+      - name: Build merged postcode dataset
         run: python scripts/build_postcodes.py
 
-      - name: Validate generated JSON
+      - name: Validate generated data and Södermalm precision
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          p = Path("public/data/postcodes-se.json")
-          data = json.loads(p.read_text(encoding="utf-8"))
-          codes = {row["code"] for row in data["postcodes"]}
-          assert len(data["postcodes"]) >= 5000
-          assert data["meta"]["source"].startswith("GeoNames")
-          for code in ("11234", "16731", "17173"):
-              assert code in codes, f"Known postcode missing: {code}"
-          print(data["meta"])
+
+          data = json.loads(Path("public/data/postcodes-se.json").read_text(encoding="utf-8"))
+          rows = data["postcodes"]
+          by_code = {row["code"]: row for row in rows}
+
+          assert len(rows) >= 5000
+          assert len(by_code) == len(rows)
+
+          for code in ("11234", "11620", "16731", "17173"):
+              assert code in by_code, f"Known postcode missing: {code}"
+
+          p = by_code["11620"]
+          assert p["coordinateSource"] == "osm-address-centroid", p
+          assert p["osmSampleCount"] >= 2, p
+          assert 59.305 <= p["lat"] <= 59.325, p
+          assert 18.055 <= p["lng"] <= 18.095, p
+
+          print({
+              "unique_postcodes": len(rows),
+              "osm_overlay_postcodes": data["meta"].get("osmOverlayPostcodes"),
+              "11620": p,
+          })
           PY
 
       - name: Commit refreshed postcode data
@@ -56,7 +85,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/postcodes-se.json
+          git add public/data/postcodes-se.json public/data/postcodes-osm.json
           if git diff --cached --quiet; then
             echo "Postcode data unchanged"
           else
