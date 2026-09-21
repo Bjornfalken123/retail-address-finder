@@ -51,6 +51,51 @@ jobs:
           print(data["meta"])
           PY
 
+      - name: Validate Vastermalmsgallerian source lists
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+
+          data = json.loads(Path("public/data/postcodes-se.json").read_text(encoding="utf-8"))
+          by_code = {row["code"]: row for row in data["postcodes"]}
+
+          prio = (
+              [f"112{i:02d}" for i in range(11, 100)]
+              + [f"113{i:02d}" for i in range(20, 66)]
+              + [f"113{i:02d}" for i in range(70, 100)]
+          )
+          secondary = (
+              [f"167{i:02d}" for i in range(31, 34)]
+              + [f"167{i:02d}" for i in range(35, 46)]
+              + [f"167{i:02d}" for i in range(51, 59)]
+              + [f"167{i:02d}" for i in range(61, 64)]
+              + [f"167{i:02d}" for i in range(65, 68)]
+              + ["16961"]
+              + [f"169{i:02d}" for i in range(63, 65)]
+              + [f"169{i:02d}" for i in range(68, 71)]
+              + ["16974", "17066"]
+              + [f"171{i:02d}" for i in range(48, 66)]
+              + [f"171{i:02d}" for i in range(70, 74)]
+          )
+
+          assert len(prio) == 165, len(prio)
+          assert len(secondary) == 58, len(secondary)
+          assert len(set(prio + secondary)) == 223
+
+          missing = [code for code in prio + secondary if code not in by_code]
+          assert not missing, f"Missing submitted postcodes: {missing}"
+
+          rows = [by_code[code] for code in prio + secondary]
+          print({
+              "submitted": 223,
+              "matched": len(rows),
+              "accuracy": dict(Counter(row["accuracy"] for row in rows)),
+              "shared_coordinate_gt_1": sum(row["sharedCoordinateCount"] > 1 for row in rows),
+          })
+          PY
+
       - name: Commit refreshed postcode data
         if: github.event_name != 'pull_request'
         run: |
