@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const POSTCODE_URL = "https://gist.githubusercontent.com/Gronis/175de473918d9487946da07a1c4d3118/raw/zipcodes.json";
+  const POSTCODE_URL = "/api/postcodes";
   const SWEDEN_CENTER = [62.0, 15.0];
 
   const els = {
@@ -50,22 +50,25 @@
   const matchedLayer = L.layerGroup().addTo(map);
   const circleLayer = L.featureGroup().addTo(map);
 
-  map.pm.addControls({
-    position: "topleft",
-    drawMarker: false,
-    drawPolyline: false,
-    drawRectangle: false,
-    drawPolygon: false,
-    drawText: false,
-    drawCircleMarker: false,
-    cutPolygon: false,
-    rotateMode: false,
-    dragMode: false,
-    editMode: true,
-    removalMode: true,
-    drawCircle: true
-  });
-  map.pm.setGlobalOptions({ snappable: false, continueDrawing: false });
+  const geomanAvailable = Boolean(map.pm);
+  if (geomanAvailable) {
+    map.pm.addControls({
+      position: "topleft",
+      drawMarker: false,
+      drawPolyline: false,
+      drawRectangle: false,
+      drawPolygon: false,
+      drawText: false,
+      drawCircleMarker: false,
+      cutPolygon: false,
+      rotateMode: false,
+      dragMode: false,
+      editMode: true,
+      removalMode: true,
+      drawCircle: true
+    });
+    map.pm.setGlobalOptions({ snappable: false, continueDrawing: false });
+  }
 
   function normalizePostcode(value) {
     const digits = String(value ?? "").replace(/\D/g, "");
@@ -96,6 +99,40 @@
   function setStatus(message, type = "") {
     els.status.className = `status ${type}`.trim();
     els.status.textContent = message;
+  }
+
+  function startFallbackCircleDrawing() {
+    const container = map.getContainer();
+    container.style.cursor = "crosshair";
+    setStatus("Klicka på kartan för cirkelns centrum.", "ok");
+
+    map.once("click", firstEvent => {
+      const center = firstEvent.latlng;
+      const preview = L.circle(center, {
+        radius: 100,
+        color: "#155eef",
+        fillColor: "#155eef",
+        fillOpacity: 0.09,
+        weight: 2.5
+      }).addTo(circleLayer);
+
+      const onMove = moveEvent => {
+        preview.setRadius(Math.max(50, map.distance(center, moveEvent.latlng)));
+      };
+
+      const onFinish = finishEvent => {
+        preview.setRadius(Math.max(50, map.distance(center, finishEvent.latlng)));
+        map.off("mousemove", onMove);
+        container.style.cursor = "";
+        registerCircle(preview, { source: "drawn" });
+        updateResults();
+        setStatus("Cirkel skapad. Rita fler eller exportera postnumren.", "ok");
+      };
+
+      map.on("mousemove", onMove);
+      setTimeout(() => map.once("click", onFinish), 0);
+      setStatus("Flytta musen för radie och klicka igen för att avsluta cirkeln.", "ok");
+    });
   }
 
   function switchMode(mode) {
@@ -187,8 +224,8 @@
       fillOpacity: 0.09,
       weight: 2.5
     });
-    layer.pm.enable({ allowSelfIntersection: false });
     registerCircle(layer, { name: `Automatiskt område ${index + 1}`, source: "import" });
+    if (layer.pm) layer.pm.enable({ allowSelfIntersection: false });
   }
 
   function renderImportedMarkers(points) {
@@ -417,7 +454,10 @@
     clearCircleLayers();
     setStatus("Importen är rensad.");
   });
-  els.startCircle.addEventListener("click", () => map.pm.enableDraw("Circle"));
+  els.startCircle.addEventListener("click", () => {
+    if (map.pm) map.pm.enableDraw("Circle");
+    else startFallbackCircleDrawing();
+  });
   els.clearCircles.addEventListener("click", () => {
     clearCircleLayers();
     setStatus("Alla cirklar är borttagna.");
@@ -432,6 +472,7 @@
       return response.json();
     })
     .then(rows => {
+      if (!Array.isArray(rows)) throw new Error(rows?.error || "Invalid postcode response.");
       const seen = new Set();
       state.postcodes = rows.flatMap(row => {
         const code = normalizePostcode(row.zipcode);
@@ -442,10 +483,10 @@
         return [{ code, lat, lng, city: row.city || row.place || "" }];
       });
       state.postcodeByCode = new Map(state.postcodes.map(record => [record.code, record]));
-      setStatus(`${state.postcodes.length.toLocaleString("sv-SE")} svenska postnummer är laddade. Verktyget är klart.`, "ok");
+      setStatus(`${state.postcodes.length.toLocaleString("sv-SE")} svenska postnummer är laddade via Cloudflare. Verktyget är klart.`, "ok");
     })
     .catch(error => {
       console.error(error);
-      setStatus("Postnummerunderlaget kunde inte laddas. Kontrollera internetanslutningen och försök igen.", "error");
+      setStatus(`Postnummerunderlaget kunde inte laddas (${error.message}). Ladda om sidan eller kontrollera /api/postcodes.`, "error");
     });
 })();
