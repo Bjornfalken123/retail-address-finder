@@ -55,7 +55,8 @@
     circles: [],
     nextCircleId: 1,
     dataReady: false,
-    dataMeta: null
+    dataMeta: null,
+    importMarkerByCode: new Map()
   };
 
   const map = L.map("map", { zoomControl: true }).setView(SWEDEN_CENTER, 5);
@@ -238,6 +239,7 @@
 
   function renderImportedMarkers(records) {
     importedLayer.clearLayers();
+    state.importMarkerByCode.clear();
 
     records.forEach(point => {
       const approximate = point.precision === "low";
@@ -251,6 +253,7 @@
       marker.bindPopup(postcodePopup(point));
       marker.bindTooltip(formatPostcode(point.code), { direction: "top", offset: [0, -4] });
       marker.addTo(importedLayer);
+      state.importMarkerByCode.set(point.code, marker);
     });
   }
 
@@ -263,11 +266,11 @@
         const quality = precisionInfo(point);
         const place = point.city || point.municipality || "";
         rows.push(`
-          <div class="qualityRow">
+          <button class="qualityRow qualityRowButton" type="button" data-code="${point.code}">
             <span class="qualityCode">${formatPostcode(point.code)}</span>
             <span class="qualityPlace" title="${place}">${place || "—"}</span>
             <span class="qualityBadge ${quality.kind}">${quality.label}</span>
-          </div>
+          </button>
         `);
       });
 
@@ -284,6 +287,15 @@
       });
 
     els.importList.innerHTML = rows.join("");
+
+    els.importList.querySelectorAll("[data-code]").forEach(row => {
+      row.addEventListener("click", () => {
+        const marker = state.importMarkerByCode.get(row.dataset.code);
+        if (!marker) return;
+        map.setView(marker.getLatLng(), Math.max(map.getZoom(), 14));
+        marker.openPopup();
+      });
+    });
   }
 
   function updateImportResults(totalInput, records, missing) {
@@ -294,6 +306,7 @@
     els.approxCount.textContent = String(approximate);
     els.importMissingCount.textContent = String(missing.length);
     els.importResultCount.textContent = `${records.length} visade`;
+    els.zoomImported.disabled = records.length === 0;
 
     const hasInput = totalInput > 0;
     els.importEmpty.classList.toggle("hidden", hasInput);
@@ -520,6 +533,10 @@
     els.matchedCount.textContent = String(matched.length);
     els.excludedCount.textContent = String(excluded.length);
     els.resultCount.textContent = `${matched.length} postnummer`;
+    els.clearCircles.disabled = state.circles.length === 0;
+    els.copyPostcodes.disabled = matched.length === 0;
+    els.exportCsv.disabled = matched.length === 0;
+    els.exportGeojson.disabled = state.circles.length === 0;
 
     const hasCircles = state.circles.length > 0;
     els.drawEmpty.classList.toggle("hidden", hasCircles);
