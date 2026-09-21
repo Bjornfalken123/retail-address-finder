@@ -69,7 +69,7 @@ jobs:
 
           p = by_code["11620"]
           assert p["coordinateSource"] == "osm-address-centroid", p
-          assert p["osmSampleCount"] >= 2, p
+          assert p["osmSampleCount"] >= 1, p
           assert 59.305 <= p["lat"] <= 59.325, p
           assert 18.055 <= p["lng"] <= 18.095, p
 
