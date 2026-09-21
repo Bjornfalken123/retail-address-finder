@@ -4,131 +4,180 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Postnummerkartan · Retail Address Finder</title>
-  <meta name="description" content="Importera svenska postnummer och skapa områdescirklar, eller rita cirklar på kartan och exportera postnummer." />
+  <meta name="description" content="Visa svenska postnummer på karta eller rita cirklar och få ut postnummer som ligger inom området." />
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.css" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=20260921-5" />
 </head>
 <body>
   <div class="appShell">
     <header class="topbar">
-      <a class="brand" href="/">⌖ <span>Retail Address Finder</span></a>
+      <a class="brand" href="/" aria-label="Till Retail Address Finder">
+        <span class="brandMark">⌖</span>
+        <span>Retail Address Finder</span>
+      </a>
       <div class="topbarTitle">Postnummerkartan</div>
-      <a class="backLink" href="/">Till adressverktyget</a>
+      <a class="backLink" href="/">Adressverktyget</a>
     </header>
 
     <main class="workspace">
       <aside class="sidebar">
         <div class="intro">
-          <div class="eyebrow">Sverige · postnummer & områden</div>
-          <h1>Bygg målområden från postnummer — eller tvärtom.</h1>
-          <p>Importera en lista och skapa redigerbara cirklar automatiskt, eller rita cirklar på kartan och få ut postnumren som träffas.</p>
+          <div class="eyebrow">Kartverktyg · Sverige</div>
+          <h1>Postnummer, tydligt på karta.</h1>
+          <p>Visa en lista med postnummer som markeringar, eller rita ett område och få ut postnumren som ligger i det.</p>
         </div>
 
         <div class="modeTabs" role="tablist" aria-label="Arbetsläge">
-          <button id="modeImport" class="modeTab active" type="button">Postnummer → cirklar</button>
-          <button id="modeDraw" class="modeTab" type="button" disabled>Cirklar → postnummer</button>
+          <button id="modeImport" class="modeTab active" type="button" role="tab" aria-selected="true">
+            <span class="modeIcon">●</span>
+            <span><strong>Visa postnummer</strong><small>Lista → karta</small></span>
+          </button>
+          <button id="modeDraw" class="modeTab" type="button" role="tab" aria-selected="false" disabled>
+            <span class="modeIcon ringIcon">○</span>
+            <span><strong>Cirkel → postnummer</strong><small>Karta → lista</small></span>
+          </button>
+        </div>
+
+        <div class="dataBar">
+          <span id="dataDot" class="dataDot loading"></span>
+          <div>
+            <strong id="dataState">Laddar postnummerdata…</strong>
+            <span id="dataMeta">Förbereder kartunderlaget</span>
+          </div>
         </div>
 
         <section id="importPanel" class="panel">
           <div class="panelHeader">
-            <div><span class="step">1</span><h2>Importera postnummer</h2></div>
+            <div>
+              <span class="step">1</span>
+              <div><h2>Lägg in postnummer</h2><p>Klistra in eller ladda en fil.</p></div>
+            </div>
             <button id="clearImport" class="textButton" type="button">Rensa</button>
           </div>
 
           <label class="field">
-            <span>Klistra in postnummer</span>
-            <textarea id="postcodeInput" rows="7" placeholder="112 34&#10;112 35&#10;113 20"></textarea>
+            <span>Postnummer</span>
+            <textarea id="postcodeInput" rows="7" placeholder="116 20&#10;112 34&#10;167 31"></textarea>
             <small>En per rad, eller separerade med komma, semikolon eller mellanslag.</small>
           </label>
 
           <label class="uploadBox" for="csvFile">
             <input id="csvFile" type="file" accept=".csv,.txt,text/csv,text/plain" />
-            <strong>Ladda CSV eller TXT</strong>
-            <span>Vi hittar femsiffriga svenska postnummer automatiskt.</span>
+            <span class="uploadIcon">↑</span>
+            <span class="uploadText"><strong>Ladda CSV eller TXT</strong><small>Femsiffriga svenska postnummer hittas automatiskt.</small></span>
           </label>
 
-          <div class="fieldRow">
-            <label class="field compact">
-              <span>Maxradie per automatisk cirkel</span>
-              <select id="clusterDistance">
-                <option value="1500">1,5 km</option>
-                <option value="2500">2,5 km</option>
-                <option value="3500" selected>3,5 km</option>
-                <option value="5000">5 km</option>
-                <option value="7500">7,5 km</option>
-                <option value="10000">10 km</option>
-              </select>
-            </label>
-            <label class="field compact">
-              <span>Minsta radie</span>
-              <select id="minimumRadius">
-                <option value="500">0,5 km</option>
-                <option value="1000" selected>1 km</option>
-                <option value="1500">1,5 km</option>
-                <option value="2500">2,5 km</option>
-              </select>
-            </label>
+          <button id="showPostcodes" class="primaryButton" type="button" disabled>Visa postnummer på kartan</button>
+        </section>
+
+        <section id="importResults" class="panel resultsPanel">
+          <div class="panelHeader">
+            <div>
+              <span class="step">2</span>
+              <div><h2>Markeringar</h2><p>Resultat från din lista.</p></div>
+            </div>
+            <span id="importResultCount" class="countBadge">0 visade</span>
           </div>
 
-          <button id="buildCircles" class="primaryButton" type="button" disabled>Skapa cirklar från listan</button>
+          <div class="statsGrid four">
+            <div><strong id="inputCount">0</strong><span>inlästa</span></div>
+            <div><strong id="placedCount">0</strong><span>placerade</span></div>
+            <div><strong id="approxCount">0</strong><span>ungefärliga</span></div>
+            <div><strong id="importMissingCount">0</strong><span>saknas</span></div>
+          </div>
+
+          <div id="importEmpty" class="emptyState">
+            <span class="emptyIcon">⌖</span>
+            <strong>Inga postnummer visade ännu</strong>
+            <p>Lägg in en lista ovan och välj “Visa postnummer på kartan”.</p>
+          </div>
+
+          <div id="importActions" class="hidden">
+            <button id="zoomImported" class="secondaryButton" type="button" disabled>Visa alla markeringar</button>
+            <details class="postcodeDetails">
+              <summary>Visa postnummer och datakvalitet</summary>
+              <div id="importList" class="qualityList"></div>
+            </details>
+          </div>
         </section>
 
         <section id="drawPanel" class="panel hidden">
-          <div class="panelHeader"><div><span class="step">1</span><h2>Rita områden</h2></div></div>
-          <p class="panelCopy">Välj cirkelverktyget på kartan, klicka ut centrum och dra till önskad radie. Du kan skapa flera cirklar och redigera dem efteråt.</p>
-          <div class="hintCard">
-            <strong>Urval</strong>
-            <span>Ett postnummer räknas med när dess representativa koordinat ligger inne i minst en cirkel.</span>
+          <div class="panelHeader">
+            <div>
+              <span class="step">1</span>
+              <div><h2>Rita ett område</h2><p>Skapa en eller flera cirklar på kartan.</p></div>
+            </div>
           </div>
-          <button id="startCircle" class="primaryButton" type="button" disabled>Rita en cirkel</button>
-          <button id="clearCircles" class="secondaryButton" type="button">Ta bort alla cirklar</button>
+
+          <div class="workflowSteps">
+            <div><span>1</span><p><strong>Rita</strong> en cirkel på kartan.</p></div>
+            <div><span>2</span><p><strong>Justera</strong> centrum eller radie vid behov.</p></div>
+            <div><span>3</span><p><strong>Exportera</strong> postnumren som träffas.</p></div>
+          </div>
+
+          <div class="hintCard">
+            <strong>Så räknas ett postnummer</strong>
+            <span>Postnumrets representativa punkt måste ligga i minst en cirkel. Lågprecisionspunkter exkluderas automatiskt för att undvika felaktiga träffar.</span>
+          </div>
+
+          <div class="buttonStack">
+            <button id="startCircle" class="primaryButton" type="button" disabled>Rita en cirkel</button>
+            <button id="clearCircles" class="secondaryButton" type="button" disabled>Ta bort alla cirklar</button>
+          </div>
         </section>
 
-        <section class="panel resultsPanel">
+        <section id="drawResults" class="panel resultsPanel hidden">
           <div class="panelHeader">
-            <div><span class="step">2</span><h2>Resultat</h2></div>
+            <div>
+              <span class="step">2</span>
+              <div><h2>Postnummer i området</h2><p>Uppdateras när cirkeln ändras.</p></div>
+            </div>
             <span id="resultCount" class="countBadge">0 postnummer</span>
           </div>
 
           <div class="statsGrid">
             <div><strong id="circleCount">0</strong><span>cirklar</span></div>
             <div><strong id="matchedCount">0</strong><span>träffade</span></div>
-            <div><strong id="missingCount">0</strong><span>saknas</span></div>
+            <div><strong id="excludedCount">0</strong><span>osäkra exkl.</span></div>
           </div>
 
-          <div id="circleList" class="circleList"></div>
-
-          <div class="resultActions">
-            <button id="copyPostcodes" class="secondaryButton" type="button">Kopiera postnummer</button>
-            <button id="exportCsv" class="secondaryButton" type="button">Exportera CSV</button>
-            <button id="exportGeojson" class="secondaryButton" type="button">Exportera GeoJSON</button>
+          <div id="drawEmpty" class="emptyState compact">
+            <span class="emptyIcon ringLarge">○</span>
+            <strong>Rita en cirkel för att börja</strong>
+            <p>Postnummer och exportalternativ visas här.</p>
           </div>
 
-          <details class="postcodeDetails">
-            <summary>Visa postnummerlista</summary>
-            <div id="postcodeList" class="postcodeList empty">Inga postnummer valda ännu.</div>
-          </details>
+          <div id="drawResultContent" class="hidden">
+            <div id="circleList" class="circleList"></div>
+
+            <div class="resultActions">
+              <button id="copyPostcodes" class="secondaryButton" type="button" disabled>Kopiera postnummer</button>
+              <button id="exportCsv" class="secondaryButton" type="button" disabled>Exportera CSV</button>
+              <button id="exportGeojson" class="secondaryButton" type="button" disabled>Exportera cirklar</button>
+            </div>
+
+            <details class="postcodeDetails">
+              <summary>Visa postnummerlista</summary>
+              <div id="postcodeList" class="postcodeList empty">Inga postnummer träffas ännu.</div>
+            </details>
+          </div>
         </section>
 
-        <div id="status" class="status">Läser in svenskt postnummerunderlag…</div>
-        <p class="footnote">Postnummerpunkterna kommer från <a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames</a> (CC BY 4.0) och är representativa/estimerade koordinater, inte officiella postnummergränser. Cirkelurval betyder därför att postnumrets punkt ligger i cirkeln.</p>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+        <p class="footnote">Positionsdata kombinerar adressbaserade OpenStreetMap-punkter med GeoNames som fallback. Markeringarna är representativa punkter, inte officiella postnummergränser.</p>
       </aside>
 
       <section class="mapWrap">
-        <div id="map" aria-label="Karta över postnummer och områdescirklar"></div>
-        <div class="mapLegend">
-          <span><i class="dot imported"></i> Importerat postnummer</span>
-          <span><i class="dot matched"></i> Träffat postnummer</span>
-          <span><i class="ring"></i> Områdescirkel</span>
-        </div>
+        <div id="map" aria-label="Karta över svenska postnummer"></div>
+        <div id="mapLegend" class="mapLegend"></div>
       </section>
     </main>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.min.js"></script>
-  <script src="./app.js?v=20260921-4"></script>
+  <script src="./app.js?v=20260921-5"></script>
 </body>
 </html>
