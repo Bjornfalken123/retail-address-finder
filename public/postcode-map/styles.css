@@ -239,6 +239,8 @@ textarea:focus { border-color: #84adff; box-shadow: 0 0 0 3px rgba(23,92,211,.09
 
 .qualityList { display: grid; gap: 5px; max-height: 220px; overflow: auto; padding-top: 9px; }
 .qualityRow { display: grid; grid-template-columns: 58px 1fr auto; gap: 7px; align-items: center; padding: 6px 7px; border: 1px solid var(--line); border-radius: 8px; }
+.qualityRowButton { width: 100%; color: inherit; text-align: left; cursor: pointer; }
+.qualityRowButton:hover { border-color: #b7c3ce; background: #f9fbfc; }
 .qualityCode { font-size: 10.5px; font-weight: 760; font-variant-numeric: tabular-nums; }
 .qualityPlace { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); font-size: 9.5px; }
 .qualityBadge { border-radius: 999px; padding: 3px 6px; font-size: 8.5px; font-weight: 750; white-space: nowrap; }
