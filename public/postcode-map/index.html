@@ -28,7 +28,7 @@
 
         <div class="modeTabs" role="tablist" aria-label="Arbetsläge">
           <button id="modeImport" class="modeTab active" type="button">Postnummer → cirklar</button>
-          <button id="modeDraw" class="modeTab" type="button">Cirklar → postnummer</button>
+          <button id="modeDraw" class="modeTab" type="button" disabled>Cirklar → postnummer</button>
         </div>
 
         <section id="importPanel" class="panel">
@@ -51,7 +51,7 @@
 
           <div class="fieldRow">
             <label class="field compact">
-              <span>Klusteravstånd</span>
+              <span>Maxradie per automatisk cirkel</span>
               <select id="clusterDistance">
                 <option value="1500">1,5 km</option>
                 <option value="2500">2,5 km</option>
@@ -72,7 +72,7 @@
             </label>
           </div>
 
-          <button id="buildCircles" class="primaryButton" type="button">Skapa cirklar från listan</button>
+          <button id="buildCircles" class="primaryButton" type="button" disabled>Skapa cirklar från listan</button>
         </section>
 
         <section id="drawPanel" class="panel hidden">
@@ -82,7 +82,7 @@
             <strong>Urval</strong>
             <span>Ett postnummer räknas med när dess representativa koordinat ligger inne i minst en cirkel.</span>
           </div>
-          <button id="startCircle" class="primaryButton" type="button">Rita en cirkel</button>
+          <button id="startCircle" class="primaryButton" type="button" disabled>Rita en cirkel</button>
           <button id="clearCircles" class="secondaryButton" type="button">Ta bort alla cirklar</button>
         </section>
 
@@ -113,7 +113,7 @@
         </section>
 
         <div id="status" class="status">Läser in svenskt postnummerunderlag…</div>
-        <p class="footnote">MVP:n använder representativa koordinater för postnummer. Nästa nivå är riktiga postnummerpolygoner för överlappsberäkning.</p>
+        <p class="footnote">Postnummerpunkterna kommer från <a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames</a> (CC BY 4.0) och är representativa/estimerade koordinater, inte officiella postnummergränser. Cirkelurval betyder därför att postnumrets punkt ligger i cirkeln.</p>
       </aside>
 
       <section class="mapWrap">
@@ -129,6 +129,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.min.js"></script>
-  <script src="./app.js?v=20260921-2"></script>
+  <script src="./app.js?v=20260921-4"></script>
 </body>
 </html>

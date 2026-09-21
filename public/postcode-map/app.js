@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const POSTCODE_URL = "/api/postcodes";
+  const POSTCODE_URL = "/data/postcodes-se.json";
   const SWEDEN_CENTER = [62.0, 15.0];
 
   const els = {
@@ -37,7 +37,9 @@
     missingCodes: [],
     matchedCodes: [],
     circles: [],
-    nextCircleId: 1
+    nextCircleId: 1,
+    dataReady: false,
+    dataMeta: null
   };
 
   const map = L.map("map", { zoomControl: true }).setView(SWEDEN_CENTER, 5);
@@ -81,7 +83,7 @@
   }
 
   function parsePostcodes(text) {
-    const matches = String(text ?? "").match(/(?<!\d)\d{3}\s?\d{2}(?!\d)/g) || [];
+    const matches = String(text ?? "").match(/\b\d{3}\s?\d{2}\b/g) || [];
     return [...new Set(matches.map(normalizePostcode).filter(Boolean))];
   }
 
@@ -99,6 +101,13 @@
   function setStatus(message, type = "") {
     els.status.className = `status ${type}`.trim();
     els.status.textContent = message;
+  }
+
+  function setDataReady(ready) {
+    state.dataReady = ready;
+    els.buildCircles.disabled = !ready;
+    els.startCircle.disabled = !ready;
+    els.modeDraw.disabled = !ready;
   }
 
   function startFallbackCircleDrawing() {
@@ -152,28 +161,44 @@
     };
   }
 
-  function clusterPoints(points, thresholdMeters) {
-    if (!points.length) return [];
-    const parent = points.map((_, i) => i);
-    const find = i => parent[i] === i ? i : (parent[i] = find(parent[i]));
-    const union = (a, b) => {
-      const ra = find(a), rb = find(b);
-      if (ra !== rb) parent[rb] = ra;
-    };
+  function clusterRadius(points) {
+    if (!points.length) return 0;
+    const center = averageCenter(points);
+    return Math.max(...points.map(point => haversineMeters(center, point)), 0);
+  }
 
-    for (let i = 0; i < points.length; i += 1) {
-      for (let j = i + 1; j < points.length; j += 1) {
-        if (haversineMeters(points[i], points[j]) <= thresholdMeters) union(i, j);
+  function clusterPoints(points, maxRadiusMeters) {
+    const remaining = [...points].sort((a, b) => a.code.localeCompare(b.code, "sv"));
+    const clusters = [];
+
+    while (remaining.length) {
+      const cluster = [remaining.shift()];
+      let changed = true;
+
+      while (changed && remaining.length) {
+        changed = false;
+        let bestIndex = -1;
+        let bestRadius = Infinity;
+
+        for (let i = 0; i < remaining.length; i += 1) {
+          const candidate = [...cluster, remaining[i]];
+          const radius = clusterRadius(candidate);
+          if (radius <= maxRadiusMeters && radius < bestRadius) {
+            bestRadius = radius;
+            bestIndex = i;
+          }
+        }
+
+        if (bestIndex >= 0) {
+          cluster.push(remaining.splice(bestIndex, 1)[0]);
+          changed = true;
+        }
       }
+
+      clusters.push(cluster);
     }
 
-    const groups = new Map();
-    points.forEach((point, index) => {
-      const root = find(index);
-      if (!groups.has(root)) groups.set(root, []);
-      groups.get(root).push(point);
-    });
-    return [...groups.values()];
+    return clusters;
   }
 
   function clearCircleLayers() {
@@ -216,7 +241,7 @@
   function createAutoCircle(points, minRadius, index) {
     const center = averageCenter(points);
     const farthest = Math.max(...points.map(p => haversineMeters(center, p)), 0);
-    const radius = Math.max(minRadius, farthest + 300);
+    const radius = Math.max(minRadius, farthest);
     const layer = L.circle([center.lat, center.lng], {
       radius,
       color: "#155eef",
@@ -334,8 +359,8 @@
   }
 
   function buildFromImportedCodes() {
-    if (!state.postcodes.length) {
-      setStatus("Postnummerunderlaget är inte färdigladdat ännu.", "error");
+    if (!state.dataReady || !state.postcodes.length) {
+      setStatus("Postnummerdatan är inte klar. Vänta tills statusraden visar att datafilen är verifierad.", "error");
       return;
     }
     const codes = parsePostcodes(els.postcodeInput.value);
@@ -362,13 +387,13 @@
       return;
     }
 
-    const threshold = Number(els.clusterDistance.value);
-    const minRadius = Number(els.minimumRadius.value);
-    const groups = clusterPoints(found, threshold);
+    const maxRadius = Number(els.clusterDistance.value);
+    const minRadius = Math.min(Number(els.minimumRadius.value), maxRadius);
+    const groups = clusterPoints(found, maxRadius);
     groups.forEach((group, index) => createAutoCircle(group, minRadius, index));
     updateResults();
     zoomToLayers();
-    setStatus(`${found.length} av ${codes.length} postnummer matchade och grupperades i ${groups.length} cirklar.${missing.length ? ` ${missing.length} saknas i underlaget.` : ""}`, "ok");
+    setStatus(`${found.length} av ${codes.length} postnummer matchade och grupperades i ${groups.length} cirklar med maxradie ${(maxRadius / 1000).toFixed(1).replace(".", ",")} km.${missing.length ? ` ${missing.length} saknas i underlaget.` : ""}`, "ok");
   }
 
   async function readFile(file) {
@@ -393,9 +418,9 @@
 
   function exportCsv() {
     const records = getMatchedRecords().sort((a, b) => a.code.localeCompare(b.code, "sv"));
-    const lines = [["postcode", "city", "latitude", "longitude"].join(",")];
+    const lines = [["postcode", "city", "municipality", "county", "latitude", "longitude", "accuracy", "shared_coordinate_count"].join(",")];
     records.forEach(r => {
-      const values = [formatPostcode(r.code), r.city || "", r.lat, r.lng];
+      const values = [formatPostcode(r.code), r.city || "", r.municipality || "", r.county || "", r.lat, r.lng, r.accuracy ?? "", r.sharedCoordinateCount ?? ""];
       lines.push(values.map(v => `"${String(v).replaceAll('"', '""')}"`).join(","));
     });
     download("postnummer-urval.csv", `\uFEFF${lines.join("\n")}`, "text/csv;charset=utf-8");
@@ -455,6 +480,10 @@
     setStatus("Importen är rensad.");
   });
   els.startCircle.addEventListener("click", () => {
+    if (!state.dataReady) {
+      setStatus("Postnummerdatan måste vara verifierad innan du kan göra ett postnummerurval.", "error");
+      return;
+    }
     if (map.pm) map.pm.enableDraw("Circle");
     else startFallbackCircleDrawing();
   });
@@ -466,27 +495,62 @@
   els.exportCsv.addEventListener("click", exportCsv);
   els.exportGeojson.addEventListener("click", exportGeojson);
 
-  fetch(POSTCODE_URL)
+  setDataReady(false);
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 20000);
+
+  fetch(POSTCODE_URL, { cache: "no-cache", signal: controller.signal })
     .then(response => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      if (!response.ok) throw new Error(`datafil HTTP ${response.status}`);
       return response.json();
     })
-    .then(rows => {
-      if (!Array.isArray(rows)) throw new Error(rows?.error || "Invalid postcode response.");
+    .then(payload => {
+      const rows = payload?.postcodes;
+      const meta = payload?.meta || null;
+
+      if (!Array.isArray(rows)) throw new Error("datafilen saknar postcodes-lista");
+      if (rows.length < 5000) throw new Error(`orimligt få postnummer (${rows.length})`);
+
       const seen = new Set();
       state.postcodes = rows.flatMap(row => {
-        const code = normalizePostcode(row.zipcode);
+        const code = normalizePostcode(row.code);
         const lat = Number(row.lat);
         const lng = Number(row.lng);
         if (!code || seen.has(code) || !Number.isFinite(lat) || !Number.isFinite(lng)) return [];
         seen.add(code);
-        return [{ code, lat, lng, city: row.city || row.place || "" }];
+        return [{
+          code,
+          lat,
+          lng,
+          city: row.city || "",
+          municipality: row.municipality || "",
+          county: row.county || "",
+          accuracy: Number(row.accuracy) || 0,
+          sharedCoordinateCount: Number(row.sharedCoordinateCount) || 1
+        }];
       });
+
+      if (state.postcodes.length < 5000) {
+        throw new Error(`bara ${state.postcodes.length} giltiga unika postnummer efter validering`);
+      }
+
       state.postcodeByCode = new Map(state.postcodes.map(record => [record.code, record]));
-      setStatus(`${state.postcodes.length.toLocaleString("sv-SE")} svenska postnummer är laddade via Cloudflare. Verktyget är klart.`, "ok");
+      state.dataMeta = meta;
+      setDataReady(true);
+
+      const sourceDate = meta?.sourceLastModified || meta?.generatedAt || "okänt datum";
+      setStatus(
+        `${state.postcodes.length.toLocaleString("sv-SE")} unika svenska postnummer verifierade. Källa: GeoNames. Datadatum: ${sourceDate}.`,
+        "ok"
+      );
     })
     .catch(error => {
       console.error(error);
-      setStatus(`Postnummerunderlaget kunde inte laddas (${error.message}). Ladda om sidan eller kontrollera /api/postcodes.`, "error");
-    });
+      setDataReady(false);
+      const reason = error?.name === "AbortError" ? "timeout efter 20 sekunder" : error.message;
+      setStatus(`Postnummerdatan kunde inte laddas: ${reason}. Fil: ${POSTCODE_URL}`, "error");
+    })
+    .finally(() => clearTimeout(timeoutId));
+
 })();
