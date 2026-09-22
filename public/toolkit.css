@@ -49,9 +49,9 @@ a { color: inherit; }
 .appHeader {
   color: #fff;
   background: linear-gradient(132deg, var(--navy) 0%, #0d1b3b 72%, #102647 100%);
-  padding-bottom: 68px;
+  padding-bottom: 46px;
   position: relative;
-  z-index: 1100;
+  z-index: 0;
 }
 
 .headerInner,
@@ -128,7 +128,7 @@ a { color: inherit; }
 }
 
 .headerHero {
-  padding-top: 40px;
+  padding-top: 28px;
 }
 
 .headerHero .eyebrow {
@@ -137,9 +137,9 @@ a { color: inherit; }
 
 .headerHero h1 {
   max-width: 880px;
-  margin: 10px 0 12px;
+  margin: 8px 0 10px;
   color: #fff;
-  font-size: clamp(38px, 4.6vw, 60px);
+  font-size: clamp(34px, 4vw, 52px);
   line-height: 1.02;
   letter-spacing: -.048em;
   font-weight: 790;
@@ -149,7 +149,7 @@ a { color: inherit; }
   max-width: 720px;
   margin: 0;
   color: #c5cfda;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -163,10 +163,10 @@ a { color: inherit; }
 }
 
 .pageShell {
-  margin-top: -34px;
+  margin-top: -24px;
   position: relative;
   z-index: 2;
-  padding-bottom: 96px;
+  padding-bottom: 82px;
 }
 
 .surface {
@@ -357,7 +357,7 @@ textarea:focus {
 }
 
 @media (max-width: 700px) {
-  .appHeader { padding-bottom: 56px; }
+  .appHeader { padding-bottom: 36px; }
   .headerInner,
   .headerHero,
   .pageShell,
@@ -368,10 +368,10 @@ textarea:focus {
   .hawkLogo { width: 96px; height: 30px; }
   .brandProduct { display: none; }
   .toolTab { padding: 7px 8px; font-size: 10px; }
-  .headerHero { padding-top: 30px; }
-  .headerHero h1 { font-size: clamp(34px, 11vw, 48px); }
-  .headerHero p { font-size: 14px; }
-  .pageShell { margin-top: -27px; padding-bottom: 70px; }
+  .headerHero { padding-top: 22px; }
+  .headerHero h1 { font-size: clamp(30px, 10vw, 42px); }
+  .headerHero p { font-size: 13px; }
+  .pageShell { margin-top: -18px; padding-bottom: 58px; }
   .surface { border-radius: 13px; }
   .productFooter { display: block; }
   .productFooter span { display: block; margin-top: 3px; }

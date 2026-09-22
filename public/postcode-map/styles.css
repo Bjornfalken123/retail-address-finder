@@ -1,10 +1,10 @@
 .mapperWorkspace {
   width: min(1320px, calc(100% - 44px));
-  height: calc(100vh - 238px);
-  min-height: 620px;
+  height: calc(100vh - 205px);
+  min-height: 600px;
   display: grid;
   grid-template-columns: 404px minmax(0, 1fr);
-  margin: -34px auto 72px;
+  margin: -24px auto 56px;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -17,9 +17,9 @@
 .mapperSidebar {
   min-height: 0;
   overflow-y: auto;
-  padding: 20px 18px 24px;
+  padding: 18px 16px 22px;
   border-right: 1px solid var(--line);
-  background: #f7f9f9;
+  background: #f8fafa;
   scrollbar-width: thin;
   position: relative;
   z-index: 800;
@@ -150,8 +150,9 @@
 }
 
 .mapperPanel {
-  padding: 13px;
+  padding: 15px;
   margin-bottom: 10px;
+  box-shadow: none;
 }
 
 .panelHeader {
@@ -654,8 +655,8 @@
     min-height: 0;
     display: flex;
     flex-direction: column;
-    margin-top: -27px;
-    margin-bottom: 36px;
+    margin-top: -18px;
+    margin-bottom: 30px;
   }
 
   .mapperSidebar {

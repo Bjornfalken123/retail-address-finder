@@ -1,13 +1,13 @@
 .finderWorkspace {
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  gap: 16px;
+  gap: 14px;
   align-items: start;
 }
 
 .requestCard,
 .statusCard {
-  padding: 18px;
+  padding: 22px;
 }
 
 .exportForm {
@@ -213,15 +213,15 @@
 }
 
 .statusCard {
-  min-height: 500px;
+  min-height: 460px;
 }
 
 .result {
-  min-height: 403px;
+  min-height: 360px;
 }
 
 .exportEmpty {
-  min-height: 390px;
+  min-height: 345px;
   align-content: center;
   padding: 30px;
   border: 1px dashed var(--line-strong);
@@ -472,10 +472,10 @@
 }
 
 .coverageSection {
-  margin-top: 18px;
-  padding: 18px;
+  margin-top: 14px;
+  padding: 22px;
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
+  border-radius: 15px;
   background: var(--surface);
 }
 
@@ -594,6 +594,6 @@
   .requestCard,
   .statusCard,
   .coverageSection {
-    padding: 13px;
+    padding: 16px;
   }
 }
