@@ -155,13 +155,13 @@
   function renderLegend() {
     if (state.mode === "import") {
       els.mapLegend.innerHTML = `
-        <span><i class="legendDot precise"></i>Adressbaserad / bättre position</span>
-        <span><i class="legendDot approx"></i>Ungefärlig fallback</span>
+        <span><i class="legendDot precise"></i>Address-derived / higher confidence</span>
+        <span><i class="legendDot approx"></i>Approximate fallback</span>
       `;
     } else {
       els.mapLegend.innerHTML = `
-        <span><i class="legendRing"></i>Områdescirkel</span>
-        <span><i class="legendDot matched"></i>Postnummer i cirkel</span>
+        <span><i class="legendRing"></i>Target circle</span>
+        <span><i class="legendDot matched"></i>Matched postcode</span>
       `;
     }
   }
@@ -185,14 +185,14 @@
       hideLayer(matchedLayer);
       hideLayer(circleLayer);
       configureDrawControls(false);
-      setStatus(state.importedRecords.length ? "Importmarkeringarna visas på kartan." : "");
+      setStatus(state.importedRecords.length ? "Imported postcodes are shown on the map." : "");
     } else {
       hideLayer(importedLayer);
       showLayer(circleLayer);
       showLayer(matchedLayer);
       configureDrawControls(true);
       updateDrawResults();
-      setStatus("Rita eller redigera cirklar på kartan. Resultatet uppdateras automatiskt.");
+      setStatus("Draw or edit circles on the map. Results update automatically.");
     }
 
     renderLegend();
@@ -203,23 +203,23 @@
     if (point.coordinateSource === "osm-address-centroid") {
       return {
         kind: "good",
-        label: point.osmSampleCount >= 3 ? "Adressbaserad" : "Adressbaserad",
+        label: "Address-derived",
         detail: point.osmSampleCount > 1
-          ? `${point.osmSampleCount} OSM-adresspunkter`
-          : "1 OSM-adresspunkt"
+          ? `${point.osmSampleCount} OSM address points`
+          : "1 OSM address point"
       };
     }
     if (point.precision === "low") {
       return {
         kind: "low",
-        label: "Ungefärlig",
-        detail: "Lågprecisions-fallback"
+        label: "Approximate",
+        detail: "Low-precision fallback"
       };
     }
     return {
       kind: "fallback",
       label: "Fallback",
-      detail: "GeoNames-position"
+      detail: "GeoNames position"
     };
   }
 
@@ -280,8 +280,8 @@
         rows.push(`
           <div class="qualityRow">
             <span class="qualityCode">${formatPostcode(code)}</span>
-            <span class="qualityPlace">Ingen position</span>
-            <span class="qualityBadge missing">Saknas</span>
+            <span class="qualityPlace">No position</span>
+            <span class="qualityBadge missing">Missing</span>
           </div>
         `);
       });
@@ -305,7 +305,7 @@
     els.placedCount.textContent = String(records.length);
     els.approxCount.textContent = String(approximate);
     els.importMissingCount.textContent = String(missing.length);
-    els.importResultCount.textContent = `${records.length} visade`;
+    els.importResultCount.textContent = `${records.length} shown`;
     els.zoomImported.disabled = records.length === 0;
 
     const hasInput = totalInput > 0;
@@ -334,13 +334,13 @@
 
   function showImportedPostcodes() {
     if (!state.dataReady) {
-      setStatus("Postnummerdatan är inte färdigladdad ännu.", "error");
+      setStatus("Postcode data is still loading.", "error");
       return;
     }
 
     const codes = parsePostcodes(els.postcodeInput.value);
     if (!codes.length) {
-      setStatus("Lägg in minst ett femsiffrigt svenskt postnummer.", "error");
+      setStatus("Enter at least one five-digit Swedish postcode.", "error");
       return;
     }
 
@@ -364,13 +364,13 @@
     const approximate = records.filter(point => point.precision === "low").length;
 
     if (!records.length) {
-      setStatus("Inga av postnumren kunde placeras i underlaget.", "error");
+      setStatus("None of the postcodes could be mapped with the current dataset.", "error");
       return;
     }
 
-    const messages = [`${records.length} av ${codes.length} postnummer visas på kartan.`];
-    if (approximate) messages.push(`${approximate} har ungefärlig position.`);
-    if (missing.length) messages.push(`${missing.length} saknas i underlaget.`);
+    const messages = [`${records.length} of ${codes.length} postcodes are shown on the map.`];
+    if (approximate) messages.push(`${approximate} use approximate positions.`);
+    if (missing.length) messages.push(`${missing.length} are missing from the dataset.`);
 
     setStatus(messages.join(" "), approximate || missing.length ? "" : "ok");
   }
@@ -383,7 +383,7 @@
     state.missingCodes = [];
     importedLayer.clearLayers();
     updateImportResults(0, [], []);
-    setStatus("Importen är rensad.");
+    setStatus("The postcode list has been cleared.");
   }
 
   function pointInsideCircle(point, item) {
@@ -430,7 +430,7 @@
   }
 
   function circleName(index) {
-    return `Område ${index}`;
+    return `Area ${index}`;
   }
 
   function registerCircle(layer, options = {}) {
@@ -452,7 +452,7 @@
       layer
         .bindPopup(`
           <div class="popupTitle">${item.name}</div>
-          <div class="popupMeta">${(layer.getRadius() / 1000).toFixed(1).replace(".", ",")} km radie · ${count} postnummer</div>
+          <div class="popupMeta">${(layer.getRadius() / 1000).toFixed(1)} km radius · ${count} postcodes</div>
         `)
         .openPopup();
     });
@@ -471,7 +471,7 @@
     state.circles = [];
     matchedLayer.clearLayers();
     updateDrawResults();
-    setStatus("Alla cirklar är borttagna.");
+    setStatus("All circles have been removed.");
   }
 
   function updateCircleList() {
@@ -491,9 +491,9 @@
       row.innerHTML = `
         <div class="circleItemMain">
           <strong>${item.name}</strong>
-          <span>${(item.layer.getRadius() / 1000).toFixed(1).replace(".", ",")} km · ${matched} postnummer${excluded ? ` · ${excluded} osäkra exkl.` : ""}</span>
+          <span>${(item.layer.getRadius() / 1000).toFixed(1)} km · ${matched} postcodes${excluded ? ` · ${excluded} low-confidence excluded` : ""}</span>
         </div>
-        <button type="button" aria-label="Ta bort ${item.name}">Ta bort</button>
+        <button type="button" aria-label="Remove ${item.name}">Remove</button>
       `;
 
       row.querySelector(".circleItemMain").addEventListener("click", () => {
@@ -511,7 +511,7 @@
 
     if (!sorted.length) {
       els.postcodeList.className = "postcodeList empty";
-      els.postcodeList.textContent = "Inga postnummer träffas ännu.";
+      els.postcodeList.textContent = "No postcodes matched yet.";
       return;
     }
 
@@ -532,7 +532,7 @@
     els.circleCount.textContent = String(state.circles.length);
     els.matchedCount.textContent = String(matched.length);
     els.excludedCount.textContent = String(excluded.length);
-    els.resultCount.textContent = `${matched.length} postnummer`;
+    els.resultCount.textContent = `${matched.length} postcodes`;
     els.clearCircles.disabled = state.circles.length === 0;
     els.copyPostcodes.disabled = matched.length === 0;
     els.exportCsv.disabled = matched.length === 0;
@@ -546,7 +546,7 @@
   function startFallbackCircleDrawing() {
     const container = map.getContainer();
     container.style.cursor = "crosshair";
-    setStatus("Klicka på kartan för cirkelns centrum.");
+    setStatus("Click the map to set the circle centre.");
 
     map.once("click", firstEvent => {
       const center = firstEvent.latlng;
@@ -568,12 +568,12 @@
         container.style.cursor = "";
         registerCircle(preview);
         updateDrawResults();
-        setStatus("Cirkeln är skapad. Resultatet uppdateras i vänsterpanelen.", "ok");
+        setStatus("Circle created. The postcode result has been updated.", "ok");
       };
 
       map.on("mousemove", onMove);
       setTimeout(() => map.once("click", onFinish), 0);
-      setStatus("Flytta musen för radie och klicka igen för att avsluta.");
+      setStatus("Move the pointer to set the radius, then click again to finish.");
     });
   }
 
@@ -584,13 +584,13 @@
       const codes = parsePostcodes(text);
       els.postcodeInput.value = codes.map(formatPostcode).join("\n");
       if (!codes.length) {
-        setStatus(`Inga femsiffriga svenska postnummer hittades i ${file.name}.`, "error");
+        setStatus(`No five-digit Swedish postcodes were found in ${file.name}.`, "error");
         return;
       }
-      setStatus(`${codes.length} unika postnummer hittades i ${file.name}. Välj “Visa postnummer på kartan”.`, "ok");
+      setStatus(`${codes.length} unique postcodes found in ${file.name}. Choose “Show postcodes on map”.`, "ok");
     } catch (error) {
       console.error(error);
-      setStatus("Filen kunde inte läsas.", "error");
+      setStatus("The file could not be read.", "error");
     }
   }
 
@@ -611,7 +611,7 @@
       .sort((a, b) => a.code.localeCompare(b.code, "sv"));
 
     if (!records.length) {
-      setStatus("Det finns inga postnummer att exportera.", "error");
+      setStatus("There are no matched postcodes to export.", "error");
       return;
     }
 
@@ -635,13 +635,13 @@
       lines.push(values.map(value => `"${String(value).replaceAll('"', '""')}"`).join(","));
     });
 
-    download("postnummer-i-cirklar.csv", `\uFEFF${lines.join("\n")}`, "text/csv;charset=utf-8");
-    setStatus(`${records.length} postnummer exporterades till CSV.`, "ok");
+    download("postcodes-in-circles.csv", `\uFEFF${lines.join("\n")}`, "text/csv;charset=utf-8");
+    setStatus(`${records.length} postcodes exported to CSV.`, "ok");
   }
 
   function exportGeojson() {
     if (!state.circles.length) {
-      setStatus("Det finns inga cirklar att exportera.", "error");
+      setStatus("There are no circles to export.", "error");
       return;
     }
 
@@ -661,26 +661,26 @@
     });
 
     download(
-      "omradescirklar.geojson",
+      "target-circles.geojson",
       JSON.stringify({ type: "FeatureCollection", features }, null, 2),
       "application/geo+json;charset=utf-8"
     );
-    setStatus(`${features.length} cirklar exporterades som GeoJSON.`, "ok");
+    setStatus(`${features.length} circles exported as GeoJSON.`, "ok");
   }
 
   async function copyPostcodes() {
     const text = state.matchedCodes.map(formatPostcode).join("\n");
     if (!text) {
-      setStatus("Det finns inga postnummer att kopiera.", "error");
+      setStatus("There are no matched postcodes to copy.", "error");
       return;
     }
 
     try {
       await navigator.clipboard.writeText(text);
-      setStatus(`${state.matchedCodes.length} postnummer kopierade.`, "ok");
+      setStatus(`${state.matchedCodes.length} postcodes copied.`, "ok");
     } catch (error) {
       console.error(error);
-      setStatus("Kunde inte kopiera automatiskt. Öppna postnummerlistan och kopiera manuellt.", "error");
+      setStatus("Could not copy automatically. Open the postcode list and copy it manually.", "error");
     }
   }
 
@@ -696,7 +696,7 @@
     });
     registerCircle(layer);
     updateDrawResults();
-    setStatus("Cirkeln är skapad. Dra eller ändra radien för att justera urvalet.", "ok");
+    setStatus("Circle created. Drag it or change the radius to refine the selection.", "ok");
   });
 
   map.on("pm:remove", event => {
@@ -721,7 +721,7 @@
 
   els.startCircle.addEventListener("click", () => {
     if (!state.dataReady) {
-      setStatus("Postnummerdatan måste vara laddad innan du kan göra ett urval.", "error");
+      setStatus("Postcode data must be loaded before you can create a selection.", "error");
       return;
     }
     if (geomanAvailable) {
@@ -746,7 +746,7 @@
   els.exportGeojson.addEventListener("click", exportGeojson);
 
   setDataReady(false);
-  setDataState("loading", "Laddar postnummerdata…", "Förbereder kartunderlaget");
+  setDataState("loading", "Loading postcode data…", "Preparing map data");
   updateImportResults(0, [], []);
   updateDrawResults();
   renderLegend();
@@ -764,8 +764,8 @@
       const rows = payload?.postcodes;
       const meta = payload?.meta || {};
 
-      if (!Array.isArray(rows)) throw new Error("datafilen saknar postcodes-lista");
-      if (rows.length < 5000) throw new Error(`orimligt få postnummer (${rows.length})`);
+      if (!Array.isArray(rows)) throw new Error("postcode data is missing the postcodes array");
+      if (rows.length < 5000) throw new Error(`unexpectedly small postcode dataset (${rows.length})`);
 
       const seen = new Set();
       state.postcodes = rows.flatMap(row => {
@@ -794,7 +794,7 @@
       });
 
       if (state.postcodes.length < 5000) {
-        throw new Error(`bara ${state.postcodes.length} giltiga postnummer efter validering`);
+        throw new Error(`only ${state.postcodes.length} valid postcodes remained after validation`);
       }
 
       state.postcodeByCode = new Map(
@@ -812,18 +812,18 @@
 
       setDataState(
         "ready",
-        "Kartunderlaget är klart",
-        `${state.postcodes.length.toLocaleString("sv-SE")} postnummer · ${osmCount.toLocaleString("sv-SE")} adressbaserade · ${lowCount.toLocaleString("sv-SE")} lågprecision`
+        "Postcode data is ready",
+        `${state.postcodes.length.toLocaleString("en-GB")} postcodes · ${osmCount.toLocaleString("en-GB")} address-derived · ${lowCount.toLocaleString("en-GB")} low precision`
       );
     })
     .catch(error => {
       console.error(error);
       setDataReady(false);
       const reason = error?.name === "AbortError"
-        ? "laddningen tog för lång tid"
+        ? "the request timed out"
         : error.message;
-      setDataState("error", "Kunde inte läsa postnummerdata", reason);
-      setStatus("Ladda om sidan. Om felet kvarstår behöver datafilen kontrolleras.", "error");
+      setDataState("error", "Could not load postcode data", reason);
+      setStatus("Reload the page. If the issue persists, the postcode dataset needs to be checked.", "error");
     })
     .finally(() => clearTimeout(timeoutId));
 })();
