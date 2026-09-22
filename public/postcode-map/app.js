@@ -98,7 +98,7 @@
   }
 
   function setStatus(message = "", type = "") {
-    els.status.className = `status ${type}`.trim();
+    els.status.className = `status statusText ${type}`.trim();
     els.status.textContent = message;
   }
 
