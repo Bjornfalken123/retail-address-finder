@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Postcode Mapper · Retail Location Toolkit</title>
+  <title>Hawk Location Tools · Postcode Mapper</title>
   <meta name="description" content="Map Swedish postcodes or draw circular target areas and export the postcodes inside them." />
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -14,12 +14,9 @@
 <body>
   <header class="appHeader">
     <div class="headerInner">
-      <a class="productBrand" href="/" aria-label="Retail Location Toolkit home">
-        <span class="brandMark">⌖</span>
-        <span class="brandText">
-          <strong>Retail Location Toolkit</strong>
-          <span>Location intelligence workspace</span>
-        </span>
+      <a class="productBrand" href="/" aria-label="Hawk Location Tools">
+        <img class="hawkLogo" src="https://hawk-tech.io/wp-content/uploads/2023/11/Hawk_Azerion_Logo_White.svg" alt="Hawk" referrerpolicy="no-referrer" />
+        <span class="brandProduct">Location Tools</span>
       </a>
 
       <nav class="toolNav" aria-label="Toolkit sections">
@@ -27,17 +24,16 @@
         <a class="toolTab active" href="/postcode-map/" aria-current="page">Postcode Mapper</a>
       </nav>
 
-      <span class="headerMeta">Swedish postcode workspace</span>
+    </div>
+    <div class="headerHero postcodeHero">
+      <div class="eyebrow">Postcode Mapper</div>
+      <h1>Map Swedish postcodes and define target areas.</h1>
+      <p>Inspect postcode coverage from a list, or draw circular areas and export the postcodes inside them.</p>
     </div>
   </header>
 
   <main class="mapperWorkspace">
     <aside class="mapperSidebar">
-      <div class="mapperIntro">
-        <div class="eyebrow">Postcode Mapper</div>
-        <h1>Map postcodes and build circular target areas.</h1>
-        <p>Use a postcode list to inspect coverage, or draw circles to create a postcode selection.</p>
-      </div>
 
       <div class="modeTabs" role="tablist" aria-label="Postcode workflow">
         <button id="modeImport" class="modeTab active" type="button" role="tab" aria-selected="true" aria-controls="importPanel importResults">
@@ -58,7 +54,7 @@
         </div>
       </div>
 
-      <section id="importPanel" class="surface mapperPanel">
+      <section id="importPanel" class="surface surfaceAccent mapperPanel">
         <div class="panelHeader">
           <div>
             <span class="step">1</span>
