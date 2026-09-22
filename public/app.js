@@ -787,20 +787,16 @@ function setChip(text, mode) {
   if (!statusChip) return;
 
   statusChip.textContent = text;
-  statusChip.className = "cardBadge";
+  statusChip.className = "badge";
 
   if (mode === "ready") {
-    statusChip.style.background = "#dcfae6";
-    statusChip.style.color = "#079455";
+    statusChip.classList.add("success");
   } else if (mode === "error") {
-    statusChip.style.background = "#fff1f0";
-    statusChip.style.color = "#912018";
+    statusChip.classList.add("error");
   } else if (mode === "slow") {
-    statusChip.style.background = "#fff7e6";
-    statusChip.style.color = "#b54708";
+    statusChip.classList.add("warning");
   } else {
-    statusChip.style.background = "#ecf7fb";
-    statusChip.style.color = "#008ca0";
+    statusChip.classList.add("running");
   }
 }
 
