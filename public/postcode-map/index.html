@@ -1,183 +1,193 @@
 <!doctype html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Postnummerkartan · Retail Address Finder</title>
-  <meta name="description" content="Visa svenska postnummer på karta eller rita cirklar och få ut postnummer som ligger inom området." />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#0b1534" />
+  <title>Hawk Location Tools · Postcode Mapper</title>
+  <meta name="description" content="Map Swedish postcodes or draw circular target areas and export the postcodes inside them." />
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.css" />
-  <link rel="stylesheet" href="./styles.css?v=20260921-5" />
+  <link rel="stylesheet" href="/toolkit.css?v=20260922-1" />
+  <link rel="stylesheet" href="./styles.css?v=20260922-1" />
 </head>
 <body>
-  <div class="appShell">
-    <header class="topbar">
-      <a class="brand" href="/" aria-label="Till Retail Address Finder">
-        <span class="brandMark">⌖</span>
-        <span>Retail Address Finder</span>
+  <header class="appHeader">
+    <div class="headerInner">
+      <a class="productBrand" href="/" aria-label="Hawk Location Tools">
+        <img class="hawkLogo" src="https://hawk-tech.io/wp-content/uploads/2023/11/Hawk_Azerion_Logo_White.svg" alt="Hawk" referrerpolicy="no-referrer" />
+        <span class="brandProduct">Location Tools</span>
       </a>
-      <div class="topbarTitle">Postnummerkartan</div>
-      <a class="backLink" href="/">Adressverktyget</a>
-    </header>
 
-    <main class="workspace">
-      <aside class="sidebar">
-        <div class="intro">
-          <div class="eyebrow">Kartverktyg · Sverige</div>
-          <h1>Postnummer, tydligt på karta.</h1>
-          <p>Visa en lista med postnummer som markeringar, eller rita ett område och få ut postnumren som ligger i det.</p>
+      <nav class="toolNav" aria-label="Toolkit sections">
+        <a class="toolTab" href="/">Location Finder</a>
+        <a class="toolTab active" href="/postcode-map/" aria-current="page">Postcode Mapper</a>
+      </nav>
+
+    </div>
+    <div class="headerHero postcodeHero">
+      <div class="eyebrow">Postcode Mapper</div>
+      <h1>Map Swedish postcodes and define target areas.</h1>
+      <p>Inspect postcode coverage from a list, or draw circular areas and export the postcodes inside them.</p>
+    </div>
+  </header>
+
+  <main class="mapperWorkspace">
+    <aside class="mapperSidebar">
+
+      <div class="modeTabs" role="tablist" aria-label="Postcode workflow">
+        <button id="modeImport" class="modeTab active" type="button" role="tab" aria-selected="true" aria-controls="importPanel importResults">
+          <span class="modeIcon">●</span>
+          <span><strong>Show postcodes</strong><small>List → map</small></span>
+        </button>
+        <button id="modeDraw" class="modeTab" type="button" role="tab" aria-selected="false" aria-controls="drawPanel drawResults" disabled>
+          <span class="modeIcon ringIcon">○</span>
+          <span><strong>Circle → postcodes</strong><small>Map → list</small></span>
+        </button>
+      </div>
+
+      <div class="dataBar">
+        <span id="dataDot" class="dataDot loading"></span>
+        <div>
+          <strong id="dataState">Loading postcode data…</strong>
+          <span id="dataMeta">Preparing map data</span>
         </div>
+      </div>
 
-        <div class="modeTabs" role="tablist" aria-label="Arbetsläge">
-          <button id="modeImport" class="modeTab active" type="button" role="tab" aria-selected="true">
-            <span class="modeIcon">●</span>
-            <span><strong>Visa postnummer</strong><small>Lista → karta</small></span>
-          </button>
-          <button id="modeDraw" class="modeTab" type="button" role="tab" aria-selected="false" disabled>
-            <span class="modeIcon ringIcon">○</span>
-            <span><strong>Cirkel → postnummer</strong><small>Karta → lista</small></span>
-          </button>
-        </div>
-
-        <div class="dataBar">
-          <span id="dataDot" class="dataDot loading"></span>
+      <section id="importPanel" class="surface surfaceAccent mapperPanel">
+        <div class="panelHeader">
           <div>
-            <strong id="dataState">Laddar postnummerdata…</strong>
-            <span id="dataMeta">Förbereder kartunderlaget</span>
+            <span class="step">1</span>
+            <div><h2>Add postcodes</h2><p>Paste a list or upload a file.</p></div>
+          </div>
+          <button id="clearImport" class="textButton" type="button">Clear</button>
+        </div>
+
+        <label class="field">
+          <span>Postcodes</span>
+          <textarea id="postcodeInput" rows="7" placeholder="116 20&#10;112 34&#10;167 31"></textarea>
+          <small class="fieldHint">One per line, or separated with commas, semicolons or spaces.</small>
+        </label>
+
+        <label class="uploadBox" for="csvFile">
+          <input id="csvFile" type="file" accept=".csv,.txt,text/csv,text/plain" />
+          <span class="uploadIcon">↑</span>
+          <span class="uploadText">
+            <strong>Upload CSV or TXT</strong>
+            <small>Five-digit Swedish postcodes are detected automatically.</small>
+          </span>
+        </label>
+
+        <button id="showPostcodes" class="primaryButton fullWidth" type="button" disabled>Show postcodes on map</button>
+      </section>
+
+      <section id="importResults" class="surface mapperPanel resultsPanel">
+        <div class="panelHeader">
+          <div>
+            <span class="step">2</span>
+            <div><h2>Mapped postcodes</h2><p>Results from your list.</p></div>
+          </div>
+          <span id="importResultCount" class="badge">0 shown</span>
+        </div>
+
+        <div class="statsGrid four">
+          <div><strong id="inputCount">0</strong><span>input</span></div>
+          <div><strong id="placedCount">0</strong><span>mapped</span></div>
+          <div><strong id="approxCount">0</strong><span>approx.</span></div>
+          <div><strong id="importMissingCount">0</strong><span>missing</span></div>
+        </div>
+
+        <div id="importEmpty" class="emptyState mapperEmpty">
+          <span class="emptyIcon">⌖</span>
+          <strong>No postcodes mapped yet</strong>
+          <p>Add a list above and choose “Show postcodes on map”.</p>
+        </div>
+
+        <div id="importActions" class="hidden">
+          <button id="zoomImported" class="secondaryButton fullWidth" type="button" disabled>Fit all markers</button>
+          <details class="postcodeDetails">
+            <summary>View postcode list and data quality</summary>
+            <div id="importList" class="qualityList"></div>
+          </details>
+        </div>
+      </section>
+
+      <section id="drawPanel" class="surface surfaceAccent mapperPanel hidden">
+        <div class="panelHeader">
+          <div>
+            <span class="step">1</span>
+            <div><h2>Draw target area</h2><p>Create one or more circles on the map.</p></div>
           </div>
         </div>
 
-        <section id="importPanel" class="panel">
-          <div class="panelHeader">
-            <div>
-              <span class="step">1</span>
-              <div><h2>Lägg in postnummer</h2><p>Klistra in eller ladda en fil.</p></div>
-            </div>
-            <button id="clearImport" class="textButton" type="button">Rensa</button>
-          </div>
+        <div class="workflowSteps">
+          <div><span>1</span><p><strong>Draw</strong> a circle on the map.</p></div>
+          <div><span>2</span><p><strong>Adjust</strong> the centre or radius.</p></div>
+          <div><span>3</span><p><strong>Export</strong> the matching postcodes.</p></div>
+        </div>
 
-          <label class="field">
-            <span>Postnummer</span>
-            <textarea id="postcodeInput" rows="7" placeholder="116 20&#10;112 34&#10;167 31"></textarea>
-            <small>En per rad, eller separerade med komma, semikolon eller mellanslag.</small>
-          </label>
+        <div class="hintCard">
+          <strong>How matching works</strong>
+          <span>A postcode is included when its representative point falls inside at least one circle. Low-precision fallback points are excluded from matching.</span>
+        </div>
 
-          <label class="uploadBox" for="csvFile">
-            <input id="csvFile" type="file" accept=".csv,.txt,text/csv,text/plain" />
-            <span class="uploadIcon">↑</span>
-            <span class="uploadText"><strong>Ladda CSV eller TXT</strong><small>Femsiffriga svenska postnummer hittas automatiskt.</small></span>
-          </label>
-
-          <button id="showPostcodes" class="primaryButton" type="button" disabled>Visa postnummer på kartan</button>
-        </section>
-
-        <section id="importResults" class="panel resultsPanel">
-          <div class="panelHeader">
-            <div>
-              <span class="step">2</span>
-              <div><h2>Markeringar</h2><p>Resultat från din lista.</p></div>
-            </div>
-            <span id="importResultCount" class="countBadge">0 visade</span>
-          </div>
-
-          <div class="statsGrid four">
-            <div><strong id="inputCount">0</strong><span>inlästa</span></div>
-            <div><strong id="placedCount">0</strong><span>placerade</span></div>
-            <div><strong id="approxCount">0</strong><span>ungefärliga</span></div>
-            <div><strong id="importMissingCount">0</strong><span>saknas</span></div>
-          </div>
-
-          <div id="importEmpty" class="emptyState">
-            <span class="emptyIcon">⌖</span>
-            <strong>Inga postnummer visade ännu</strong>
-            <p>Lägg in en lista ovan och välj “Visa postnummer på kartan”.</p>
-          </div>
-
-          <div id="importActions" class="hidden">
-            <button id="zoomImported" class="secondaryButton" type="button" disabled>Visa alla markeringar</button>
-            <details class="postcodeDetails">
-              <summary>Visa postnummer och datakvalitet</summary>
-              <div id="importList" class="qualityList"></div>
-            </details>
-          </div>
-        </section>
-
-        <section id="drawPanel" class="panel hidden">
-          <div class="panelHeader">
-            <div>
-              <span class="step">1</span>
-              <div><h2>Rita ett område</h2><p>Skapa en eller flera cirklar på kartan.</p></div>
-            </div>
-          </div>
-
-          <div class="workflowSteps">
-            <div><span>1</span><p><strong>Rita</strong> en cirkel på kartan.</p></div>
-            <div><span>2</span><p><strong>Justera</strong> centrum eller radie vid behov.</p></div>
-            <div><span>3</span><p><strong>Exportera</strong> postnumren som träffas.</p></div>
-          </div>
-
-          <div class="hintCard">
-            <strong>Så räknas ett postnummer</strong>
-            <span>Postnumrets representativa punkt måste ligga i minst en cirkel. Lågprecisionspunkter exkluderas automatiskt för att undvika felaktiga träffar.</span>
-          </div>
-
-          <div class="buttonStack">
-            <button id="startCircle" class="primaryButton" type="button" disabled>Rita en cirkel</button>
-            <button id="clearCircles" class="secondaryButton" type="button" disabled>Ta bort alla cirklar</button>
-          </div>
-        </section>
-
-        <section id="drawResults" class="panel resultsPanel hidden">
-          <div class="panelHeader">
-            <div>
-              <span class="step">2</span>
-              <div><h2>Postnummer i området</h2><p>Uppdateras när cirkeln ändras.</p></div>
-            </div>
-            <span id="resultCount" class="countBadge">0 postnummer</span>
-          </div>
-
-          <div class="statsGrid">
-            <div><strong id="circleCount">0</strong><span>cirklar</span></div>
-            <div><strong id="matchedCount">0</strong><span>träffade</span></div>
-            <div><strong id="excludedCount">0</strong><span>osäkra exkl.</span></div>
-          </div>
-
-          <div id="drawEmpty" class="emptyState compact">
-            <span class="emptyIcon ringLarge">○</span>
-            <strong>Rita en cirkel för att börja</strong>
-            <p>Postnummer och exportalternativ visas här.</p>
-          </div>
-
-          <div id="drawResultContent" class="hidden">
-            <div id="circleList" class="circleList"></div>
-
-            <div class="resultActions">
-              <button id="copyPostcodes" class="secondaryButton" type="button" disabled>Kopiera postnummer</button>
-              <button id="exportCsv" class="secondaryButton" type="button" disabled>Exportera CSV</button>
-              <button id="exportGeojson" class="secondaryButton" type="button" disabled>Exportera cirklar</button>
-            </div>
-
-            <details class="postcodeDetails">
-              <summary>Visa postnummerlista</summary>
-              <div id="postcodeList" class="postcodeList empty">Inga postnummer träffas ännu.</div>
-            </details>
-          </div>
-        </section>
-
-        <div id="status" class="status" role="status" aria-live="polite"></div>
-        <p class="footnote">Positionsdata kombinerar adressbaserade OpenStreetMap-punkter med GeoNames som fallback. Markeringarna är representativa punkter, inte officiella postnummergränser.</p>
-      </aside>
-
-      <section class="mapWrap">
-        <div id="map" aria-label="Karta över svenska postnummer"></div>
-        <div id="mapLegend" class="mapLegend"></div>
+        <div class="buttonStack">
+          <button id="startCircle" class="primaryButton fullWidth" type="button" disabled>Draw a circle</button>
+          <button id="clearCircles" class="secondaryButton fullWidth" type="button" disabled>Remove all circles</button>
+        </div>
       </section>
-    </main>
-  </div>
+
+      <section id="drawResults" class="surface mapperPanel resultsPanel hidden">
+        <div class="panelHeader">
+          <div>
+            <span class="step">2</span>
+            <div><h2>Postcodes in area</h2><p>Updates as circles change.</p></div>
+          </div>
+          <span id="resultCount" class="badge">0 postcodes</span>
+        </div>
+
+        <div class="statsGrid">
+          <div><strong id="circleCount">0</strong><span>circles</span></div>
+          <div><strong id="matchedCount">0</strong><span>matched</span></div>
+          <div><strong id="excludedCount">0</strong><span>excluded</span></div>
+        </div>
+
+        <div id="drawEmpty" class="emptyState mapperEmpty compact">
+          <span class="emptyIcon ringLarge">○</span>
+          <strong>Draw a circle to begin</strong>
+          <p>Matching postcodes and export options will appear here.</p>
+        </div>
+
+        <div id="drawResultContent" class="hidden">
+          <div id="circleList" class="circleList"></div>
+
+          <div class="resultActions">
+            <button id="copyPostcodes" class="secondaryButton" type="button" disabled>Copy postcodes</button>
+            <button id="exportCsv" class="secondaryButton" type="button" disabled>Export CSV</button>
+            <button id="exportGeojson" class="secondaryButton" type="button" disabled>Export circles</button>
+          </div>
+
+          <details class="postcodeDetails">
+            <summary>View postcode list</summary>
+            <div id="postcodeList" class="postcodeList empty">No postcodes matched yet.</div>
+          </details>
+        </div>
+      </section>
+
+      <div id="status" class="status statusText" role="status" aria-live="polite"></div>
+      <p class="mapperFootnote">Positions combine address-derived OpenStreetMap points with GeoNames fallback data. Markers are representative points, not official postcode boundaries.</p>
+    </aside>
+
+    <section class="mapWorkspace">
+      <div id="map" aria-label="Swedish postcode map"></div>
+      <div id="mapLegend" class="mapLegend"></div>
+    </section>
+  </main>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.min.js"></script>
-  <script src="./app.js?v=20260921-5"></script>
+  <script src="./app.js?v=20260922-1"></script>
 </body>
 </html>

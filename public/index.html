@@ -3,338 +3,191 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Retail Address Finder</title>
-  <meta
-    name="description"
-    content="Generate CSV exports of store, restaurant and B2C chain locations by country."
-  />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#0b1534" />
+  <title>Hawk Location Tools · Location Finder</title>
+  <meta name="description" content="Build location datasets for retail chains and consumer-facing categories." />
+  <link rel="stylesheet" href="/toolkit.css?v=20260922-1" />
+  <link rel="stylesheet" href="/styles.css?v=20260922-1" />
 </head>
-
 <body>
-  <main class="page">
-    <header class="topbar">
-      <a class="brand" href="/" aria-label="Retail Address Finder home">
-        <span class="brandMark">⌖</span>
-        <span>Retail Address Finder</span>
+  <header class="appHeader">
+    <div class="headerInner">
+      <a class="productBrand" href="/" aria-label="Hawk Location Tools">
+        <img class="hawkLogo" src="https://hawk-tech.io/wp-content/uploads/2023/11/Hawk_Azerion_Logo_White.svg" alt="Hawk" referrerpolicy="no-referrer" />
+        <span class="brandProduct">Location Tools</span>
       </a>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a class="active" href="#create">Create export</a>
-        <a href="#status">Status</a>
-        <a href="#coverage">Coverage</a>
-        <a href="/postcode-map/">Postcode map</a>
+      <nav class="toolNav" aria-label="Toolkit sections">
+        <a class="toolTab active" href="/" aria-current="page">Location Finder</a>
+        <a class="toolTab" href="/postcode-map/">Postcode Mapper</a>
       </nav>
 
-      <div class="topPill">B2C location intelligence</div>
-    </header>
+    </div>
+    <div class="headerHero">
+      <div class="eyebrow">Location Finder</div>
+      <h1>Build location datasets for Hawk DSP planning.</h1>
+      <p>Search chains or consumer-facing categories by market and export a structured CSV with addresses, coordinates and source identifiers.</p>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div class="heroCopy">
-        <div class="eyebrow">
-          <span class="eyebrowDot"></span>
-          Store, restaurant and consumer-location exports
-        </div>
+  <main class="pageShell">
 
-        <h1>Generate location files for chains or entire categories.</h1>
-
-        <p class="lead">
-          Export structured CSV files for a specific chain, or pull an entire category
-          such as pharmacies, fast food restaurants, hotels, fuel stations or gyms.
-        </p>
-
-        <div class="heroActions">
-          <a class="primaryLink" href="#create">Create an export</a>
-          <a class="secondaryLink" href="#coverage">Explore coverage</a>
-          <a class="secondaryLink" href="/postcode-map/">Open postcode map</a>
-        </div>
-      </div>
-
-      <aside class="heroPanel" aria-label="Export workflow overview">
-        <div class="heroPanelHeader">
-          <span class="pulse"></span>
-          Automated export workflow
-        </div>
-
-        <div class="workflowPreview">
+    <section class="finderWorkspace" id="create">
+      <section class="surface surfaceAccent requestCard">
+        <div class="surfaceHeader">
           <div>
-            <strong>1. Choose export type</strong>
-            <span>Specific chain or entire category</span>
+            <p class="sectionLabel">New dataset</p>
+            <h2>Configure export</h2>
+            <p>Choose what to find and where to search.</p>
           </div>
-          <div>
-            <strong>2. Target the market</strong>
-            <span>Select country, category and subtype</span>
-          </div>
-          <div>
-            <strong>3. Process data</strong>
-            <span>Normalize, deduplicate and prepare output</span>
-          </div>
-          <div>
-            <strong>4. Download CSV</strong>
-            <span>Access the completed file directly</span>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <section class="productGrid" id="create">
-      <section class="card requestCard">
-        <div class="cardHeader">
-          <div>
-            <p class="sectionLabel">New export</p>
-            <h2>Create a location file</h2>
-            <p>
-              Export one chain, or select an entire category such as pharmacies,
-              fast food restaurants, hotels or fuel stations.
-            </p>
-          </div>
-          <span class="cardBadge">CSV</span>
+          <span class="badge">CSV</span>
         </div>
 
         <form id="exportForm" class="exportForm">
           <fieldset class="modeSelector">
-            <legend>Export type</legend>
+            <legend>Search mode</legend>
 
             <label class="modeOption">
-              <input
-                type="radio"
-                name="exportMode"
-                value="chain"
-                checked
-              />
+              <input type="radio" name="exportMode" value="chain" checked />
               <span>
                 <strong>Specific chain</strong>
-                <small>Find locations for one brand or chain, such as MAX, Carrefour or SATS.</small>
+                <small>Find one brand, such as MAX, Carrefour or SATS.</small>
               </span>
             </label>
 
             <label class="modeOption">
-              <input
-                type="radio"
-                name="exportMode"
-                value="category"
-              />
+              <input type="radio" name="exportMode" value="category" />
               <span>
                 <strong>Entire category</strong>
-                <small>Export all locations of a selected type, such as pharmacies or fast food restaurants.</small>
+                <small>Find all locations of a selected type in a market.</small>
               </span>
             </label>
           </fieldset>
 
-          <label>
-            <span>Country</span>
-            <input
-              id="country"
-              name="country"
-              type="text"
-              placeholder="e.g. Sweden, Norway, France"
-              autocomplete="country-name"
-              required
-            />
-          </label>
+          <div class="formGrid">
+            <label class="field">
+              <span>Country</span>
+              <input id="country" name="country" type="text" placeholder="e.g. Sweden, Norway, France" autocomplete="country-name" required />
+            </label>
 
-          <label>
-            <span>Category</span>
-            <select id="category" name="category">
-              <option value="retail_grocery">Retail & grocery</option>
-              <option value="food_restaurants">Food & restaurants</option>
-              <option value="mobility_fuel">Mobility & fuel</option>
-              <option value="hotels">Hotels & accommodation</option>
-              <option value="services">Services</option>
-              <option value="healthcare_pharmacy">Healthcare & pharmacy</option>
-              <option value="fitness_entertainment">Fitness & entertainment</option>
-              <option value="all">All B2C locations</option>
-            </select>
-          </label>
+            <label class="field">
+              <span>Category</span>
+              <select id="category" name="category">
+                <option value="retail_grocery">Retail & grocery</option>
+                <option value="food_restaurants">Food & restaurants</option>
+                <option value="mobility_fuel">Mobility & fuel</option>
+                <option value="hotels">Hotels & accommodation</option>
+                <option value="services">Services</option>
+                <option value="healthcare_pharmacy">Healthcare & pharmacy</option>
+                <option value="fitness_entertainment">Fitness & entertainment</option>
+                <option value="all">All B2C locations</option>
+              </select>
+            </label>
 
-          <label id="subtypeGroup">
-            <span>Subtype</span>
-            <select id="subtype" name="subtype">
-              <option value="auto">Smart match — recommended</option>
-            </select>
-          </label>
+            <label id="subtypeGroup" class="field">
+              <span>Subtype</span>
+              <select id="subtype" name="subtype">
+                <option value="auto">Smart match — recommended</option>
+              </select>
+            </label>
 
-          <label id="chainGroup" class="autocompleteField">
-            <span>Chain or brand</span>
-            <input
-              id="chain"
-              name="chain"
-              type="text"
-              placeholder="e.g. MAX, Carrefour, Circle K"
-              autocomplete="off"
-              aria-autocomplete="list"
-              aria-expanded="false"
-              aria-controls="chainSuggestionPanel"
-            />
+            <label id="chainGroup" class="field autocompleteField">
+              <span>Chain or brand</span>
+              <input id="chain" name="chain" type="text" placeholder="e.g. MAX, Carrefour, Circle K" autocomplete="off" aria-autocomplete="list" aria-expanded="false" aria-controls="chainSuggestionPanel" />
+              <div id="chainSuggestionPanel" class="suggestionPanel" role="listbox" aria-label="Chain suggestions" hidden></div>
+              <small id="chainHint" class="fieldHint">Start typing to search known chains. Selecting a suggestion sets the category automatically.</small>
+            </label>
+          </div>
 
-            <div
-              id="chainSuggestionPanel"
-              class="suggestionPanel"
-              role="listbox"
-              aria-label="Chain suggestions"
-              hidden
-            ></div>
+          <details class="advancedOptions">
+            <summary>Output settings</summary>
+            <div class="formGrid advancedGrid">
+              <label class="field">
+                <span>Output format</span>
+                <select id="format" name="format">
+                  <option value="CSV">CSV UTF-8</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Data source</span>
+                <select id="source" name="source">
+                  <option value="OpenStreetMap">OpenStreetMap / Overpass</option>
+                </select>
+              </label>
+            </div>
+          </details>
 
-            <small id="chainHint" class="fieldHint">
-              Start typing to search known chains. Selecting a suggestion will set category automatically.
-            </small>
-          </label>
-
-          <label>
-            <span>Output format</span>
-            <select id="format" name="format">
-              <option value="CSV">CSV UTF-8</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Data source</span>
-            <select id="source" name="source">
-              <option value="OpenStreetMap">OpenStreetMap / Overpass</option>
-            </select>
-          </label>
-
-          <button type="submit" class="submitButton">
-            <span>Generate CSV</span>
+          <button type="submit" class="primaryButton submitButton">
+            <span>Generate location CSV</span>
             <span aria-hidden="true">→</span>
           </button>
         </form>
 
         <div class="exampleBlock">
-          <div class="exampleHeader">Example exports</div>
+          <div class="exampleHeader">Quick examples</div>
           <div class="examples">
-            <button
-              type="button"
-              class="example"
-              data-mode="chain"
-              data-chain="MAX"
-              data-country="Sweden"
-              data-category="food_restaurants"
-              data-subtype="auto"
-            >
-              MAX locations / Sweden
-            </button>
-
-            <button
-              type="button"
-              class="example"
-              data-mode="category"
-              data-chain=""
-              data-country="Sweden"
-              data-category="healthcare_pharmacy"
-              data-subtype="pharmacy"
-            >
-              All pharmacies / Sweden
-            </button>
-
-            <button
-              type="button"
-              class="example"
-              data-mode="category"
-              data-chain=""
-              data-country="Norway"
-              data-category="food_restaurants"
-              data-subtype="fast_food"
-            >
-              All fast food / Norway
-            </button>
-
-            <button
-              type="button"
-              class="example"
-              data-mode="category"
-              data-chain=""
-              data-country="Germany"
-              data-category="mobility_fuel"
-              data-subtype="fuel"
-            >
-              All fuel stations / Germany
-            </button>
+            <button type="button" class="example" data-mode="chain" data-chain="MAX" data-country="Sweden" data-category="food_restaurants" data-subtype="auto">MAX · Sweden</button>
+            <button type="button" class="example" data-mode="category" data-chain="" data-country="Sweden" data-category="healthcare_pharmacy" data-subtype="pharmacy">Pharmacies · Sweden</button>
+            <button type="button" class="example" data-mode="category" data-chain="" data-country="Norway" data-category="food_restaurants" data-subtype="fast_food">Fast food · Norway</button>
+            <button type="button" class="example" data-mode="category" data-chain="" data-country="Germany" data-category="mobility_fuel" data-subtype="fuel">Fuel stations · Germany</button>
           </div>
         </div>
       </section>
 
-      <section class="card statusCard" id="status">
-        <div class="cardHeader">
+      <section class="surface statusCard" id="status">
+        <div class="surfaceHeader">
           <div>
-            <p class="sectionLabel">Live status</p>
-            <h2>Export progress</h2>
-            <p>
-              Follow the export from request to completed CSV. The download button
-              appears automatically when the file is ready.
-            </p>
+            <p class="sectionLabel">Export status</p>
+            <h2>Dataset progress</h2>
+            <p>Follow the run from search to downloadable CSV.</p>
           </div>
-          <span id="statusChip" class="cardBadge mutedBadge">Idle</span>
+          <span id="statusChip" class="badge muted">Idle</span>
         </div>
 
         <div id="result" class="result idle">
-          <div class="emptyState">
+          <div class="emptyState exportEmpty">
             <div class="emptyIcon">↓</div>
-            <h3>No export running</h3>
-            <p>Create an export to track progress and download the finished CSV here.</p>
+            <strong>No export running</strong>
+            <p>Configure an export on the left. Progress and the finished file will appear here.</p>
           </div>
         </div>
       </section>
     </section>
 
-    <section class="categorySection" id="coverage">
-      <div class="sectionIntro">
+    <section class="coverageSection" id="coverage">
+      <div class="coverageIntro">
         <p class="sectionLabel">Coverage</p>
-        <h2>Designed for chain and category-level location discovery</h2>
-        <p>
-          Use specific-chain exports when you know the brand. Use entire-category exports
-          when you want all locations of a type in a country, such as all pharmacies,
-          all fast food restaurants or all hotels.
-        </p>
+        <h2>One search workflow for many consumer-facing location types.</h2>
+        <p>Use a specific chain when you know the brand, or use category mode to discover all matching locations in a country.</p>
       </div>
 
-      <div class="categoryGrid">
-        <div class="categoryCard">
-          <span>🛒</span>
-          <strong>Retail & grocery</strong>
-          <p>
-            Supermarkets, convenience stores, fashion, electronics, furniture,
-            specialty retail and general shops.
-          </p>
-        </div>
-
-        <div class="categoryCard">
-          <span>🍔</span>
-          <strong>Food & restaurants</strong>
-          <p>
-            Fast food, restaurants, cafés, bars, pubs, food courts and ice cream chains.
-          </p>
-        </div>
-
-        <div class="categoryCard">
-          <span>⛽</span>
-          <strong>Mobility & fuel</strong>
-          <p>
-            Gas stations, EV charging, car rental, car sharing, bike rental and
-            automotive retail or service locations.
-          </p>
-        </div>
-
-        <div class="categoryCard">
-          <span>🏨</span>
-          <strong>Hotels & services</strong>
-          <p>
-            Hotels, gyms, banks, parcel lockers, pharmacies, clinics, opticians and
-            other consumer-facing service locations.
-          </p>
-        </div>
+      <div class="coverageGrid">
+        <article class="coverageCard">
+          <span class="coverageIcon">01</span>
+          <div><strong>Retail & grocery</strong><p>Supermarkets, convenience, fashion, electronics, furniture and specialty retail.</p></div>
+        </article>
+        <article class="coverageCard">
+          <span class="coverageIcon">02</span>
+          <div><strong>Food & restaurants</strong><p>Fast food, restaurants, cafés, bars, food courts and related concepts.</p></div>
+        </article>
+        <article class="coverageCard">
+          <span class="coverageIcon">03</span>
+          <div><strong>Mobility & fuel</strong><p>Fuel, EV charging, rentals, automotive services and mobility locations.</p></div>
+        </article>
+        <article class="coverageCard">
+          <span class="coverageIcon">04</span>
+          <div><strong>Services & leisure</strong><p>Hotels, healthcare, pharmacies, gyms, banks and other consumer services.</p></div>
+        </article>
       </div>
     </section>
-
-    <footer class="footer">
-      <span>Retail Address Finder</span>
-      <span>
-        CSV exports include category, address fields, formatted address,
-        coordinates, source and OpenStreetMap identifiers.
-      </span>
-    </footer>
   </main>
 
-  <script src="/app.js"></script>
+  <footer class="productFooter">
+    <span>Hawk Location Tools</span>
+    <span>Location discovery and postcode mapping for Hawk DSP workflows.</span>
+  </footer>
+
+  <script src="/app.js?v=20260922-1"></script>
 </body>
 </html>
