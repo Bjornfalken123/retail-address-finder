@@ -276,6 +276,26 @@ a { color: inherit; }
   color: #667482;
 }
 
+.badge.running {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.badge.success {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.badge.warning {
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+
+.badge.error {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
 .field {
   display: grid;
   gap: 6px;
