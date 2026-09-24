@@ -6,12 +6,12 @@
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#0b1534" />
   <title>Hawk Location Tools · Postcode Mapper</title>
-  <meta name="description" content="Map Swedish postcodes or draw circular target areas and export the postcodes inside them." />
+  <meta name="description" content="Map Swedish postcodes or draw circles and polygons to export the postcodes inside them." />
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.css" />
   <link rel="stylesheet" href="/toolkit.css?v=20260922-2" />
-  <link rel="stylesheet" href="./styles.css?v=20260922-2" />
+  <link rel="stylesheet" href="./styles.css?v=20260924-1" />
 </head>
 <body>
   <header class="appHeader">
@@ -30,7 +30,7 @@
     <div class="headerHero postcodeHero">
       <div class="eyebrow">Postcode Mapper</div>
       <h1>Map Swedish postcodes and define target areas.</h1>
-      <p>Inspect postcode coverage from a list, or draw circular areas and export the postcodes inside them.</p>
+      <p>Inspect postcode coverage from a list, or draw circles and polygons to export the postcodes inside them.</p>
     </div>
   </header>
 
@@ -44,7 +44,7 @@
         </button>
         <button id="modeDraw" class="modeTab" type="button" role="tab" aria-selected="false" aria-controls="drawPanel drawResults" disabled>
           <span class="modeIcon ringIcon">○</span>
-          <span><strong>Circle → postcodes</strong><small>Map → list</small></span>
+          <span><strong>Area → postcodes</strong><small>Map → list</small></span>
         </button>
       </div>
 
@@ -118,45 +118,52 @@
         <div class="panelHeader">
           <div>
             <span class="step">1</span>
-            <div><h2>Draw target area</h2><p>Create one or more circles on the map.</p></div>
+            <div><h2>Draw target area</h2><p>Create circles or custom polygons on the map.</p></div>
           </div>
         </div>
 
         <div class="workflowSteps">
-          <div><span>1</span><p><strong>Draw</strong> a circle on the map.</p></div>
+          <div><span>1</span><p><strong>Draw</strong> a circle or polygon on the map.</p></div>
           <div><span>2</span><p><strong>Adjust</strong> the centre or radius.</p></div>
           <div><span>3</span><p><strong>Export</strong> the matching postcodes.</p></div>
         </div>
 
         <div class="hintCard">
           <strong>How matching works</strong>
-          <span>A postcode is included when its representative point falls inside at least one circle. Low-precision fallback points are excluded from matching.</span>
+          <span>A postcode is included when its representative point falls inside at least one drawn area. Low-precision fallback points are excluded from matching.</span>
         </div>
 
-        <div class="buttonStack">
-          <button id="startCircle" class="primaryButton fullWidth" type="button" disabled>Draw a circle</button>
-          <button id="clearCircles" class="secondaryButton fullWidth" type="button" disabled>Remove all circles</button>
+        <div class="drawActions">
+          <button id="startCircle" class="primaryButton" type="button" disabled>
+            <span class="shapeIcon circleShape" aria-hidden="true"></span>
+            <span>Draw circle</span>
+          </button>
+          <button id="startPolygon" class="secondaryButton" type="button" disabled>
+            <span class="shapeIcon polygonShape" aria-hidden="true"></span>
+            <span>Draw polygon</span>
+          </button>
         </div>
+        <button id="clearAreas" class="textButton clearAreasButton" type="button" disabled>Remove all areas</button>
       </section>
 
       <section id="drawResults" class="surface mapperPanel resultsPanel hidden">
         <div class="panelHeader">
           <div>
             <span class="step">2</span>
-            <div><h2>Postcodes in area</h2><p>Updates as circles change.</p></div>
+            <div><h2>Postcodes in area</h2><p>Updates whenever an area is edited.</p></div>
           </div>
           <span id="resultCount" class="badge">0 postcodes</span>
         </div>
 
         <div class="statsGrid">
-          <div><strong id="circleCount">0</strong><span>circles</span></div>
+          <div><strong id="areaCount">0</strong><span>areas</span></div>
           <div><strong id="matchedCount">0</strong><span>matched</span></div>
           <div><strong id="excludedCount">0</strong><span>excluded</span></div>
         </div>
 
         <div id="drawEmpty" class="emptyState mapperEmpty compact">
           <span class="emptyIcon ringLarge">○</span>
-          <strong>Draw a circle to begin</strong>
+          <strong>Draw an area to begin</strong>
           <p>Matching postcodes and export options will appear here.</p>
         </div>
 
@@ -166,7 +173,7 @@
           <div class="resultActions">
             <button id="copyPostcodes" class="secondaryButton" type="button" disabled>Copy postcodes</button>
             <button id="exportCsv" class="secondaryButton" type="button" disabled>Export CSV</button>
-            <button id="exportGeojson" class="secondaryButton" type="button" disabled>Export circles</button>
+            <button id="exportGeojson" class="secondaryButton" type="button" disabled>Export areas</button>
           </div>
 
           <details class="postcodeDetails">
@@ -188,6 +195,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.18.0/dist/leaflet-geoman.min.js"></script>
-  <script src="./app.js?v=20260922-1"></script>
+  <script src="./app.js?v=20260924-1"></script>
 </body>
 </html>
