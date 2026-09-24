@@ -25,11 +25,12 @@
     importActions: document.getElementById("importActions"),
     importList: document.getElementById("importList"),
     startCircle: document.getElementById("startCircle"),
-    clearCircles: document.getElementById("clearCircles"),
+    startPolygon: document.getElementById("startPolygon"),
+    clearAreas: document.getElementById("clearAreas"),
     drawEmpty: document.getElementById("drawEmpty"),
     drawResultContent: document.getElementById("drawResultContent"),
     resultCount: document.getElementById("resultCount"),
-    circleCount: document.getElementById("circleCount"),
+    areaCount: document.getElementById("areaCount"),
     matchedCount: document.getElementById("matchedCount"),
     excludedCount: document.getElementById("excludedCount"),
     circleList: document.getElementById("circleList"),
@@ -52,8 +53,8 @@
     importedCodes: [],
     missingCodes: [],
     matchedCodes: [],
-    circles: [],
-    nextCircleId: 1,
+    areas: [],
+    nextAreaId: 1,
     dataReady: false,
     dataMeta: null,
     importMarkerByCode: new Map()
@@ -67,7 +68,7 @@
 
   const importedLayer = L.layerGroup().addTo(map);
   const matchedLayer = L.layerGroup();
-  const circleLayer = L.featureGroup();
+  const areaLayer = L.featureGroup();
   const geomanAvailable = Boolean(map.pm);
 
   function normalizePostcode(value) {
@@ -112,6 +113,7 @@
     state.dataReady = ready;
     els.showPostcodes.disabled = !ready;
     els.startCircle.disabled = !ready;
+    els.startPolygon.disabled = !ready;
     els.modeDraw.disabled = !ready;
   }
 
@@ -147,7 +149,7 @@
       dragMode: false,
       editMode: true,
       removalMode: true,
-      drawCircle: true
+      drawCircle: false
     });
     map.pm.setGlobalOptions({ snappable: false, continueDrawing: false });
   }
@@ -160,7 +162,7 @@
       `;
     } else {
       els.mapLegend.innerHTML = `
-        <span><i class="legendRing"></i>Target circle</span>
+        <span><i class="legendRing"></i>Target area</span>
         <span><i class="legendDot matched"></i>Matched postcode</span>
       `;
     }
@@ -183,16 +185,16 @@
     if (importing) {
       showLayer(importedLayer);
       hideLayer(matchedLayer);
-      hideLayer(circleLayer);
+      hideLayer(areaLayer);
       configureDrawControls(false);
       setStatus(state.importedRecords.length ? "Imported postcodes are shown on the map." : "");
     } else {
       hideLayer(importedLayer);
-      showLayer(circleLayer);
+      showLayer(areaLayer);
       showLayer(matchedLayer);
       configureDrawControls(true);
       updateDrawResults();
-      setStatus("Draw or edit circles on the map. Results update automatically.");
+      setStatus("Draw or edit areas on the map. Results update automatically.");
     }
 
     renderLegend();
@@ -386,29 +388,79 @@
     setStatus("The postcode list has been cleared.");
   }
 
-  function pointInsideCircle(point, item) {
-    const center = item.layer.getLatLng();
-    return haversineMeters(
-      { lat: center.lat, lng: center.lng },
-      point
-    ) <= item.layer.getRadius();
+  function isCircleArea(item) {
+    return typeof item.layer.getRadius === "function";
   }
 
-  function pointInsideAnyCircle(point) {
-    return state.circles.some(item => pointInsideCircle(point, item));
+  function polygonRing(layer) {
+    let latlngs = layer.getLatLngs();
+    while (Array.isArray(latlngs) && latlngs.length && Array.isArray(latlngs[0])) {
+      latlngs = latlngs[0];
+    }
+    return Array.isArray(latlngs) ? latlngs : [];
+  }
+
+  function pointOnSegment(point, a, b) {
+    const x = point.lng;
+    const y = point.lat;
+    const x1 = a.lng;
+    const y1 = a.lat;
+    const x2 = b.lng;
+    const y2 = b.lat;
+    const cross = (x - x1) * (y2 - y1) - (y - y1) * (x2 - x1);
+    if (Math.abs(cross) > 1e-10) return false;
+    const dot = (x - x1) * (x2 - x1) + (y - y1) * (y2 - y1);
+    if (dot < 0) return false;
+    const lengthSq = (x2 - x1) ** 2 + (y2 - y1) ** 2;
+    return dot <= lengthSq;
+  }
+
+  function pointInsidePolygon(point, layer) {
+    const ring = polygonRing(layer);
+    if (ring.length < 3) return false;
+
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const a = ring[j];
+      const b = ring[i];
+
+      if (pointOnSegment(point, a, b)) return true;
+
+      const intersects =
+        ((a.lat > point.lat) !== (b.lat > point.lat)) &&
+        (point.lng < (b.lng - a.lng) * (point.lat - a.lat) / ((b.lat - a.lat) || Number.EPSILON) + a.lng);
+
+      if (intersects) inside = !inside;
+    }
+    return inside;
+  }
+
+  function pointInsideArea(point, item) {
+    if (isCircleArea(item)) {
+      const center = item.layer.getLatLng();
+      return haversineMeters(
+        { lat: center.lat, lng: center.lng },
+        point
+      ) <= item.layer.getRadius();
+    }
+    return pointInsidePolygon(point, item.layer);
+  }
+
+  function pointInsideAnyArea(point) {
+    return state.areas.some(item => pointInsideArea(point, item));
   }
 
   function getMatchedRecords() {
-    if (!state.circles.length) return [];
+    if (!state.areas.length) return [];
     return state.postcodes.filter(
-      point => point.precision !== "low" && pointInsideAnyCircle(point)
+      point => point.precision !== "low" && pointInsideAnyArea(point)
     );
   }
 
   function getExcludedLowPrecisionRecords() {
-    if (!state.circles.length) return [];
+    if (!state.areas.length) return [];
     return state.postcodes.filter(
-      point => point.precision === "low" && pointInsideAnyCircle(point)
+      point => point.precision === "low" && pointInsideAnyArea(point)
     );
   }
 
@@ -429,30 +481,49 @@
     });
   }
 
-  function circleName(index) {
+  function areaName(index) {
     return `Area ${index}`;
   }
 
-  function registerCircle(layer, options = {}) {
+  function areaCenter(item) {
+    if (isCircleArea(item)) return item.layer.getLatLng();
+    return item.layer.getBounds().getCenter();
+  }
+
+  function areaSummary(item, matched, excluded) {
+    const exclusion = excluded ? ` · ${excluded} low-confidence excluded` : "";
+    if (isCircleArea(item)) {
+      return `Circle · ${(item.layer.getRadius() / 1000).toFixed(1)} km radius · ${matched} postcodes${exclusion}`;
+    }
+    const vertices = polygonRing(item.layer).length;
+    return `Polygon · ${vertices} vertices · ${matched} postcodes${exclusion}`;
+  }
+
+  function registerArea(layer, options = {}) {
     const item = {
-      id: state.nextCircleId++,
-      name: options.name || circleName(state.circles.length + 1),
+      id: state.nextAreaId++,
+      name: options.name || areaName(state.areas.length + 1),
+      type: options.type || (typeof layer.getRadius === "function" ? "circle" : "polygon"),
       layer
     };
 
-    state.circles.push(item);
-    if (!circleLayer.hasLayer(layer)) circleLayer.addLayer(layer);
+    state.areas.push(item);
+    if (!areaLayer.hasLayer(layer)) areaLayer.addLayer(layer);
 
     layer.on("pm:edit", updateDrawResults);
     layer.on("pm:dragend", updateDrawResults);
     layer.on("click", () => {
-      const count = state.postcodes.filter(
-        point => point.precision !== "low" && pointInsideCircle(point, item)
+      const matched = state.postcodes.filter(
+        point => point.precision !== "low" && pointInsideArea(point, item)
       ).length;
+      const excluded = state.postcodes.filter(
+        point => point.precision === "low" && pointInsideArea(point, item)
+      ).length;
+
       layer
         .bindPopup(`
           <div class="popupTitle">${item.name}</div>
-          <div class="popupMeta">${(layer.getRadius() / 1000).toFixed(1)} km radius · ${count} postcodes</div>
+          <div class="popupMeta">${areaSummary(item, matched, excluded)}</div>
         `)
         .openPopup();
     });
@@ -460,47 +531,51 @@
     return item;
   }
 
-  function removeCircle(item) {
-    circleLayer.removeLayer(item.layer);
-    state.circles = state.circles.filter(circle => circle !== item);
+  function removeArea(item) {
+    areaLayer.removeLayer(item.layer);
+    state.areas = state.areas.filter(area => area !== item);
     updateDrawResults();
   }
 
-  function clearCircles() {
-    circleLayer.clearLayers();
-    state.circles = [];
+  function clearAreas() {
+    areaLayer.clearLayers();
+    state.areas = [];
     matchedLayer.clearLayers();
     updateDrawResults();
-    setStatus("All circles have been removed.");
+    setStatus("All areas have been removed.");
   }
 
-  function updateCircleList() {
+  function updateAreaList() {
     els.circleList.innerHTML = "";
 
-    state.circles.forEach(item => {
+    state.areas.forEach(item => {
       const matched = state.postcodes.filter(
-        point => point.precision !== "low" && pointInsideCircle(point, item)
+        point => point.precision !== "low" && pointInsideArea(point, item)
       ).length;
       const excluded = state.postcodes.filter(
-        point => point.precision === "low" && pointInsideCircle(point, item)
+        point => point.precision === "low" && pointInsideArea(point, item)
       ).length;
-      const center = item.layer.getLatLng();
+      const center = areaCenter(item);
 
       const row = document.createElement("div");
       row.className = "circleItem";
       row.innerHTML = `
         <div class="circleItemMain">
           <strong>${item.name}</strong>
-          <span>${(item.layer.getRadius() / 1000).toFixed(1)} km · ${matched} postcodes${excluded ? ` · ${excluded} low-confidence excluded` : ""}</span>
+          <span>${areaSummary(item, matched, excluded)}</span>
         </div>
         <button type="button" aria-label="Remove ${item.name}">Remove</button>
       `;
 
       row.querySelector(".circleItemMain").addEventListener("click", () => {
-        map.setView(center, Math.max(map.getZoom(), 11));
+        if (isCircleArea(item)) {
+          map.setView(center, Math.max(map.getZoom(), 11));
+        } else {
+          map.fitBounds(item.layer.getBounds(), { padding: [30, 30], maxZoom: 15 });
+        }
         item.layer.openPopup();
       });
-      row.querySelector("button").addEventListener("click", () => removeCircle(item));
+      row.querySelector("button").addEventListener("click", () => removeArea(item));
       els.circleList.appendChild(row);
     });
   }
@@ -526,21 +601,21 @@
     const excluded = getExcludedLowPrecisionRecords();
 
     renderMatchedMarkers(matched);
-    updateCircleList();
+    updateAreaList();
     updatePostcodeList(matched);
 
-    els.circleCount.textContent = String(state.circles.length);
+    els.areaCount.textContent = String(state.areas.length);
     els.matchedCount.textContent = String(matched.length);
     els.excludedCount.textContent = String(excluded.length);
     els.resultCount.textContent = `${matched.length} postcodes`;
-    els.clearCircles.disabled = state.circles.length === 0;
+    els.clearAreas.disabled = state.areas.length === 0;
     els.copyPostcodes.disabled = matched.length === 0;
     els.exportCsv.disabled = matched.length === 0;
-    els.exportGeojson.disabled = state.circles.length === 0;
+    els.exportGeojson.disabled = state.areas.length === 0;
 
-    const hasCircles = state.circles.length > 0;
-    els.drawEmpty.classList.toggle("hidden", hasCircles);
-    els.drawResultContent.classList.toggle("hidden", !hasCircles);
+    const hasAreas = state.areas.length > 0;
+    els.drawEmpty.classList.toggle("hidden", hasAreas);
+    els.drawResultContent.classList.toggle("hidden", !hasAreas);
   }
 
   function startFallbackCircleDrawing() {
@@ -552,11 +627,11 @@
       const center = firstEvent.latlng;
       const preview = L.circle(center, {
         radius: 100,
-        color: "#175cd3",
-        fillColor: "#175cd3",
+        color: "#0eafa5",
+        fillColor: "#25e0d0",
         fillOpacity: 0.09,
         weight: 2.4
-      }).addTo(circleLayer);
+      }).addTo(areaLayer);
 
       const onMove = moveEvent => {
         preview.setRadius(Math.max(50, map.distance(center, moveEvent.latlng)));
@@ -566,7 +641,7 @@
         preview.setRadius(Math.max(50, map.distance(center, finishEvent.latlng)));
         map.off("mousemove", onMove);
         container.style.cursor = "";
-        registerCircle(preview);
+        registerArea(preview, { type: "circle" });
         updateDrawResults();
         setStatus("Circle created. The postcode result has been updated.", "ok");
       };
@@ -635,37 +710,50 @@
       lines.push(values.map(value => `"${String(value).replaceAll('"', '""')}"`).join(","));
     });
 
-    download("postcodes-in-circles.csv", `\uFEFF${lines.join("\n")}`, "text/csv;charset=utf-8");
+    download("postcodes-in-areas.csv", `\uFEFF${lines.join("\n")}`, "text/csv;charset=utf-8");
     setStatus(`${records.length} postcodes exported to CSV.`, "ok");
   }
 
   function exportGeojson() {
-    if (!state.circles.length) {
-      setStatus("There are no circles to export.", "error");
+    if (!state.areas.length) {
+      setStatus("There are no areas to export.", "error");
       return;
     }
 
-    const features = state.circles.map((item, index) => {
-      const center = item.layer.getLatLng();
+    const features = state.areas.map((item, index) => {
+      if (isCircleArea(item)) {
+        const center = item.layer.getLatLng();
+        return {
+          type: "Feature",
+          properties: {
+            name: item.name || areaName(index + 1),
+            shape: "circle",
+            radiusMeters: Math.round(item.layer.getRadius())
+          },
+          geometry: {
+            type: "Point",
+            coordinates: [center.lng, center.lat]
+          }
+        };
+      }
+
+      const geometry = item.layer.toGeoJSON().geometry;
       return {
         type: "Feature",
         properties: {
-          name: item.name || circleName(index + 1),
-          radiusMeters: Math.round(item.layer.getRadius())
+          name: item.name || areaName(index + 1),
+          shape: "polygon"
         },
-        geometry: {
-          type: "Point",
-          coordinates: [center.lng, center.lat]
-        }
+        geometry
       };
     });
 
     download(
-      "target-circles.geojson",
+      "target-areas.geojson",
       JSON.stringify({ type: "FeatureCollection", features }, null, 2),
       "application/geo+json;charset=utf-8"
     );
-    setStatus(`${features.length} circles exported as GeoJSON.`, "ok");
+    setStatus(`${features.length} areas exported as GeoJSON.`, "ok");
   }
 
   async function copyPostcodes() {
@@ -685,22 +773,29 @@
   }
 
   map.on("pm:create", event => {
-    if (state.mode !== "draw" || event.shape !== "Circle") return;
+    if (state.mode !== "draw" || !["Circle", "Polygon"].includes(event.shape)) return;
 
     const layer = event.layer;
     layer.setStyle({
-      color: "#175cd3",
-      fillColor: "#175cd3",
-      fillOpacity: 0.09,
+      color: "#0eafa5",
+      fillColor: "#25e0d0",
+      fillOpacity: 0.12,
       weight: 2.4
     });
-    registerCircle(layer);
+
+    const type = event.shape === "Circle" ? "circle" : "polygon";
+    registerArea(layer, { type });
     updateDrawResults();
-    setStatus("Circle created. Drag it or change the radius to refine the selection.", "ok");
+    setStatus(
+      type === "circle"
+        ? "Circle created. Drag it or change the radius to refine the selection."
+        : "Polygon created. Edit its vertices to refine the selection.",
+      "ok"
+    );
   });
 
   map.on("pm:remove", event => {
-    state.circles = state.circles.filter(item => item.layer !== event.layer);
+    state.areas = state.areas.filter(item => item.layer !== event.layer);
     updateDrawResults();
   });
 
@@ -729,9 +824,9 @@
         snappable: false,
         continueDrawing: false,
         pathOptions: {
-          color: "#175cd3",
-          fillColor: "#175cd3",
-          fillOpacity: 0.09,
+          color: "#0eafa5",
+          fillColor: "#25e0d0",
+          fillOpacity: 0.12,
           weight: 2.4
         }
       });
@@ -740,7 +835,28 @@
     }
   });
 
-  els.clearCircles.addEventListener("click", clearCircles);
+  els.startPolygon.addEventListener("click", () => {
+    if (!state.dataReady) {
+      setStatus("Postcode data must be loaded before you can create a selection.", "error");
+      return;
+    }
+    if (!geomanAvailable) {
+      setStatus("Polygon drawing is unavailable because the map drawing tools did not load.", "error");
+      return;
+    }
+    map.pm.enableDraw("Polygon", {
+      snappable: false,
+      continueDrawing: false,
+      pathOptions: {
+        color: "#0eafa5",
+        fillColor: "#25e0d0",
+        fillOpacity: 0.12,
+        weight: 2.4
+      }
+    });
+  });
+
+  els.clearAreas.addEventListener("click", clearAreas);
   els.copyPostcodes.addEventListener("click", copyPostcodes);
   els.exportCsv.addEventListener("click", exportCsv);
   els.exportGeojson.addEventListener("click", exportGeojson);
