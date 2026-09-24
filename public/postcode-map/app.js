@@ -141,7 +141,7 @@
       drawMarker: false,
       drawPolyline: false,
       drawRectangle: false,
-      drawPolygon: true,
+      drawPolygon: false,
       drawText: false,
       drawCircleMarker: false,
       cutPolygon: false,
@@ -149,7 +149,7 @@
       dragMode: false,
       editMode: true,
       removalMode: true,
-      drawCircle: true
+      drawCircle: false
     });
     map.pm.setGlobalOptions({ snappable: false, continueDrawing: false });
   }
