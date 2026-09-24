@@ -689,3 +689,49 @@
     gap: 6px 9px;
   }
 }
+
+
+/* Area drawing controls */
+.drawActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.drawActions button {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.shapeIcon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.circleShape {
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.polygonShape {
+  background: currentColor;
+  clip-path: polygon(50% 0%, 96% 35%, 78% 96%, 18% 88%, 0% 30%);
+}
+
+.clearAreasButton {
+  width: 100%;
+  margin-top: 7px;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .drawActions {
+    grid-template-columns: 1fr;
+  }
+}
